@@ -1,0 +1,111 @@
+@extends('layouts.app', ['title' => $lesson->name])
+
+@section('content')
+<section class="welcome course">
+  <div class="container">
+  	<div class="row">
+  		<div class="col-12">
+        <h3 class="preheader"><a href="/courses/{{ $lesson->course->slug }}">{{ $lesson->course->name }}</a></h3>
+        <h2>Module {{$lesson->module->order}}: {{ $lesson->module->name}}</h2>
+  			<h1>{{ $lesson->name }}</h1>
+        @role('admin')
+          <p><a href="/lessons/{{ $lesson->id }}/edit" class="btn btn-primary">Edit Lesson</a></p>
+        @endrole
+  		</div>
+  	</div>
+  </div>
+</section>
+<section class="content">
+  <div class="container">
+  	<div class="row">
+      <div class="col-12 col-lg-8">
+        @if(count($lesson->objectives) > 0)
+          <h3>Lesson Objectives</h3>
+          <ol>
+            @foreach($lesson->objectives as $objective)
+              <li>{{ $objective->title }}</li>
+            @endforeach
+          </ol>
+          <hr>
+        @endif
+        {!! $lesson->content !!}
+        @if(count($lesson->objectives) > 0)
+          <h3>Lesson Objectives</h3>
+          <ol>
+            @foreach($lesson->objectives as $objective)
+              <li>{{ $objective->title }}</li>
+            @endforeach
+          </ol>
+          <hr>
+        @endif
+      </div>
+    </div>
+  </div>
+</section>
+@if(count($lesson->worksheets) > 0)
+<section class="content smoke">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8">
+          <h3 style="margin-top: 0;">{{ $lesson->name }} Exercises</h3>
+          @foreach($lesson->worksheets as $worksheet)
+            <hr>
+            @if($answer = $worksheet->worksheetanswered($worksheet->id))
+              <p id="worksheet-{{$worksheet->id}}"><strong>{{ $worksheet->description}}</strong></p>
+              {!! $answer->answer !!}
+            @else
+              <div id="worksheet-{{$worksheet->id}}"></div>
+              {!! Form::open(['url' => 'worksheetanswers']) !!}
+                <div class="form-group">
+                  <label for="answer"><strong>{{ $worksheet->description}}</strong></label>
+                  <textarea class="form-control" name="answer" rows="6"></textarea>
+                </div>
+                <input type="hidden" name="worksheet_id" value="{{$worksheet->id}}">
+                <button type="submit" class="btn btn-primary btn-block">Save Response</button>
+              {!! Form::close() !!}
+            @endif
+          @endforeach
+      </div>
+    </div>
+  </div>
+</section>
+@endif
+<section class="content rose">
+  <div class="container">
+    <div class="row">
+  		<div class="col-12 col-lg-8">
+        @if(Auth::user()->lessons->contains($lesson->id))
+          <p>You've completed this lesson but good on you for coming back and revisiting things!</p>
+        @else
+          <p><a href="/lessoncompleted/{{$lesson->id}}" class="btn btn-block btn-primary btn-lg">I've completed this lesson!</a></p>
+        @endif
+        <h2 style="border-bottom: none;">Curriculum</h2>
+  			<table class="table">
+          <?php $c = 1; ?>
+          @foreach($modules as $module)
+            <tr class="section">
+              <td colspan="3">Module {{$c}}: {{$module->name}}</td>
+            </tr>
+            <?php $c++;?>
+            <?php $count = 1; ?>
+            @if(count($module->less) > 0)
+              @foreach($module->less as $less)
+                <tr @if($less->id == $lesson->id) class="active" @endif>
+                  <td>{{ $count }}</td>
+                  <td><a href="/courses/{{$less->course->slug}}/{{ $less->slug }}">{{ $less->name }}</a></td>
+                  <td>@if(Auth::user()->lessons->contains($less->id)) &#x2714; @endif</td>
+                </tr>
+                <?php $count++;?>
+              @endforeach
+            @endif
+          @endforeach
+        </table>
+  		</div>
+  	</div>
+  </div>
+</section>
+@endsection
+
+@section('headScripts')
+<script charset="ISO-8859-1" src="https://fast.wistia.com/assets/external/E-v1.js"></script>
+@endsection

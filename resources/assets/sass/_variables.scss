@@ -1,0 +1,37 @@
+$color1: rgba(78, 89, 140, 1);
+$color2: rgba(255, 255, 255, 1);
+$color3: rgba(249, 203, 64, 1);
+$color4: rgba(142, 184, 229, 1);
+$color5: rgba(124, 153, 180, 1);
+
+$yellow:  $color3 !default;
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #FF715B !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+$white:   #fff    !default;
+$smoke:   #eee    !default;
+$space:   #474954 !default;
+$rose:    #F2CCC3 !default;
+
+$primary: $color1;
+// Body
+$body-bg: #white;
+
+// Typography
+$font-family-sans-serif: "proxima-nova", sans-serif;
+$font-size-base: 1.2rem;
+$line-height-base: 1.6;
+
+$headings-font-weight:        300 !default;
+
+$border-radius: 0.25rem;
+
+$navbar-dark-color:                 rgba($white, 1) !default;
+$navbar-dark-hover-color:           rgba($white, .75) !default;
+$navbar-dark-active-color:          $white !default;

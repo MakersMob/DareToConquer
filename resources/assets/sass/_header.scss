@@ -1,0 +1,31 @@
+.welcome {
+	background-color: $color1;
+	color: $white;
+	padding: 1rem 0;
+	h3.preheader {
+		padding: 1rem 0;
+		margin-bottom: 1rem;
+		border-bottom: 3px double rgba($white, 0.5);
+		a {
+			color: $yellow;
+		}
+		span.me {
+			color: $yellow;
+			font-weight: 700;
+		}
+	}
+	a.btn-primary {
+		background-color: $color3;
+		color: $primary;
+		&:hover {
+			background-color: $color5;
+			color: $white;
+		}
+	}
+	h1 {
+		span {
+			color: $yellow;
+			border-bottom: 3px solid $yellow;
+		}
+	}
+}

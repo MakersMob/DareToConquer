@@ -1,0 +1,26 @@
+.navbar {
+	background-color: $color1;
+	border-bottom: 1px solid rgba($white, 0.25);
+	.navbar-brand {
+		font-weight: 500;
+		span.me {
+			color: $yellow;
+			font-weight: 700;
+		}
+		span.omo {
+		}
+		span.break {
+			content: "\A";
+  			white-space: pre;
+		}
+		img {
+			max-width: 2rem;
+		}
+
+		a {
+			&:hover {
+
+			}
+		}
+	}
+}

@@ -1,0 +1,80 @@
+.content {
+	background-color: $white;
+	padding: 2rem 0;
+	h2, h3 {
+		margin-top: 2rem;
+	}
+	h2 {
+		border-bottom: 1px solid $smoke;
+	}
+	p, li, label {
+		font-size: 1.2rem;
+		max-width: 45rem;
+	}
+	ul, ol {
+		margin: 1rem 0;
+		padding: 0;
+	}
+
+	strong {
+	 background-color: $yellow;
+	 font-weight: 500;
+	}
+	div.image img {
+		max-width: 100%;
+	}
+
+	table {
+		border-radius: $border-radius;
+	}
+
+	tr.section {
+		background-color: $yellow;
+		font-weight: 700;
+	}
+
+	tr.active {
+		background-color: $primary;
+		color: $white;
+		a {
+			color: $white;
+		}
+	}
+	a.btn {
+		font-weight: 300;
+	}
+}
+
+.content.smoke {
+	background-color: $smoke;
+	table {
+		background-color: $white;
+		border: 3px solid $white;
+	}
+}
+
+.content.rose {
+	background-color: $rose;
+	table {
+		background-color: $white;
+		border-radius: $border-radius;
+		border-collapse: separate;
+		tr {
+			background-color: $space;
+			color: $white;
+			a {
+				color: $white;
+			}
+			&.active {
+				background-color: $yellow;
+				color: $primary;
+				a {
+					color: $primary;
+				}
+			}
+			&.section {
+				background-color: $primary;
+			}
+		}
+	}
+}
