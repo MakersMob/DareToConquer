@@ -1,11 +1,11 @@
 <?php
 
-namespace Moobology\Http\Controllers;
+namespace Momosity\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Moobology\Worksheetanswer;
-use Moobology\Worksheet;
-use Moobology\Lesson;
+use Momosity\Worksheetanswer;
+use Momosity\Worksheet;
+use Momosity\Lesson;
 use Auth;
 
 class WorksheetanswerController extends Controller

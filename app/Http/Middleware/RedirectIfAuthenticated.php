@@ -1,6 +1,6 @@
 <?php
 
-namespace Moobology\Http\Middleware;
+namespace Momosity\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

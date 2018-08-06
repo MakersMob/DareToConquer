@@ -1,11 +1,11 @@
 <?php
 
-namespace Moobology\Http\Controllers;
+namespace Momosity\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Moobology\Lesson;
-use Moobology\Course;
-use Moobology\Module;
+use Momosity\Lesson;
+use Momosity\Course;
+use Momosity\Module;
 use Auth;
 
 class LessoncompletedController extends Controller

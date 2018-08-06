@@ -1,6 +1,6 @@
 <?php
 
-namespace Moobology;
+namespace Momosity;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -12,11 +12,11 @@ class Objective extends Model
 
     public function lesson()
     {
-    	return $this->belongsTo('Moobology\Lesson');
+    	return $this->belongsTo('Momosity\Lesson');
     }
 
     public function users()
     {
-    	return $this->belongsToMany('Moobology\User')->withTimestamps;
+    	return $this->belongsToMany('Momosity\User')->withTimestamps;
     }
 }

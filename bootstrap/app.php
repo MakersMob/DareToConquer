@@ -28,17 +28,17 @@ $app = new Illuminate\Foundation\Application(
 
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
-    Moobology\Http\Kernel::class
+    Momosity\Http\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Console\Kernel::class,
-    Moobology\Console\Kernel::class
+    Momosity\Console\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
-    Moobology\Exceptions\Handler::class
+    Momosity\Exceptions\Handler::class
 );
 
 /*

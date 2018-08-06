@@ -1,11 +1,11 @@
 <?php
 
-namespace Moobology;
+namespace Momosity;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laravel\Cashier\Billable;
-use Moobology\Worksheetanswer;
+use Momosity\Worksheetanswer;
 use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable
@@ -32,11 +32,11 @@ class User extends Authenticatable
 
     public function objectives()
     {
-        return $this->belongsToMany('Moobology\Objective')->withTimestamps();
+        return $this->belongsToMany('Momosity\Objective')->withTimestamps();
     }
 
     public function lessons()
     {
-        return $this->belongsToMany('Moobology\Lesson')->withTimestamps();
+        return $this->belongsToMany('Momosity\Lesson')->withTimestamps();
     }
 }

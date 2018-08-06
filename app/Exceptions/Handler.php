@@ -1,6 +1,6 @@
 <?php
 
-namespace Moobology\Exceptions;
+namespace Momosity\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;

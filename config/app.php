@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Moobology'),
+    'name' => env('APP_NAME', 'Momosity'),
 
     /*
     |--------------------------------------------------------------------------
@@ -159,11 +159,11 @@ return [
         /*
          * Application Service Providers...
          */
-        Moobology\Providers\AppServiceProvider::class,
-        Moobology\Providers\AuthServiceProvider::class,
-        // Moobology\Providers\BroadcastServiceProvider::class,
-        Moobology\Providers\EventServiceProvider::class,
-        Moobology\Providers\RouteServiceProvider::class,
+        Momosity\Providers\AppServiceProvider::class,
+        Momosity\Providers\AuthServiceProvider::class,
+        // Momosity\Providers\BroadcastServiceProvider::class,
+        Momosity\Providers\EventServiceProvider::class,
+        Momosity\Providers\RouteServiceProvider::class,
 
     ],
 

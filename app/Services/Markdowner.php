@@ -1,6 +1,6 @@
 <?php 
 
-namespace Moobology\Services;
+namespace Momosity\Services;
 
 use League\CommonMark\CommonMarkConverter;
 

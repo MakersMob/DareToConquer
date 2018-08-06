@@ -1,9 +1,9 @@
 <?php
 
-namespace Moobology\Http\Controllers\Auth;
+namespace Momosity\Http\Controllers\Auth;
 
-use Moobology\User;
-use Moobology\Http\Controllers\Controller;
+use Momosity\User;
+use Momosity\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -59,7 +59,7 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \Moobology\User
+     * @return \Momosity\User
      */
     protected function create(array $data)
     {

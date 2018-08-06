@@ -1,8 +1,8 @@
 <?php
 
-namespace Moobology\Http\Controllers\Auth;
+namespace Momosity\Http\Controllers\Auth;
 
-use Moobology\Http\Controllers\Controller;
+use Momosity\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class ResetPasswordController extends Controller

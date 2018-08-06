@@ -1,6 +1,6 @@
 <?php
 
-namespace Moobology\Http\Controllers;
+namespace Momosity\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

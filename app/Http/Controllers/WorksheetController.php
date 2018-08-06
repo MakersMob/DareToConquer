@@ -1,10 +1,10 @@
 <?php
 
-namespace Moobology\Http\Controllers;
+namespace Momosity\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Moobology\Worksheet;
-use Moobology\Lesson;
+use Momosity\Worksheet;
+use Momosity\Lesson;
 
 class WorksheetController extends Controller
 {

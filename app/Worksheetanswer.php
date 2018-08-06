@@ -1,9 +1,9 @@
 <?php
 
-namespace Moobology;
+namespace Momosity;
 
 use Illuminate\Database\Eloquent\Model;
-use Moobology\Services\Markdowner;
+use Momosity\Services\Markdowner;
 use Auth;
 
 class Worksheetanswer extends Model
@@ -14,12 +14,12 @@ class Worksheetanswer extends Model
 
     public function user()
     {
-    	return $this->belongsTo('Moobology\User');
+    	return $this->belongsTo('Momosity\User');
     }
 
     public function worksheet()
     {
-        return $this->belongsTo('Moobology\Worksheet');
+        return $this->belongsTo('Momosity\Worksheet');
     }
 
     public function setAnswerAttribute($value)

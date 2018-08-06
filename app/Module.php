@@ -1,10 +1,10 @@
 <?php
 
-namespace Moobology;
+namespace Momosity;
 
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
-use Moobology\Services\Markdowner;
+use Momosity\Services\Markdowner;
 
 class Module extends Model
 {
@@ -16,12 +16,12 @@ class Module extends Model
 
     public function course()
     {
-    	return $this->belongsTo('Moobology\Course');
+    	return $this->belongsTo('Momosity\Course');
     }
 
     public function less()
     {
-        return $this->hasMany('Moobology\Lesson');
+        return $this->hasMany('Momosity\Lesson');
     }
 
     public function sluggable()

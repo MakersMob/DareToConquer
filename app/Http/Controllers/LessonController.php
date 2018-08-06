@@ -1,11 +1,11 @@
 <?php
 
-namespace Moobology\Http\Controllers;
+namespace Momosity\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Moobology\Lesson;
-use Moobology\Module;
-use Moobology\Course;
+use Momosity\Lesson;
+use Momosity\Module;
+use Momosity\Course;
 
 class LessonController extends Controller
 {

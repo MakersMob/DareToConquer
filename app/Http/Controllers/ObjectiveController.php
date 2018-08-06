@@ -1,10 +1,10 @@
 <?php
 
-namespace Moobology\Http\Controllers;
+namespace Momosity\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Moobology\Objective;
-use Moobology\Lesson;
+use Momosity\Objective;
+use Momosity\Lesson;
 
 class ObjectiveController extends Controller
 {

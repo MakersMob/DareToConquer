@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => Moobology\User::class,
+            'model' => Momosity\User::class,
         ],
 
         // 'users' => [

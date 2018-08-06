@@ -1,6 +1,6 @@
 <?php
 
-namespace Moobology\Providers;
+namespace Momosity\Providers;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -13,8 +13,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'Moobology\Events\Event' => [
-            'Moobology\Listeners\EventListener',
+        'Momosity\Events\Event' => [
+            'Momosity\Listeners\EventListener',
         ],
     ];
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Moobology\Http\Middleware;
+namespace Momosity\Http\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken as Middleware;
 

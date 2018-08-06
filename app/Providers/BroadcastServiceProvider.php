@@ -1,6 +1,6 @@
 <?php
 
-namespace Moobology\Providers;
+namespace Momosity\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Broadcast;

@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => Moobology\User::class,
+        'model' => Momosity\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
