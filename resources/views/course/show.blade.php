@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h3 class="preheader"><span class="me">Moob</span>ology <a href="/courses">Courses</a></h3>
+				<h3 class="preheader"><span class="me">Momosity</span> <a href="/courses">Courses</a></h3>
 				<h1>{{ $course->name }}</h1>
 			</div>
 		</div>
