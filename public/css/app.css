@@ -1,4 +1,9 @@
-@import url(https://use.typekit.net/zyd8atj.css);.make-me-sticky {
+@import url(https://use.typekit.net/zyd8atj.css);a {
+  -webkit-transition: 0.2s linear all;
+  transition: 0.2s linear all;
+}
+
+.make-me-sticky {
   position: relative;
   /* I am the fallback */
   /* Give it everything you got! (use an auto prefixer...) */
@@ -12,30 +17,40 @@
 }
 
 .navbar {
-  background-color: #4e598c;
+  background: #FF416C;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#FF4B2B), to(#FF416C));
+  background: linear-gradient(to right, #FF4B2B, #FF416C);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .navbar .navbar-brand {
-  font-weight: 500;
-}
-
-.navbar .navbar-brand span.me {
-  color: #f9cb40;
   font-weight: 700;
+  font-size: 2rem;
 }
 
-.navbar .navbar-brand span.break {
-  content: "\A";
-  white-space: pre;
+.navbar .navbar-brand:hover {
+  color: #f9cb40 !important;
 }
 
 .navbar .navbar-brand img {
   max-width: 2rem;
+  vertical-align: 0px;
+}
+
+.navbar li a.active {
+  color: #f9cb40 !important;
 }
 
 .welcome {
-  background-color: #4e598c;
+  background: #FF416C;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#FF4B2B), to(#FF416C));
+  background: linear-gradient(to right, #FF4B2B, #FF416C);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
   padding: 1rem 0;
 }
