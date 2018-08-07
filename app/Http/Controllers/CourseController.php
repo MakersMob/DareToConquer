@@ -16,7 +16,7 @@ class CourseController extends Controller
     public function index()
     {
         
-        $courses = Course::where('status', 1)->get();
+        $courses = Course::where('active', 1)->get();
 
         return view('course.index', compact('courses'));
     }
