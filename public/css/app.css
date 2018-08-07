@@ -17,11 +17,11 @@
 }
 
 .navbar {
-  background: #FF416C;
+  background: #42275a;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#FF4B2B), to(#FF416C));
-  background: linear-gradient(to right, #FF4B2B, #FF416C);
+  background: -webkit-gradient(linear, left top, right top, from(#734b6d), to(#42275a));
+  background: linear-gradient(to right, #734b6d, #42275a);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
@@ -45,11 +45,11 @@
 }
 
 .welcome {
-  background: #FF416C;
+  background: #42275a;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#FF4B2B), to(#FF416C));
-  background: linear-gradient(to right, #FF4B2B, #FF416C);
+  background: -webkit-gradient(linear, left top, right top, from(#734b6d), to(#42275a));
+  background: linear-gradient(to right, #734b6d, #42275a);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
   padding: 1rem 0;
