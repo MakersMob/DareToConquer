@@ -10,9 +10,9 @@
   	</div>
   </div>
 </section>
-<section class="content">
+<section class="content smoke">
 	<div class="container">
-		<div class="row justify-content-center">
+		<div class="row">
 			<div class="col-12 col-lg-6">
 				{!! Form::open(['url' => 'modules']) !!}
 					<div class="form-group">
