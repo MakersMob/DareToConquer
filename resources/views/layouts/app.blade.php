@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ $title OR 'Momosity: Me On My Own University' }}</title>
+    <title>{{ $title OR 'Dare to Conquer' }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="https://s3-us-west-2.amazonaws.com/billionaireblogclub-master/blog/wp-content/uploads/2018/08/07171321/school-white.png" alt="Momosity"> <span class="me">Momosity</span>
+                    <img src="https://s3-us-west-2.amazonaws.com/billionaireblogclub-master/blog/wp-content/uploads/2018/08/08232743/wolf-yellow-2461.png" alt="Dare to Conquer"> Dare to Conquer
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -31,10 +31,10 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link @if(Request::is('courses*')) active @endif" href="/courses">Courses</a>
+                            <a class="nav-link @if(Request::is('guides*')) active @endif" href="/guides">Field Guides</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link @if(Request::is('about*')) active @endif" href="/about">About</a>
+                            <a class="nav-link @if(Request::is('courses*')) active @endif" href="/courses">Courses</a>
                         </li>
                     </ul>
 

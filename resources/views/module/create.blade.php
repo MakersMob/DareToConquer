@@ -14,25 +14,29 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg-6">
-				{!! Form::open(['url' => 'modules']) !!}
-					<div class="form-group">
-						<label for="name">Name</label>
-						<input class="form-control" type="text" name="name" id="name">
+				<div class="card">
+					<div class="card-body">
+						{!! Form::open(['url' => 'modules']) !!}
+							<div class="form-group">
+								<label for="name">Name</label>
+								<input class="form-control" type="text" name="name" id="name">
+							</div>
+							<div class="form-group">
+								<label for="course_id">Course</label>
+								<select class="form-control" name="course_id" id="course_id">
+									@foreach($courses as $course)
+										<option value="{{$course->id}}">{{ $course->name }}</option>
+									@endforeach
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="description">Description</label>
+								<textarea class="form-control" name="description" rows="8"></textarea>
+							</div>
+							<button type="submit" class="btn btn-primary">Create Module</button>
+						{!! Form::close() !!}
 					</div>
-					<div class="form-group">
-						<label for="course_id">Course</label>
-						<select class="form-control" name="course_id" id="course_id">
-							@foreach($courses as $course)
-								<option value="{{$course->id}}">{{ $course->name }}</option>
-							@endforeach
-						</select>
-					</div>
-					<div class="form-group">
-						<label for="description">Description</label>
-						<textarea class="form-control" name="description" rows="8"></textarea>
-					</div>
-					<button type="submit" class="btn btn-primary">Create Module</button>
-				{!! Form::close() !!}
+				</div>
 			</div>
 		</div>
 	</div>

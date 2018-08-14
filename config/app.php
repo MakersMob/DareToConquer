@@ -159,11 +159,11 @@ return [
         /*
          * Application Service Providers...
          */
-        Momosity\Providers\AppServiceProvider::class,
-        Momosity\Providers\AuthServiceProvider::class,
-        // Momosity\Providers\BroadcastServiceProvider::class,
-        Momosity\Providers\EventServiceProvider::class,
-        Momosity\Providers\RouteServiceProvider::class,
+        DareToConquer\Providers\AppServiceProvider::class,
+        DareToConquer\Providers\AuthServiceProvider::class,
+        // DareToConquer\Providers\BroadcastServiceProvider::class,
+        DareToConquer\Providers\EventServiceProvider::class,
+        DareToConquer\Providers\RouteServiceProvider::class,
 
     ],
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Momosity\Http\Controllers\Auth;
+namespace DareToConquer\Http\Controllers\Auth;
 
-use Momosity\Http\Controllers\Controller;
+use DareToConquer\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 
 class ForgotPasswordController extends Controller

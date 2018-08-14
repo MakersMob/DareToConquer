@@ -30,7 +30,7 @@
             "database/factories"
         ],
         "psr-4": {
-            "Momosity\\": "app/"
+            "DareToConquer\\": "app/"
         }
     },
     "autoload-dev": {

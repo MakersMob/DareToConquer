@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => Momosity\User::class,
+            'model' => DareToConquer\User::class,
         ],
 
         // 'users' => [

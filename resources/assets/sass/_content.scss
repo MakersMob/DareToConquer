@@ -3,6 +3,10 @@
 	padding: 2rem 0;
 	h2, h3 {
 		margin-top: 2rem;
+		strong {
+			font-family: "flood-std",sans-serif;
+			background-color: transparent;
+		}
 	}
 	h2 {
 		border-bottom: 1px solid $smoke;
@@ -13,12 +17,12 @@
 	}
 	ul, ol {
 		margin: 1rem 0;
-		padding: 0;
+		padding: 0 0 0 1.5rem;
 	}
 
 	strong {
 	 background-color: $yellow;
-	 font-weight: 500;
+	 font-weight: 700;
 	}
 	div.image img {
 		max-width: 100%;
@@ -40,8 +44,51 @@
 			color: $white;
 		}
 	}
-	a.btn {
-		
+	button.btn, a.btn {
+		border-radius: 1000px;
+	}
+
+	ul.course-list {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		li {
+			padding: 0;
+
+			a {
+				font-family: "flood-std",sans-serif;
+				color: $pink;
+				font-size: 4rem;
+				font-weight: 900;
+			}
+		}
+	}
+
+	form strong {
+		padding: 0 5px;
+		font-weight: 700;
+	}
+
+	div.recap {
+		border: 3px double rgba($ocean, 0.5);
+		background-color: $smoke;
+		padding: 1rem 1rem 0;
+		margin-bottom: 1rem;
+		border-radius: $border-radius;
+		h3, h4 {
+			margin-top: 0;
+			font-family: "flood-std",sans-serif;
+		}
+	}
+
+	.worksheet-question {
+		border-bottom: 3px solid $smoke;
+	}
+}
+
+.content.lesson {
+	p, li, div.recap {
+		max-width: 45rem;
 	}
 }
 
@@ -53,28 +100,60 @@
 	}
 }
 
+.content.sky {
+	background-color: $sky;
+}
+
+.content.ocean {
+	background-color: $ocean;
+	h2, h3 { color: $white; }
+	strong {
+		padding: 0 3px;
+		font-weight: 700;
+	}
+	form {
+		color: $black;
+	}
+	.card {
+		border: 3px solid $rose;
+	}
+}
+
 .content.rose {
 	background-color: $rose;
+	h2, h3 {
+		color: rgba($space, 0.75);
+	}
 	table {
 		background-color: $white;
 		border-radius: $border-radius;
 		border-collapse: separate;
 		tr {
-			background-color: $space;
-			color: $white;
+			background-color: $smoke;
+			color: $space;
 			a {
-				color: $white;
+				color: $space;
+				display: block;
 			}
 			&.active {
 				background-color: $yellow;
 				color: $primary;
 				a {
-					color: $primary;
+					color: $space;
+					font-weight: 700;
 				}
 			}
 			&.section {
-				background-color: $primary;
+				background-color: $night;
+				color: $white;
 			}
 		}
+	}
+}
+
+.content.objectives {
+	padding: 1rem 0;
+	h3 {
+		margin-top: 1rem;
 	}
 }

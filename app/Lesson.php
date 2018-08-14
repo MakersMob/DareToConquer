@@ -1,10 +1,10 @@
 <?php
 
-namespace Momosity;
+namespace DareToConquer;
 
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
-use Momosity\Services\Markdowner;
+use DareToConquer\Services\Markdowner;
 
 class Lesson extends Model
 {
@@ -16,27 +16,27 @@ class Lesson extends Model
 
     public function course()
     {
-    	return $this->belongsTo('Momosity\Course');
+    	return $this->belongsTo('DareToConquer\Course');
     }
 
     public function module()
     {
-    	return $this->belongsTo('Momosity\Module');
+    	return $this->belongsTo('DareToConquer\Module');
     }
 
     public function objectives()
     {
-        return $this->hasMany('Momosity\Objective');
+        return $this->hasMany('DareToConquer\Objective');
     }
 
     public function worksheets()
     {
-        return $this->hasMany('Momosity\Worksheet');
+        return $this->hasMany('DareToConquer\Worksheet');
     }
 
     public function users()
     {
-        return $this->belongsToMany('Momosity\User')->withTimestamps();
+        return $this->belongsToMany('DareToConquer\User')->withTimestamps();
     }
 
     public function sluggable()

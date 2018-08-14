@@ -1,10 +1,10 @@
 <?php
 
-namespace Momosity\Http\Controllers;
+namespace DareToConquer\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Momosity\Module;
-use Momosity\Course;
+use DareToConquer\Module;
+use DareToConquer\Course;
 
 class ModuleController extends Controller
 {

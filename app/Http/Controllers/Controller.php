@@ -1,6 +1,6 @@
 <?php
 
-namespace Momosity\Http\Controllers;
+namespace DareToConquer\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

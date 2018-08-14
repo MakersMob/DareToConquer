@@ -1,11 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="content">
+<section class="welcome course">
+  <div class="container">
+  	<div class="row">
+  		<div class="col-12">
+        	<h1>Add an Objective</h1>
+  		</div>
+  	</div>
+  </div>
+</section>
+<section class="content smoke">
 	<div class="container">
-		<div class="row justify-content-center">
+		<div class="row">
 			<div class="col-12 col-lg-8">
-				<h2 class="text-center">Create an Objective</h2>
 				<div class="card">
 					<div class="card-body">
 						{!! Form::open(['url' => 'objectives']) !!}
@@ -21,7 +29,7 @@
 									@endforeach
 								</select>
 							</div>
-							<button type="submit" class="btn btn-primary btn-block">Create Lesson</button>
+							<button type="submit" class="btn btn-primary btn-lg btn-block">Add Objective</button>
 						{!! Form::close() !!}
 					</div>
 				</div>

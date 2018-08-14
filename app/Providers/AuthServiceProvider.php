@@ -1,6 +1,6 @@
 <?php
 
-namespace Momosity\Providers;
+namespace DareToConquer\Providers;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -13,7 +13,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'Momosity\Model' => 'Momosity\Policies\ModelPolicy',
+        'DareToConquer\Model' => 'DareToConquer\Policies\ModelPolicy',
     ];
 
     /**

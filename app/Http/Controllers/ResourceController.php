@@ -3,13 +3,8 @@
 namespace DareToConquer\Http\Controllers;
 
 use Illuminate\Http\Request;
-use DareToConquer\Course;
-use DareToConquer\Module;
-use Spatie\Permission\Models\Role;
-use Spatie\Permission\Models\Permission;
-use Auth;
 
-class CourseController extends Controller
+class ResourceController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,11 +13,7 @@ class CourseController extends Controller
      */
     public function index()
     {
-        // $role = Role::create(['name' => 'admin']);
-        // $user = Auth::user()->assignRole('admin');
-        $courses = Course::where('active', 1)->get();
-
-        return view('course.index', compact('courses'));
+        //
     }
 
     /**
@@ -32,7 +23,7 @@ class CourseController extends Controller
      */
     public function create()
     {
-        return view('course.create');
+        //
     }
 
     /**
@@ -43,13 +34,7 @@ class CourseController extends Controller
      */
     public function store(Request $request)
     {
-        $course = Course::create([
-            'name' => $request->name,
-            'description' => $request->description,
-            'price' => $request->price,
-        ]);
-
-        return redirect('courses/'.$course->slug);
+        //
     }
 
     /**
@@ -60,12 +45,7 @@ class CourseController extends Controller
      */
     public function show($id)
     {
-        $course = Course::where('slug', $id)->firstOrFail();
-        $modules = Module::where('course_id', $course->id)->with(['less' => function ($query) {
-            $query->orderBy('order', 'ASC');
-        }])->orderBy('order', 'ASC')->get();
-
-        return view('course.show', compact('course', 'modules'));
+        //
     }
 
     /**

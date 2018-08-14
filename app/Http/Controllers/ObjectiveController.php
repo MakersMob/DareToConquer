@@ -1,10 +1,10 @@
 <?php
 
-namespace Momosity\Http\Controllers;
+namespace DareToConquer\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Momosity\Objective;
-use Momosity\Lesson;
+use DareToConquer\Objective;
+use DareToConquer\Lesson;
 
 class ObjectiveController extends Controller
 {

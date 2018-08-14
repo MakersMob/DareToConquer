@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => Momosity\User::class,
+        'model' => DareToConquer\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],

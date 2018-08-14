@@ -1,6 +1,6 @@
 <?php
 
-namespace Momosity\Http\Controllers;
+namespace DareToConquer\Http\Controllers;
 
 use Illuminate\Http\Request;
 

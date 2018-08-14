@@ -1,6 +1,6 @@
 <?php
 
-namespace Momosity\Http\Middleware;
+namespace DareToConquer\Http\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\TrimStrings as Middleware;
 

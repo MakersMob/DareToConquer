@@ -1,6 +1,6 @@
 <?php
 
-namespace Momosity\Providers;
+namespace DareToConquer\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

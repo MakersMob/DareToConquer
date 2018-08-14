@@ -1,11 +1,11 @@
 <?php
 
-namespace Momosity\Http\Controllers;
+namespace DareToConquer\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Momosity\Worksheetanswer;
-use Momosity\Worksheet;
-use Momosity\Lesson;
+use DareToConquer\Worksheetanswer;
+use DareToConquer\Worksheet;
+use DareToConquer\Lesson;
 use Auth;
 
 class WorksheetanswerController extends Controller

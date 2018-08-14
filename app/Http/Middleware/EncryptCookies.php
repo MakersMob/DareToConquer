@@ -1,6 +1,6 @@
 <?php
 
-namespace Momosity\Http\Middleware;
+namespace DareToConquer\Http\Middleware;
 
 use Illuminate\Cookie\Middleware\EncryptCookies as Middleware;
 

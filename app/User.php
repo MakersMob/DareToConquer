@@ -1,11 +1,11 @@
 <?php
 
-namespace Momosity;
+namespace DareToConquer;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laravel\Cashier\Billable;
-use Momosity\Worksheetanswer;
+use DareToConquer\Worksheetanswer;
 use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable
@@ -32,11 +32,11 @@ class User extends Authenticatable
 
     public function objectives()
     {
-        return $this->belongsToMany('Momosity\Objective')->withTimestamps();
+        return $this->belongsToMany('DareToConquer\Objective')->withTimestamps();
     }
 
     public function lessons()
     {
-        return $this->belongsToMany('Momosity\Lesson')->withTimestamps();
+        return $this->belongsToMany('DareToConquer\Lesson')->withTimestamps();
     }
 }

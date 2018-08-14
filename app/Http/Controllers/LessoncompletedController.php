@@ -1,11 +1,11 @@
 <?php
 
-namespace Momosity\Http\Controllers;
+namespace DareToConquer\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Momosity\Lesson;
-use Momosity\Course;
-use Momosity\Module;
+use DareToConquer\Lesson;
+use DareToConquer\Course;
+use DareToConquer\Module;
 use Auth;
 
 class LessoncompletedController extends Controller

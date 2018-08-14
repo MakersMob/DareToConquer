@@ -1,6 +1,6 @@
 <?php
 
-namespace Momosity\Http\Middleware;
+namespace DareToConquer\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

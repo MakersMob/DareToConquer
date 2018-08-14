@@ -1,6 +1,6 @@
 <?php
 
-namespace Momosity\Exceptions;
+namespace DareToConquer\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;

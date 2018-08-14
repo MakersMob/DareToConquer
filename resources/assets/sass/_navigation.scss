@@ -1,25 +1,38 @@
 .navbar {
-	background: #42275a;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #734b6d, #42275a);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #734b6d, #42275a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-	border-bottom: 1px solid rgba($white, 0.25);
+	background-color: $night;
 	.navbar-brand {
-		font-weight: 900;
-		text-transform:lowercase;
-		font-size: 2rem;
+		font-family: "flood-std",sans-serif;
+		font-weight: 700;
+		font-size: 1.5rem;
+		border-right: 1px solid rgba($white, 0.25);
+		padding-right: 1rem;
+		color: $white !important;
 		&:hover {
 			color: $yellow !important;
 		}
 		img {
 			max-width: 2rem;
-			vertical-align: 0px;
+			vertical-align: -9px;
 		}
 	}
-	li a {
+	li.nav-item a.nav-link {
+		font-size: 1rem;
+		color: $white;
+		font-weight: 300;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin-top: 2px;
+		&:hover {
+			color: $yellow !important;
+		}
 		&.active {
 			color: $yellow !important;
 		}
 	}
+}
+.navbar-dark .navbar-toggler {
+	border: none;
+}
+.navbar .navbar-dark {
+	background: $space;
 }

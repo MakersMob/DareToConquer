@@ -1,6 +1,6 @@
 <?php 
 
-namespace Momosity\Services;
+namespace DareToConquer\Services;
 
 use League\CommonMark\CommonMarkConverter;
 

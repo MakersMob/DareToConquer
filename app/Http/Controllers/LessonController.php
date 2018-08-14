@@ -1,11 +1,11 @@
 <?php
 
-namespace Momosity\Http\Controllers;
+namespace DareToConquer\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Momosity\Lesson;
-use Momosity\Module;
-use Momosity\Course;
+use DareToConquer\Lesson;
+use DareToConquer\Module;
+use DareToConquer\Course;
 
 class LessonController extends Controller
 {
@@ -86,7 +86,10 @@ class LessonController extends Controller
      */
     public function edit($id)
     {
-        //
+        $lesson = Lesson::find($id);
+        $modules = Module::orderBy('id', 'DESC')->get();
+
+        return view('lesson.edit', compact('lesson', 'modules'));
     }
 
     /**
@@ -98,7 +101,18 @@ class LessonController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $lesson = Lesson::find($id);
+        $module = Module::find($request->module_id);
+
+        $lesson->name = $request->name;
+        $lesson->content = $request->content;
+        $lesson->module_id = $request->module_id;
+        $lesson->course_id = $module->course_id;
+        $lesson->save();
+
+        $course = Course::find($module->course_id);
+
+        return redirect('courses/'.$course->slug.'/'.$lesson->slug);
     }
 
     /**

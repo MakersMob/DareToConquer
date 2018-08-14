@@ -1,9 +1,9 @@
 <?php
 
-namespace Momosity;
+namespace DareToConquer;
 
 use Illuminate\Database\Eloquent\Model;
-use Momosity\Worksheetanswer;
+use DareToConquer\Worksheetanswer;
 use Auth;
 
 class Worksheet extends Model
@@ -14,7 +14,7 @@ class Worksheet extends Model
 
     public function lesson()
     {
-    	return $this->belongsTo('Momosity\Lesson');
+    	return $this->belongsTo('DareToConquer\Lesson');
     }
 
     public function worksheetanswered($worksheet_id)

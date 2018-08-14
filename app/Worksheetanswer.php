@@ -1,9 +1,9 @@
 <?php
 
-namespace Momosity;
+namespace DareToConquer;
 
 use Illuminate\Database\Eloquent\Model;
-use Momosity\Services\Markdowner;
+use DareToConquer\Services\Markdowner;
 use Auth;
 
 class Worksheetanswer extends Model
@@ -14,12 +14,12 @@ class Worksheetanswer extends Model
 
     public function user()
     {
-    	return $this->belongsTo('Momosity\User');
+    	return $this->belongsTo('DareToConquer\User');
     }
 
     public function worksheet()
     {
-        return $this->belongsTo('Momosity\Worksheet');
+        return $this->belongsTo('DareToConquer\Worksheet');
     }
 
     public function setAnswerAttribute($value)

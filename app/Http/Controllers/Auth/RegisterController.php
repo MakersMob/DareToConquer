@@ -1,9 +1,9 @@
 <?php
 
-namespace Momosity\Http\Controllers\Auth;
+namespace DareToConquer\Http\Controllers\Auth;
 
-use Momosity\User;
-use Momosity\Http\Controllers\Controller;
+use DareToConquer\User;
+use DareToConquer\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -59,7 +59,7 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \Momosity\User
+     * @return \DareToConquer\User
      */
     protected function create(array $data)
     {
