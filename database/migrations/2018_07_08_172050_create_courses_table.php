@@ -18,7 +18,6 @@ class CreateCoursesTable extends Migration
             $table->string('name');
             $table->string('slug');
             $table->text('description')->nullable();
-            $table->integer('lessons')->default(0);
             $table->integer('price')->default(0);
             $table->boolean('active')->default(0);
             $table->timestamps();

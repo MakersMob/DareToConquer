@@ -53,6 +53,7 @@
 
 .navbar li.nav-item a.nav-link.active {
   color: #f9cb40 !important;
+  font-weight: 700;
 }
 
 .navbar-dark .navbar-toggler {

@@ -10,10 +10,19 @@
 		</div>
 	</div>
 </section>
-<section class="content rose">
+<!--<section class="content smoke">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
+				<h4 style="margin-bottom: 0;"><a href="/curriculum">View the curriculum &#8594;</a></h4>
+			</div>
+		</div>
+	</div>
+</section>-->
+<section class="content rose">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-lg-6">
 				<ul class="course-list">
 					@foreach($courses as $course)
 						<li><a href="/courses/{{$course->slug}}">{{$course->name}}</a></li>
