@@ -18,8 +18,8 @@ class CourseController extends Controller
      */
     public function index()
     {
-        $role = Role::create(['name' => 'admin']);
-        $user = Auth::user()->assignRole('admin');
+        // $role = Role::create(['name' => 'admin']);
+        // $user = Auth::user()->assignRole('admin');
         $courses = Course::where('active', 1)->get();
 
         return view('course.index', compact('courses'));
