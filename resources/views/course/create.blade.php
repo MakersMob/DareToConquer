@@ -19,11 +19,11 @@
 						{!! Form::open(['url' => 'courses']) !!}
 							<div class="form-group">
 								<label for="name">Name</label>
-								<input class="form-control" type="text" name="name" id="name">
+								<input class="form-control" type="text" name="name" id="name" required>
 							</div>
 							<div class="form-group">
 								<label for="price">Price</label>
-								<input class="form-control" type="number" name="price" id="price">
+								<input class="form-control" type="number" name="price" id="price" required>
 							</div>
 							<div class="form-group">
 								<label for="description">Description</label>
