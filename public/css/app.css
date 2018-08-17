@@ -16,8 +16,51 @@
   /* Required  */
 }
 
+#top,
+#bottom,
+#left,
+#right {
+  background: #FF715B;
+  position: fixed;
+}
+
+#left,
+#right {
+  top: 0;
+  bottom: 0;
+  width: 25px;
+  z-index: 1000;
+}
+
+#left {
+  left: 0;
+}
+
+#right {
+  right: 0;
+}
+
+#top,
+#bottom {
+  left: 0;
+  right: 0;
+  height: 25px;
+}
+
+#top {
+  top: 0;
+}
+
+#bottom {
+  bottom: 0;
+}
+
+#bottom {
+  z-index: 1000;
+}
+
 .navbar {
-  background-color: #021828;
+  background-color: #fff;
 }
 
 .navbar .navbar-brand {
@@ -26,11 +69,11 @@
   font-size: 1.5rem;
   border-right: 1px solid rgba(255, 255, 255, 0.25);
   padding-right: 1rem;
-  color: #fff !important;
+  color: #083859 !important;
 }
 
 .navbar .navbar-brand:hover {
-  color: #f9cb40 !important;
+  color: #FF715B !important;
 }
 
 .navbar .navbar-brand img {
@@ -40,23 +83,23 @@
 
 .navbar li.nav-item a.nav-link {
   font-size: 1rem;
-  color: #fff;
-  font-weight: 300;
+  color: #083859;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-top: 2px;
 }
 
 .navbar li.nav-item a.nav-link:hover {
-  color: #f9cb40 !important;
+  color: #FF715B !important;
 }
 
 .navbar li.nav-item a.nav-link.active {
-  color: #f9cb40 !important;
-  font-weight: 700;
+  color: #FF715B !important;
+  font-weight: 900;
 }
 
-.navbar-dark .navbar-toggler {
+.navbar-light .navbar-toggler {
   border: none;
 }
 
@@ -65,18 +108,16 @@
 }
 
 .welcome {
-  border-bottom: 1px solid rgba(71, 73, 84, 0.25);
   padding: 1rem 0;
-  color: #083859;
   text-align: center;
 }
 
 .welcome h3.preheader {
   padding: 0.5rem 0;
   margin-bottom: 0.5rem;
-  border-bottom: 3px double rgba(71, 73, 84, 0.25);
-  font-weight: 100;
+  border-bottom: 1px solid #eee;
   font-size: 1.5rem;
+  font-family: "flood-std",sans-serif;
 }
 
 .welcome h3.preheader a {
@@ -95,12 +136,14 @@
 
 .welcome a.btn-primary {
   background-color: #f9cb40;
-  color: #4e598c;
+  color: #083859;
+  border-color: #f9cb40;
 }
 
 .welcome a.btn-primary:hover {
+  border-color: #7c99b4;
   background-color: #7c99b4;
-  color: #474954;
+  color: #fff;
 }
 
 .welcome h1 {
@@ -168,8 +211,8 @@
 
 .content ul,
 .content ol {
-  margin: 1rem 0;
-  padding: 0 0 0 1.5rem;
+  margin: 1rem auto;
+  padding: 0;
 }
 
 .content strong {
@@ -226,24 +269,21 @@
   font-weight: 700;
 }
 
-.content div.recap {
-  margin-left: auto;
-  margin-right: auto;
-  border: 3px double rgba(8, 56, 89, 0.5);
-  background-color: #eee;
-  padding: 1rem 1rem 0;
-  margin-bottom: 1rem;
-  border-radius: 0.25rem;
-}
-
-.content div.recap h3,
-.content div.recap h4 {
-  margin-top: 0;
-  font-family: "flood-std",sans-serif;
-}
-
 .content .worksheet-question {
   border-bottom: 3px solid #eee;
+}
+
+.content.lesson {
+  background-color: #fefefe;
+}
+
+.content.lesson p {
+  margin: 1.875rem auto;
+  line-height: 2.14;
+}
+
+.content.lesson p:first-child {
+  margin-top: 0;
 }
 
 .content.lesson p,
@@ -254,7 +294,28 @@
 
 .content.lesson p,
 .content.lesson li {
-  font-family: "ff-tisa-web-pro";
+  font-family: "ff-meta-serif-web-pro";
+}
+
+.content.lesson div.recap {
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid rgba(8, 56, 89, 0.5);
+  background-color: #eee;
+  padding: 1rem 1rem 0;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+}
+
+.content.lesson div.recap p:first-child {
+  margin-top: 0;
+}
+
+.content.lesson div.recap h3,
+.content.lesson div.recap h4 {
+  text-align: center;
+  margin-top: 0;
+  font-family: "flood-std",sans-serif;
 }
 
 .content.smoke {
@@ -341,9 +402,10 @@
 }
 
 footer {
-  padding: 2rem 0 1rem;
+  padding: 2rem 0 3rem;
   color: #fff;
   background-color: #021828;
+  z-index: 2000;
 }
 
 /*!
@@ -380,7 +442,7 @@ footer {
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "proxima-nova", sans-serif;
+  --font-family-sans-serif: "brandon-grotesque", "proxima-nova", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -419,7 +481,7 @@ section {
 
 body {
   margin: 0;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "brandon-grotesque", "proxima-nova", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.6;
@@ -6614,7 +6676,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "brandon-grotesque", "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -6739,7 +6801,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "brandon-grotesque", "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;

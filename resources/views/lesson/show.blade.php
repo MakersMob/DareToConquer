@@ -45,7 +45,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 justify-content-center">
-        <h3>Does the Following Make Sense?</h3>
+        <h3>Lesson Objectives Recap</h3>
         <ol>
           @foreach($lesson->objectives as $objective)
             <li>{{ $objective->title }}</li>
