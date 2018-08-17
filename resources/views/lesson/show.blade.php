@@ -66,7 +66,7 @@
             <div class="card">
                 <div class="card-body">
             @if($answer = $worksheet->worksheetanswered($worksheet->id))
-              <h5 class="worksheet-question" id="worksheet-{{$worksheet->id}}">{{ $worksheet->description}}</h5>
+              <h5 class="worksheet-question text-center" id="worksheet-{{$worksheet->id}}">{{ $worksheet->description}}</h5>
               {!! $answer->answer !!}
             @else
               <div id="worksheet-{{$worksheet->id}}"></div>
