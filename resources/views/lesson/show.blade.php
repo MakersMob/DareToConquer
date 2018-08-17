@@ -76,7 +76,7 @@
                       <textarea class="form-control" name="answer" rows="6"></textarea>
                     </div>
                     <input type="hidden" name="worksheet_id" value="{{$worksheet->id}}">
-                    <button type="submit" class="btn btn-lg btn-primary btn-block">Save Response</button>
+                    <button type="submit" class="btn btn-lg btn-primary btn-block">Save response</button>
                   {!! Form::close() !!}
                 </div>
               </div>
