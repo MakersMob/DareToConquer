@@ -15,24 +15,26 @@ a {
     top: 0; /* Required  */
 }
 
-#top, #bottom, #left, #right {
-	background: $pink;
-	position: fixed;
-	}
-	#left, #right {
-		top: 0; bottom: 0;
-		width: 25px;
-		z-index: 1000;
+@media (min-width: 768px) {
+	#top, #bottom, #left, #right {
+		background: $pink;
+		position: fixed;
 		}
-		#left { left: 0; }
-		#right { right: 0; }
-		
-	#top, #bottom {
-		left: 0; right: 0;
-		height: 25px;
+		#left, #right {
+			top: 0; bottom: 0;
+			width: 25px;
+			z-index: 1000;
+			}
+			#left { left: 0; }
+			#right { right: 0; }
+			
+		#top, #bottom {
+			left: 0; right: 0;
+			height: 25px;
+			}
+			#top { top: 0; }
+			#bottom { bottom: 0; }
+		#bottom {
+			z-index: 1000;
 		}
-		#top { top: 0; }
-		#bottom { bottom: 0; }
-	#bottom {
-		z-index: 1000;
-	}
+}
