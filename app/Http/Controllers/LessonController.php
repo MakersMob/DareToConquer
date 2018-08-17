@@ -39,6 +39,7 @@ class LessonController extends Controller
      */
     public function store(Request $request)
     {
+        //dd($request->media);
         $module = Module::find($request->module_id);
         $order = 1;
 
@@ -55,9 +56,24 @@ class LessonController extends Controller
             'module_id' => $request->module_id,
             'course_id' => $module->course_id,
             'order' => $order,
+            'active' => $request->active,
         ]);
 
         $course = Course::find($module->course_id);
+        if(isset($request->media)) {
+            $lesson->addMediaFromRequest('media')->toMediaCollection('media');
+        }
+
+        //dd($media);
+        // foreach($media as $med) {
+        // //     //dd($med);
+        //      $lesson->addMedia($med)->toMediaCollection('media');
+        // }
+        // $fileAdders = $lesson
+        //       ->addMultipleMediaFromRequest($media)
+        //       ->each(function ($fileAdder) {
+        //           $fileAdder->toMediaCollection('media');
+        //     });
 
         return redirect('courses/'.$course->slug.'/'.$lesson->slug);
     }
@@ -72,6 +88,7 @@ class LessonController extends Controller
     {
         $lesson = Lesson::where('slug', $id)->firstOrFail();
         $modules = Module::where('course_id', $lesson->course_id)->with(['less' => function ($query) {
+            $query->where('active', '1');
             $query->orderBy('order', 'ASC');
         }])->orderBy('order', 'ASC')->get();
 
@@ -88,8 +105,9 @@ class LessonController extends Controller
     {
         $lesson = Lesson::find($id);
         $modules = Module::orderBy('id', 'DESC')->get();
+        $media = $lesson->getMedia('media');
 
-        return view('lesson.edit', compact('lesson', 'modules'));
+        return view('lesson.edit', compact('lesson', 'modules', 'media'));
     }
 
     /**
@@ -108,9 +126,14 @@ class LessonController extends Controller
         $lesson->content = $request->content;
         $lesson->module_id = $request->module_id;
         $lesson->course_id = $module->course_id;
+        $lesson->active = $request->active;
         $lesson->save();
 
         $course = Course::find($module->course_id);
+
+        if(isset($request->media)) {
+            $lesson->addMediaFromRequest('media')->toMediaCollection('media');
+        }
 
         return redirect('courses/'.$course->slug.'/'.$lesson->slug);
     }

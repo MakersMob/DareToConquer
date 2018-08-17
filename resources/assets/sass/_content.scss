@@ -7,6 +7,15 @@
 			font-family: "flood-std",sans-serif;
 			background-color: transparent;
 		}
+		max-width: 45rem;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	h4, h5 {
+		max-width: 45rem;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	h2 {
 		border-bottom: 1px solid $smoke;
@@ -14,6 +23,8 @@
 	p, li, label {
 		font-size: 1.2rem;
 		max-width: 45rem;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	ul, ol {
 		margin: 1rem 0;
@@ -70,6 +81,8 @@
 	}
 
 	div.recap {
+		margin-left:auto;
+		margin-right: auto;
 		border: 3px double rgba($ocean, 0.5);
 		background-color: $smoke;
 		padding: 1rem 1rem 0;
@@ -89,6 +102,9 @@
 .content.lesson {
 	p, li, div.recap {
 		max-width: 45rem;
+	}
+	p, li {
+		font-family: "ff-tisa-web-pro";
 	}
 }
 

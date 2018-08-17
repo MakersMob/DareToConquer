@@ -44,7 +44,7 @@
 <section class="content smoke objectives">
   <div class="container">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 justify-content-center">
         <h3>Does the Following Make Sense?</h3>
         <ol>
           @foreach($lesson->objectives as $objective)
@@ -59,7 +59,7 @@
 @if(count($lesson->worksheets) > 0)
 <section class="content ocean">
   <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="col-12 col-lg-8">
           <h3 style="margin-top: 0;">{{ $lesson->name }} <strong>Exercises</strong></h3>
           @foreach($lesson->worksheets as $worksheet)
@@ -91,7 +91,7 @@
 @endif
 <section class="content rose">
   <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
   		<div class="col-12 col-lg-8">
         @if(Auth::user()->lessons->contains($lesson->id))
           <p>You've completed this lesson but good on you for coming back and revisiting things!</p>

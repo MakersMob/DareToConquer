@@ -62,6 +62,7 @@ class CourseController extends Controller
     {
         $course = Course::where('slug', $id)->firstOrFail();
         $modules = Module::where('course_id', $course->id)->with(['less' => function ($query) {
+            $query->where('active', '1');
             $query->orderBy('order', 'ASC');
         }])->orderBy('order', 'ASC')->get();
 

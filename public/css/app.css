@@ -65,25 +65,22 @@
 }
 
 .welcome {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 56, 89, 0.25)), to(rgba(8, 56, 89, 0.25))), url("https://s3-us-west-2.amazonaws.com/billionaireblogclub-master/blog/wp-content/uploads/2018/08/08211740/hiker-1149898_1280.jpg");
-  background: linear-gradient(rgba(8, 56, 89, 0.25), rgba(8, 56, 89, 0.25)), url("https://s3-us-west-2.amazonaws.com/billionaireblogclub-master/blog/wp-content/uploads/2018/08/08211740/hiker-1149898_1280.jpg");
-  /* fallback for old browsers */
-  background-size: cover;
   border-bottom: 1px solid rgba(71, 73, 84, 0.25);
   padding: 1rem 0;
-  color: #fff;
+  color: #083859;
+  text-align: center;
 }
 
 .welcome h3.preheader {
   padding: 0.5rem 0;
   margin-bottom: 0.5rem;
-  border-bottom: 3px double rgba(255, 255, 255, 0.25);
+  border-bottom: 3px double rgba(71, 73, 84, 0.25);
   font-weight: 100;
   font-size: 1.5rem;
 }
 
 .welcome h3.preheader a {
-  color: #f9cb40;
+  color: #FF715B;
 }
 
 .welcome h3.preheader span.me {
@@ -137,12 +134,23 @@
 .content h2,
 .content h3 {
   margin-top: 2rem;
+  max-width: 45rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .content h2 strong,
 .content h3 strong {
   font-family: "flood-std",sans-serif;
   background-color: transparent;
+}
+
+.content h4,
+.content h5 {
+  max-width: 45rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .content h2 {
@@ -154,6 +162,8 @@
 .content label {
   font-size: 1.2rem;
   max-width: 45rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .content ul,
@@ -217,6 +227,8 @@
 }
 
 .content div.recap {
+  margin-left: auto;
+  margin-right: auto;
   border: 3px double rgba(8, 56, 89, 0.5);
   background-color: #eee;
   padding: 1rem 1rem 0;
@@ -238,6 +250,11 @@
 .content.lesson li,
 .content.lesson div.recap {
   max-width: 45rem;
+}
+
+.content.lesson p,
+.content.lesson li {
+  font-family: "ff-tisa-web-pro";
 }
 
 .content.smoke {

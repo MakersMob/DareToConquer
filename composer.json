@@ -14,7 +14,9 @@
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "^5.4.0",
         "league/commonmark": "^0.15.3",
+        "league/flysystem-aws-s3-v3": "~1.0",
         "league/html-to-markdown": "^4.4",
+        "spatie/laravel-medialibrary": "^7.0.0",
         "spatie/laravel-permission": "^2.13"
     },
     "require-dev": {

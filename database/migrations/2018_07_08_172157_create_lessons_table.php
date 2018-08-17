@@ -17,6 +17,7 @@ class CreateLessonsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('slug')->nullable();
+            $table->boolean('active')->default(0);
             $table->integer('module_id')->unsigned();
             $table->foreign('module_id')->references('id')->on('modules');
             $table->integer('course_id')->unsigned();

@@ -5,13 +5,15 @@ namespace DareToConquer;
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
 use DareToConquer\Services\Markdowner;
+use Spatie\MediaLibrary\HasMedia\HasMedia;
+use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
 
-class Lesson extends Model
+class Lesson extends Model implements HasMedia
 {
-    use Sluggable;
+    use Sluggable, HasMediaTrait;
 
     protected $fillable = [
-    	'name', 'slug', 'content', 'module_id', 'course_id', 'order',
+    	'name', 'slug', 'content', 'module_id', 'course_id', 'order', 'active',
     ];
 
     public function course()
