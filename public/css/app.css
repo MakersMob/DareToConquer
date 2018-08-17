@@ -115,11 +115,13 @@
 }
 
 .welcome h3.preheader {
-  padding: 0.5rem 0;
-  margin-bottom: 0.5rem;
-  border-bottom: 1px solid #eee;
-  font-size: 1.5rem;
   font-family: "flood-std",sans-serif;
+}
+
+@media (min-width: 768px) {
+  .welcome h3.preheader {
+    font-size: 1.5rem;
+  }
 }
 
 .welcome h3.preheader a {
@@ -133,7 +135,12 @@
 
 .welcome h2 {
   font-weight: 500;
-  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .welcome h2 {
+    font-size: 2rem;
+  }
 }
 
 .welcome a.btn-primary {
@@ -148,8 +155,10 @@
   color: #fff;
 }
 
-.welcome h1 {
-  font-size: 4rem;
+@media (min-width: 768px) {
+  .welcome h1 {
+    font-size: 4rem;
+  }
 }
 
 .welcome h1 span {
@@ -401,6 +410,10 @@
 
 .content.objectives h3 {
   margin-top: 1rem;
+}
+
+.content.objectives ol {
+  padding-left: 3.2rem;
 }
 
 footer {
