@@ -72,7 +72,7 @@
               <div id="worksheet-{{$worksheet->id}}"></div>
                   {!! Form::open(['url' => 'worksheetanswers']) !!}
                     <div class="form-group">
-                      <label for="answer"><strong>{{ $worksheet->description}}</strong></label>
+                      <label for="answer" class="text-center"><strong>{{ $worksheet->description}}</strong></label>
                       <textarea class="form-control" name="answer" rows="6"></textarea>
                     </div>
                     <input type="hidden" name="worksheet_id" value="{{$worksheet->id}}">
