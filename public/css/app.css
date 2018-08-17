@@ -231,6 +231,10 @@
   font-weight: 700;
 }
 
+.content div.image {
+  text-align: center;
+}
+
 .content div.image img {
   max-width: 100%;
   margin-left: auto;
