@@ -63,6 +63,7 @@
 
 .navbar {
   background-color: #fff;
+  border-bottom: 1px solid #eee;
 }
 
 .navbar .navbar-brand {
