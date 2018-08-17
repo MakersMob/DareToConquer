@@ -130,7 +130,7 @@
 }
 
 .welcome h3.preheader span.me {
-  color: #f9cb40;
+  color: #FF715B;
   font-weight: 700;
 }
 
@@ -163,7 +163,7 @@
 }
 
 .welcome h1 span {
-  color: #f9cb40;
+  color: #FF715B;
   border-bottom: 3px solid #f9cb40;
 }
 
@@ -174,7 +174,7 @@
 
 .welcome h1.billboard strong {
   font-family: "flood-std",sans-serif;
-  color: #f9cb40;
+  color: #FF715B;
 }
 
 .welcome.home {
