@@ -15,6 +15,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <meta name="google-site-verification" content="N6MbNrBPXwIIUB6WpB57yr-mW1kLsQdpdCpsUSw0V9c" />
 </head>
 <body>
     <div id="left"></div>
