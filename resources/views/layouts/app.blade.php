@@ -35,21 +35,21 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
+                        <!--<li class="nav-item">
                             <a class="nav-link @if(Request::is('guides*')) active @endif" href="/guides">Field Guides</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link @if(Request::is('courses*')) active @endif" href="/courses">Courses</a>
-                        </li>
+                        </li>-->
                     </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
-                            <li class="nav-item">
+                            <!--<li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
+                            </li>-->
                             <!--<li class="nav-item">
                                 <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                             </li>-->
@@ -90,5 +90,20 @@
             </div>
         </footer>
     </div>
+    <!-- Drip -->
+    <script type="text/javascript">
+      var _dcq = _dcq || [];
+      var _dcs = _dcs || {};
+      _dcs.account = '7512416';
+
+      (function() {
+        var dc = document.createElement('script');
+        dc.type = 'text/javascript'; dc.async = true;
+        dc.src = '//tag.getdrip.com/7512416.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(dc, s);
+      })();
+    </script>
+    <!-- end Drip -->
 </body>
 </html>
