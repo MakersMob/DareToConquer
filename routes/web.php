@@ -19,8 +19,16 @@ Route::get('/planner', function () {
 	return view('planner.index');
 });
 
-Route::get('/coaching', function () {
-	return view('coaching.index');
+Route::get('/planner/thanks', function () {
+	return view('planner.thanks');
+});
+
+Route::get('/mentorship/thanks', function () {
+	return view('mentorship.thanks');
+});
+
+Route::get('/review/thanks', function () {
+	return view('review.thanks');
 });
 
 Auth::routes();
