@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row">
         <div class="col-12">
-            <h1 class="billboard">Let me help you plan the <strong>6-figure business</strong> you&rsquo;ve wanted</h1>
+            <h1 class="billboard">Let me help you plan the <strong>Six-figure business</strong> you&rsquo;ve always wanted</h1>
         </div>
     </div>
   </div>
@@ -32,7 +32,7 @@
 				<p>(If you're wondering how you find these things out the easiest way is to just look around your niche. If others have had success making money a certain way then why can't you?)</p>
 				<p><strong>So what I'm going to do is create some planners.</strong> <em>Planners</em> probably isn't even the best term to use for them.</p> 
 				<p>Consider them more like awesome field guides that direct you in what you need to do before you move on to the next level.</p>
-				<p>Two different ones but they aren't going to be released until October 15th.</strong></p>
+				<p><strong>Two different planners but they aren't going to be released until October 15th.</strong></p>
 				<p>That's a long ways away.</p>
 				<p>That's so far away I didn't even have time to create fake images of these planners to make you think you're getting a 12-inch binder full of pages.</p>
 				<p><em>I'm selling these 100% on reputation alone so hopefully mine is halfway decent.</em></p>
