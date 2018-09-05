@@ -3,6 +3,7 @@
 namespace DareToConquer\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DareToConquer\Lesson;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $lessons = Lesson::where('active', 1)->orderBy('updated_at', 'DESC')->limit(20)->get();
+        return view('home', compact('lessons'));
     }
 }
