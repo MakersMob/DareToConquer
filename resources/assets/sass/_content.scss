@@ -17,7 +17,7 @@
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
-		
+
 	}
 	h2 {
 		border-bottom: 1px solid $smoke;
@@ -101,6 +101,15 @@
 		line-height: 2.14;
 		&:first-child {
 			margin-top: 0;
+		}
+		a {
+			color: $pink;
+			border-bottom: 1px solid $pink;
+			&:hover {
+				color: $black;
+				border-bottom: none;
+				text-decoration: none;
+			}
 		}
 	}
 	p, li, div.recap {

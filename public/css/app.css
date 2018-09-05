@@ -305,6 +305,17 @@
   margin-top: 0;
 }
 
+.content.lesson p a {
+  color: #FF715B;
+  border-bottom: 1px solid #FF715B;
+}
+
+.content.lesson p a:hover {
+  color: #333;
+  border-bottom: none;
+  text-decoration: none;
+}
+
 .content.lesson p,
 .content.lesson li,
 .content.lesson div.recap {
