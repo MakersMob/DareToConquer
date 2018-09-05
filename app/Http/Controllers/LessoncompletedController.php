@@ -20,7 +20,7 @@ class LessoncompletedController extends Controller
 
     	$order = $lesson->order + 1;
 
-    	$next_lesson = Lesson::where('order', $order)->where('module_id', $module->id)->first();
+    	$next_lesson = Lesson::where('order', $order)->where('module_id', $module->id)->where('active', 1)->first();
 
     	if($next_lesson) {
         	return redirect('courses/'.$course->slug.'/'.$next_lesson->slug);
@@ -31,7 +31,7 @@ class LessoncompletedController extends Controller
     	$next_module = Module::where('order', $ord)->where('course_id', $course->id)->first();
 
     	if($next_module) {
-    		$lesson = Lesson::where('module_id', $next_module->id)->where('order', 1)->first();
+    		$lesson = Lesson::where('module_id', $next_module->id)->where('active', 1)->where('order', 1)->first();
 
     		return redirect('courses/'.$course->slug.'/'.$lesson->slug);
     	}
