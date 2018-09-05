@@ -1,10 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="content">
+<section class="content lesson">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
+            <p>This page is just a placeholder. You're looking for <a href="/courses/pinterest">the Pinterest Course</a>.</p>
             <div class="card">
                 <div class="card-header">Recently Updated Lessons</div>
 
