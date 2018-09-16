@@ -20,6 +20,13 @@ class CourseController extends Controller
     {
         // $role = Role::create(['name' => 'admin']);
         // $user = Auth::user()->assignRole('admin');
+        $user = Auth::user();
+
+        if($user->hasRole('admin')) {
+            $courses = Course::get();
+            return view('course.index', compact('courses'));
+        }
+
         $courses = Course::where('active', 1)->get();
 
         return view('course.index', compact('courses'));
@@ -61,6 +68,16 @@ class CourseController extends Controller
     public function show($id)
     {
         $course = Course::where('slug', $id)->firstOrFail();
+        $user = Auth::user();
+
+        if($user->hasRole('admin')) {
+            $modules = Module::where('course_id', $course->id)->with(['less' => function ($query) {
+                $query->orderBy('order', 'ASC');
+            }])->orderBy('order', 'ASC')->get();
+
+            return view('course.show', compact('course', 'modules'));
+        }
+        
         $modules = Module::where('course_id', $course->id)->with(['less' => function ($query) {
             $query->where('active', '1');
             $query->orderBy('order', 'ASC');
