@@ -22,7 +22,7 @@
 <section class="content rose">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 col-lg-6">
+			<div class="col-12">
 				<ul class="course-list">
 					@foreach($courses as $course)
 						<li><a href="/courses/{{$course->slug}}">{{$course->name}}</a></li>
