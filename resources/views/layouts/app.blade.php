@@ -85,8 +85,16 @@
         <footer>
             <div class="container">
                 <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <h4>Helpful Things</h4>
+                        <ul>
+                            <li><a href="/questions">Online Business FAQ</a></li>
+                            <li><a href="/guide">Online Business Field Guides</a></li>
+                        </ul>
+                    </div>
                     <div class="col-12">
-                        <p>&copy; Makers Mob LLC.</p>
+                        <hr>
+                        <p>&copy; Makers Mob LLC. | You create what you dare to conquer.</p>
                     </div>
                 </div>
             </div>

@@ -93,7 +93,15 @@
 		border-bottom: 3px solid $smoke;
 	}
 }
-
+.content .sidebar {
+	li {
+		margin-left: 0;
+		margin-right: 0;
+		a {
+			display: block;
+		}
+	}
+}
 .content.lesson {
 	background-color: #fefefe;
 	p {

@@ -40,7 +40,7 @@
 								  </label>
 								</div>
 								<div class="form-check">
-								  <input class="form-check-input" type="radio" name="active" id="exampleRadios2" value="2" @if($lesson->active == 0) checked @endif>
+								  <input class="form-check-input" type="radio" name="active" id="exampleRadios2" value="0" @if($lesson->active == 0) checked @endif>
 								  <label class="form-check-label" for="exampleRadios2">
 								    No
 								  </label>

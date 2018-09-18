@@ -35,6 +35,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('questions/category/{cat}', 'QuestionCategoryController@show');
+Route::resource('questions', 'QuestionController');
+Route::resource('guide', 'GuideController');
+
 Route::group(['middleware' => 'auth'], function () {
 	Route::get('courses/{course}/{id}', 'LessonController@show');
 	Route::get('lessoncompleted/{id}', 'LessoncompletedController@show');

@@ -292,6 +292,15 @@
   border-bottom: 3px solid #eee;
 }
 
+.content .sidebar li {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.content .sidebar li a {
+  display: block;
+}
+
 .content.lesson {
   background-color: #fefefe;
 }
@@ -450,6 +459,10 @@ footer {
   color: #fff;
   background-color: #021828;
   z-index: 2000;
+}
+
+footer a {
+  color: #f9cb40;
 }
 
 /*!
