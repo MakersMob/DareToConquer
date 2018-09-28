@@ -11,8 +11,12 @@
     <title>{{ $title OR 'Dare to Conquer' }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <!--<script src="{{ asset('js/app.js') }}" defer></script>-->
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="//js.stripe.com/v3/"></script>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <meta name="google-site-verification" content="N6MbNrBPXwIIUB6WpB57yr-mW1kLsQdpdCpsUSw0V9c" />
@@ -89,7 +93,7 @@
                         <h4>Helpful Things</h4>
                         <ul>
                             <li><a href="/questions">Online Business FAQ</a></li>
-                            <li><a href="/guide">Online Business Field Guides</a></li>
+                            <li><a href="/guide">Online Business Help Guides</a></li>
                         </ul>
                     </div>
                     <div class="col-12">
@@ -100,6 +104,7 @@
             </div>
         </footer>
     </div>
+    @if (ENV('APP_ENV') == 'production')
     <!-- Drip -->
     <script type="text/javascript">
       var _dcq = _dcq || [];
@@ -115,5 +120,15 @@
       })();
     </script>
     <!-- end Drip -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51364-108"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-51364-108');
+    </script>
+    @endif
 </body>
 </html>

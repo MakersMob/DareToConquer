@@ -14,7 +14,9 @@ class GuideController extends Controller
      */
     public function index()
     {
-        //
+        $guides = Guide::get();
+
+        return view('guide.index', compact('guides'));
     }
 
     /**
