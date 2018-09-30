@@ -87,6 +87,14 @@ class LessonController extends Controller
     public function show($course, $id)
     {
         $lesson = Lesson::where('slug', $id)->firstOrFail();
+        if($user->hasRole('admin')) {
+            $modules = Module::where('course_id', $course->id)->with(['less' => function ($query) {
+                $query->orderBy('order', 'ASC');
+            }])->orderBy('order', 'ASC')->get();
+
+            return view('lesson.show', compact('lesson', 'modules'));
+        }
+        
         $modules = Module::where('course_id', $lesson->course_id)->with(['less' => function ($query) {
             $query->where('active', '1');
             $query->orderBy('order', 'ASC');
