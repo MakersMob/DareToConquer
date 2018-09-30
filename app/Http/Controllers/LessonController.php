@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use DareToConquer\Lesson;
 use DareToConquer\Module;
 use DareToConquer\Course;
+use Auth;
 
 class LessonController extends Controller
 {
