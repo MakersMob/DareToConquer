@@ -88,7 +88,7 @@ class LessonController extends Controller
     {
         $lesson = Lesson::where('slug', $id)->firstOrFail();
         
-        if($user->hasRole('admin')) {
+        if(Auth::user()->hasRole('admin')) {
             $modules = Module::where('course_id', $lesson->course->id)->with(['less' => function ($query) {
                 $query->orderBy('order', 'ASC');
             }])->orderBy('order', 'ASC')->get();
