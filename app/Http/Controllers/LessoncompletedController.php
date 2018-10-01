@@ -19,8 +19,24 @@ class LessoncompletedController extends Controller
     	$course = Course::find($lesson->course_id);
 
     	$order = $lesson->order + 1;
+        if(Auth::user()->hasRole('admin')) {
+            $next_lesson = Lesson::where('order', $order)->where('module_id', $module->id)->first();
+            if($next_lesson) {
+                return redirect('courses/'.$course->slug.'/'.$next_lesson->slug);
+            }
 
-    	$next_lesson = Lesson::where('order', $order)->where('module_id', $module->id)->where('active', 1)->first();
+            $ord = $module->order + 1;
+
+            $next_module = Module::where('order', $ord)->where('course_id', $course->id)->first();
+
+            if($next_module) {
+                $lesson = Lesson::where('module_id', $next_module->id)->where('order', 1)->first();
+
+                return redirect('courses/'.$course->slug.'/'.$lesson->slug);
+            }
+        }
+    	
+        $next_lesson = Lesson::where('order', $order)->where('module_id', $module->id)->where('active', 1)->first();
 
     	if($next_lesson) {
         	return redirect('courses/'.$course->slug.'/'.$next_lesson->slug);
