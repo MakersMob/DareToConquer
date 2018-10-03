@@ -1,11 +1,11 @@
-@extends('layouts.app')
+@extends('layouts.app', ['title' => 'How to Start an Online Business: Watch Me Do It'])
 
 @section('content')
 <section class="welcome home">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h1 class="">Your Courses</h1>
+				<h1 class="">How to Start a Business</h1>
 			</div>
 		</div>
 	</div>
@@ -23,21 +23,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<ul class="course-list">
-					@foreach($courses as $course)
-						<li><a href="/courses/{{$course->slug}}">{{$course->name}}</a></li>
-					@endforeach
-				</ul>
-				@role('bronze')
-					<h2>Other DTC Courses</h2>
-					<ul class="course-list">
-						@foreach($others as $other)
-							@unless(Auth::user()->courses->contains($other->id))
-								<li><a href="/courses/{{$other->slug}}">{{$other->name}}</a></li>
-							@endunless
-						@endforeach
-					</ul>
-				@endhasrole
+				
 			</div>
 		</div>
 	</div>

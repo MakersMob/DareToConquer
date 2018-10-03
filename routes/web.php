@@ -31,6 +31,16 @@ Route::get('/review/thanks', function () {
 	return view('review.thanks');
 });
 
+Route::get('/pinterest', function () {
+	return view('sales.pinterest');
+});
+
+Route::get('how-to-start-a-business/season1', function () {
+	return view('business.season1');
+});
+
+Route::post('/payment', 'PaymentController@store');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -40,6 +50,8 @@ Route::resource('questions', 'QuestionController');
 Route::resource('guide', 'GuideController');
 
 Route::group(['middleware' => 'auth'], function () {
+	Route::get('/member', 'MemberController@index');
+	Route::get('/user', 'UserController@index');
 	Route::get('courses/{course}/{id}', 'LessonController@show');
 	Route::get('lessoncompleted/{id}', 'LessoncompletedController@show');
 	

@@ -38,7 +38,7 @@
 				</ul>
 				<p>This stuff takes a long time to put together so I don&rsquo;t have time to write bullshit answers.</p>
 				<p>Let&rsquo;s just get right to it.</p>
-				<p>If you have a question then feel free to submit it to <a href="mailto:scrivs@billionaireblogclub.com?subject=FAQ Question">scrivs@billionaireblogclub.com</a>.</p>
+				<p>If you have a question then feel free to submit it to <a href="mailto:scrivs@daretoconquer.com?subject=FAQ Question">scrivs@daretoconquer.com</a>.</p>
 			</div>
 		</div>
 	</div>

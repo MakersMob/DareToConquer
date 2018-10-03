@@ -24,10 +24,13 @@ class CourseController extends Controller
 
         if($user->hasRole('admin')) {
             $courses = Course::get();
-            return view('course.index', compact('courses'));
+        } elseif($user->hasRole('gold')) {
+            $courses = Course::where('active', 1)->get();
+        } else {
+            $courses = $user->courses;
+            $others = Course::where('active', 1)->get();
+            return view('course.index', compact('courses', 'others'));
         }
-
-        $courses = Course::where('active', 1)->get();
 
         return view('course.index', compact('courses'));
     }

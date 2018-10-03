@@ -104,6 +104,7 @@
             </div>
         </footer>
     </div>
+    @yield('footScripts')
     @if (ENV('APP_ENV') == 'production')
     <!-- Drip -->
     <script type="text/javascript">
