@@ -35,6 +35,10 @@ Route::get('/pinterest', function () {
 	return view('sales.pinterest');
 });
 
+Route::get('empire-builder', function () {
+	return view('empire.index');
+});
+
 Route::get('how-to-start-a-business/season1', function () {
 	return view('business.season1');
 });
@@ -51,7 +55,9 @@ Route::resource('guide', 'GuideController');
 
 Route::group(['middleware' => 'auth'], function () {
 	Route::get('/member', 'MemberController@index');
-	Route::get('/user', 'UserController@index');
+	Route::group(['middleware' => ['role:admin']], function () {
+		Route::resource('user', 'UserController');
+	});	
 	Route::get('courses/{course}/{id}', 'LessonController@show');
 	Route::get('lessoncompleted/{id}', 'LessoncompletedController@show');
 	
