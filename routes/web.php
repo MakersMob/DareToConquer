@@ -48,7 +48,7 @@ Route::get('empire-builder/confirm', function () {
 });
 
 Route::get('empire-builder/season1/', function () {
-	return view('empire.season1.index.blade.php')
+	return view('empire.season1.index.blade.php');
 });
 
 Route::get('how-to-start-a-business/season1', function () {
