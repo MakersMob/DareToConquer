@@ -54,7 +54,9 @@ Route::resource('questions', 'QuestionController');
 Route::resource('guide', 'GuideController');
 
 Route::group(['middleware' => 'auth'], function () {
-	Route::get('/member', 'MemberController@index');
+	Route::get('member/edit', 'MemberController@edit');
+	Route::resource('member', 'MemberController');
+	Route::resource('password', 'PasswordController');
 	Route::group(['middleware' => ['role:admin']], function () {
 		Route::resource('user', 'UserController');
 	});	

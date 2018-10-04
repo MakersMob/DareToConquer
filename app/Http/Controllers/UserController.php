@@ -43,4 +43,17 @@ class UserController extends Controller
 
         return redirect('user/create');
     }
+
+    public function update($id, Request $request)
+    {
+        $user = User::find($id);
+
+        $user->first_name = $request->first_name;
+        $user->last_name = $request->last_name;
+        $user->email = $request->email;
+
+        $user->save();
+
+        return redirect('user/edit')->withSuccess('Profile successfully updated.');
+    }
 }
