@@ -3,9 +3,9 @@
 namespace DareToConquer\Http\Controllers;
 
 use Illuminate\Http\Request;
-use DareToConquer\Guide;
+use DareToConquer\Article;
 
-class GuideController extends Controller
+class ArticleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,9 @@ class GuideController extends Controller
      */
     public function index()
     {
-        $guides = Guide::get();
+        $articles = Article::get();
 
-        return view('guide.index', compact('guides'));
+        return view('article.index', compact('articles'));
     }
 
     /**

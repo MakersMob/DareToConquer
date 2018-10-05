@@ -71,6 +71,10 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('password', 'PasswordController');
 	Route::group(['middleware' => ['role:admin']], function () {
 		Route::resource('user', 'UserController');
+		Route::get('article/create', 'ArticleController@create');
+		Route::post('article', 'ArticleController@store');
+		Route::get('article/{id}/edit', 'ArticleController@edit');
+		Route::patch('article/{id}', 'ArticleController@update');
 	});	
 	Route::get('courses/{course}/{id}', 'LessonController@show');
 	Route::get('lessoncompleted/{id}', 'LessoncompletedController@show');
@@ -83,3 +87,6 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('worksheets', 'WorksheetController');
 	Route::resource('worksheetanswers', 'WorksheetanswerController');
 });
+
+Route::get('/{slug}', 'ArticleController@show');
+Route::get('/articles', 'ArticleController@index');
