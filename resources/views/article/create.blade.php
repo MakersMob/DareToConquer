@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h1 class="text-center">Create a Guide</h1>
+				<h1 class="text-center">Create a Article</h1>
 			</div>
 		</div>
 	</div>
@@ -37,7 +37,7 @@
 								<label for="content">Content</label>
 								<textarea class="form-control" name="content" rows="8"></textarea>
 							</div>
-							<button type="submit" class="btn btn-primary">Create Guide</button>
+							<button type="submit" class="btn btn-primary">Publish Article</button>
 						{!! Form::close() !!}
 					</div>
 				</div>

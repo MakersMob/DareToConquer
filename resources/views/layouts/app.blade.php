@@ -42,6 +42,9 @@
                         <!--<li class="nav-item">
                             <a class="nav-link @if(Request::is('guides*')) active @endif" href="/guides">Field Guides</a>
                         </li>-->
+                        <li class="nav-item">
+                            <a class="nav-link @if(Request::is('empire-builder*')) active @endif" href="/empire-builder">Empire Builder</a>
+                        </li>
                         @auth
                         <li class="nav-item">
                             <a class="nav-link @if(Request::is('courses*')) active @endif" href="/courses">Courses</a>

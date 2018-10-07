@@ -26,7 +26,7 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        return view('guide.create');
+        return view('article.create');
     }
 
     /**
@@ -37,7 +37,7 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        $guide = Guide::create([
+        $article = Article::create([
             'title' => $request->title,
             'seo_title' => $request->seo_title,
             'summary' => $request->summary,
@@ -45,7 +45,7 @@ class ArticleController extends Controller
             'content' => $request->content
         ]);
 
-        return redirect('/guide/'.$guide->slug);
+        return redirect($article->slug);
     }
 
     /**
@@ -56,9 +56,9 @@ class ArticleController extends Controller
      */
     public function show($id)
     {
-        $guide = Guide::where('slug', $id)->first();
+        $article = Article::where('slug', $id)->first();
 
-        return view('guide.show', compact('guide'));
+        return view('article.show', compact('article'));
     }
 
     /**
@@ -69,9 +69,9 @@ class ArticleController extends Controller
      */
     public function edit($id)
     {
-        $guide = Guide::find($id);
+        $article = Article::find($id);
 
-        return view('guide.edit', compact('guide'));
+        return view('article.edit', compact('article'));
     }
 
     /**
@@ -83,18 +83,18 @@ class ArticleController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $guide = Guide::find($id);
+        $article = Article::find($id);
 
-        $guide->title = $request->title;
-        $guide->seo_title = $request->title;
-        $guide->summary = $request->summary;
-        $guide->content = $request->content;
-        $guide->slug = $request->slug;
-        $guide->active = $request->active;
+        $article->title = $request->title;
+        $article->seo_title = $request->title;
+        $article->summary = $request->summary;
+        $article->content = $request->content;
+        $article->slug = $request->slug;
+        $article->active = $request->active;
 
-        $guide->save();
+        $article->save();
 
-        return redirect('/guide/'.$guide->slug);
+        return redirect('/article/'.$article->slug);
     }
 
     /**
