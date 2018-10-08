@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h1 class="">Empire Builder: How to Start and Grow a Successful Online Business</h1>
+				<h1 class="billboard"><strong>Empire Builder</strong><hr> How to Start and Grow a Successful Online Business</h1>
 			</div>
 		</div>
 	</div>
@@ -50,7 +50,7 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12">
-				<h2>Season 1: Talented Underachiever</h2>
+				<h2>Season 1: <strong>Talented Underachiever</strong></h2>
 				<h3>Episode 1</h3>
 				<div class="embed-responsive embed-responsive-16by9">
 					<iframe width="1280" height="720" src="https://www.youtube.com/embed/tahhxpW8hiQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

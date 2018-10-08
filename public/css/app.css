@@ -1,4 +1,4 @@
-@import url(https://use.typekit.net/jzc5yvp.css);a {
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800|Permanent+Marker|Source+Serif+Pro:400,700);a {
   -webkit-transition: 0.2s linear all;
   transition: 0.2s linear all;
 }
@@ -67,7 +67,7 @@
 }
 
 .navbar .navbar-brand {
-  font-family: "flood-std",sans-serif;
+  font-family: "Permanent Marker",sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   border-right: 1px solid rgba(255, 255, 255, 0.25);
@@ -116,7 +116,7 @@
 }
 
 .welcome h3.preheader {
-  font-family: "flood-std",sans-serif;
+  font-family: "Permanent Marker",sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -135,7 +135,7 @@
 }
 
 .welcome h2 {
-  font-weight: 500;
+  font-weight: 300;
 }
 
 @media (min-width: 768px) {
@@ -156,6 +156,10 @@
   color: #fff;
 }
 
+.welcome h1 {
+  font-weight: 300;
+}
+
 @media (min-width: 768px) {
   .welcome h1 {
     font-size: 4rem;
@@ -169,11 +173,10 @@
 
 .welcome h1.billboard {
   font-size: 4rem;
-  font-weight: 700;
 }
 
 .welcome h1.billboard strong {
-  font-family: "flood-std",sans-serif;
+  font-family: "Permanent Marker",sans-serif;
   color: #FF715B;
 }
 
@@ -197,8 +200,9 @@
 
 .content h2 strong,
 .content h3 strong {
-  font-family: "flood-std",sans-serif;
+  font-family: "Permanent Marker",sans-serif;
   background-color: transparent;
+  color: #FF715B;
 }
 
 .content h4,
@@ -277,7 +281,7 @@
 }
 
 .content ul.course-list li a {
-  font-family: "flood-std",sans-serif;
+  font-family: "Permanent Marker",sans-serif;
   color: #FF715B;
   font-size: 4rem;
   font-weight: 900;
@@ -333,7 +337,7 @@
 
 .content.lesson p,
 .content.lesson li {
-  font-family: "ff-meta-serif-web-pro";
+  font-family: "Source Serif Pro";
 }
 
 .content.lesson div.recap {
@@ -354,7 +358,7 @@
 .content.lesson div.recap h4 {
   text-align: center;
   margin-top: 0;
-  font-family: "flood-std",sans-serif;
+  font-family: "Permanent Marker",sans-serif;
 }
 
 .content.smoke {
@@ -524,7 +528,7 @@ footer a {
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "brandon-grotesque", "proxima-nova", sans-serif;
+  --font-family-sans-serif: "Open Sans", "proxima-nova", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -563,7 +567,7 @@ section {
 
 body {
   margin: 0;
-  font-family: "brandon-grotesque", "proxima-nova", sans-serif;
+  font-family: "Open Sans", "proxima-nova", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.6;
@@ -883,7 +887,7 @@ h6,
 .h6 {
   margin-bottom: 0.5rem;
   font-family: inherit;
-  font-weight: 900;
+  font-weight: 300;
   line-height: 1.2;
   color: inherit;
 }
@@ -6758,7 +6762,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "brandon-grotesque", "proxima-nova", sans-serif;
+  font-family: "Open Sans", "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -6883,7 +6887,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "brandon-grotesque", "proxima-nova", sans-serif;
+  font-family: "Open Sans", "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;

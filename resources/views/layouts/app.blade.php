@@ -30,7 +30,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a class="navbar-brand" href="@auth {{ url('/home') }} @else {{ url('/') }} @endauth">
-                    <img src="https://s3-us-west-2.amazonaws.com/billionaireblogclub-master/blog/wp-content/uploads/2018/08/08232743/wolf-yellow-2461.png" alt="Dare to Conquer"> <span class="d-none d-md-inline">Dare to Conquer</span>
+                    <span class="d-none d-md-inline">Dare to Conquer</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
