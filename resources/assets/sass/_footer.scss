@@ -5,5 +5,9 @@ footer {
 	z-index: 2000;
 	a {
 		color: $yellow;
+		&:hover {
+			color: $pink;
+			text-decoration: none;
+		}
 	}
 }

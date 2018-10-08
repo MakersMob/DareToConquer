@@ -22,7 +22,7 @@ a {
 		}
 		#left, #right {
 			top: 0; bottom: 0;
-			width: 25px;
+			width: 15px;
 			z-index: 1000;
 			}
 			#left { left: 0; }
@@ -30,7 +30,7 @@ a {
 			
 		#top, #bottom {
 			left: 0; right: 0;
-			height: 25px;
+			height: 15px;
 			}
 			#top { top: 0; }
 			#bottom { bottom: 0; }

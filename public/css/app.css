@@ -29,7 +29,7 @@
   #right {
     top: 0;
     bottom: 0;
-    width: 25px;
+    width: 15px;
     z-index: 1000;
   }
 
@@ -45,7 +45,7 @@
   #bottom {
     left: 0;
     right: 0;
-    height: 25px;
+    height: 15px;
   }
 
   #top {
@@ -108,7 +108,10 @@
 }
 
 .welcome {
-  background-color: #083859;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 56, 89, 0.25)), to(rgba(8, 56, 89, 0.25))), url("https://s3-us-west-2.amazonaws.com/billionaireblogclub-master/blog/wp-content/uploads/2018/10/08163829/overlooking-mountains.jpg");
+  background: linear-gradient(rgba(8, 56, 89, 0.25), rgba(8, 56, 89, 0.25)), url("https://s3-us-west-2.amazonaws.com/billionaireblogclub-master/blog/wp-content/uploads/2018/10/08163829/overlooking-mountains.jpg");
+  /* fallback for old browsers */
+  background-size: cover;
   padding: 1rem 0;
   text-align: center;
 }
@@ -211,12 +214,15 @@
 }
 
 .content p,
-.content li,
-.content label {
+.content li {
   font-size: 1.2rem;
   max-width: 45rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.content label {
+  font-size: 16px;
 }
 
 .content ul,
@@ -465,6 +471,11 @@ footer {
 
 footer a {
   color: #f9cb40;
+}
+
+footer a:hover {
+  color: #FF715B;
+  text-decoration: none;
 }
 
 /**
