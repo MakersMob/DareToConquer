@@ -1,15 +1,13 @@
 .navbar {
-	background-color: $white;
-	border-bottom: 1px solid $smoke;
+	background-color: $pink;
 	.navbar-brand {
 		font-family: "Permanent Marker",sans-serif;
 		font-weight: 700;
 		font-size: 1.5rem;
-		border-right: 1px solid rgba($white, 0.25);
 		padding-right: 1rem;
-		color: $ocean !important;
+		color: $white !important;
 		&:hover {
-			color: $pink !important;
+			color: $yellow !important;
 		}
 		img {
 			max-width: 2rem;
@@ -18,16 +16,15 @@
 	}
 	li.nav-item a.nav-link {
 		font-size: 1rem;
-		color: $ocean;
+		color: $white;
 		font-weight: 500;
-		text-transform: uppercase;
 		letter-spacing: 1px;
 		margin-top: 2px;
 		&:hover {
-			color: $pink !important;
+			color: $ocean !important;
 		}
 		&.active {
-			color: $pink !important;
+			color: $yellow !important;
 			font-weight: 900;
 		}
 	}

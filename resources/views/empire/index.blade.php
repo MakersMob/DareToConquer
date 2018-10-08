@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h1 class="billboard"><strong>Empire Builder</strong><hr> How to Start and Grow a Successful Online Business</h1>
+				<h1 class="billboard"><strong>Empire Builder</strong><br> How to Start and Grow a Successful Online Business</h1>
 			</div>
 		</div>
 	</div>
