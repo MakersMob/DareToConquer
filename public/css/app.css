@@ -192,9 +192,6 @@
 .content h2,
 .content h3 {
   margin-top: 2rem;
-  max-width: 45rem;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
 }
 
@@ -211,10 +208,6 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-}
-
-.content h2 {
-  border-bottom: 1px solid #eee;
 }
 
 .content p,

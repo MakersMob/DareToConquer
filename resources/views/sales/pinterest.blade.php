@@ -1,11 +1,11 @@
-@extends('layouts.app', ['title' => 'Billionaire Pinterest: The Ultimate Blog Traffic Generating Course', 'description' => 'Learn how to turn Pinterest into a traffic generating machine for your blog where you consistently get thousands of people every single day to view your content.', 'page' => 'landing'])
+@extends('layouts.app', ['title' => 'Dare to Conquer Pinterest: The Ultimate Blog Traffic Generating Course', 'description' => 'Learn how to turn Pinterest into a traffic generating machine for your blog where you consistently get thousands of people every single day to view your content.', 'page' => 'landing'])
 
 @section('content')
 <section class="welcome course">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 text-center">
-				<h1>Billionaire Blogging Pinterest</h1>
+				<h1 class="billboard">Dare to Conquer <strong>Pinterest</strong></h1>
 				<h2 class="subheader course-title">The Ultimate Blog Traffic Generating Course</h2>
 			</div>
 		</div>
