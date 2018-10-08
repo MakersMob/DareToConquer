@@ -109,7 +109,7 @@
             <?php $count = 1; ?>
             @if(count($module->less) > 0)
               @foreach($module->less as $less)
-                <tr @if($less->id == $lesson->id) class="active" @endif>
+                <tr class="lessons @if($less->id == $lesson->id) active @endif">
                   <td>{{ $count }}</td>
                   <td><a href="/courses/{{$less->course->slug}}/{{ $less->slug }}">{{ $less->name }}</a></td>
                   <td>@if(Auth::user()->lessons->contains($less->id)) &#x2714; @endif</td>

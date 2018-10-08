@@ -124,7 +124,7 @@
 }
 
 .welcome h3.preheader a {
-  color: #FF715B;
+  color: #f9cb40;
 }
 
 .welcome h3.preheader span.me {
@@ -249,6 +249,10 @@
   font-weight: 700;
 }
 
+.content tr.lessons {
+  font-size: 16px;
+}
+
 .content tr.active {
   background-color: #4e598c;
   color: #fff;
@@ -267,6 +271,7 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  font-size: 16px;
 }
 
 .content ul.course-list li {

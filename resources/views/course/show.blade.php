@@ -25,7 +25,7 @@
 							<?php $c++;?>
 							<?php $count = 1; ?>
 							@foreach($module->less as $less)
-								<tr>
+								<tr class="lessons">
 									<td>{{ $count }}</td>
 									<td><a href="/courses/{{$course->slug}}/{{ $less->slug }}">{{ $less->name }}</a></td>
 									<td>@if(Auth::user()->lessons->contains($less->id)) &#x2714; @endif</td>
