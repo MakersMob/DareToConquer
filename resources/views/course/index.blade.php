@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h1 class="">Your Courses</h1>
+				<h1 class="billboard"><strong>Your Courses</strong></h1>
 			</div>
 		</div>
 	</div>
@@ -19,13 +19,13 @@
 		</div>
 	</div>
 </section>-->
-<section class="content rose">
+<section class="content">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
 				<ul class="course-list">
 					@foreach($courses as $course)
-						<li><a href="/courses/{{$course->slug}}">{{$course->name}}</a></li>
+						<li class="text-center"><a href="/courses/{{$course->slug}}">{{$course->name}}</a></li>
 					@endforeach
 				</ul>
 				@role('bronze')
