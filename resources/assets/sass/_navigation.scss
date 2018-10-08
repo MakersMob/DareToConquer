@@ -18,7 +18,6 @@
 		font-size: 1rem;
 		color: $white;
 		font-weight: 500;
-		letter-spacing: 1px;
 		margin-top: 2px;
 		&:hover {
 			color: $ocean !important;
@@ -27,6 +26,9 @@
 			color: $yellow !important;
 			font-weight: 900;
 		}
+	}
+	a.dropdown-item {
+		font-size: 16px;
 	}
 }
 .navbar-light .navbar-toggler {

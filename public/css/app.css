@@ -86,7 +86,6 @@
   font-size: 1rem;
   color: #fff;
   font-weight: 500;
-  letter-spacing: 1px;
   margin-top: 2px;
 }
 
@@ -97,6 +96,10 @@
 .navbar li.nav-item a.nav-link.active {
   color: #f9cb40 !important;
   font-weight: 900;
+}
+
+.navbar a.dropdown-item {
+  font-size: 16px;
 }
 
 .navbar-light .navbar-toggler {
@@ -476,6 +479,11 @@ footer a {
 footer a:hover {
   color: #FF715B;
   text-decoration: none;
+}
+
+footer p,
+footer li {
+  font-size: 16px;
 }
 
 /**
