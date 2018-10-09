@@ -16,7 +16,7 @@
 		<div class="row justify-content-center">
 			<div class="col-12">
 				<div class="embed-responsive embed-responsive-16by9">
-					<iframe width="1280" height="720" src="https://www.youtube.com/embed/WN-klUC1USw" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/zypfk3hVpH4" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
@@ -47,19 +47,6 @@
 						  </div>
 						</form>
 					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="content smoke">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-12">
-				<h2>Season 1: <strong>Talented Underachiever</strong></h2>
-				<h3>Episode 1</h3>
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe width="1280" height="720" src="https://www.youtube.com/embed/tahhxpW8hiQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
