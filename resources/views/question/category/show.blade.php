@@ -1,12 +1,12 @@
-@extends('layouts.app')
+@extends('layouts.app', ['title' => 'Questions about '.{$cat}])
 
 @section('content')
 <section class="welcome">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h2 class="preheader"><a href="/questions">The Keepin&rsquo; It Real Blogging FAQ</a></h2>
-				<h1>{{ $cat }}</h1>
+				<h2 class="preheader"><a href="/questions">Online Business FAQ</a></h2>
+				<h1 class="billboard"><strong>{{ $cat }}</strong></h1>
 				@role('admin')
 					<div class="" style="margin-top: 2rem;"><a href="/questions/create" class="btn btn-primary">Add Question</a></div>
 				@endrole
