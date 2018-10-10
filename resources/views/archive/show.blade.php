@@ -23,7 +23,7 @@
 		</div>
 	</div>
 </section>
-<section class="content">
+<section class="content smoke">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg-8">
