@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h1 class="">BBC Email Archives</h1>
+				<h1 class="billboard"><strong>DTC Email Archives</strong></h1>
 				@role('admin')
 					<div class="" style="margin-top: 2rem;"><a href="/archives/create" class="btn btn-primary">Add Archive</a></div>
 				@endrole

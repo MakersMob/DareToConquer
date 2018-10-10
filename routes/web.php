@@ -57,6 +57,9 @@ Route::get('how-to-start-a-business/season1', function () {
 
 Route::post('/payment', 'PaymentController@store');
 
+Route::get('archives', 'ArchiveController@index');
+Route::get('archives/{slug}', 'ArchiveController@show');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -69,13 +72,16 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('member/edit', 'MemberController@edit');
 	Route::resource('member', 'MemberController');
 	Route::resource('password', 'PasswordController');
-	Route::resource('archives', 'ArchiveController');
 	Route::group(['middleware' => ['role:admin']], function () {
 		Route::resource('user', 'UserController');
 		Route::get('article/create', 'ArticleController@create');
 		Route::post('article', 'ArticleController@store');
 		Route::get('article/{id}/edit', 'ArticleController@edit');
 		Route::patch('article/{id}', 'ArticleController@update');
+		Route::get('archives/create', 'ArchiveController@create');
+		Route::get('archives/{id}/edit', 'ArchiveController@edit');
+		Route::patch('archives/{id}', 'ArchiveController@update');
+		Route::post('archives', 'ArchiveController@store');
 	});	
 	Route::get('courses/{course}/{id}', 'LessonController@show');
 	Route::get('lessoncompleted/{id}', 'LessoncompletedController@show');
