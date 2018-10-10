@@ -39,6 +39,11 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
+                        @auth
+                        <li class="nav-item">
+                            <a class="nav-link @if(Request::is('courses*')) active @endif" href="/courses">Courses</a>
+                        </li>
+                        @endauth
                         <!--<li class="nav-item">
                             <a class="nav-link @if(Request::is('guides*')) active @endif" href="/guides">Field Guides</a>
                         </li>-->
@@ -48,11 +53,6 @@
                         <li class="nav-item">
                             <a class="nav-link @if(Request::is('archives*')) active @endif" href="/archives">Archives</a>
                         </li>
-                        @auth
-                        <li class="nav-item">
-                            <a class="nav-link @if(Request::is('courses*')) active @endif" href="/courses">Courses</a>
-                        </li>
-                        @endauth
                     </ul>
 
                     <!-- Right Side Of Navbar -->

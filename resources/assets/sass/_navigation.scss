@@ -15,6 +15,7 @@
 		}
 	}
 	li.nav-item a.nav-link {
+		font-family: "Permanent Marker",sans-serif;
 		font-size: 1rem;
 		color: $white;
 		font-weight: 500;
@@ -23,7 +24,7 @@
 			color: $ocean !important;
 		}
 		&.active {
-			color: $yellow !important;
+			color: $ocean !important;
 			font-weight: 900;
 		}
 	}
