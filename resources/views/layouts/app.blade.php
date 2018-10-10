@@ -41,10 +41,10 @@
                     <ul class="navbar-nav mr-auto">
                         <!--<li class="nav-item">
                             <a class="nav-link @if(Request::is('guides*')) active @endif" href="/guides">Field Guides</a>
-                        </li>
+                        </li>-->
                         <li class="nav-item">
                             <a class="nav-link @if(Request::is('empire-builder*')) active @endif" href="/empire-builder">Empire Builder</a>
-                        </li>-->
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link @if(Request::is('archives*')) active @endif" href="/archives">Archives</a>
                         </li>

@@ -1,4 +1,4 @@
-@extends('layouts.app', ['title' => 'Questions about '.{$cat}])
+@extends('layouts.app', ['title' => 'Questions about '.$cat])
 
 @section('content')
 <section class="welcome">
