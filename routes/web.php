@@ -57,9 +57,6 @@ Route::get('how-to-start-a-business/season1', function () {
 
 Route::post('/payment', 'PaymentController@store');
 
-Route::get('archives', 'ArchiveController@index');
-Route::get('archives/{slug}', 'ArchiveController@show');
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -94,6 +91,9 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('worksheets', 'WorksheetController');
 	Route::resource('worksheetanswers', 'WorksheetanswerController');
 });
+
+Route::get('archives', 'ArchiveController@index');
+Route::get('archives/{slug}', 'ArchiveController@show');
 
 Route::get('/{slug}', 'ArticleController@show');
 Route::get('/articles', 'ArticleController@index');
