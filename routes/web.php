@@ -69,6 +69,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('member/edit', 'MemberController@edit');
 	Route::resource('member', 'MemberController');
 	Route::resource('password', 'PasswordController');
+	Route::resource('archives', 'ArchiveController');
 	Route::group(['middleware' => ['role:admin']], function () {
 		Route::resource('user', 'UserController');
 		Route::get('article/create', 'ArticleController@create');
