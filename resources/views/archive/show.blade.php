@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h2 class="preheader"><a href="/archives" rel="nofollow">BBC Email Archives</a></h2>
+				<h2 class="preheader"><strong><a href="/archives" rel="nofollow">BBC Email Archives</a></strong></h2>
 				<h1 class="">{{ $archive->title }}</h1>
 				@role('admin')
 					<div class="" style="margin-top: 2rem;"><a href="/archives/{{ $archive->id }}/edit" class="btn btn-primary">Edit Archive</a></div>
@@ -14,7 +14,7 @@
 		</div>
 	</div>
 </section>
-<section class="content smoke">
+<section class="content smoke lesson">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg-8 main">
