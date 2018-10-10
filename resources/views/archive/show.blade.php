@@ -6,7 +6,7 @@
 		<div class="row">
 			<div class="col-12">
 				<h2 class="preheader"><strong><a href="/archives" rel="nofollow">BBC Email Archives</a></strong></h2>
-				<h1 class="">{{ $archive->title }}</h1>
+				<h1 class="billboard"><strong>{{ $archive->title }}</strong></h1>
 				@role('admin')
 					<div class="" style="margin-top: 2rem;"><a href="/archives/{{ $archive->id }}/edit" class="btn btn-primary">Edit Archive</a></div>
 				@endrole
@@ -14,10 +14,10 @@
 		</div>
 	</div>
 </section>
-<section class="content smoke lesson">
+<section class="content lesson">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 col-lg-8 main">
+			<div class="col-12">
 				{!! $archive->email !!}
 			</div>
 		</div>
