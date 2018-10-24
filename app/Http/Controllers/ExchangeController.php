@@ -54,6 +54,7 @@ class ExchangeController extends Controller
         $exchange = Exchange::create([
             'user_id' => Auth::user()->id,
             'url' => $url,
+            'niche' => $request->niche,
             'type' => $request->type,
             'description' => $request->description,
             'status' => 1,
@@ -111,6 +112,7 @@ class ExchangeController extends Controller
     {
         $exchange = Exchange::find($id);
 
+        $exchange->niche = $request->niche;
         $exchange->type = $request->type;
         $exchange->url = $request->url;
         $exchange->description = $request->description;

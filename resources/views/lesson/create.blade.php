@@ -32,13 +32,13 @@
 							<div class="form-group">
 								<label for="active">Make it live?</label>
 								<div class="form-check">
-								  <input class="form-check-input" type="radio" name="active" id="exampleRadios1" value="1" checked>
+								  <input class="form-check-input" type="radio" name="active" id="exampleRadios1" value="1">
 								  <label class="form-check-label" for="exampleRadios1">
 								    Yes
 								  </label>
 								</div>
 								<div class="form-check">
-								  <input class="form-check-input" type="radio" name="active" id="exampleRadios2" value="2">
+								  <input class="form-check-input" type="radio" name="active" id="exampleRadios2" value="0" checked>
 								  <label class="form-check-label" for="exampleRadios2">
 								    No
 								  </label>
