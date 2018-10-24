@@ -30,17 +30,23 @@
 								</select>
 							</div>
 							<div class="form-group">
-								<label for="active">Make it live?</label>
+								<label for="active">Status</label>
 								<div class="form-check">
 								  <input class="form-check-input" type="radio" name="active" id="exampleRadios1" value="1">
 								  <label class="form-check-label" for="exampleRadios1">
-								    Yes
+								    Published
 								  </label>
 								</div>
 								<div class="form-check">
 								  <input class="form-check-input" type="radio" name="active" id="exampleRadios2" value="0" checked>
 								  <label class="form-check-label" for="exampleRadios2">
-								    No
+								    Draft
+								  </label>
+								</div>
+								<div class="form-check">
+								  <input class="form-check-input" type="radio" name="active" id="exampleRadios3" value="2" @if($lesson->active == 2) checked @endif>
+								  <label class="form-check-label" for="exampleRadios3">
+								    Review
 								  </label>
 								</div>
 							</div>
