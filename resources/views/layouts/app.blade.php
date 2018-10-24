@@ -51,8 +51,11 @@
                             <a class="nav-link @if(Request::is('empire-builder*')) active @endif" href="/empire-builder">Empire Builder</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link @if(Request::is('archives*')) active @endif" href="/archives">Archives</a>
+                            <a class="nav-link @if(Request::is('milestones*')) active @endif" href="/milestones">Milestones</a>
                         </li>
+                        <!--<li class="nav-item">
+                            <a class="nav-link @if(Request::is('archives*')) active @endif" href="/archives">Archives</a>
+                        </li>-->
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -101,6 +104,7 @@
                         <ul>
                             <li><a href="/questions">Online Business FAQ</a></li>
                             <li><a href="/guide">Online Business Help Guides</a></li>
+                            <li><a href="/archives">Email Archives</a></li>
                         </ul>
                     </div>
                     <div class="col-12">

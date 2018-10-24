@@ -3,6 +3,9 @@
 	background-size: cover;
 	padding: 1rem 0;
 	text-align: center;
+	h2.preheader {
+		font-weight: 700;
+	}
 	h3.preheader {
 		// padding: 0.5rem 0;
 		// margin-bottom: 0.5rem;
@@ -41,7 +44,7 @@
 			font-size: 4rem;
 		}
 		color: $white;
-		font-weight: 300;
+		font-weight: 500;
 		span {
 			color: $pink;
 			border-bottom: 3px solid $yellow;

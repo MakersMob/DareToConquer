@@ -229,3 +229,16 @@
 		}
 	}
 }
+
+ul.avatar-list {
+	li {
+		float: left;
+		padding: 3px;
+		margin-right: 0.5rem;
+		margin-bottom: 0.5rem;
+		img {
+			max-width: 64px;
+			border-radius: 1000px;
+		}
+	}
+}

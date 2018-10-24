@@ -44,4 +44,9 @@ class User extends Authenticatable
     {
         return $this->belongsToMany('DareToConquer\Course')->withTimestamps();
     }
+
+    public function milestones()
+    {
+        return $this->belongsToMany('DareToConquer\Milestone')->withTimestamps();
+    }
 }

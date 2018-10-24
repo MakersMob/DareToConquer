@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/power-words', function() {
+	return view('resource.power-words');
+});
+
 Route::get('/planner', function () {
 	return view('planner.index');
 });
@@ -90,6 +94,13 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('objectives', 'ObjectiveController');
 	Route::resource('worksheets', 'WorksheetController');
 	Route::resource('worksheetanswers', 'WorksheetanswerController');
+
+	Route::resource('milestones', 'MilestoneController');
+	Route::post('milestonecompleted', 'MilestoneCompleteController@store');
+
+	Route::post('taskcomplete', 'TaskCompleteController@store');
+	Route::get('exchange/{id}/close', 'ExchangeController@close');
+	Route::resource('exchange', 'ExchangeController');
 });
 
 Route::get('archives', 'ArchiveController@index');
