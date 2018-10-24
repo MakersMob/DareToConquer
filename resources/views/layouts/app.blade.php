@@ -50,9 +50,9 @@
                         <li class="nav-item">
                             <a class="nav-link @if(Request::is('empire-builder*')) active @endif" href="/empire-builder">Empire Builder</a>
                         </li>
-                        <li class="nav-item">
+                       <!-- <li class="nav-item">
                             <a class="nav-link @if(Request::is('milestones*')) active @endif" href="/milestones">Milestones</a>
-                        </li>
+                        </li> -->
                         <!--<li class="nav-item">
                             <a class="nav-link @if(Request::is('archives*')) active @endif" href="/archives">Archives</a>
                         </li>-->
