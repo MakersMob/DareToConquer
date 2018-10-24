@@ -6,7 +6,7 @@
 		<div class="row">
 			<div class="col-12">
 				<h2 class="preheader"><a href="/questions" rel="nofollow">The Online Business FAQ</a> // <a href="/questions/category/{{ $question->category }}">{{ $question->category }}</a></h2>
-				<h1 class="billboard"><strong>{{ $question->question }}</strong></h1>
+				<h1 class="billboard">{{ $question->question }}</h1>
 				@role('admin')
 					<div class="" style="margin-top: 2rem;"><a href="/questions/{{ $question->id }}/edit" class="btn btn-primary">Edit Question</a></div>
 				@endrole
