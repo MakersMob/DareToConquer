@@ -93,11 +93,13 @@
   <div class="container">
     <div class="row justify-content-center">
   		<div class="col-12 col-lg-8">
-        @if(Auth::user()->lessons->contains($lesson->id))
-          <p>You've completed this lesson but good on you for coming back and revisiting things!</p>
-        @else
-          <p><a href="/lessoncompleted/{{$lesson->id}}" class="btn btn-block btn-primary btn-lg">I've completed this lesson!</a></p>
-        @endif
+        @unless($lesson->active != 1)
+          @if(Auth::user()->lessons->contains($lesson->id))
+            <p>You've completed this lesson but good on you for coming back and revisiting things!</p>
+          @else
+            <p><a href="/lessoncompleted/{{$lesson->id}}" class="btn btn-block btn-primary btn-lg">I've completed this lesson!</a></p>
+          @endif
+        @endunless
         <h2 style="border-bottom: none;">{{ $lesson->course->name }} <strong>Curriculum</strong></h2>
   			<table class="table">
           <?php $c = 1; ?>
