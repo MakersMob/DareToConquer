@@ -8,6 +8,7 @@ use DareToConquer\User;
 use Auth;
 use Stripe;
 use DareToConquer\Mail\CoursePurchased;
+use DareToConquer\Mail\InviteRequired;
 use Illuminate\Support\Facades\Mail;
 
 class PaymentController extends Controller
