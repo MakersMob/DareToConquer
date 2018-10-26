@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/guidelines', function () {
+	return view('guidelines');
+});
+
 Route::get('/power-words', function() {
 	return view('resource.power-words');
 });

@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <p>The <a href="/courses/seo">SEO Course</a> is now slowly rolling out.</p>
+            @hasrole('gold')<p>The <a href="/courses/seo">SEO Course</a> is now slowly rolling out.</p>@endhasrole
             <p>This page is just a placeholder. You're looking for <a href="/courses/pinterest">the Pinterest Course</a>.</p>
             <div class="card">
                 <div class="card-header">Recently Updated Lessons</div>
