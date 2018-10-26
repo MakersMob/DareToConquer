@@ -326,21 +326,25 @@
   background-color: #fefefe;
 }
 
-.content.lesson p {
+.content.lesson p,
+.content.lesson li {
   margin: 1.875rem auto;
   line-height: 2.14;
 }
 
-.content.lesson p:first-child {
+.content.lesson p:first-child,
+.content.lesson li:first-child {
   margin-top: 0;
 }
 
-.content.lesson p a {
+.content.lesson p a,
+.content.lesson li a {
   color: #FF715B;
   border-bottom: 1px solid #FF715B;
 }
 
-.content.lesson p a:hover {
+.content.lesson p a:hover,
+.content.lesson li a:hover {
   color: #333;
   border-bottom: none;
   text-decoration: none;

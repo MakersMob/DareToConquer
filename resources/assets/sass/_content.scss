@@ -109,7 +109,7 @@
 }
 .content.lesson {
 	background-color: #fefefe;
-	p {
+	p, li {
 		margin: rem-calc(30) auto;
 		line-height: 2.14;
 		&:first-child {
