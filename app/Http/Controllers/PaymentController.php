@@ -7,6 +7,8 @@ use DareToConquer\Course;
 use DareToConquer\User;
 use Auth;
 use Stripe;
+use DareToConquer\Mail\CoursePurchased;
+use Illuminate\Support\Facades\Mail;
 
 class PaymentController extends Controller
 {
@@ -15,9 +17,16 @@ class PaymentController extends Controller
     	switch ($request->type) {
     		case 'course':
     			$course = Course::where('slug', $request->course)->first();
+                $amount = $course->price;
+                $description = $course->name;
     			$role = 'bronze';
     			break;
-    		
+    		case 'pinterest-special':
+                $course = Course::where('slug', $request->course)->first();
+                $role = 'bronze';
+                $amount = 1;
+                $description = $course->name;
+                break;
     		default:
     			$course = Course::where('slug', $request->course)->first();
     			$role = 'copper';
@@ -27,7 +36,7 @@ class PaymentController extends Controller
     	try {
             $charge = Stripe::charges()->create([
                 'currency' => 'USD',
-                'amount' => $course->price, // change affiliate total as well
+                'amount' => $amount, // change affiliate total as well
                 'source' => $request->stripeToken,
                 'description' => $course->name,
                 'capture' => true,
@@ -54,6 +63,9 @@ class PaymentController extends Controller
             'email' => $request->email,
             'password' => bcrypt($request->password),
         ]);
+
+        Mail::to($user)->send(new CoursePurchased($user, $course));
+        Mail::to('marybeth@makersmob.com')->send(new InviteRequired($user));
 
         if(Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
         	$user->courses()->attach($course->id);

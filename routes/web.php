@@ -39,6 +39,10 @@ Route::get('/pinterest', function () {
 	return view('sales.pinterest');
 });
 
+Route::get('/pinterest/special', function () {
+	return view('sales.pinterest-special');
+});
+
 Route::get('empire-builder', function () {
 	return view('empire.index');
 });
