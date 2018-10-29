@@ -25,8 +25,12 @@
             <ul>
                 <li>Please don’t share affiliate links in Slack. If you’ve got one and you know someone who might be interested, you can DM them.</li>
                 <li>Please keep discussions about other blogging courses that cover the same topics as DTC out of the public channels.</li>
-                <li>The most efficient way to get an answer quickly in Slack is to ask the question.   Popping in and saying, “How do I change the color on my Social Warfare sharing icons?“ as opposed to popping in and saying” Does anyone use Social Warfare? I need some help.”</li>
+                <li>The most efficient way to get an answer quickly in Slack is to ask the question. Popping in and saying, “How do I change the color on my Social Warfare sharing icons?“ as opposed to saying” Does anyone use Social Warfare? I need some help.”</li>
             </ul>
+            <h2>From Scrivs</h2>
+            <p>This one is pretty simple. Don't harrass or weird other members out in DMs. This isn't a dating site. There is zero tolerance for this.</p>
+            <p>If I find you doing anything of the sort you will be removed from Slack without question and will not be able to return.</p>p>
+            <p>If you are encountering a situation where another member is making you feel uncomfortable then please contact either myself or Marybeth and we will take care of the issue immediately.</p>
         </div>
     </div>
 </div>
