@@ -196,6 +196,11 @@
   color: #f9cb40;
 }
 
+.welcome img.avatar-image {
+  max-width: 64px;
+  border-radius: 1000px;
+}
+
 .welcome.home {
   padding: 2rem 0;
 }
