@@ -75,6 +75,7 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">{{ Auth::user()->points }} Points</a>
                                     <a class="dropdown-item" href="/member/edit">Edit Profile</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
