@@ -11,7 +11,7 @@ class MilestoneCompleteController extends Controller
     {
     	$user = Auth::user();
 
-    	$user->points = $user->points + 1;
+    	$user->points = $user->points + 3;
     	$user->save();
 
     	$user->milestones()->attach($request->milestone_id);
