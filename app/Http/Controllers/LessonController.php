@@ -97,7 +97,7 @@ class LessonController extends Controller
             return view('lesson.show', compact('lesson', 'modules'));
         }
 
-        $modules = Module::where('course_id', $lesson->course_id)->with(['less' => function ($query) {
+        $modules = Module::where('course_id', $lesson->course_id)->where('active', 1)->with(['less' => function ($query) {
             $query->where('active', '1');
             $query->orderBy('order', 'ASC');
         }])->orderBy('order', 'ASC')->get();

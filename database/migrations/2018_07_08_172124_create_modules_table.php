@@ -17,6 +17,7 @@ class CreateModulesTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->integer('order')->default(100);
+            $table->boolean('active')->default(0);
             $table->string('slug')->nullable();
             $table->integer('course_id')->unsigned();
             $table->foreign('course_id')->references('id')->on('courses');

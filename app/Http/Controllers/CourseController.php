@@ -81,7 +81,7 @@ class CourseController extends Controller
             return view('course.show', compact('course', 'modules'));
         }
         
-        $modules = Module::where('course_id', $course->id)->with(['less' => function ($query) {
+        $modules = Module::where('course_id', $course->id)->where('active', 1)->with(['less' => function ($query) {
             $query->where('active', '1');
             $query->orderBy('order', 'ASC');
         }])->orderBy('order', 'ASC')->get();
