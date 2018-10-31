@@ -14,8 +14,12 @@
 <section class="content smoke lesson">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 col-lg-4">
-				{!! $milestone->description !!}
+			<div class="col-12 col-lg-6">
+				<div class="card">
+					<div class="card-body">
+						{!! $milestone->description !!}
+					</div>
+				</div>
 				@unless(Auth::user()->milestones->contains($milestone->id))
 					{!! Form::open(['url' => 'milestonecompleted', 'style' => 'margin-bottom: 2rem;']) !!}
 						<input type="hidden" name="milestone_id" value="{{ $milestone->id }}">
@@ -23,8 +27,8 @@
 					{!! Form::close() !!}
 				@endunless
 			</div>
-			<div class="col-12 col-lg-8">
-				<h3>Wall of Fame</h3>
+			<div class="col-12 col-lg-6">
+				<h3 style="margin-top: 0;">Wall of Fame</h3>
 				<ul class="avatar-list list-unstyled">
 					@foreach($milestone->users as $user)
 						<?php 
