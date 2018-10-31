@@ -8,6 +8,13 @@ use Auth;
 
 class MemberController extends Controller
 {
+    public function show($id)
+    {
+        $user = User::find($id);
+
+        return view('member.show', compact('user'));
+    }
+
 	public function edit()
     {
     	$user = Auth::user();
