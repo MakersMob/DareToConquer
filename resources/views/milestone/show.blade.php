@@ -15,17 +15,17 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg-6">
-				<div class="card">
-					<div class="card-body">
-						{!! $milestone->description !!}
-					</div>
-				</div>
 				@unless(Auth::user()->milestones->contains($milestone->id))
 					{!! Form::open(['url' => 'milestonecompleted', 'style' => 'margin-bottom: 2rem;']) !!}
 						<input type="hidden" name="milestone_id" value="{{ $milestone->id }}">
 						<button type="submit" class="btn btn-primary btn-block btn-lg">I&rsquo;ve Completed the Milestone</button>
 					{!! Form::close() !!}
 				@endunless
+				<div class="card">
+					<div class="card-body">
+						{!! $milestone->description !!}
+					</div>
+				</div>
 			</div>
 			<div class="col-12 col-lg-6">
 				<h3 style="margin-top: 0;">Wall of Fame</h3>
