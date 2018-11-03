@@ -118,6 +118,10 @@
     </div>
     @yield('footScripts')
     @if (ENV('APP_ENV') == 'production')
+    <!-- REFERSION TRACKING: BEGIN -->
+    <script src="//billionaireblogclub.refersion.com/tracker/v3/pub_fff12c39e1cee94229d4.js"></script>
+    <script>_refersion();</script>
+    <!-- REFERSION TRACKING: END -->
     <!-- Drip -->
     <script type="text/javascript">
       var _dcq = _dcq || [];

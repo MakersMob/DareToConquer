@@ -95,7 +95,7 @@
 }
 
 .navbar li.nav-item a.nav-link.active {
-  color: #083859 !important;
+  color: #333 !important;
   font-weight: 900;
 }
 
@@ -117,8 +117,8 @@
 }
 
 .welcome {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 56, 89, 0.25)), to(rgba(8, 56, 89, 0.25))), url("https://s3-us-west-2.amazonaws.com/billionaireblogclub-master/blog/wp-content/uploads/2018/10/08163829/overlooking-mountains.jpg");
-  background: linear-gradient(rgba(8, 56, 89, 0.25), rgba(8, 56, 89, 0.25)), url("https://s3-us-west-2.amazonaws.com/billionaireblogclub-master/blog/wp-content/uploads/2018/10/08163829/overlooking-mountains.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 56, 89, 0.5)), to(rgba(8, 56, 89, 0.5))), url("https://s3-us-west-2.amazonaws.com/billionaireblogclub-master/blog/wp-content/uploads/2018/10/08163829/overlooking-mountains.jpg");
+  background: linear-gradient(rgba(8, 56, 89, 0.5), rgba(8, 56, 89, 0.5)), url("https://s3-us-west-2.amazonaws.com/billionaireblogclub-master/blog/wp-content/uploads/2018/10/08163829/overlooking-mountains.jpg");
   /* fallback for old browsers */
   background-size: cover;
   padding: 1rem 0;
@@ -126,7 +126,8 @@
 }
 
 .welcome h2.preheader {
-  font-weight: 700;
+  border-bottom: 1px dotted #fff;
+  padding-bottom: 1rem;
 }
 
 .welcome h3.preheader {
@@ -331,24 +332,39 @@
   background-color: #fefefe;
 }
 
-.content.lesson p,
-.content.lesson li {
+.content.lesson p {
   margin: 1.875rem auto;
   line-height: 2.14;
 }
 
-.content.lesson p:first-child,
+.content.lesson p:first-child {
+  margin-top: 0;
+}
+
+.content.lesson p a {
+  color: #FF715B;
+  border-bottom: 1px solid #FF715B;
+}
+
+.content.lesson p a:hover {
+  color: #333;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.content.lesson li {
+  line-height: 2.14;
+}
+
 .content.lesson li:first-child {
   margin-top: 0;
 }
 
-.content.lesson p a,
 .content.lesson li a {
   color: #FF715B;
   border-bottom: 1px solid #FF715B;
 }
 
-.content.lesson p a:hover,
 .content.lesson li a:hover {
   color: #333;
   border-bottom: none;

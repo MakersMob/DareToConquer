@@ -23,7 +23,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h2>Your Courses</h2>
+				@role('bronze')
+					<h2>Your Courses</h2>
+				@endhasrole
 				<ul class="course-list">
 					@foreach($courses as $course)
 						<li class="text-center"><a href="/courses/{{$course->slug}}">{{$course->name}}</a></li>

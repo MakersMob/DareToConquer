@@ -1,10 +1,11 @@
 .welcome {
-	background: linear-gradient(rgba($ocean, 0.25), rgba($ocean, 0.25)), url('https://s3-us-west-2.amazonaws.com/billionaireblogclub-master/blog/wp-content/uploads/2018/10/08163829/overlooking-mountains.jpg');  /* fallback for old browsers */
+	background: linear-gradient(rgba($ocean, 0.5), rgba($ocean, 0.5)), url('https://s3-us-west-2.amazonaws.com/billionaireblogclub-master/blog/wp-content/uploads/2018/10/08163829/overlooking-mountains.jpg');  /* fallback for old browsers */
 	background-size: cover;
 	padding: 1rem 0;
 	text-align: center;
 	h2.preheader {
-		font-weight: 700;
+		border-bottom: 1px dotted $white;
+		padding-bottom: 1rem;
 	}
 	h3.preheader {
 		// padding: 0.5rem 0;
