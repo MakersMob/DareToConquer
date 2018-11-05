@@ -27,11 +27,11 @@
 				<h4>Categories</h4>
 				<ul class="list-group" style="margin-bottom: 2rem;">
 					<li class="list-group-item"><a style="border: none;" href="/questions/category/affiliate-marketing">Affiliate Marketing</a></li>
-					<li class="list-group-item"><a style="border: none;" href="/questions/category/dtc">Dare to Conquer</a></li>
+					<li class="list-group-item"><a style="border: none;" href="/questions/category/DTC">Dare to Conquer</a></li>
 					<li class="list-group-item"><a style="border: none;" href="/questions/category/blogging">Blogging</a></li>
 					<li class="list-group-item"><a style="border: none;" href="/questions/category/analytics">Google Analytics</a></li>
 					<li class="list-group-item"><a style="border: none;" href="/questions/category/pinterest">Pinterest</a></li>
-					<li class="list-group-item"><a style="border: none;" href="/questions/category/seo">SEO</a></li>
+					<li class="list-group-item"><a style="border: none;" href="/questions/category/SEO">SEO</a></li>
 				</ul>
 				<p>This stuff takes a long time to put together so I don&rsquo;t have time to write bullshit answers.</p>
 				<p>Let&rsquo;s just get right to it.</p>
