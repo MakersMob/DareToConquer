@@ -366,6 +366,12 @@
   text-decoration: none;
 }
 
+.content.lesson blockquote {
+  padding-left: 5rem;
+  font-style: italic;
+  border-left: 10px solid #F2CCC3;
+}
+
 .content.lesson li {
   line-height: 2.14;
 }

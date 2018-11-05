@@ -132,6 +132,11 @@
 			}
 		}
 	}
+	blockquote {
+		padding-left: 5rem;
+		font-style: italic;
+		border-left: 10px solid $rose;
+	}
 	li {
 		line-height: 2.14;
 		&:first-child {
