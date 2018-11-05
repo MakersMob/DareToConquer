@@ -27,7 +27,7 @@
 				<h4>Categories</h4>
 				<ul class="list-group" style="margin-bottom: 2rem;">
 					<li class="list-group-item"><a style="border: none;" href="/questions/category/affiliate-marketing">Affiliate Marketing</a></li>
-					<li class="list-group-item"><a style="border: none;" href="/questions/category/bbc">Dare to Conquer</a></li>
+					<li class="list-group-item"><a style="border: none;" href="/questions/category/dtc">Dare to Conquer</a></li>
 					<li class="list-group-item"><a style="border: none;" href="/questions/category/blogging">Blogging</a></li>
 					<li class="list-group-item"><a style="border: none;" href="/questions/category/analytics">Google Analytics</a></li>
 					<li class="list-group-item"><a style="border: none;" href="/questions/category/pinterest">Pinterest</a></li>
