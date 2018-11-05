@@ -98,7 +98,8 @@ Route::get('/bootcamp/pinterest/welcome', function () {
 });
 
 Route::group(['middleware' => 'auth'], function () {
-	
+	Route::get('service/{id}/destroy', 'ServiceController@destroy');
+	Route::resource('service', 'ServiceController');
 	Route::get('journey/{journey}/{stop}', 'StopController@show');
 	Route::resource('stop', 'StopController');
 	Route::get('member/edit', 'MemberController@edit');

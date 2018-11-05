@@ -532,6 +532,11 @@ ul.avatar-list li img {
   border-radius: 1000px;
 }
 
+img.avatar {
+  border-radius: 1000px;
+  max-width: 48px;
+}
+
 footer {
   padding: 2rem 0 3rem;
   color: #fff;

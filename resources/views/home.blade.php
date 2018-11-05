@@ -18,7 +18,7 @@
                             <tr>
                                 <td>Course</td>
                                 <td>Lesson</td>
-                                <td>Completed On</td>
+                                <td>Your Completion Date</td>
                                 <td>Updated On</td>
                             </tr>
                         </thead>
