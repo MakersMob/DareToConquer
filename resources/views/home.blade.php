@@ -33,9 +33,11 @@
                                                 $less = Auth::user()->lessonCompleted($lesson->id);
                                             ?>
                                             {{ date('F j, Y', strtotime($less->pivot->updated_at)) }}
+                                        @else
+                                            <?php $less = ''; ?>
                                         @endif
                                     </td>
-                                    <td @if($less->pivot->updated_at < $lesson->updated_at) class="updated" @endif>{{ date('F j, Y', strtotime($lesson->updated_at)) }}</td>
+                                    <td @unless($less == '') @if($less->pivot->updated_at < $lesson->updated_at) class="updated" @endif @endunless>{{ date('F j, Y', strtotime($lesson->updated_at)) }}</td>
                                 </tr>
                             @endforeach
                         </tbody>
