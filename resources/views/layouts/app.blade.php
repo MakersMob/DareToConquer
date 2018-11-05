@@ -55,9 +55,9 @@
                                 <a class="nav-link @if(Request::is('bootcamp*')) active @endif" href="/bootcamp">Bootcamps</a>
                             </li>
                         @endhasrole
-                        <!--<li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link @if(Request::is('headstart*')) active @endif" href="/headstart">60-Day Headstart</a>
-                        </li>-->
+                        </li>
                         <!--<li class="nav-item">
                             <a class="nav-link @if(Request::is('empire-builder*')) active @endif" href="/empire-builder">Empire Builder</a>
                         </li>-->
