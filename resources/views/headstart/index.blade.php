@@ -15,6 +15,7 @@
 		<div class="row">
 			<div class="col-12">
 				<p>I'll make a prettier page as the Headstart moves along but for now this page will serve as a good way to view the previous days.</p>
+				<p><strong>Just because this is the 60-Day Headstart that doesn't mean there is content for each day.</strong></p>
 				<ul>
 					@foreach($days as $day)
 						<li><a href="/headstart/{{ $day->slug }}">{{ $day->title }}</a></li>
