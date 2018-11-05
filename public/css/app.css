@@ -342,6 +342,10 @@
   display: block;
 }
 
+.content .sidebar p {
+  font-size: 16px;
+}
+
 .content.lesson {
   background-color: #fefefe;
 }
