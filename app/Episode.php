@@ -9,7 +9,7 @@ use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
 
 class Episode extends Model implements HasMedia
 {
-    use HasMediaTrait, Sluggable;
+    use HasMediaTrait;
 
     protected $fillable = [
     	'title', 'slug', 'content', 'summary', 'seo_title', 'active', 'youtube', 'season'

@@ -6,10 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 use DareToConquer\Services\Markdowner;
 use Spatie\MediaLibrary\HasMedia\HasMedia;
 use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
+use Laravel\Scout\Searchable;
 
 class Guide extends Model implements HasMedia
 {
-    use HasMediaTrait;
+    use HasMediaTrait, Searchable;
 
     protected $fillable = [
     	'title', 'slug', 'content', 'summary', 'seo_title', 'active'

@@ -44,12 +44,23 @@
                             <a class="nav-link @if(Request::is('courses*')) active @endif" href="/courses">Courses</a>
                         </li>
                         @endauth
+                        @role('admin')
+                            <li class="nav-item">
+                                <a class="nav-link @if(Request::is('journey*')) active @endif" href="/journey">Journeys</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link @if(Request::is('guide*')) active @endif" href="/guide">Guides</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link @if(Request::is('bootcamp*')) active @endif" href="/bootcamp">Bootcamps</a>
+                            </li>
+                        @endhasrole
                         <!--<li class="nav-item">
-                            <a class="nav-link @if(Request::is('guides*')) active @endif" href="/guides">Field Guides</a>
+                            <a class="nav-link @if(Request::is('headstart*')) active @endif" href="/headstart">60-Day Headstart</a>
                         </li>-->
-                        <li class="nav-item">
+                        <!--<li class="nav-item">
                             <a class="nav-link @if(Request::is('empire-builder*')) active @endif" href="/empire-builder">Empire Builder</a>
-                        </li>
+                        </li>-->
                        <!-- <li class="nav-item">
                             <a class="nav-link @if(Request::is('milestones*')) active @endif" href="/milestones">Milestones</a>
                         </li> -->

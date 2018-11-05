@@ -6,7 +6,7 @@
 		<div class="row">
 			<div class="col-12">
 				<h2 class="preheader"><a href="/questions">Online Business FAQ</a></h2>
-				<h1 class="billboard"><strong>{{ $cat }}</strong></h1>
+				<h1 class=""><strong>{{ $cat }}</strong></h1>
 				@role('admin')
 					<div class="" style="margin-top: 2rem;"><a href="/questions/create" class="btn btn-primary">Add Question</a></div>
 				@endrole
@@ -27,12 +27,12 @@
 			<div class="col-12 col-lg-4 sidebar">
 				<h4>Categories</h4>
 				<ul class="list-group" style="margin-bottom: 2rem;">
-					<li class="list-group-item"><a href="/questions/category/affiliate-marketing">Affiliate Marketing</a></li>
-					<li class="list-group-item"><a href="/questions/category/bbc">Billionaire Blog Club</a></li>
-					<li class="list-group-item"><a href="/questions/category/blogging">Blogging</a></li>
-					<li class="list-group-item"><a href="/questions/category/analytics">Google Analytics</a></li>
-					<li class="list-group-item"><a href="/questions/category/pinterest">Pinterest</a></li>
-					<li class="list-group-item"><a href="/questions/category/seo">SEO</a></li>
+					<li class="list-group-item"><a style="border: none;" href="/questions/category/affiliate-marketing">Affiliate Marketing</a></li>
+					<li class="list-group-item"><a style="border: none;" href="/questions/category/bbc">Billionaire Blog Club</a></li>
+					<li class="list-group-item"><a style="border: none;" href="/questions/category/blogging">Blogging</a></li>
+					<li class="list-group-item"><a style="border: none;" href="/questions/category/analytics">Google Analytics</a></li>
+					<li class="list-group-item"><a style="border: none;" href="/questions/category/pinterest">Pinterest</a></li>
+					<li class="list-group-item"><a style="border: none;" href="/questions/category/seo">SEO</a></li>
 				</ul>
 				<p>This stuff takes a long time to put together so I don&rsquo;t have time to write bullshit answers.</p>
 				<p>Let&rsquo;s just get right to it.</p>

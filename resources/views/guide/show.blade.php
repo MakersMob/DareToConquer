@@ -1,10 +1,11 @@
-@extends('layouts.app', ['title' => $guide->title, 'description' => $guide->summary])
+@extends('layouts.app', ['title' => $guide->seo_title, 'description' => $guide->summary])
 
 @section('content')
 <section class="welcome course">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
+				<h2 class="preheader"><a href="/guide">DTC Business Guides</a></h2>
 				<h1 class="">{{ $guide->title }}</h1>
 				@role('admin')
 					<div class="" style="margin-top: 2rem;"><a href="/guide/{{ $guide->id }}/edit" class="btn btn-primary">Edit Guide</a></div>

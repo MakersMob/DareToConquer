@@ -6,6 +6,10 @@
 	h2.preheader {
 		border-bottom: 1px dotted $white;
 		padding-bottom: 1rem;
+		a {
+			color: $yellow;
+			font-family: "Permanent Marker",sans-serif;
+		}
 	}
 	h3.preheader {
 		// padding: 0.5rem 0;

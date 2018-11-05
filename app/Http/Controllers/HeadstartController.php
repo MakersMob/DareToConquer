@@ -3,10 +3,9 @@
 namespace DareToConquer\Http\Controllers;
 
 use Illuminate\Http\Request;
-use DareToConquer\Journey;
-use DareToConquer\Stop;
+use DareToConquer\Headstart;
 
-class StopController extends Controller
+class HeadstartController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +14,9 @@ class StopController extends Controller
      */
     public function index()
     {
-        //
+        $days = Headstart::get();
+
+        return view('headstart.index', compact('days'));
     }
 
     /**
@@ -25,9 +26,7 @@ class StopController extends Controller
      */
     public function create()
     {
-        $journeys = Journey::orderBy('id', 'DESC')->get();
-
-        return view('stop.create', compact('journeys'));
+        return view('headstart.create');
     }
 
     /**
@@ -38,16 +37,15 @@ class StopController extends Controller
      */
     public function store(Request $request)
     {
-        $journey = Journey::find($request->journey_id);
-
-        $stop = Stop::create([
-            'name' => $request->name,
-            'journey_id' => $request->journey_id,
-            'active' => $request->active,
-            'content' => $request->content,
+        $headstart = Headstart::create([
+            'title' => $request->title,
+            'seo_title' => $request->seo_title,
+            'summary' => $request->summary,
+            'slug' => $request->slug,
+            'content' => $request->content
         ]);
 
-        return redirect('journey/'.$journey->slug.'/'.$stop->slug);
+        return redirect('headstart/'.$headstart->slug);
     }
 
     /**
@@ -56,13 +54,12 @@ class StopController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($journey, $stop)
+    public function show($id)
     {
-        $journey = Journey::where('slug', $journey)->first();
+        $day = Headstart::where('slug', $id)->first();
+        $days = Headstart::get();
 
-        $stop = Stop::where('slug', $stop)->first();
-
-        return view('stop.show', compact('journey', 'stop'));
+        return view('headstart.show', compact('day', 'days'));
     }
 
     /**

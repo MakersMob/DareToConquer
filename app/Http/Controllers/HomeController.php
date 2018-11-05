@@ -4,6 +4,7 @@ namespace DareToConquer\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DareToConquer\Lesson;
+use Auth;
 
 class HomeController extends Controller
 {
@@ -24,7 +25,16 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $lessons = Lesson::where('active', 1)->orderBy('updated_at', 'DESC')->limit(20)->get();
+        if(Auth::user()->hasRole('gold')) {
+            $lessons = Lesson::where('active', 1)->orderBy('updated_at', 'DESC')->paginate(20);
+            
+            return view('home', compact('lessons'));
+        }
+        
+        $courses = Auth::user()->courses()->pluck('course_id')->toArray();
+
+        $lessons = Lesson::where('active', 1)->where('course_id', $courses)->orderBy('updated_at', 'DESC')->paginate(20)->get();
+
         return view('home', compact('lessons'));
     }
 }

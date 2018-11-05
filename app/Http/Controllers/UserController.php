@@ -4,6 +4,7 @@ namespace DareToConquer\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DareToConquer\User;
+use DareToConquer\Course;
 use Illuminate\Support\Facades\Mail;
 use DareToConquer\Mail\AccountCreated;
 
@@ -11,12 +12,9 @@ class UserController extends Controller
 {
     public function index()
     {
-    	$users = User::get();
+    	$users = User::orderBy('id', 'DESC')->get();
 
-    	foreach($users as $user)
-    	{
-    		$user->assignRole('gold');
-    	}
+    	return view('user.index', compact('users'));
     }
 
     public function create()
@@ -42,6 +40,21 @@ class UserController extends Controller
         Mail::to($user)->send(new AccountCreated($user));
 
         return redirect('user/create');
+    }
+
+    public function show($id)
+    {
+        $user = User::find($id);
+
+        if($user->hasRole('gold')) {
+            $courses = Course::get();
+        } elseif ($user->hasRole('bronze')) {
+            $courses = $user->courses();
+        } else {
+            return view('user.show_copper', compact('user'));
+        }
+
+        return view('user.show', compact('user', 'courses'));
     }
 
     public function update($id, Request $request)

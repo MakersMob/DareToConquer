@@ -3,6 +3,7 @@
 namespace DareToConquer\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DareToConquer\Episode;
 
 class EpisodeController extends Controller
 {
@@ -13,7 +14,9 @@ class EpisodeController extends Controller
      */
     public function index()
     {
-        //
+        $episodes = Episode::get();
+
+        return view('episode.index', compact('episodes'));
     }
 
     /**
@@ -23,7 +26,7 @@ class EpisodeController extends Controller
      */
     public function create()
     {
-        //
+        return view('episode.create');
     }
 
     /**
@@ -34,7 +37,18 @@ class EpisodeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $episode = Episode::create([
+            'title' => $request->title,
+            'seo_title' => $request->seo_title,
+            'summary' => $request->summary,
+            'slug' => $request->slug,
+            'content' => $request->content,
+            'youtube' => $request->youtube,
+            'season' => $request->season,
+            'active' => $request->active
+        ]);
+
+        return redirect('/empire-builder/episode/'.$episode->slug);
     }
 
     /**
@@ -45,7 +59,10 @@ class EpisodeController extends Controller
      */
     public function show($id)
     {
-        //
+        $episode = Episode::where('slug', $id)->first();
+        $episodes = Episode::where('season', $episode->season)->get();
+
+        return view('episode.show', compact('episode', 'episodes'));
     }
 
     /**
@@ -56,7 +73,9 @@ class EpisodeController extends Controller
      */
     public function edit($id)
     {
-        //
+        $episode = Episode::find($id);
+
+        return view('episode.edit', compact('episode'));
     }
 
     /**

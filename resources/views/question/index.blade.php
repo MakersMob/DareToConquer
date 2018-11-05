@@ -24,17 +24,14 @@
 				</ul>
 			</div>
 			<div class="col-12 col-lg-4 sidebar">
-				<div style="margin-bottom: 1rem;">
-					<script src="https://fast.wistia.com/embed/medias/5gev97vnui.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_5gev97vnui popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;width:100%">&nbsp;</span></div></div>
-				</div>
 				<h4>Categories</h4>
 				<ul class="list-group" style="margin-bottom: 2rem;">
-					<li class="list-group-item"><a href="/questions/category/affiliate-marketing">Affiliate Marketing</a></li>
-					<li class="list-group-item"><a href="/questions/category/bbc">Billionaire Blog Club</a></li>
-					<li class="list-group-item"><a href="/questions/category/blogging">Blogging</a></li>
-					<li class="list-group-item"><a href="/questions/category/analytics">Google Analytics</a></li>
-					<li class="list-group-item"><a href="/questions/category/pinterest">Pinterest</a></li>
-					<li class="list-group-item"><a href="/questions/category/seo">SEO</a></li>
+					<li class="list-group-item"><a style="border: none;" href="/questions/category/affiliate-marketing">Affiliate Marketing</a></li>
+					<li class="list-group-item"><a style="border: none;" href="/questions/category/bbc">Dare to Conquer</a></li>
+					<li class="list-group-item"><a style="border: none;" href="/questions/category/blogging">Blogging</a></li>
+					<li class="list-group-item"><a style="border: none;" href="/questions/category/analytics">Google Analytics</a></li>
+					<li class="list-group-item"><a style="border: none;" href="/questions/category/pinterest">Pinterest</a></li>
+					<li class="list-group-item"><a style="border: none;" href="/questions/category/seo">SEO</a></li>
 				</ul>
 				<p>This stuff takes a long time to put together so I don&rsquo;t have time to write bullshit answers.</p>
 				<p>Let&rsquo;s just get right to it.</p>

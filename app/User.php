@@ -6,11 +6,14 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laravel\Cashier\Billable;
 use DareToConquer\Worksheetanswer;
+use DareToConquer\Lesson;
 use Spatie\Permission\Traits\HasRoles;
+use Laravel\Scout\Searchable;
+use Auth;
 
 class User extends Authenticatable
 {
-    use Notifiable, Billable, HasRoles;
+    use Notifiable, Billable, HasRoles, Searchable;
 
     /**
      * The attributes that are mass assignable.
@@ -45,8 +48,20 @@ class User extends Authenticatable
         return $this->belongsToMany('DareToConquer\Course')->withTimestamps();
     }
 
+    public function journeys()
+    {
+        return $this->belongsToMany('DareToConquer\Journey')->withTimestamps();
+    }
+
     public function milestones()
     {
         return $this->belongsToMany('DareToConquer\Milestone')->withTimestamps();
+    }
+
+    public function lessonCompleted($id)
+    {
+        $pivot = Auth::user()->lessons()->wherePivot('lesson_id', $id)->first();
+        //dd($pivot);
+        return $pivot;
     }
 }

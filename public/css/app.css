@@ -130,6 +130,11 @@
   padding-bottom: 1rem;
 }
 
+.welcome h2.preheader a {
+  color: #f9cb40;
+  font-family: "Permanent Marker",sans-serif;
+}
+
 .welcome h3.preheader {
   font-family: "Permanent Marker",sans-serif;
 }
@@ -269,6 +274,10 @@
   border-radius: 0.25rem;
 }
 
+.content table.data {
+  font-size: 16px;
+}
+
 .content tr.section {
   background-color: #f9cb40;
   font-weight: 700;
@@ -284,6 +293,11 @@
 }
 
 .content tr.active a {
+  color: #fff;
+}
+
+.content td.updated {
+  background-color: #FF715B;
   color: #fff;
 }
 

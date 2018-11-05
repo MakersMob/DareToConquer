@@ -4,16 +4,11 @@ namespace DareToConquer;
 
 use Illuminate\Database\Eloquent\Model;
 use DareToConquer\Services\Markdowner;
-use Spatie\MediaLibrary\HasMedia\HasMedia;
-use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
-use Laravel\Scout\Searchable;
 
-class Article extends Model implements HasMedia
+class Headstart extends Model
 {
-    use HasMediaTrait, Searchable;
-
     protected $fillable = [
-    	'title', 'slug', 'content', 'summary', 'seo_title', 'active'
+    	'title', 'slug', 'summary', 'seo_title', 'content'
     ];
 
     public function setContentAttribute($value)
