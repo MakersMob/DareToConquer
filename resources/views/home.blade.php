@@ -44,6 +44,7 @@
                     </table>
                 </div>
             </div>
+            {{ $lessons->links() }}
         </div>
     </div>
 </div>
