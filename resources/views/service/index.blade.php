@@ -18,7 +18,7 @@
 					<div class="card-body">
 						<p><a href="/service/create" class="btn btn-lg btn-primary btn-block">Post a Service</a></p>
 						<p>The Member Services Directory is a place to offer paid services to other members.</p>
-						<p>Marybeth and I are not responsible for bad service. We are not the middlemen.</p>
+						<p>Marybeth and I are not responsible for bad service. We are not the middleman and middlewoman.</p>
 						<p>It's on you to do your due diligence and handle all payment arrangements.</p>
 						<p>If you have a complaint about a Member and the Service they provided, you can contact us but only so that we can decide if the Service should be removed from the directory.</p>
 					</div>
