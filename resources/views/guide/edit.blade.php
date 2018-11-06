@@ -73,8 +73,8 @@
 				@endforeach
 				<p>Image code:</p>
 				<code>
-					&lt;div class="image"&gt;
-						&lt;img src="blahblahblah.jpg"&gt;
+					&lt;div class="image"&gt;<br>
+						&lt;img src="blahblahblah.jpg"&gt;<br>
 					&lt;/div&gt;
 				</code>
 			</div>
