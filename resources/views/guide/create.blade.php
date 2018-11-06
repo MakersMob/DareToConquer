@@ -16,7 +16,7 @@
 			<div class="col-12 col-lg-6">
 				<div class="card">
 					<div class="card-body">
-						{!! Form::open(['url' => 'guide']) !!}
+						{!! Form::open(['url' => 'guide','enctype' => 'multipart/form-data']) !!}
 							<div class="form-group">
 								<label for="slug">Slug</label>
 								<input class="form-control" type="text" name="slug" id="slug">
@@ -36,6 +36,12 @@
 							<div class="form-group">
 								<label for="content">Content</label>
 								<textarea class="form-control" name="content" rows="8"></textarea>
+							</div>
+							<div class="form-group">
+								<div class="custom-file">
+								  <input type="file" class="custom-file-input" id="media" name="media">
+								  <label class="custom-file-label" for="customFile">Choose file</label>
+								</div>
 							</div>
 							<button type="submit" class="btn btn-primary">Create Guide</button>
 						{!! Form::close() !!}

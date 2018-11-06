@@ -10,12 +10,12 @@
 		</div>
 	</div>
 </section>
-<section class="content lesson">
+<section class="content smoke lesson">
 	<div class="container">
 		<div class="row">
 			@foreach($guides as $guide)	
 				<div class="col-12 col-lg-4">
-					<div class="card">
+					<div class="card mb-3">
 						<div class="card-header">
 							<a href="/guide/{{ $guide->slug }}">{{ $guide->title }}</a>
 						</div>
@@ -25,7 +25,6 @@
 					</div>
 				</div>
 			@endforeach
-			</div>
 		</div>
 	</div>
 </section>

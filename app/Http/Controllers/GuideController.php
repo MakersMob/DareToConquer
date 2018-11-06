@@ -45,6 +45,10 @@ class GuideController extends Controller
             'content' => $request->content
         ]);
 
+        if(isset($request->media)) {
+            $guide->addMediaFromRequest('media')->toMediaCollection('media');
+        }
+
         return redirect('/guide/'.$guide->slug);
     }
 
@@ -70,8 +74,9 @@ class GuideController extends Controller
     public function edit($id)
     {
         $guide = Guide::find($id);
+        $media = $guide->getMedia('media');
 
-        return view('guide.edit', compact('guide'));
+        return view('guide.edit', compact('guide', 'media'));
     }
 
     /**
@@ -93,6 +98,10 @@ class GuideController extends Controller
         $guide->active = $request->active;
 
         $guide->save();
+
+        if(isset($request->media)) {
+            $guide->addMediaFromRequest('media')->toMediaCollection('media');
+        }
 
         return redirect('/guide/'.$guide->slug);
     }

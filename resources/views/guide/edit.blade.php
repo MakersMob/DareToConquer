@@ -12,11 +12,11 @@
 </section>
 <section class="content smoke">
 	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-12 col-lg-6">
+		<div class="row">
+			<div class="col-12 col-lg-8">
 				<div class="card">
 					<div class="card-body">
-						{!! Form::open(['url' => 'guide/'.$guide->id, 'method' => 'patch', 'class' => 'callout']) !!}
+						{!! Form::open(['url' => 'guide/'.$guide->id, 'method' => 'patch', 'class' => 'callout','enctype' => 'multipart/form-data']) !!}
 							<div class="form-group">
 								<label for="slug">Slug</label>
 								<input class="form-control" type="text" name="slug" id="slug" value="{{ $guide->slug }}">
@@ -52,10 +52,25 @@
 								  </label>
 								</div>
 							</div>
+							<div class="form-group">
+								<div class="custom-file">
+								  <input type="file" class="custom-file-input" id="media" name="media">
+								  <label class="custom-file-label" for="customFile">Choose file</label>
+								</div>
+							</div>
 							<button type="submit" class="btn btn-primary">Create Guide</button>
 						{!! Form::close() !!}
 					</div>
 				</div>
+			</div>
+			<div class="col-12 col-lg-4">
+				<h3>Media</h3>
+				@foreach($media as $med) 
+					<div class="image">
+						<img src="{{ $med->getFullUrl() }}">
+						<br><span>{{ $med->getFullUrl() }}</span>
+					</div>
+				@endforeach
 			</div>
 		</div>
 	</div>

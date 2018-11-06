@@ -333,6 +333,10 @@
   border-bottom: 3px solid #eee;
 }
 
+.content .card-header {
+  font-weight: 700;
+}
+
 .content .sidebar li {
   margin-left: 0;
   margin-right: 0;
