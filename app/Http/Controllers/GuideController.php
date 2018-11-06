@@ -4,6 +4,7 @@ namespace DareToConquer\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DareToConquer\Guide;
+use Auth;
 
 class GuideController extends Controller
 {
@@ -14,7 +15,7 @@ class GuideController extends Controller
      */
     public function index()
     {
-        if($user->hasRole('admin')) {
+        if(Auth::user()->hasRole('admin')) {
             $guides = Guide::get();
         } else {
             $guides = Guide::where('active', 1)->get();
