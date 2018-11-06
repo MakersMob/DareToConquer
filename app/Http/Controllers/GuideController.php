@@ -15,7 +15,7 @@ class GuideController extends Controller
      */
     public function index()
     {
-        if(Auth::user()->hasRole('admin')) {
+        if(Auth::user() && Auth::user()->hasRole('admin')) {
             $guides = Guide::get();
         } else {
             $guides = Guide::where('active', 1)->get();
