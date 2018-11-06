@@ -71,6 +71,12 @@
 						<br><span>{{ $med->getFullUrl() }}</span>
 					</div>
 				@endforeach
+				<p>Image code:</p>
+				<code>
+					&lt;div class="image"&gt;
+						&lt;img src="blahblahblah.jpg"&gt;
+					&lt;/div&gt;
+				</code>
 			</div>
 		</div>
 	</div>
