@@ -14,7 +14,12 @@ class GuideController extends Controller
      */
     public function index()
     {
-        $guides = Guide::get();
+        if($user->hasRole('admin')) {
+            $guides = Guide::get();
+        } else {
+            $guides = Guide::where('active', 1)->get();
+        }
+        
 
         return view('guide.index', compact('guides'));
     }
