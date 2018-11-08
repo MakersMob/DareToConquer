@@ -278,6 +278,16 @@
   font-size: 16px;
 }
 
+.content table a {
+  color: #FF715B;
+  font-weight: 700;
+}
+
+.content table thead tr td {
+  background-color: #f9cb40;
+  font-weight: 700;
+}
+
 .content tr.section {
   background-color: #f9cb40;
   font-weight: 700;

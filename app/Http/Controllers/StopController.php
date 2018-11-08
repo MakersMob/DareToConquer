@@ -40,11 +40,20 @@ class StopController extends Controller
     {
         $journey = Journey::find($request->journey_id);
 
+        $order = 1;
+
+        $last_stop = Stop::where('journey_id', $journey->id)->get();
+        $l = $last_stop->last();
+        if($l) {
+            $order = $l->order + 1;
+        }
+
         $stop = Stop::create([
             'name' => $request->name,
             'journey_id' => $request->journey_id,
             'active' => $request->active,
             'content' => $request->content,
+            'order' => $order
         ]);
 
         return redirect('journey/'.$journey->slug.'/'.$stop->slug);

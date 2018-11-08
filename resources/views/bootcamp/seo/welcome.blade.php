@@ -1,4 +1,4 @@
-@extends('layouts.app', ['title' => 'Welcome to the 12-Day Blogging Bootcamp'])
+@extends('layouts.app', ['title' => 'Welcome to the SEO Bootcamp'])
 
 @section('content')
 <section class="welcome home">

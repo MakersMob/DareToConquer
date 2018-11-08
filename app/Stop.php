@@ -13,7 +13,7 @@ class Stop extends Model implements HasMedia
     use Sluggable, HasMediaTrait;
 
     protected $fillable = [
-    	'name', 'slug', 'content', 'journey_id', 'order', 'active',
+    	'name', 'slug', 'content', 'journey_id', 'order', 'active', 'path_id'
     ];
 
     public function journey()

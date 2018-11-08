@@ -11,8 +11,14 @@
 |
 */
 
+Auth::routes();
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/join', function () {
+	return view('join');
 });
 
 Route::get('/guidelines', function () {
@@ -23,6 +29,7 @@ Route::get('/power-words', function() {
 	return view('resource.power-words');
 });
 
+/*
 Route::get('/planner', function () {
 	return view('planner.index');
 });
@@ -38,7 +45,9 @@ Route::get('/mentorship/thanks', function () {
 Route::get('/review/thanks', function () {
 	return view('review.thanks');
 });
+*/
 
+/* Courses */
 Route::get('/pinterest', function () {
 	return view('sales.pinterest');
 });
@@ -46,6 +55,8 @@ Route::get('/pinterest', function () {
 Route::get('/pinterest/special', function () {
 	return view('sales.pinterest-special');
 });
+
+/* Empire Builder */
 
 Route::get('empire-builder', 'EpisodeController@index');
 
@@ -63,8 +74,6 @@ Route::resource('episode', 'EpisodeController');
 
 
 Route::post('/payment', 'PaymentController@store');
-
-Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -97,7 +106,27 @@ Route::get('/bootcamp/pinterest/welcome', function () {
 	return view('bootcamp.pinterest.welcome');
 });
 
+Route::get('/bootcamp/seo', function () {
+	return view('bootcamp.seo.index');
+});
+
+Route::get('/bootcamp/seo/welcome', function () {
+	return view('bootcamp.seo.welcome');
+});
+
+Route::get('/bootcamp/affiliate-marketing', function () {
+	return view('bootcamp.affiliate.index');
+});
+
+Route::get('/bootcamp/affiliate-marketing/welcome', function () {
+	return view('bootcamp.affiliate.welcome');
+});
+
 Route::group(['middleware' => 'auth'], function () {
+	Route::get('/member/affiliate-program', function () {
+		return view('member.affiliate');
+	});
+	Route::get('/welcome', 'WelcomeController@show');
 	Route::get('service/{id}/destroy', 'ServiceController@destroy');
 	Route::resource('service', 'ServiceController');
 	Route::get('journey/{journey}/{stop}', 'StopController@show');

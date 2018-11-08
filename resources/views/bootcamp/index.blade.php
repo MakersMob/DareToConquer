@@ -11,4 +11,18 @@
 		</div>
 	</div>
 </section>
+<section class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<ul class="course-list">
+					<li><a href="/bootcamp/blogging">Blogging</a></li>
+					<li><a href="/bootcamp/pinterest">Pinterest</a></li>
+					<li><a href="/bootcamp/seo">SEO</a></li>
+					<li><a href="/bootcamp/affiliate-marketing">Affiliate Marketing</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
 @endsection

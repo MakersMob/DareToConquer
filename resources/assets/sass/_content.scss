@@ -52,6 +52,14 @@
 		&.data {
 			font-size: 16px;
 		}
+		a {
+			color: $pink;
+			font-weight: 700;
+		}
+		thead tr td {
+			background-color: $yellow;
+			font-weight: 700;
+		}
 	}
 
 	tr.section {

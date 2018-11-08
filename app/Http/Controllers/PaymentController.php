@@ -5,8 +5,10 @@ namespace DareToConquer\Http\Controllers;
 use Illuminate\Http\Request;
 use DareToConquer\Course;
 use DareToConquer\User;
+use DareToConquer\Payment;
 use Auth;
 use Stripe;
+use DareToConquer\Mail\MembershipPurchased;
 use DareToConquer\Mail\CoursePurchased;
 use DareToConquer\Mail\InviteRequired;
 use Illuminate\Support\Facades\Mail;
@@ -18,28 +20,42 @@ class PaymentController extends Controller
     	switch ($request->type) {
     		case 'course':
     			$course = Course::where('slug', $request->course)->first();
+                $id = $course->id;
+                $type = 'course';
                 $amount = $course->price;
                 $description = $course->name;
     			$role = 'bronze';
     			break;
     		case 'pinterest-special':
                 $course = Course::where('slug', $request->course)->first();
+                $id = $course->id;
                 $role = 'bronze';
+                $type = 'course';
                 $amount = 1;
                 $description = $course->name;
+                break;
+            case 'membership':
+                $amount = 447;
+                $id = 999;
+                $type = 'membership';
+                $description = 'DTC Membership';
                 break;
     		default:
     			$course = Course::where('slug', $request->course)->first();
     			$role = 'copper';
+                $id = 0;
+                $type = 'error';
+                $description = 'Emptiness';
     			break;
     	}
 
+        // Attempt to Charge Card
     	try {
             $charge = Stripe::charges()->create([
                 'currency' => 'USD',
                 'amount' => $amount, // change affiliate total as well
                 'source' => $request->stripeToken,
-                'description' => $course->name,
+                'description' => $description,
                 'capture' => true,
                 'receipt_email' => $request->email,
             ]);
@@ -49,29 +65,69 @@ class PaymentController extends Controller
             return redirect()->back()->with('message', $message);
         }
 
+        // Assign purchase and send email
         if(Auth::user()) {
         	$user = Auth::user();
 
+            $payment = Payment::create([
+                'item' => $description,
+                'price' => $amount,
+                'user_id' => $user->id,
+                'type' => $type,
+                'type_id' => $id
+            ]);
+
+            if($request->type == 'membership') {
+                $user->removeRole('bronze');
+                $user->assignRole('gold');
+                $user->points += 10;
+                $user->save();
+                Mail::to($user)->send(new MembershipPurchased($user));
+
+                return redirect('/welcome');
+            }
+
         	$user->courses()->attach($course->id);
         	$user->assignRole('bronze');
 
-        	return redirect('courses/'.$request->course);
-        }
+            Mail::to($user)->send(new CoursePurchased($user, $course));
 
-    	$user = User::create([
-            'first_name' => $request->first_name,
-            'last_name' => $request->last_name,
-            'email' => $request->email,
-            'password' => bcrypt($request->password),
-        ]);
+            return redirect('/welcome');
+        } else {
+            $user = User::create([
+                'first_name' => $request->first_name,
+                'last_name' => $request->last_name,
+                'email' => $request->email,
+                'password' => bcrypt($request->password),
+            ]);
 
-        Mail::to($user)->send(new CoursePurchased($user, $course));
-        Mail::to('marybeth@makersmob.com')->send(new InviteRequired($user));
+            $payment = Payment::create([
+                'item' => $description,
+                'price' => $amount,
+                'user_id' => $user->id,
+                'type' => $type,
+                'type_id' => $id
+            ]);
 
-        if(Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
-        	$user->courses()->attach($course->id);
-        	$user->assignRole('bronze');
-        	return redirect('courses/'.$request->course);
-        }
+            if(Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+
+                Mail::to('marybeth@makersmob.com')->send(new InviteRequired($user));
+
+                if($request->type == 'membership') {
+                    $user->assignRole('gold');
+                    $user->points += 10;
+                    $user->save();
+                    Mail::to($user)->send(new MembershipPurchased($user));
+
+                    return redirect('/welcome');
+                }
+
+                Mail::to($user)->send(new CoursePurchased($user, $course));
+                $user->courses()->attach($course->id);
+                $user->assignRole('bronze');
+
+                return redirect('/welcome');
+            }
+        }        
     }
 }

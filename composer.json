@@ -9,6 +9,7 @@
         "algolia/algoliasearch-client-php": "^1.27",
         "cartalyst/stripe-laravel": "8.0.*",
         "cviebrock/eloquent-sluggable": "^4.2",
+        "doctrine/dbal": "^2.8",
         "fideloper/proxy": "^4.0",
         "laravel/cashier": "~7.0",
         "laravel/framework": "5.6.*",

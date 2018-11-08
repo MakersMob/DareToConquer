@@ -1,16 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
+<section class="welcome">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="billboard"><strong>Welcome Home, {{ Auth::user()->first_name }}</strong></h1>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="content lesson">
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            @hasrole('gold')<p>The <a href="/courses/seo">SEO Course</a> is now slowly rolling out.</p>@endhasrole
-            <p>This page is just a placeholder. You're looking for <a href="/courses/pinterest">the Pinterest Course</a>.</p>
-        </div>
         <div class="col-12">
             <div class="card">
-                <div class="card-header">Recently Updated Lessons</div>
+                <div class="card-header">Recently Added/Updated Lessons</div>
 
                 <div class="card-body">
                     <table class="table data">
