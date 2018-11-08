@@ -51,12 +51,12 @@
                             <li class="nav-item">
                                 <a class="nav-link @if(Request::is('guide*')) active @endif" href="/guide">Guides</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link @if(Request::is('bootcamp*')) active @endif" href="/bootcamp">Bootcamps</a>
+                            </li>
                         @endhasrole
                         <!--<li class="nav-item">
                             <a class="nav-link @if(Request::is('headstart*')) active @endif" href="/headstart">60-Day Headstart</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link @if(Request::is('bootcamp*')) active @endif" href="/bootcamp">Bootcamps</a>
                         </li>-->
                     </ul>
 
