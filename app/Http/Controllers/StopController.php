@@ -42,8 +42,8 @@ class StopController extends Controller
 
         $order = 1;
 
-        $last_stop = Stop::where('journey_id', $journey->id)->get();
-        $l = $last_stop->last();
+        $last_stop = Stop::where('journey_id', $journey->id)->orderBy('order', 'DESC')->get();
+        $l = $last_stop->first();
         if($l) {
             $order = $l->order + 1;
         }
