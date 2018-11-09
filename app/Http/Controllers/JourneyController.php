@@ -37,7 +37,7 @@ class JourneyController extends Controller
     {
     	$journey = Journey::with(['stops' => function ($query) {
             $query->orderBy('order', 'ASC');
-        })->where('slug', $slug)->first();
+        }])->where('slug', $slug)->first();
 
     	if(Auth::guest()) {
     		return view('sales.journey.'.$slug, compact('journey'));
