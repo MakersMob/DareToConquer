@@ -61,7 +61,7 @@
 								  <label class="custom-file-label" for="customFile">Choose file</label>
 								</div>
 							</div>
-							<button type="submit" class="btn btn-primary btn-lg btn-block">Create Stop</button>
+							<button type="submit" class="btn btn-primary btn-lg btn-block">Update Stop</button>
 						{!! Form::close() !!}
 					</div>
 				</div>

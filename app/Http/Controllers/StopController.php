@@ -56,6 +56,10 @@ class StopController extends Controller
             'order' => $order
         ]);
 
+        if(isset($request->media)) {
+            $guide->addMediaFromRequest('media')->toMediaCollection('media');
+        }
+
         return redirect('journey/'.$journey->slug.'/'.$stop->slug);
     }
 
@@ -106,6 +110,10 @@ class StopController extends Controller
         $stop->journey_id = $request->journey_id;
 
         $stop->save();
+
+        if(isset($request->media)) {
+            $guide->addMediaFromRequest('media')->toMediaCollection('media');
+        }
 
         $journey = Journey::find($stop->journey_id);
 
