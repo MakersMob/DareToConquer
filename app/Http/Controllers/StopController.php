@@ -82,7 +82,11 @@ class StopController extends Controller
      */
     public function edit($id)
     {
-        //
+        $stop = Stop::find($id);
+
+        $journeys = Journey::get();
+
+        return view('stop.edit', compact('stop', 'journeys'));
     }
 
     /**
@@ -94,7 +98,18 @@ class StopController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $stop = Stop::find($id);
+
+        $stop->name = $request->name;
+        $stop->content = $request->content;
+        $stop->active = $request->active;
+        $stop->journey_id = $request->journey_id;
+
+        $stop->save();
+
+        $journey = Journey::find($stop->journey_id);
+
+        return redirect('journey/'.$journey->slug.'/'.$stop->slug);
     }
 
     /**
