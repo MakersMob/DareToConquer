@@ -53,6 +53,11 @@ class User extends Authenticatable
         return $this->belongsToMany('DareToConquer\Journey')->withTimestamps();
     }
 
+    public function stops()
+    {
+        return $this->belongsToMany('DareToConquer\Stop')->withTimestamps();
+    }
+
     public function milestones()
     {
         return $this->belongsToMany('DareToConquer\Milestone')->withTimestamps();

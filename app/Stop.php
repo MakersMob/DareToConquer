@@ -21,6 +21,11 @@ class Stop extends Model implements HasMedia
     	return $this->belongsTo('DareToConquer\Journey');
     }
 
+    public function users()
+    {
+        return $this->belongsTo('DareToConquer\User')->withTimestamps();
+    }
+
     public function setContentAttribute($value)
     {
         $markdown = new Markdowner();

@@ -149,6 +149,7 @@ Route::group(['middleware' => 'auth'], function () {
 	});	
 	Route::get('courses/{course}/{id}', 'LessonController@show');
 	Route::get('lessoncompleted/{id}', 'LessoncompletedController@show');
+	Route::get('stopcompleted/{id}', 'StopCompletedController@store');
 	
 	Route::resource('courses', 'CourseController');
 	Route::resource('modules', 'ModuleController');

@@ -14,11 +14,26 @@
 		</div>
 	</div>
 </section>
-<section class="content smoke lesson">
+<section class="content lesson">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 main">
 				{!! $stop->content !!}
+			</div>
+		</div>
+	</div>
+</section>
+<section class="content rose">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				@unless($stop->active != 1)
+				  @if(Auth::user()->stops->contains($stop->id))
+				    <p>You've completed this Stop but good on you for coming back and revisiting things!</p>
+				  @else
+				    <p><a href="/stopcompleted/{{$stop->id}}" class="btn btn-block btn-primary btn-lg">I've completed this Stop!</a></p>
+				  @endif
+				@endunless
 			</div>
 		</div>
 	</div>
