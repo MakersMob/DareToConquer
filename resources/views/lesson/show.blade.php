@@ -78,7 +78,6 @@
                         <input type="hidden" name="worksheet_id" value="{{$worksheet->id}}">
                         <button type="submit" class="btn btn-lg btn-primary btn-block">Save response</button>
                       {!! Form::close() !!}
-                    </div>
                    @endif
                 </div>
             </div>
