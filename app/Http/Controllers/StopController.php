@@ -87,10 +87,10 @@ class StopController extends Controller
     public function edit($id)
     {
         $stop = Stop::find($id);
-
+        $media = $stop->getMedia('media');
         $journeys = Journey::get();
 
-        return view('stop.edit', compact('stop', 'journeys'));
+        return view('stop.edit', compact('stop', 'journeys', 'media'));
     }
 
     /**
