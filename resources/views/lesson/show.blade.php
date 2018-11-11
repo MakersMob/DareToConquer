@@ -65,22 +65,21 @@
           @foreach($lesson->worksheets as $worksheet)
             <div class="card">
                 <div class="card-body">
-            @if($answer = $worksheet->worksheetanswered($worksheet->id))
-              <h5 class="worksheet-question text-center" id="worksheet-{{$worksheet->id}}">{{ $worksheet->description}}</h5>
-              {!! $answer->answer !!}
-            @else
-              <div id="worksheet-{{$worksheet->id}}"></div>
-                  {!! Form::open(['url' => 'worksheetanswers']) !!}
-                    <div class="form-group">
-                      <label for="answer" class="text-center"><strong>{{ $worksheet->description}}</strong></label>
-                      <textarea class="form-control" name="answer" rows="6"></textarea>
+                  @if($answer = $worksheet->worksheetanswered($worksheet->id))
+                    <h5 class="worksheet-question text-center" id="worksheet-{{$worksheet->id}}">{{ $worksheet->description}}</h5>
+                    {!! $answer->answer !!}
+                  @else
+                    <div id="worksheet-{{$worksheet->id}}"></div>
+                      {!! Form::open(['url' => 'worksheetanswers']) !!}
+                        <div class="form-group">
+                          <label for="answer" class="text-center"><strong>{{ $worksheet->description}}</strong></label>
+                          <textarea class="form-control" name="answer" rows="6"></textarea>
+                        </div>
+                        <input type="hidden" name="worksheet_id" value="{{$worksheet->id}}">
+                        <button type="submit" class="btn btn-lg btn-primary btn-block">Save response</button>
+                      {!! Form::close() !!}
                     </div>
-                    <input type="hidden" name="worksheet_id" value="{{$worksheet->id}}">
-                    <button type="submit" class="btn btn-lg btn-primary btn-block">Save response</button>
-                  {!! Form::close() !!}
-                </div>
-              </div>
-            @endif
+                   @endif
                 </div>
             </div>
           @endforeach
