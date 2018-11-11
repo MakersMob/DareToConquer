@@ -90,6 +90,10 @@ Route::get('/bootcamp', function () {
 	return view('bootcamp.index');
 });
 
+Route::get('/bootcamp/finish', function () {
+	return view('bootcamp.finish');
+});
+
 Route::get('/bootcamp/blogging', function () {
 	return view('bootcamp.blogging.index');
 });
