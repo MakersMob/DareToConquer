@@ -6,7 +6,7 @@
 		<div class="row">
 			<div class="col-12">
 				<h1 class="billboard"><strong>The Free 5-Day Pinterest Bootcamp</strong></h1>
-				<h2 class="subheader">Take this blogging crash course and find out what it takes to build a successful blog before you make some silly mistakes.</h2>
+				<h2 class="subheader">Take this Pinterest crash course and find out what it takes to build a successful blog before you make some silly mistakes.</h2>
 			</div>
 		</div>
 	</div>
