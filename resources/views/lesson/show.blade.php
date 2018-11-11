@@ -63,7 +63,7 @@
       <div class="col-12 col-lg-8">
           <h3 style="margin-top: 0;">{{ $lesson->name }} <strong>Exercises</strong></h3>
           @foreach($lesson->worksheets as $worksheet)
-            <div class="card">
+            <div class="card" style="margin-bottom: 2rem;">
                 <div class="card-body">
                   @if($answer = $worksheet->worksheetanswered($worksheet->id))
                     <h5 class="worksheet-question text-center" id="worksheet-{{$worksheet->id}}">{{ $worksheet->description}}</h5>
