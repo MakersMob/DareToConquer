@@ -27,14 +27,14 @@
 				<p><a target="_blank" href="https://billionaireblogclub.refersion.com" class="btn btn-lg btn-block btn-primary">Join the Affiliate Program</a></p>
 				<p><strong>Please register with your DTC email so I can verify you are a member.</strong></p>
 				<h2>DTC Affiliate Marketing Guide</h2>
-				<p>It's important to understand that you shouldn't just promote the Billionaire Blog Club to make money. Yes, that is an awesome benefit of it, but you won't make many sales if you don't think that this place will have an impact on your audience.</p>
+				<p>It's important to understand that you shouldn't just promote Dare to Conquer to make money. Yes, that is an awesome benefit of it, but you won't make many sales if you don't think that this place will have an impact on your audience.</p>
 				<p>The most successful affiliates are the ones that can speak with a passion about DTC. A passion that their audience can feel.</p>
 				<h3>Best Way to Market DTC</h3>
 				<p>There is no surefire way to get people to click over and join DTC. However, instead of sending them directly to the sales page (when it's open), I'd suggest you send them to one of the many different public resources available.</p>
 				<p>This way they can get a feel for the DTC and then I can do all of the work in convincing them to join.</p>
 				<p>This way you also don't have to feel like you're force-feeding your audience sales stuff.</p>
-				<p>If the public can access a page on the BillionaireBlogClub.com domain, then you can make that page an affiliate link.</p>
-				<p>Simply grab the URL you want to use, open up your affiliate dashboard, plug it in and you're good to go. This even applies to <a href="/blog">DTC blog posts</a>.</p>
+				<p>If the public can access a page on the Daretoconquer.com domain, then you can make that page an affiliate link.</p>
+				<p>Simply grab the URL you want to use, open up your affiliate dashboard, plug it in and you're good to go.</p>
 				<div class="image">
 					<img src="https://s3-us-west-2.amazonaws.com/billionaireblogclub-master/blog/wp-content/uploads/2018/04/06050027/refersion.png">
 				</div>
