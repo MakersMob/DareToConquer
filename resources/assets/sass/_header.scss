@@ -4,11 +4,11 @@
 	padding: 1rem 0;
 	text-align: center;
 	h2.preheader {
-		border-bottom: 1px dotted $white;
+		border-bottom: 3px double $white;
 		padding-bottom: 1rem;
 		a {
-			color: $yellow;
-			font-family: "Permanent Marker",sans-serif;
+			color: $white;
+			font-weight: 700;
 		}
 	}
 	h3.preheader {

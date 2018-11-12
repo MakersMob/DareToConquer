@@ -126,13 +126,13 @@
 }
 
 .welcome h2.preheader {
-  border-bottom: 1px dotted #fff;
+  border-bottom: 3px double #fff;
   padding-bottom: 1rem;
 }
 
 .welcome h2.preheader a {
-  color: #f9cb40;
-  font-family: "Permanent Marker",sans-serif;
+  color: #fff;
+  font-weight: 700;
 }
 
 .welcome h3.preheader {

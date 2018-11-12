@@ -5,7 +5,7 @@
   <div class="container">
   	<div class="row">
   		<div class="col-12">
-        <h2 class="subheader"><a href="/journey">Journeys</a></h2>
+        <h2 class="preheader"><strong><a href="/journey">Journeys</a></strong></h2>
         <h1 class="billboard"><strong>{{ $journey->title }}</strong></h1>
         @role('admin')
           <p><a href="/journey/{{ $journey->id }}/edit" class="btn btn-primary">Edit Journey</a></p>
