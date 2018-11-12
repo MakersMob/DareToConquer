@@ -168,5 +168,5 @@ Route::group(['middleware' => 'auth'], function () {
 Route::get('archives', 'ArchiveController@index');
 Route::get('archives/{slug}', 'ArchiveController@show');
 
-Route::get('/{slug}', 'ArticleController@show');
 Route::get('/articles', 'ArticleController@index');
+Route::get('/{slug}', 'ArticleController@show');

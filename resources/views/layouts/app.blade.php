@@ -106,6 +106,7 @@
                     <div class="col-12 col-lg-4">
                         <h4>Helpful Things</h4>
                         <ul>
+                            <li><a href="/articles">Articles</a></li>
                             <li><a href="/questions">Online Business FAQ</a></li>
                             <!--<li><a href="/guide">Online Business Help Guides</a></li>-->
                             <li><a href="/archives">Email Archives</a></li>
