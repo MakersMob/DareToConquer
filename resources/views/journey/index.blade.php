@@ -14,7 +14,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<ul>
+				<ul class="course-list">
 					@foreach($journeys as $journey)
 						<li><a href="/journey/{{ $journey->slug }}">{{ $journey->title }}</a></li>
 					@endforeach
