@@ -16,32 +16,35 @@
         </div>
     </div>
 </section>
-<section class="content smoke">
+<section class="content lesson smoke">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div style="margin-bottom: 1rem;margin-top: 1rem;">
-                    <script src="https://fast.wistia.com/embed/medias/2ri1ge9fu0.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.26% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_2ri1ge9fu0 videoFoam=true" style="height:100%;width:100%">&nbsp;</div></div></div>
-                </div>
-                <h3><a href="https://billionaireblogclub.com/blog/february-2018-income-report/" target="_blank">Sample Income Report</a></h3>
+                <p>I want you to imagine this stupid scenario. Imagine you go off to college to become an accountant. You get accepted into the school and then you take your first semester of classes.</p>
+                <p>You learn some things but you know there is a ton more stuff you need to learn so you go to register for next semester's classes but find that your school doesn't offer a second semester.</p>
+                <p>Instead, they tell you to go to another school.</p>
+                <p>Once you finish that school then you have to go another school!</p>
+                <p>That sounds completely idiotic, right?</p>
+                <p>Well, that's how the <em>how to make money</em> niche seems to work. You need to bounce around to 30 different sites to hopefully gain all of the knowledge necessary to build the successful business you want.</p>
+                <p><em>Dare to Conquer</em> is the opposite of that.</p>
+                <p>DTC is all about me (Scrivs) sharing every single thing that I know about building a successful business.</p>
+                <p>I do this through a number of different ways and you can access all of them through this page.</p>
+                <p>Lifetime access. I learn something new, I share it with you, and you grow even more.</p>
             </div>
         </div>
     </div>
 </section>
-<section class="content ice" id="join">
+<section class="content lesson ice" id="join">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12">
                 <h2 class="">Enrollment</h2>
             </div>
             <div class="col-12 col-lg-8">
-                <p>The Billionaire Blog Club is currently not always open. This isn't me trying to be exclusive or strike fear into your heart and make you think that you're missing out.</p>
-                <p>I run this place solo so it's much easier to let in groups of people where we can answer the beginner questions instead of a constant stream of people that need the same questions answered again and again.</p>
-                <p>The beauty of the Billionaire Blog Club is that once you join, you join for life. You won't have to worry about paying for the next version or when a new course is added.</p>
-                <p>It's the ultimate pay once, learn forever blogging resource.</p>
+                <p>The beauty of the <em>Dare to Conquer</em> is that once you join, you join for life. You won't have to worry about paying for the next version or when a new course is added.</p>
+                <p>It's the ultimate pay once, learn forever online business resource.</p>
                 <h3 class="">Pricing</h3>
                 <p><strong>The current enrollment price is $447 for a lifetime membership.</strong> That's as much as a single course cost on most sites and even less than other courses!</p>
-                <p>There won't ever be a sale where the price is lower so there is no point in waiting.</p>
             </div>
         </div>
         <div class="row">
@@ -109,7 +112,29 @@
         </div>
     </div>
 </section>
--->
+<section class="content lesson smoke">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p>If this awesome sales page hasn't enticed you enough then why don't you go through one of my <a href="/bootcamp">free bootcamps</a> to get a better feel for how I do things.</p>
+                <h2>What is inside</h2>
+                <p>Currently, when you purchase a DTC Membership you will get access to both DTC and <a href="https://billionaireblogclub.com">the Billionaire Blog Club</a>.</p>
+                <p>The reason why is because I'm slowly moving over all BBC assets to DTC but I'm doing it from the ground up.</p>
+                <p>Between both sites you'll find courses on:</p>
+                <ul>
+                    <li>Pinterest</li>
+                    <li>SEO</li>
+                    <li>Affiliate Marketing</li>
+                    <li>Content Creation</li>
+                    <li>Email Marketing</li>
+                </ul>
+                <p>You'll also find Challenges and Journeys that will guide you through launching a blog, getting a 1,000 subscribers, and earning your first $1,000.</p>
+                <p>More importantly you'll gain access to the DTC Slack Community where you can ask me personally questions when they enter your mind. You'll also get answers from 1,200+ people that live around the world and are taking the same journey as you.</p>
+                <p>It is an experience like no other.</p>
+            </div>
+        </div>
+    </div>
+</section>
 @endsection
 
 @section('footScripts')
