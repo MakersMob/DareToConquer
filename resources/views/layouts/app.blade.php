@@ -43,11 +43,11 @@
                         <li class="nav-item">
                             <a class="nav-link @if(Request::is('courses*')) active @endif" href="/courses">Courses</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link @if(Request::is('journey*')) active @endif" href="/journey">Journeys</a>
+                        </li>
                         @endauth
                         @role('admin')
-                            <li class="nav-item">
-                                <a class="nav-link @if(Request::is('journey*')) active @endif" href="/journey">Journeys</a>
-                            </li>
                             <li class="nav-item">
                                 <a class="nav-link @if(Request::is('guide*')) active @endif" href="/guide">Guides</a>
                             </li>

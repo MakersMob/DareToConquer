@@ -10,9 +10,14 @@ class JourneyController extends Controller
 {
 	public function index()
 	{
-		$journeys = Journey::get();
-
-		return view('journey.index', compact('journeys'));
+        if(Auth::user()->hasRole('admin')) {
+            $journeys = Journey::get();
+            return view('journey.index', compact('journeys'));
+        } 
+		
+        $journeys = Journey::where('active', 1)->get();
+        
+        return view('journey.index', compact('journeys'));
 	}
     public function create()
     {
