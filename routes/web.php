@@ -48,13 +48,8 @@ Route::get('/review/thanks', function () {
 */
 
 /* Courses */
-Route::get('/pinterest', function () {
-	return view('sales.pinterest');
-});
 
-Route::get('/pinterest/special', function () {
-	return view('sales.pinterest-special');
-});
+Route::resource('course', 'CourseController');
 
 /* Empire Builder */
 
@@ -151,11 +146,10 @@ Route::group(['middleware' => 'auth'], function () {
 		Route::patch('archives/{id}', 'ArchiveController@update');
 		Route::post('archives', 'ArchiveController@store');
 	});	
-	Route::get('courses/{course}/{id}', 'LessonController@show');
+	Route::get('course/{course}/{id}', 'LessonController@show');
 	Route::get('lessoncompleted/{id}', 'LessoncompletedController@show');
 	Route::get('stopcompleted/{id}', 'StopCompletedController@store');
 	
-	Route::resource('courses', 'CourseController');
 	Route::resource('modules', 'ModuleController');
 
 	Route::resource('lessons', 'LessonController');

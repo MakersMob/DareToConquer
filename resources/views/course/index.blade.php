@@ -28,7 +28,7 @@
 				@endhasrole
 				<ul class="course-list">
 					@foreach($courses as $course)
-						<li class="text-center"><a href="/courses/{{$course->slug}}">{{$course->name}}</a></li>
+						<li class="text-center"><a href="/course/{{$course->slug}}">{{$course->name}}</a></li>
 					@endforeach
 				</ul>
 				@role('bronze')
@@ -36,7 +36,7 @@
 					<ul class="course-list">
 						@foreach($others as $other)
 							@unless(Auth::user()->courses->contains($other->id))
-								<li><a href="/courses/{{$other->slug}}">{{$other->name}}</a></li>
+								<li><a href="/course/{{$other->slug}}">{{$other->name}}</a></li>
 							@endunless
 						@endforeach
 					</ul>

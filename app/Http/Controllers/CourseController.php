@@ -18,8 +18,12 @@ class CourseController extends Controller
      */
     public function index()
     {
-        // $role = Role::create(['name' => 'admin']);
-        // $user = Auth::user()->assignRole('admin');
+        if(Auth::guest()) {
+            $courses = Course::where('active', 1)->get();
+
+            return view('course.index', compact('courses'));
+        }
+
         $user = Auth::user();
 
         if($user->hasRole('admin')) {
@@ -71,6 +75,11 @@ class CourseController extends Controller
     public function show($id)
     {
         $course = Course::where('slug', $id)->firstOrFail();
+
+        if(Auth::guest()) {
+            return view('sales.'.$id, compact('course'));
+        }
+        
         $user = Auth::user();
 
         if($user->hasRole('admin')) {

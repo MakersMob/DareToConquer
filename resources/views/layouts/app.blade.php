@@ -39,11 +39,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        @auth
                         <li class="nav-item">
-                            <a class="nav-link @if(Request::is('courses*')) active @endif" href="/courses">Courses</a>
+                            <a class="nav-link @if(Request::is('courses*')) active @endif" href="/course">Courses</a>
                         </li>
-                        @endauth
                         @role('gold')
                         <li class="nav-item">
                             <a class="nav-link @if(Request::is('journey*')) active @endif" href="/journey">Journeys</a>
@@ -109,7 +107,7 @@
                         <h4>Helpful Things</h4>
                         <ul>
                             <li><a href="/questions">Online Business FAQ</a></li>
-                            <li><a href="/guide">Online Business Help Guides</a></li>
+                            <!--<li><a href="/guide">Online Business Help Guides</a></li>-->
                             <li><a href="/archives">Email Archives</a></li>
                         </ul>
                     </div>

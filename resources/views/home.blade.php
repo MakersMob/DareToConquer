@@ -31,7 +31,7 @@
                             @foreach($lessons as $lesson)
                                 <tr>
                                     <td>{{ $lesson->course->name }}</td>
-                                    <td><a href="/courses/{{$lesson->course->slug}}/{{ $lesson->slug }}">{{ $lesson->name }}</a></td>
+                                    <td><a href="/course/{{$lesson->course->slug}}/{{ $lesson->slug }}">{{ $lesson->name }}</a></td>
                                     <td>
                                         @if(Auth::user()->lessons->contains($lesson->id)) 
                                             <?php

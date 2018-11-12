@@ -16,7 +16,7 @@
 			<div class="col-12 col-lg-6">
 				<div class="card">
 					<div class="card-body">
-						{!! Form::open(['url' => 'courses']) !!}
+						{!! Form::open(['url' => 'course']) !!}
 							<div class="form-group">
 								<label for="name">Name</label>
 								<input class="form-control" type="text" name="name" id="name" required>
