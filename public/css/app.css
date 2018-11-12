@@ -323,6 +323,7 @@
 
 .content ul.course-list li {
   padding: 0;
+  line-height: 1;
 }
 
 .content ul.course-list li a {
