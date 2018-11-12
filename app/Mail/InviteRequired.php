@@ -22,6 +22,7 @@ class InviteRequired extends Mailable
     public function __construct(User $user)
     {
         $this->user = $user;
+        $this->payments = $user->payments;
     }
 
     /**
@@ -31,7 +32,6 @@ class InviteRequired extends Mailable
      */
     public function build()
     {
-        return $this->from('scrivs@daretoconquer.com')
-                    ->view('emails.user.invite');
+        return $this->view('emails.user.invite');
     }
 }
