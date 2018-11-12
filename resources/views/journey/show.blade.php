@@ -18,7 +18,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-6">
-        {{ $journey->description }}
+        {!! $journey->description !!}
       </div>
       <div class="col-12 col-lg-6">
         <table class="table">
