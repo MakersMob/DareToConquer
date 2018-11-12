@@ -94,7 +94,7 @@ class ArticleController extends Controller
 
         $article->save();
 
-        return redirect('/article/'.$article->slug);
+        return redirect($article->slug);
     }
 
     /**
