@@ -1,8 +1,8 @@
-<section class="content">
+<section class="content smoke lesson">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-lg-8">
-          <h2 class="text-center" style="border-bottom: none;">Jump right in for ${{ $course->price }}</h2>
+          <h2 class="text-center" style="margin-top: 0;">Jump right in for ${{ $course->price }}</h2>
                 <div class="card">
                     <div class="card-body">
                         <form method="POST" action="/payment" accept-charset="UTF-8" id="payment-form" name="stripe-form">

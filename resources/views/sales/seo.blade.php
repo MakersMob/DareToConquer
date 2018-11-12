@@ -15,7 +15,10 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12">
-				
+				<p>You already know how much of a pain in the ass it can be to understand SEO. Keywords, SEO tools, links, and jibjabs. Okay, jibjabs aren't an SEO thing but you wouldn't know that unless you truly understood SEO.</p>
+        <p>The one question you have to ask yourself now is <strong><em>how much traffic are you missing out on because you don't understand how to get the most out of SEO?</em></strong></p>
+        <p>This is why the <em>Dare to Conquer: SEO</em> course exists because you shouldn't have to ask that question. Instead, you should be able to look at new areas of growth for your business.</p>
+        <p>It&rsquo;s time to get started now because search engine traffic isn&rsquo;t going wait around until you are ready.</p>
 			</div>
 		</div>
 	</div>
@@ -34,7 +37,7 @@
       base: {
         color: '#32325d',
         lineHeight: '18px',
-        fontFamily: '"proxima-nova-condensed", "Helvetica Neue", Helvetica, sans-serif',
+        fontFamily: '"proxima-nova", "Helvetica Neue", Helvetica, sans-serif',
         fontSmoothing: 'antialiased',
         fontSize: '16px',
         '::placeholder': {

@@ -15,66 +15,15 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12">
-				
+				<p>You don&rsquo;t want to throw a party where nobody comes. That is how most sites feel with no traffic. Pinterest is that one person who seems to be friends with everyone and can get them to show up at the drop of a dime.</p>
+				<p>But to do well with Pinterest you can't just show up and do stuff. <strong>You have to have a strategy behind it all and you need to be able to adapt that strategy when Pinterest makes a change.</strong></p>
+				<p>That is why <em>Dare to Conquer: Pinterest</em> is an ever-evolving course. I spend my time growing multiple sites with Pinterest and that requires testing different strategies and tools all of the time.</p>
+				<p>If you're ready to get people to your party and learn what I've learned, then let's get started.</p>
 			</div>
 		</div>
 	</div>
 </section>
-<section class="content">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-12 col-lg-8">
-                <h2 class="text-center" style="border-bottom: none;">Jump right in for $149</h2>
-                <div class="card">
-                    <div class="card-body">
-                        <form method="POST" action="/payment" accept-charset="UTF-8" id="payment-form" name="stripe-form">
-                            {{ csrf_field() }}
-                            <div class="payment-errors"></div>
-                            <div class="row">
-                                <div class="col-12 col-lg-6">
-                                    <div class="form-group">
-                                        <label for="name">First Name</label>
-                                        <input class="form-control" type="text" name="first_name" id="name" value="@if(Auth::check()) {{  Auth::user()->first_name }} @endif" data-stripe="name" required>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <div class="form-group">
-                                        <label for="name">Last Name</label>
-                                        <input class="form-control" type="text" name="last_name" id="name" value="@if(Auth::check()) {{  Auth::user()->last_name }} @endif" data-stripe="name" required>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <div class="form-group">
-                                        <label for="email">Email</label>
-                                        <input class="form-control" type="email" value="@if(Auth::check()) {{  Auth::user()->email }} @endif" name="email" id="email" required>
-                                        <small class="form-text text-muted">Email for your receipt and logging into the member's area.</small>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <div class="form-group">
-                                        <label for="password">Password</label>
-                                        <input class="form-control" type="password" required name="password" id="password">
-                                        <small class="form-text text-muted">Password you will use to log into the member's area.</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4 style="">Payment Information</h4>
-                            <div class="form-group">
-                                <div id="card-element"></div>
-                                <div id="card-errors"></div>
-                            </div>
-                            <input type="hidden" name="type" value="course">
-                            <input type="hidden" name="course" value="pinterest">
-                            <button type="submit" class="btn btn-lg btn-primary btn-block" id="paymentButton">Get Started With Pinterest Today</button>
-                            <p style="margin-top: 1rem;" class="text-center"><strong>Please do not submit the form more than once.</strong></p>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
+@include('partials.course.payment')
 @endsection
 
 @section('footScripts')
@@ -87,7 +36,7 @@
       base: {
         color: '#32325d',
         lineHeight: '18px',
-        fontFamily: '"proxima-nova-condensed", "Helvetica Neue", Helvetica, sans-serif',
+        fontFamily: '"proxima-nova", "Helvetica Neue", Helvetica, sans-serif',
         fontSmoothing: 'antialiased',
         fontSize: '16px',
         '::placeholder': {
