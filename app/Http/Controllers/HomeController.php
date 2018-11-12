@@ -4,6 +4,7 @@ namespace DareToConquer\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DareToConquer\Lesson;
+use DareToConquer\Stop;
 use Auth;
 
 class HomeController extends Controller
@@ -26,15 +27,21 @@ class HomeController extends Controller
     public function index()
     {
         if(Auth::user()->hasRole('gold')) {
-            $lessons = Lesson::where('active', 1)->orderBy('updated_at', 'DESC')->paginate(20);
+            $lessons = Lesson::where('active', 1)->orderBy('updated_at', 'DESC')->paginate(10);
+
+            $stops = Stop::where('active', 1)->orderBy('updated_at', 'DESC')->paginate(5);
             
-            return view('home', compact('lessons'));
+            return view('home', compact('lessons', 'stops'));
         }
         
         $courses = Auth::user()->courses()->pluck('course_id')->toArray();
 
-        $lessons = Lesson::where('active', 1)->where('course_id', $courses)->orderBy('updated_at', 'DESC')->paginate(20)->get();
+        $lessons = Lesson::where('active', 1)->where('course_id', $courses)->orderBy('updated_at', 'DESC')->paginate(20);
 
-        return view('home', compact('lessons'));
+        $journeys = Auth::user()->journeys()->pluck('journey_id')->toArray();
+
+        $stops = Stop::where('active', 1)->where('journey_id', $journeys)->orderBy('updated_at', 'DESC')->paginate(5);
+
+        return view('home', compact('lessons', 'stops'));
     }
 }

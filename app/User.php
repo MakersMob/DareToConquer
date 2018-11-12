@@ -7,6 +7,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laravel\Cashier\Billable;
 use DareToConquer\Worksheetanswer;
 use DareToConquer\Lesson;
+use DareToConquer\Stop;
 use Spatie\Permission\Traits\HasRoles;
 use Laravel\Scout\Searchable;
 use Auth;
@@ -76,6 +77,13 @@ class User extends Authenticatable
     public function lessonCompleted($id)
     {
         $pivot = Auth::user()->lessons()->wherePivot('lesson_id', $id)->first();
+        //dd($pivot);
+        return $pivot;
+    }
+
+    public function stopCompleted($id)
+    {
+        $pivot = Auth::user()->stops()->wherePivot('stop_id', $id)->first();
         //dd($pivot);
         return $pivot;
     }
