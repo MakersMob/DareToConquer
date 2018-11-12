@@ -83,10 +83,9 @@
 }
 
 .navbar li.nav-item a.nav-link {
-  font-family: "Permanent Marker",sans-serif;
   font-size: 1rem;
   color: #fff;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 2px;
 }
 
@@ -95,7 +94,7 @@
 }
 
 .navbar li.nav-item a.nav-link.active {
-  color: #333 !important;
+  color: #f9cb40 !important;
   font-weight: 900;
 }
 
