@@ -25,8 +25,8 @@
 </section>
 <section class="content rose">
 	<div class="container">
-		<div class="row">
-			<div class="col-12">
+		<div class="row justify-content-center">
+			<div class="col-12 col-lg-8">
 				@unless($stop->active != 1)
 				  @if(Auth::user()->stops->contains($stop->id))
 				    <p>You've completed this Stop but good on you for coming back and revisiting things!</p>
@@ -34,6 +34,14 @@
 				    <p><a href="/stopcompleted/{{$stop->id}}" class="btn btn-block btn-primary btn-lg">I've completed this Stop!</a></p>
 				  @endif
 				@endunless
+				<table class="table">
+				  @foreach($stop->journey->stops as $st)
+				        <tr class="lessons">
+				          <td><a href="/journey/{{$journey->slug}}/{{ $st->slug }}">{{ $st->name }}</a> @if($st->active == 0) **DRAFT** @endif @if($st->active == 2) **REVIEW** @endif</td>
+				          <td>@if(Auth::user()->stops->contains($st->id)) &#x2714; @endif</td>
+				        </tr>
+				  @endforeach
+				</table>
 			</div>
 		</div>
 	</div>
