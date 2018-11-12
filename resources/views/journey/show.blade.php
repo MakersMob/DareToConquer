@@ -21,11 +21,14 @@
         {{ $journey->description }}
       </div>
       <div class="col-12 col-lg-6">
-        <ul>
+        <table class="table">
           @foreach($journey->stops as $stop)
-            <li><a href="/journey/{{ $journey->slug }}/{{ $stop->slug }}">{{ $stop->name }}</a></li>
+                <tr class="lessons">
+                  <td><a href="/journey/{{$journey->slug}}/{{ $stop->slug }}">{{ $stop->name }}</a> @if($stop->active == 0) **DRAFT** @endif @if($stop->active == 2) **REVIEW** @endif</td>
+                  <td>@if(Auth::user()->stops->contains($stop->id)) &#x2714; @endif</td>
+                </tr>
           @endforeach
-        </ul>
+        </table>
     </div>
   </div>
 </section>
