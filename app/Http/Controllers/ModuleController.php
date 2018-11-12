@@ -55,7 +55,7 @@ class ModuleController extends Controller
 
         $course = Course::find($request->course_id);
 
-        return redirect('courses/'.$course->slug);
+        return redirect('course/'.$course->slug);
     }
 
     /**

@@ -76,7 +76,7 @@ class LessonController extends Controller
         //           $fileAdder->toMediaCollection('media');
         //     });
 
-        return redirect('courses/'.$course->slug.'/'.$lesson->slug);
+        return redirect('course/'.$course->slug.'/'.$lesson->slug);
     }
 
     /**
@@ -145,7 +145,7 @@ class LessonController extends Controller
             $lesson->addMediaFromRequest('media')->toMediaCollection('media');
         }
 
-        return redirect('courses/'.$course->slug.'/'.$lesson->slug);
+        return redirect('course/'.$course->slug.'/'.$lesson->slug);
     }
 
     /**

@@ -45,7 +45,7 @@ class WorksheetController extends Controller
 
         $lesson = Lesson::find($request->lesson_id);
 
-        return redirect('courses/'.$lesson->course->slug.'/'.$lesson->slug);
+        return redirect('course/'.$lesson->course->slug.'/'.$lesson->slug);
     }
 
     /**
