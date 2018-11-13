@@ -46,7 +46,7 @@ class WorksheetanswerController extends Controller
 
         $worksheet = Worksheet::find($request->worksheet_id);
 
-        return redirect('courses/'.$worksheet->lesson->course->slug.'/'.$worksheet->lesson->slug.'/#worksheet-'.$request->worksheet_id);
+        return redirect('course/'.$worksheet->lesson->course->slug.'/'.$worksheet->lesson->slug.'/#worksheet-'.$request->worksheet_id);
     }
 
     /**
