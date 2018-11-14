@@ -49,7 +49,9 @@ class LessoncompletedController extends Controller
     	if($next_module) {
     		$lesson = Lesson::where('module_id', $next_module->id)->where('active', 1)->where('order', 1)->first();
 
-    		return redirect('course/'.$course->slug.'/'.$lesson->slug);
+            if($lesson) {
+                return redirect('course/'.$course->slug.'/'.$lesson->slug);
+            }
     	}
 
     	return redirect('/course/'.$course->slug);
