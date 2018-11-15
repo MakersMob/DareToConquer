@@ -440,6 +440,10 @@
   margin-top: 0;
 }
 
+.content.lesson div.recap li {
+  margin-left: 1.5rem;
+}
+
 .content.lesson div.recap h3,
 .content.lesson div.recap h4 {
   text-align: center;
