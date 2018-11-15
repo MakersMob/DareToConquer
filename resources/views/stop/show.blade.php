@@ -35,7 +35,7 @@
 				  @endif
 				@endunless
 				<table class="table">
-				  @foreach($stop->journey->stops as $st)
+				  @foreach($journey->stops as $st)
 				        <tr class="lessons">
 				          <td><a href="/journey/{{$journey->slug}}/{{ $st->slug }}">{{ $st->name }}</a> @if($st->active == 0) **DRAFT** @endif @if($st->active == 2) **REVIEW** @endif</td>
 				          <td>@if(Auth::user()->stops->contains($st->id)) &#x2714; @endif</td>
