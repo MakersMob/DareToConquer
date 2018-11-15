@@ -49,7 +49,8 @@ class UserController extends Controller
         if($user->hasRole('gold')) {
             $courses = Course::get();
         } elseif ($user->hasRole('bronze')) {
-            $courses = $user->courses();
+            $courses = $user->courses;
+            //dd($courses);
         } else {
             return view('user.show_copper', compact('user'));
         }
