@@ -73,7 +73,7 @@ class StopController extends Controller
     {
         $journey = Journey::with(['stops' => function ($query) {
             $query->orderBy('order', 'ASC');
-        }])->where('slug', $slug)->first();
+        }])->where('slug', $journey)->first();
 
         $stop = Stop::where('slug', $stop)->first();
 
