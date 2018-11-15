@@ -22,6 +22,14 @@
 					<div class="card-body">
 						{!! Form::open(['url' => 'exchange']) !!}
 							<div class="form-group">
+								<label for="niche">What niche(s) does your task fall under?</label>
+								<select class="form-control" name="niche" id="niche">
+									@foreach($niches as $niche)
+										<option value="{{ $niche->id }}">{{ $niche->name }}</option>
+									@endforeach
+								</select>
+							</div>
+							<div class="form-group">
 								<label for="type">Task Type</label>
 								<select class="form-control" name="type" id="type">
 									<option value="link">Backlink</option>
@@ -50,7 +58,7 @@
 			</div>
 			<div class="col-12 col-lg-6">
 				<p>The Member Exchange allows you to set certain tasks for other members so that they can help you grow your blog.</p>
-				<p><strong>Each task that you create costs you 10 points.</strong></p>
+				<p><strong>Each task that you create costs you 4 points.</strong></p>
 				<p>To earn more points fulfill tasks for other members in the <a href="/exchange">Exchange</a>.</p>
 				<h3>Important Note on Backlink Requests</h3>
 				<p>Please do not ask that Members use a certain keyword when linking to you. That is up to them.</p>

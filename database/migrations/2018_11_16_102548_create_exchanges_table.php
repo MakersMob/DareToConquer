@@ -17,7 +17,8 @@ class CreateExchangesTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
-            $table->string('niche');
+            $table->integer('niche_id')->unsigned();
+            $table->foreign('niche_id')->references('id')->on('niches');
             $table->string('type')->nullable();
             $table->string('url')->nullable();
             $table->text('description')->nullable();

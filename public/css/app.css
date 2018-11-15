@@ -348,15 +348,21 @@
 }
 
 .content .sidebar li {
-  margin-left: 0;
+  margin-left: 1rem;
   margin-right: 0;
 }
 
 .content .sidebar li a {
   display: block;
+  color: #FF715B;
 }
 
-.content .sidebar p {
+.content .sidebar li a:hover {
+  color: #333;
+}
+
+.content .sidebar p,
+.content .sidebar li {
   font-size: 16px;
 }
 

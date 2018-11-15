@@ -131,6 +131,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('journey/{journey}/{stop}', 'StopController@show');
 	Route::resource('stop', 'StopController');
 	Route::get('member/edit', 'MemberController@edit');
+	Route::resource('niche', 'NicheController');
 	Route::resource('member', 'MemberController');
 	Route::resource('password', 'PasswordController');
 	Route::group(['middleware' => ['role:admin']], function () {
@@ -145,6 +146,8 @@ Route::group(['middleware' => 'auth'], function () {
 		Route::get('archives/{id}/edit', 'ArchiveController@edit');
 		Route::patch('archives/{id}', 'ArchiveController@update');
 		Route::post('archives', 'ArchiveController@store');
+
+		Route::post('user/points', 'PointUserController@store');
 	});	
 	Route::get('course/{course}/{id}', 'LessonController@show');
 	Route::get('lessoncompleted/{id}', 'LessoncompletedController@show');
@@ -161,6 +164,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::post('milestonecompleted', 'MilestoneCompleteController@store');
 
 	Route::post('taskcomplete', 'TaskCompleteController@store');
+	Route::get('exchange/niche/{niche}', 'ExchangeNicheController@show');
 	Route::get('exchange/{id}/close', 'ExchangeController@close');
 	Route::resource('exchange', 'ExchangeController');
 });

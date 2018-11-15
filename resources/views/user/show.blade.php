@@ -23,6 +23,21 @@
 					@endforeach
 				</ul>
 			</div>
+			<div class="col-12 col-lg-6">
+				<p>Points: {{ $user->points }}</p>
+				<div class="card">
+					<div class="card-body">
+						{!! Form::open(['url' => 'user/points']) !!}
+							<div class="form-group">
+								<label for="points">Points</label>
+								<input type="number" name="points" id="points" class="form-control" required>
+							</div>
+							<input type="hidden" name="user_id" value="{{ $user->id }}">
+							<button type="submit" class="btn btn-primary">Award Points</button>
+						{!! Form::close() !!}
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>

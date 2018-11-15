@@ -118,13 +118,17 @@
 }
 .content .sidebar {
 	li {
-		margin-left: 0;
+		margin-left: 1rem;
 		margin-right: 0;
 		a {
 			display: block;
+			color: $pink;
+			&:hover {
+				color: $black;
+			}
 		}
 	}
-	p {
+	p, li {
 		font-size: 16px;
 	}
 }

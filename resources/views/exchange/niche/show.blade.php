@@ -1,11 +1,12 @@
-@extends('layouts.app', ['title' => 'Member Exchanges'])
+@extends('layouts.app', ['title' => 'Member Exchanges in '.$niche->name])
 
 @section('content')
 <section class="welcome exchange">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h1>Member Exchanges</h1>
+				<h2 class="preheader"><a href="/exchange">Member Exchanges</a> in</h2>
+				<h1 class="billboard"><strong>{{ $niche->name }}</strong></h1>
 			</div>
 		</div>
 	</div>

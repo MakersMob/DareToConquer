@@ -4,6 +4,7 @@ namespace DareToConquer\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DareToConquer\Exchange;
+use DareToConquer\Niche;
 use Auth;
 use League\HTMLToMarkdown\HtmlConverter;
 
@@ -22,7 +23,9 @@ class ExchangeController extends Controller
     {
         $exchanges = Exchange::where('status', 1)->orderBy('created_at', 'DESC')->simplePaginate(20);
 
-        return view('exchange.index', compact('exchanges'));
+        $niches = Niche::orderBy('name', 'ASC')->get();
+
+        return view('exchange.index', compact('exchanges', 'niches'));
     }
 
     /**
@@ -32,7 +35,8 @@ class ExchangeController extends Controller
      */
     public function create()
     {
-        return view('exchange.create');
+        $niches = Niche::orderBy('name', 'ASC')->get();
+        return view('exchange.create', compact('niches'));
     }
 
     /**
@@ -54,7 +58,7 @@ class ExchangeController extends Controller
         $exchange = Exchange::create([
             'user_id' => Auth::user()->id,
             'url' => $url,
-            'niche' => $request->niche,
+            'niche_id' => $request->niche,
             'type' => $request->type,
             'description' => $request->description,
             'status' => 1,
