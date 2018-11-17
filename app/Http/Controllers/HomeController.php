@@ -39,9 +39,12 @@ class HomeController extends Controller
         $lessons = Lesson::where('active', 1)->where('course_id', $courses)->orderBy('updated_at', 'DESC')->paginate(20);
 
         $journeys = Auth::user()->journeys()->pluck('journey_id')->toArray();
+        $stops = '';
+        if($journeys) {
+            $stops = Stop::where('active', 1)->where('journey_id', $journeys)->orderBy('updated_at', 'DESC')->paginate(5);
 
-        $stops = Stop::where('active', 1)->where('journey_id', $journeys)->orderBy('updated_at', 'DESC')->paginate(5);
-
+        }
+        
         return view('home', compact('lessons', 'stops'));
     }
 }
