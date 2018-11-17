@@ -133,21 +133,26 @@
   font-weight: 700;
 }
 
-.welcome h3.preheader {
+.welcome h3.preheader,
+.welcome h3.subheader {
   font-family: "Permanent Marker",sans-serif;
+  color: #fff;
 }
 
 @media (min-width: 768px) {
-  .welcome h3.preheader {
+  .welcome h3.preheader,
+  .welcome h3.subheader {
     font-size: 1.5rem;
   }
 }
 
-.welcome h3.preheader a {
+.welcome h3.preheader a,
+.welcome h3.subheader a {
   color: #f9cb40;
 }
 
-.welcome h3.preheader span.me {
+.welcome h3.preheader span.me,
+.welcome h3.subheader span.me {
   color: #FF715B;
   font-weight: 700;
 }

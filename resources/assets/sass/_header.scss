@@ -11,7 +11,7 @@
 			font-weight: 700;
 		}
 	}
-	h3.preheader {
+	h3.preheader, h3.subheader {
 		// padding: 0.5rem 0;
 		// margin-bottom: 0.5rem;
 		// border-bottom: 1px solid $smoke;
@@ -26,6 +26,7 @@
 			color: $pink;
 			font-weight: 700;
 		}
+		color: $white;
 	}
 	h2 {
 		font-weight: 300;
