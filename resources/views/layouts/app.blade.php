@@ -76,8 +76,6 @@
                                 Community</a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="/exchange">Member Exchange</a>
-                                </div>
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="/service">Member Services</a>
                                 </div>
                             </li>
