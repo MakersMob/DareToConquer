@@ -49,6 +49,7 @@
                     </table>
                 </div>
             </div>
+            @unless($stops == '')
             <div class="card">
                 <div class="card-header">Recently Added/Updated Stops</div>
 
@@ -84,6 +85,7 @@
                     </table>
                 </div>
             </div>
+            @endunless
         </div>
     </div>
 </div>
