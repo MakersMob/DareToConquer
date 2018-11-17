@@ -31,6 +31,7 @@
 				</div>
 			</div>
 			<div class="col-12 col-lg-6">
+				<p><em><a href="https://daretoconquer.com/service/1">You can view a sample service posting here</a></em></p>
 				<p>You can use HTML in the description. Don't worry, it's not bad at all. I've included some sample code below.</p>
 				<h4>Link</h4>
 				<p><code>&lt;a href="http://myawesomesite.com/services"&gt;You can find my services page here&lt;/a&gt;</code></p>
