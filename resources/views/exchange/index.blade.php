@@ -44,7 +44,7 @@
 					</thead>
 					@foreach($exchanges as $ex)
 						<?php 
-							dd($ex);
+							
 							$grav_url = "https://www.gravatar.com/avatar/" . md5( strtolower( trim( $ex->user->email ) ) ); 
 						?>
 						<tr>
