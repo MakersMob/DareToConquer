@@ -69,6 +69,11 @@ class User extends Authenticatable
         return $this->hasMany('DareToConquer\Service');
     }
 
+    public function tasks()
+    {
+        return $this->hasMany('DareToConquer\Task');
+    }
+
     public function payments()
     {
         return $this->hasMany('DareToConquer\Payment');
