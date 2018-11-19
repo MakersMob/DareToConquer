@@ -166,6 +166,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::post('taskcomplete', 'TaskCompleteController@store');
 	Route::get('exchange/niche/{niche}', 'ExchangeNicheController@show');
 	Route::get('exchange/{id}/close', 'ExchangeController@close');
+	Route::resource('task', 'TaskController');
 	Route::resource('exchange', 'ExchangeController');
 });
 

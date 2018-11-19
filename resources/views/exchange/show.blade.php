@@ -47,7 +47,7 @@
 					</div>
 				@elseif(Auth::user()->tasks->contains('exchange_id', $exchange->id))
 					<p><strong>Great job, you&rsquo;ve completed the task!</strong> {{ $exchange->user->first_name }} {{ $exchange->user->last_name }} has been alerted and will review it shortly so you can get your points.</p>
-					<p>Why don't you <a href="/exchange">help out other Billionaire Blog Club members</a> now?</p>
+					<p>Why don't you <a href="/exchange">help out other Dare to Conquer members</a> now?</p>
 				@else
 					<div class="card">
 						<div class="card-header">
