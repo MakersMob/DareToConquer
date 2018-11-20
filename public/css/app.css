@@ -277,7 +277,8 @@
   border-radius: 0.25rem;
 }
 
-.content table.data {
+.content table.data,
+.content table.exchange {
   font-size: 16px;
 }
 

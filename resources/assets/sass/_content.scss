@@ -49,7 +49,7 @@
 
 	table {
 		border-radius: $border-radius;
-		&.data {
+		&.data, &.exchange {
 			font-size: 16px;
 		}
 		a {

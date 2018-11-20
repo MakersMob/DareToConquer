@@ -33,7 +33,7 @@
 				</div>
 			</div>
 			<div class="col-12 col-lg-8">
-				<table class="table">
+				<table class="table exchange">
 					<thead>
 						<tr>
 							<th>Niche</th>
