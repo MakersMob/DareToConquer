@@ -16,10 +16,10 @@
 			<div class="col-12 col-lg-4 sidebar">
 				<div class="card">
 					<div class="card-body">
-						@if(Auth::user()->points >= 10)
+						@if(Auth::user()->points >= 4)
 							<p><a href="/exchange/create" class="btn btn-primary btn-block">Post a Task</a></p>
 						@else
-							<p><strong>To create a task you need 10 points. Complete tasks for other members to earn points.</strong></p>
+							<p><strong>To create a task you need 4 points. Complete tasks for other members to earn points.</strong></p>
 						@endif
 						<ul class="cat-list">
 							@foreach($niches as $niche)
