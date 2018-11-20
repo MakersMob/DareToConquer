@@ -37,7 +37,6 @@
 				<table class="table exchange">
 					<thead>
 						<tr>
-							<th>Niche</th>
 							<th>Type</th>
 							<th>Member</th>
 							<th>Have You Done This?</th>
@@ -48,7 +47,6 @@
 							$grav_url = "https://www.gravatar.com/avatar/" . md5( strtolower( trim( $ex->user->email ) ) ); 
 						?>
 						<tr>
-							<td><a href="/exchange/niche/{{ $ex->niche->slug }}">{{ $ex->niche->name }}</a></td>
 							<td><a href="/exchange/{{ $ex->id}}">{{ ucwords($ex->type) }}</a></td>
 							<td><img src="{{ $grav_url }}" class="avatar" alt="{{ $ex->user->first_name }} {{ $ex->user->last_name }}"> <a href="/member/{{ $ex->user->id }}">{{ $ex->user->first_name }} {{ $ex->user->last_name }}</a></td>
 							<td>@if(Auth::user()->id == $ex->user_id) This is your task. @else @if(Auth::user()->tasks->contains('exchange_id', $ex->id)) &#10003; @else <a href="/exchange/{{ $ex->id}}">Get it done.</a> @endif @endif</td>
