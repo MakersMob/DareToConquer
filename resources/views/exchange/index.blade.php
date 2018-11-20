@@ -17,7 +17,7 @@
 				<div class="card">
 					<div class="card-body">
 						@if(Auth::user()->points >= 10)
-							<p><a href="/exchange/create" class="btn btn-lg btn-primary btn-block">Post a Task</a></p>
+							<p><a href="/exchange/create" class="btn btn-primary btn-block">Post a Task</a></p>
 						@else
 							<p><strong>To create a task you need 10 points. Complete tasks for other members to earn points.</strong></p>
 						@endif
