@@ -5,7 +5,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12 text-center">
-				<h1 class="billboard">Dare to Conquer <strong>Pinterest</strong></h1>
+        <h2 class="preheader">Dare to Conquer...</h2>
+				<h1 class="billboard"><strong>Pinterest</strong></h1>
 				<h2 class="subheader course-title">The Ultimate Blog Traffic Generating Course</h2>
 			</div>
 		</div>
@@ -24,6 +25,7 @@
 	</div>
 </section>
 @include('partials.course.payment')
+@include('partials.course.contents')
 @endsection
 
 @section('footScripts')

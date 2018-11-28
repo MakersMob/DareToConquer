@@ -77,7 +77,11 @@ class CourseController extends Controller
         $course = Course::where('slug', $id)->firstOrFail();
 
         if(Auth::guest()) {
-            return view('sales.'.$id, compact('course'));
+            $modules = Module::where('course_id', $course->id)->where('active', 1)->with(['less' => function ($query) {
+                $query->where('active', '1');
+                $query->orderBy('order', 'ASC');
+            }])->orderBy('order', 'ASC')->get();
+            return view('sales.'.$id, compact('course', 'modules'));
         }
         
         $user = Auth::user();

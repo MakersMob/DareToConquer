@@ -9,7 +9,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="">Hello and Welcome to...</h2>
+                <h2 class="preheader">Hello and Welcome to...</h2>
                 <h1 class="billboard"><strong>Dare to Conquer</strong></h1>
                 <div class="" style="margin-top: 2rem;"><a href="#join" class="btn btn-primary btn-lg">Join Today</a></div>
             </div>

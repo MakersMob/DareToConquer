@@ -10,7 +10,7 @@
         </div>
     </div>
 </section>
-<section class="content lesson">
+<section class="content lesson smoke">
 <div class="container">
     <div class="row">
         <div class="col-12 col-lg-7">

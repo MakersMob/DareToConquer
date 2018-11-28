@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h1>Member Services Directory</h1>
+				<h1><strong>Member Services Directory</strong></h1>
 			</div>
 		</div>
 	</div>

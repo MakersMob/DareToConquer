@@ -5,7 +5,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12 text-center">
-				<h1 class="billboard">Dare to Conquer <strong>Affiliate Marketing</strong></h1>
+        <h2 class="preheader">Dare to Conquer...</h2>
+				<h1 class="billboard"><strong>Affiliate Marketing</strong></h1>
 				<h2 class="subheader course-title">The Ultimate Passively Active Revenue Generating Course</h2>
 			</div>
 		</div>

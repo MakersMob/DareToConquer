@@ -12,11 +12,13 @@ $pink:    #FF715B !default;
 $red:     #dc3545 !default;
 $orange:  #fd7e14 !default;
 $green:   #28a745 !default;
+$myrtle:  #297373 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 $white:   #fff    !default;
 $smoke:   #eee    !default;
 $space:   #474954 !default;
+$soot:    #777    !default;
 $rose:    #F2CCC3 !default;
 $black:   #333    !default;
 $sky:     #93CBE9 !default;
@@ -29,9 +31,9 @@ $body-bg: $white;
 $body-color: $black;
 
 // Typography
-$font-family-sans-serif: proxima-nova, sans-serif;
-$font-family-serif: ff-meta-serif-web-pro, serif;
-$font-family-special: permanent-marker, sans-serif;
+$font-family-sans-serif: "Noto Sans SC", sans-serif;
+$font-family-serif: "Noto Serif", serif;
+$font-family-special: "Permanent Marker", sans-serif;
 $font-size-base: 1.2rem;
 $line-height-base: 1.6;
 

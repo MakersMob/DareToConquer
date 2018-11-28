@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row">
         <div class="col-12">
-            <h1 class="billboard">Helping you <strong>conquer</strong> all aspects of running an <strong>online business</strong>.</h1>
+            <h1 class="billboard">Helping you <span>conquer</span> all aspects of running an <span>online business</span>.</h1>
         </div>
     </div>
   </div>
@@ -14,12 +14,35 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<p>If you&rsquo;re on this page then you probably know who I am. If you don&rsquo;t then pretend I am a really cool person.</p>
-				<p>The fact of the matter is it is 11:42pm and I am tired as hell. I should probably have a cooler page set up to really impress you and blow your mind but I just don't have the energy.</p>
-				<p>Instead, for now, just know that <em>Dare to Conquer</em> is my place to share EVERYTHING that I know about growing multiple 5 & 6-figure online businesses.</p>
-				<p>You can gain access to everything that is available now and in the future by checking out the <a href="/join">join join join join join page</a>.</p>
-				<p>You can also see what <a href="/course">courses I currently have available to purchase on an individual basis</a> or if you just want the free goods then check out <a href="/bootcamp">the bootcamps</a>.</p>
-				<p>I'm off to bed. I have more stuff to create for DTC Members tomorrow.</p>
+				<p>My favorite books as a kid were the Choose Your Own Adventure books. My Mom didn't like me reading them because they weren't really books. More like videogames in text form.</p>
+				<div class="image" style="float:left; margin-right: 2rem; margin-bottom: 2rem;">
+					<img src="https://daretoconquer-app-master.s3.amazonaws.com/53/Cave_of_time.jpg">
+				</div>
+				<p>Anyways, I loved them because I liked the idea of there being more than one path to take. Nothing was ever definitive. Sometimes you would get a good ending and other times you didn't.</p>
+				<p>Whenever you got a bad ending it wasn't so bad because you could always go back a couple of steps and try again.</p>
+				<p>This is exactly like building an online business. Sometimes you turn the page and think <em>damn, I didn't want this ending</em> while other times you turn the page and successfully reach the goal.</p>
+				<p><strong><em>Dare to Conquer</em> isn't about finding the one true path to success.</strong> It's about conquering a lot of different things that over time will lead you to your goals.</p>
+				<p>So in true <em>Choose Your Own Adventure</em> style, you get to pick your next step (please note I say "online business" and you can replace that with <em>blog</em> if you want):</p>
+				<ul>
+					<li><a href="/origin-story">I don't even know where to begin or know if this online business thing is for me.</a></li>
+					<li><a href="/no-traffic">I started my online business but nobody is visiting me.</a></li>
+					<li><a href="/want-more-money">I'm making a little bit of money but I'm definitely not hitting my potential.</a></li>
+					<li><a href="/online-funnels">I think I've taken things as far as I can, but maybe there is another level to go that I'm missing.</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="content smoke lesson">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<p>If you're the type that likes to scan a whole page to see what is going on then I've created a section just for you.</p>
+				<p>Seriously.</p>
+				<p>That's why I just made the paragraph above a single word because it is supposed to get your attention.</p>
+				<p>Even better I created a video for you to watch.</p>
+				<p>Watch it.</p>
+				<h2>Why Dare to Conquer Exists</h2>
 			</div>
 		</div>
 	</div>

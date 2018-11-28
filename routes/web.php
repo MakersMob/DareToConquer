@@ -21,12 +21,94 @@ Route::get('/join', function () {
 	return view('join');
 });
 
-Route::get('/guidelines', function () {
-	return view('guidelines');
+Route::get('privacy-policy', function() {
+	return view('privacy-policy');
 });
 
-Route::get('/power-words', function() {
-	return view('resource.power-words');
+/* Story */
+
+/* Track 1 */
+
+Route::get('/origin-story', function() {
+	return view('story.track1.1');
+});
+
+Route::get('/becoming-entrepreneur', function() {
+	return view('story.track1.2');
+});
+
+Route::get('/understanding-business', function() {
+	return view('story.track1.3');
+});
+
+Route::get('/value-money', function() {
+	return view('story.track1.4');
+});
+
+Route::get('/click', function() {
+	return view('story.track1.5');
+});
+
+Route::get('/next-steps', function() {
+	return view('story.track1.6');
+});
+
+/* Track 2 */
+
+Route::get('/no-traffic', function() {
+	return view('story.track2.1');
+});
+
+Route::get('content-traffic', function() {
+	return view('story.track2.2');
+});
+
+Route::get('pinterest-traffic', function() {
+	return view('story.track2.3');
+});
+
+Route::get('pinterest-strategy', function() {
+	return view('story.track2.4');
+});
+
+Route::get('seo-traffic', function() {
+	return view('story.track2.5');
+});
+
+/* Track 3 */
+
+Route::get('want-more-money', function() {
+	return view('story.track3.1');
+});
+
+Route::get('creating-product', function() {
+	return view('story.track3.2');
+});
+
+Route::get('membership-site', function() {
+	return view('story.track3.3');
+});
+
+/* Track 4 */
+
+Route::get('online-funnels', function() {
+	return view('story.track4.1');
+});
+
+Route::get('word-of-mouth-marketing', function() {
+	return view('story.track4.2');
+});
+
+Route::get('upside-down-funnel', function() {
+	return view('story.track4.3');
+});
+
+Route::get('broken-funnels', function() {
+	return view('story.track4.4');
+});
+
+Route::get('promise', function() {
+	return view('story.track4.5');
 });
 
 /*
@@ -46,6 +128,18 @@ Route::get('/review/thanks', function () {
 	return view('review.thanks');
 });
 */
+
+Route::get('/guidelines', function () {
+	return view('guidelines');
+});
+
+Route::get('/power-words', function() {
+	return view('resource.power-words');
+});
+
+Route::get('manifesto', function() {
+	return view('manifesto');
+});
 
 /* Courses */
 

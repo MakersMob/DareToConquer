@@ -52,10 +52,25 @@
 								  </label>
 								</div>
 							</div>
+							<div class="form-group">
+								<div class="custom-file">
+								  <input type="file" class="custom-file-input" id="media" name="media">
+								  <label class="custom-file-label" for="customFile">Choose file</label>
+								</div>
+							</div>
 							<button type="submit" class="btn btn-primary">Create Article</button>
 						{!! Form::close() !!}
 					</div>
 				</div>
+			</div>
+			<div class="col-12 col-lg-4">
+				<h3>Media</h3>
+				@foreach($media as $med) 
+					<div class="image">
+						<img src="{{ $med->getFullUrl() }}">
+						<br><span>{{ $med->getFullUrl() }}</span>
+					</div>
+				@endforeach
 			</div>
 		</div>
 	</div>

@@ -1,4 +1,4 @@
-@import url(https://use.typekit.net/jzc5yvp.css);a {
+a {
   -webkit-transition: 0.2s linear all;
   transition: 0.2s linear all;
 }
@@ -66,7 +66,7 @@
 }
 
 .navbar .navbar-brand {
-  font-family: "Permanent Marker",sans-serif;
+  font-family: "Permanent Marker", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   padding-right: 1rem;
@@ -115,28 +115,15 @@
 }
 
 .welcome {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 56, 89, 0.5)), to(rgba(8, 56, 89, 0.5))), url("https://s3-us-west-2.amazonaws.com/billionaireblogclub-master/blog/wp-content/uploads/2018/10/08163829/overlooking-mountains.jpg");
-  background: linear-gradient(rgba(8, 56, 89, 0.5), rgba(8, 56, 89, 0.5)), url("https://s3-us-west-2.amazonaws.com/billionaireblogclub-master/blog/wp-content/uploads/2018/10/08163829/overlooking-mountains.jpg");
-  /* fallback for old browsers */
   background-size: cover;
-  padding: 1rem 0;
+  padding: 2rem 0;
   text-align: center;
-}
-
-.welcome h2.preheader {
-  border-bottom: 3px double #fff;
-  padding-bottom: 1rem;
-}
-
-.welcome h2.preheader a {
-  color: #fff;
-  font-weight: 700;
 }
 
 .welcome h3.preheader,
 .welcome h3.subheader {
-  font-family: "Permanent Marker",sans-serif;
-  color: #fff;
+  font-family: "Permanent Marker", sans-serif;
+  color: #474954;
 }
 
 @media (min-width: 768px) {
@@ -148,7 +135,8 @@
 
 .welcome h3.preheader a,
 .welcome h3.subheader a {
-  color: #f9cb40;
+  color: #297373;
+  font-style: italic;
 }
 
 .welcome h3.preheader span.me,
@@ -157,15 +145,24 @@
   font-weight: 700;
 }
 
-.welcome h2 {
-  font-weight: 300;
-  color: #fff;
-}
-
 @media (min-width: 768px) {
   .welcome h2 {
     font-size: 2rem;
   }
+}
+
+.welcome h2.subheader {
+  font-style: italic;
+  color: #474954;
+}
+
+.welcome h2.preheader {
+  color: #777;
+}
+
+.welcome h2.preheader a {
+  color: #4e598c;
+  font-style: italic;
 }
 
 .welcome a.btn-primary {
@@ -181,28 +178,25 @@
 }
 
 .welcome h1 {
-  color: #fff;
+  color: #777;
   font-weight: 700;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1060px) {
   .welcome h1 {
-    font-size: 4rem;
+    font-size: 6rem;
+    line-height: 1;
   }
 }
 
 .welcome h1 span {
   color: #FF715B;
-  border-bottom: 3px solid #f9cb40;
+  font-family: "Permanent Marker", sans-serif;
 }
 
-.welcome h1.billboard {
-  font-size: 4rem;
-}
-
-.welcome h1.billboard strong {
-  font-family: "Permanent Marker",sans-serif;
-  color: #f9cb40;
+.welcome h1 strong {
+  font-family: "Permanent Marker", sans-serif;
+  color: #474954;
 }
 
 .welcome img.avatar-image {
@@ -219,17 +213,24 @@
   padding: 2rem 0;
 }
 
+.content strong {
+  background-color: #f9cb40;
+  font-weight: 700;
+  font-style: italic;
+}
+
 .content h2,
 .content h3 {
   margin-top: 2rem;
+  color: #474954;
+  font-family: "Permanent Marker", sans-serif;
   text-align: center;
 }
 
 .content h2 strong,
 .content h3 strong {
-  font-family: "Permanent Marker",sans-serif;
-  background-color: transparent;
   color: #FF715B;
+  background-color: transparent;
 }
 
 .content h4,
@@ -256,11 +257,6 @@
 .content ol {
   margin: 1rem auto;
   padding: 0;
-}
-
-.content strong {
-  background-color: #f9cb40;
-  font-weight: 700;
 }
 
 .content div.image {
@@ -320,24 +316,34 @@
   border-radius: 1000px;
 }
 
-.content ul.course-list {
+.content ul.course-list,
+.content ul.mini-course-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
   font-size: 16px;
 }
 
-.content ul.course-list li {
+.content ul.course-list li,
+.content ul.mini-course-list li {
   padding: 0;
   line-height: 1;
   margin-bottom: 2rem;
 }
 
-.content ul.course-list li a {
-  font-family: "Permanent Marker",sans-serif;
+.content ul.course-list li a,
+.content ul.mini-course-list li a {
+  font-family: "Permanent Marker", sans-serif;
   color: #FF715B;
-  font-size: 4rem;
   font-weight: 900;
+}
+
+.content ul.course-list li a {
+  font-size: 4rem;
+}
+
+.content ul.mini-course-list li a {
+  font-size: 2rem;
 }
 
 .content form strong {
@@ -429,7 +435,7 @@
 
 .content.lesson p,
 .content.lesson li {
-  font-family: "Source Serif Pro";
+  font-family: "Noto Serif", serif;
 }
 
 .content.lesson div.recap {
@@ -454,7 +460,7 @@
 .content.lesson div.recap h4 {
   text-align: center;
   margin-top: 0;
-  font-family: "Permanent Marker",sans-serif;
+  font-family: "Permanent Marker", sans-serif;
 }
 
 .content.smoke {
@@ -545,7 +551,7 @@
 }
 
 .content.objectives ol li {
-  font-family: "Source Serif Pro";
+  font-family: "Noto Serif", serif;
 }
 
 @media (min-width: 768px) {
@@ -651,7 +657,7 @@ footer li {
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: proxima-nova, sans-serif;
+  --font-family-sans-serif: "Noto Sans SC", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -690,7 +696,7 @@ section {
 
 body {
   margin: 0;
-  font-family: proxima-nova, sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.6;
@@ -6885,7 +6891,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: proxima-nova, sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -7010,7 +7016,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: proxima-nova, sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;

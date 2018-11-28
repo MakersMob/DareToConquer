@@ -18,14 +18,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="//js.stripe.com/v3/"></script>
     <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,900|Noto+Serif:400,400i,700,700i|Permanent+Marker" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <meta name="google-site-verification" content="N6MbNrBPXwIIUB6WpB57yr-mW1kLsQdpdCpsUSw0V9c" />
 </head>
 <body>
-    <div id="left"></div>
-    <div id="right"></div>
-    <div id="top"></div>
-    <div id="bottom"></div>
     <div id="app">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
@@ -52,9 +49,11 @@
                                 <a class="nav-link @if(Request::is('guide*')) active @endif" href="/guide">Guides</a>
                             </li>
                         @endhasrole
+                        @guest
                         <li class="nav-item">
                             <a class="nav-link @if(Request::is('bootcamp*')) active @endif" href="/bootcamp">Bootcamps</a>
                         </li>
+                        @endguest
                         <!--<li class="nav-item">
                             <a class="nav-link @if(Request::is('headstart*')) active @endif" href="/headstart">60-Day Headstart</a>
                         </li>-->
@@ -65,11 +64,11 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
+                                <a class="nav-link" href="/join">Join</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
-                            <!--<li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                            </li>-->
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -111,6 +110,24 @@
         <footer>
             <div class="container">
                 <div class="row">
+                    <div class="col-12 col-lg-4">        
+                        <h4>Bootcamps</h4>
+                        <ul>
+                            <li><a href="/bootcamp/blogging">Blogging</a></li>
+                            <li><a href="/bootcamp/pinterest">Pinterest</a></li>
+                            <li><a href="/bootcamp/seo">SEO</a></li>
+                            <li><a href="/bootcamp/affiliate-marketing">Affiliate Marketing</a></li>
+                        </Li>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <h4>Courses</h4>
+                        <ul>
+                            <li><a href="/course/pinterest">Pinterest</a></li>
+                            <li><a href="/course/seo">SEO</a></li>
+                            <li><a href="/course/affiliate-marketing">Affiliate Marketing</a></li>
+                            <li><a href="/course/sales-funnels">Sales Funnels</a></li>
+                        </ul>
+                    </div>
                     <div class="col-12 col-lg-4">
                         <h4>Helpful Things</h4>
                         <ul>
@@ -119,10 +136,15 @@
                             <!--<li><a href="/guide">Online Business Help Guides</a></li>-->
                             <li><a href="/archives">Email Archives</a></li>
                         </ul>
+                        <h4>Stuff Nobody Reads</h4>
+                        <ul>
+                            <li><a href="/manifesto">The Manifesto</a></li>
+                            <li><a href="/privacy-policy">Privacy Policy</a></li>
+                        </ul>
                     </div>
                     <div class="col-12">
                         <hr>
-                        <p>&copy; Makers Mob LLC. | You create what you dare to conquer.</p>
+                        <p>&copy; Makers Mob LLC. | Dare to create. Conquer to live. | Life is one giant sales funnel.</p>
                     </div>
                 </div>
             </div>

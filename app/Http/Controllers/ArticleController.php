@@ -45,6 +45,10 @@ class ArticleController extends Controller
             'content' => $request->content
         ]);
 
+        if(isset($request->media)) {
+            $lesson->addMediaFromRequest('media')->toMediaCollection('media');
+        }
+
         return redirect($article->slug);
     }
 
@@ -93,6 +97,10 @@ class ArticleController extends Controller
         $article->active = $request->active;
 
         $article->save();
+
+        if(isset($request->media)) {
+            $lesson->addMediaFromRequest('media')->toMediaCollection('media');
+        }
 
         return redirect($article->slug);
     }

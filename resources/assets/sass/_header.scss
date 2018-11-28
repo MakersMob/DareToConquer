@@ -1,16 +1,8 @@
 .welcome {
-	background: linear-gradient(rgba($ocean, 0.5), rgba($ocean, 0.5)), url('https://s3-us-west-2.amazonaws.com/billionaireblogclub-master/blog/wp-content/uploads/2018/10/08163829/overlooking-mountains.jpg');  /* fallback for old browsers */
+	//background: linear-gradient(rgba($ocean, 0.5), rgba($ocean, 0.5)), url('https://s3-us-west-2.amazonaws.com/billionaireblogclub-master/blog/wp-content/uploads/2018/10/08163829/overlooking-mountains.jpg');  /* fallback for old browsers */
 	background-size: cover;
-	padding: 1rem 0;
+	padding: 2rem 0;
 	text-align: center;
-	h2.preheader {
-		border-bottom: 3px double $white;
-		padding-bottom: 1rem;
-		a {
-			color: $white;
-			font-weight: 700;
-		}
-	}
 	h3.preheader, h3.subheader {
 		// padding: 0.5rem 0;
 		// margin-bottom: 0.5rem;
@@ -18,21 +10,31 @@
 		@media (min-width: 768px) {
 			font-size: 1.5rem;
 		}
-		font-family: "Permanent Marker",sans-serif;
+		font-family: $font-family-special;
 		a {
-			color: $yellow;
+			color: $myrtle;
+			font-style: italic;
 		}
 		span.me {
 			color: $pink;
 			font-weight: 700;
 		}
-		color: $white;
+		color: $space;
 	}
 	h2 {
-		font-weight: 300;
-		color: $white;
 		@media (min-width: 768px) {
 			font-size: 2rem;
+		}
+		&.subheader {
+			font-style: italic;
+			color: $space;
+		}
+		&.preheader {
+			color: $soot;
+			a {
+				color: $primary;
+				font-style: italic;
+			}
 		}
 	}
 	a.btn-primary {
@@ -46,22 +48,19 @@
 		}
 	}
 	h1 {
-		@media (min-width: 768px) {
-			font-size: 4rem;
+		@media (min-width: 1060px) {
+			font-size: 6rem;
+			line-height: 1;
 		}
-		color: $white;
-	font-weight: 700;
+		color: $soot;
+		font-weight: 700;
 		span {
 			color: $pink;
-			border-bottom: 3px solid $yellow;
+			font-family: $font-family-special;
 		}
-		&.billboard {
-			font-size: 4rem;
-			strong {
-				font-family: "Permanent Marker",sans-serif;
-				
-				color: $yellow;
-			}
+		strong {
+			font-family: $font-family-special;			
+			color: $space;
 		}
 	}
 	img.avatar-image {

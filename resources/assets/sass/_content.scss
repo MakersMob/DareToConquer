@@ -1,12 +1,18 @@
 .content {
 	background-color: $white;
 	padding: 2rem 0;
+	strong {
+	 	background-color: $yellow;
+	 	font-weight: 700;
+	 	font-style: italic;
+	}
 	h2, h3 {
 		margin-top: 2rem;
+		color: $space;
+		font-family: $font-family-special;
 		strong {
-			font-family: "Permanent Marker",sans-serif;
-			background-color: transparent;
 			color: $pink;
+			background-color: transparent;
 		}
 		// max-width: 45rem;
 		// margin-left: auto;
@@ -32,11 +38,6 @@
 	ul, ol {
 		margin: 1rem auto;
 		padding: 0;
-	}
-
-	strong {
-	 background-color: $yellow;
-	 font-weight: 700;
 	}
 	div.image {
 		text-align: center;
@@ -85,7 +86,7 @@
 		border-radius: 1000px;
 	}
 
-	ul.course-list {
+	ul.course-list, ul.mini-course-list {
 		list-style-type: none;
 		padding: 0;
 		margin: 0;
@@ -95,11 +96,20 @@
 			line-height: 1;
 			margin-bottom: 2rem;
 			a {
-				font-family: "Permanent Marker",sans-serif;
+				font-family: $font-family-special;
 				color: $pink;
-				font-size: 4rem;
 				font-weight: 900;
 			}
+		}
+	}
+	ul.course-list {
+		li a {
+			font-size: 4rem;
+		}
+	}
+	ul.mini-course-list {
+		li a {
+			font-size: 2rem;
 		}
 	}
 
@@ -174,7 +184,7 @@
 		max-width: 45rem;
 	}
 	p, li {
-		font-family: "Source Serif Pro";
+		font-family: $font-family-serif;
 	}
 	div.recap {
 		margin-left:auto;
@@ -195,7 +205,7 @@
 		h3, h4 {
 			text-align: center;
 			margin-top: 0;
-			font-family: "Permanent Marker",sans-serif;
+			font-family: $font-family-special;
 		}
 	}
 }
@@ -267,7 +277,7 @@
 	ol {
 		padding-left: 1.6rem;
 		li {
-			font-family: "Source Serif Pro";
+			font-family: $font-family-serif;
 			//font-size: 1.4rem;
 		}
 	}

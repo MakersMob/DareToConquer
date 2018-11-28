@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h1>Member Exchanges</h1>
+				<h1><strong>Member Exchanges</strong></h1>
 			</div>
 		</div>
 	</div>

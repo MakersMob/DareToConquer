@@ -7,7 +7,7 @@
   		<div class="col-12">
         <h3 class="preheader"><a href="/course/{{ $lesson->course->slug }}">{{ $lesson->course->name }}</a></h3>
         <h2 class="preheader">Module {{$lesson->module->order}}: {{ $lesson->module->name}}</h2>
-  			<h1>{{ $lesson->name }}</h1>
+  			<h1><strong>{{ $lesson->name }}</strong></h1>
         @role('admin')
           <p><a href="/lessons/{{ $lesson->id }}/edit" class="btn btn-primary">Edit Lesson</a></p>
         @endrole
