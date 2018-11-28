@@ -49,6 +49,7 @@
 				<p>Nothing is more frustrating than knowing there is opportunity at your fingertips but for some reason your hands are covered in butter and you just can't grasp it.</p>
 				<p><em>Dare to Conquer</em> exists because you shouldn't have to feel any of this.</p>
 				<p><strong>You deserve the opportunity to strive for the lifestyle that you desire.</strong></p>
+				<p><a href="/join">Join today</a> or go and explore the site some more.</p>
 			</div>
 		</div>
 	</div>
