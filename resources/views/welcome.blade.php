@@ -42,7 +42,7 @@
 				<p>That's why I just made the paragraph above a single word because it is supposed to get your attention.</p>
 				<p>Even better I created a video for you to watch.</p>
 				<p>Watch it.</p>
-				<h2>Why Dare to Conquer Exists</h2>
+				<h2>Why Does Dare to Conquer Exist?</h2>
 				<p>I've been in the position where I wondered if there was more for me out there. Why was I spending so much time making other people money?</p>
 				<p>I've been lost staring at the computer screen freaking out because I didn't know where to even begin.</p>
 				<p>I've been pulling my hair out because nobody was coming to my site.</p>
