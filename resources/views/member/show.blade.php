@@ -9,7 +9,8 @@
 				<?php 
 					$grav_url = "https://www.gravatar.com/avatar/" . md5( strtolower( trim( $user->email ) ) ); 
 				?>
-				<h1><img src="{{ $grav_url }}" class="avatar-image" alt="{{ $user->first_name }} {{ $user->last_name }}"> {{ $user->first_name }} {{ $user->last_name }}</h1>
+				<div class="avatar"><img src="{{ $grav_url }}" class="avatar-image" alt="{{ $user->first_name }} {{ $user->last_name }}"> </div>
+				<h1>{{ $user->first_name }} {{ $user->last_name }}</h1>
 			</div>
 		</div>
 	</div>
