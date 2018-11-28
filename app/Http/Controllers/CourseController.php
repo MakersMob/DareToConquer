@@ -63,7 +63,7 @@ class CourseController extends Controller
             'price' => $request->price,
         ]);
 
-        return redirect('courses/'.$course->slug);
+        return redirect('course/'.$course->slug);
     }
 
     /**

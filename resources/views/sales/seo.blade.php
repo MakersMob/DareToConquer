@@ -6,7 +6,7 @@
 		<div class="row">
 			<div class="col-12 text-center">
         <h2 class="preheader">Dare to Conquer...</h2>
-				<h1 class="billboard"><strong>SEO</strong></h1>
+				<h1 class="billboard"><span>SEO</span></h1>
 				<h2 class="subheader course-title">The Ultimate Google Mastery Course</h2>
 			</div>
 		</div>

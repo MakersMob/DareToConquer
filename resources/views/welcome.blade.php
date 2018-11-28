@@ -43,6 +43,12 @@
 				<p>Even better I created a video for you to watch.</p>
 				<p>Watch it.</p>
 				<h2>Why Dare to Conquer Exists</h2>
+				<p>I've been in the position where I wondered if there was more for me out there. Why was I spending so much time making other people money?</p>
+				<p>I've been lost staring at the computer screen freaking out because I didn't know where to even begin.</p>
+				<p>I've been pulling my hair out because nobody was coming to my site.</p>
+				<p>Nothing is more frustrating than knowing there is opportunity at your fingertips but for some reason your hands are covered in butter and you just can't grasp it.</p>
+				<p><em>Dare to Conquer</em> exists because you shouldn't have to feel any of this.</p>
+				<p><strong>You deserve the opportunity to strive for the lifestyle that you desire.</strong></p>
 			</div>
 		</div>
 	</div>

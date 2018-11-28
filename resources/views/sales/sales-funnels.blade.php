@@ -1,4 +1,4 @@
-@extends('layouts.app', ['title' => 'Dare to Conquer Affiliate Marketing: The Ultimate Revenue Generating Course With Not Your Products Course', 'description' => 'Learn how to turn Affiliate Marketing into a passive income generating machine for your blog where you consistently get dollars and dollars every single day', 'page' => 'landing'])
+@extends('layouts.app', ['title' => 'Dare to Conquer Sales Funnels: The Ultimate Blog Traffic Generating Course', 'description' => 'Learn how to turn Pinterest into a traffic generating machine for your blog where you consistently get thousands of people every single day to view your content.', 'page' => 'landing'])
 
 @section('content')
 <section class="welcome course">
@@ -6,8 +6,8 @@
 		<div class="row">
 			<div class="col-12 text-center">
         <h2 class="preheader">Dare to Conquer...</h2>
-				<h1 class="billboard"><span>Affiliate Marketing</span></h1>
-				<h2 class="subheader course-title">The Ultimate Passively Active Revenue Generating Course</h2>
+				<h1 class="billboard"><span>Sales Funnels</span></h1>
+				<h2 class="subheader course-title">Learn How Passive Income Is Really Made</h2>
 			</div>
 		</div>
 	</div>
@@ -16,15 +16,14 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12">
-				<p>Hm, I really need to find time to work on these sales page.</p>
-        <p>Ummmm...okay, this course will help you understand how to do effective affiliate marketing because it's much more than posting a link in a blog post and hoping for the best.</p>
-        <p>It is slowly being rolled out and will have all modules fully released by December 15th.</p>
+				<p>This course won't start dripping out until December 15th. If you want to get in at a lower price (60% off) and you trust that I'm going to create something awesome then you can reserve your seat now.</p>
+        <p>This course will cover the traditional online sales funnel from ads to landing page to webinar to email to sale and also cover DTC's Upside Down Sales Funnel.</p>
 			</div>
 		</div>
 	</div>
 </section>
 @include('partials.course.payment')
-
+@include('partials.course.contents')
 @endsection
 
 @section('footScripts')
@@ -37,7 +36,7 @@
       base: {
         color: '#32325d',
         lineHeight: '18px',
-        fontFamily: '"proxima-nova-condensed", "Helvetica Neue", Helvetica, sans-serif',
+        fontFamily: '"proxima-nova", "Helvetica Neue", Helvetica, sans-serif',
         fontSmoothing: 'antialiased',
         fontSize: '16px',
         '::placeholder': {
