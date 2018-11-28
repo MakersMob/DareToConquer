@@ -13,7 +13,7 @@
 <section class="content lesson smoke">
 <div class="container">
     <div class="row">
-        <div class="col-12 col-lg-7">
+        <div class="col-12 ">
             <div class="card" style="margin-bottom: 2rem;">
                 <div class="card-header">Recently Added/Updated Lessons</div>
 
