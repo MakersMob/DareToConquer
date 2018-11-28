@@ -24,6 +24,7 @@
 	</div>
 </section>
 @include('partials.course.payment')
+@include('partials.course.contents')
 
 @endsection
 
