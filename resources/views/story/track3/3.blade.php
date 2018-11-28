@@ -27,6 +27,11 @@
 				</div>
 				<p>On a membership site people can get excited about the cool things you have in it, but they have to believe in what you are trying to do. Figuring this stuff out doesn't slow you down or prevent you from making the money you want.</p>
 				<p>In fact, once you nail this stuff down it speeds up your growth because you know the exact message you want to relay to the world and the person you want to reach.</p>
+				<h2>Streams Upon Streams</h2>
+				<p>You'll notice that so far I've talked about books, courses, and membership sites as ways that I make money.</p>
+				<p>The thing is, every person that enters your world will be attracted to do different things. Some people don't want to be involved with a membership site. They just want a book.</p>
+				<p>Others might feel that a course will provide more insight.</p>
+				<p><strong>When working on an online business there is no reason to limit yourself to one or two revenue streams.</strong></p>
 			</div>
 		</div>
 	</div>

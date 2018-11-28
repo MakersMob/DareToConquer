@@ -44,7 +44,7 @@
                 <p>The beauty of the <em>Dare to Conquer</em> is that once you join, you join for life. You won't have to worry about paying for the next version or when a new course is added.</p>
                 <p>It's the ultimate pay once, learn forever online business resource.</p>
                 <h3 class="">Pricing</h3>
-                <p><strong>The current enrollment price is $447 for a lifetime membership.</strong> That's as much as a single course cost on most sites and even less than other courses!</p>
+                <p><strong>The current enrollment price is $500 for a lifetime membership.</strong> That's as much as a single course cost on most sites and even less than other courses!</p>
             </div>
         </div>
         <div class="row">
@@ -99,7 +99,7 @@
                                     <div id="card-errors"></div>
                                 </div>
                             <input type="hidden" name="type" value="membership">
-                            <button type="submit" class="btn btn-large btn-block btn-primary btn-lg submit-button">Join the Club for $447 (One-Time Payment)</button>
+                            <button type="submit" class="btn btn-large btn-block btn-primary btn-lg submit-button">Join the Club for $500 (One-Time Payment)</button>
                             <p style="margin-top: 1rem;" class="text-center"><strong>Please, only click the button once.</strong></p>
                         {!! Form::close() !!}
                     </div>
