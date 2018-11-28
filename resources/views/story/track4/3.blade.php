@@ -49,7 +49,7 @@
 				<p>A few months ago she sent me this:</p>
 
 				<div class="image">
-				<img src="">
+					<img src="https://s3-us-west-2.amazonaws.com/obstacleco-assets/wp-content/uploads/2018/11/28153054/hilda1.jpg">
 				</div>
 
 				<p>If someone asks her about DTC what do you think she is going to say?</p>

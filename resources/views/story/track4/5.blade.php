@@ -55,7 +55,7 @@
 				<p>What is your product going to do for me? What is your book going to teach me? What is your course going to help me do?</p>
 
 				<div class="image">
-				<img src="dela">
+				<img src="https://s3-us-west-2.amazonaws.com/obstacleco-assets/wp-content/uploads/2018/11/28155023/dela.jpg">
 				</div>
 
 				<p>This is an awesome win but this is the kind of stuff that I promise that I will help people with. If someone asks Dela about DTC she will (hopefully) say that DTC helped her do what I said it would help her do.</p>

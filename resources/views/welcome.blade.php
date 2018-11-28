@@ -14,7 +14,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<p>My favorite books as a kid were the Choose Your Own Adventure books. My Mom didn't like me reading them because they weren't really books. More like videogames in text form.</p>
+				<p>My favorite books as a kid were the <em>Choose Your Own Adventure</em> books. My Mom didn't like me reading them because they weren't really books. More like videogames in text form.</p>
 				<div class="image" style="float:left; margin-right: 2rem; margin-bottom: 2rem;">
 					<img src="https://daretoconquer-app-master.s3.amazonaws.com/53/Cave_of_time.jpg">
 				</div>
