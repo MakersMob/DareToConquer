@@ -42,7 +42,7 @@ class SubscriptionController extends Controller
     			'price' => $product->price,
     			'user_id' => $user->id
     		]);
-
+            Mail::to('marybeth@makersmob.com')->send(new InviteRequired($user));
     		Mail::to($user)->send(new MembershipPurchased($user));
 
     		if(Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
