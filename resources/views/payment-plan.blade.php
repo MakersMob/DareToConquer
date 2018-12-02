@@ -9,8 +9,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="preheader">Hello and Welcome to...</h2>
-                <h1 class="billboard"><strong>Dare to Conquer</strong></h1>
+                <h1 class="billboard"><strong>The Payment Plan</strong></h1>
                 <div class="" style="margin-top: 2rem;"><a href="#join" class="btn btn-primary btn-lg">Join Today</a></div>
             </div>
         </div>
@@ -20,16 +19,16 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <p>I want you to imagine this stupid scenario. Imagine you go off to college to become an accountant. You get accepted into the school and then you take your first semester of classes.</p>
-                <p>You learn some things but you know there is a ton more stuff you need to learn so you go to register for next semester's classes but find that your school doesn't offer a second semester.</p>
-                <p>Instead, they tell you to go to another school.</p>
-                <p>Once you finish that school then you have to go another school!</p>
-                <p>That sounds completely idiotic, right?</p>
-                <p>Well, that's how the <em>how to make money</em> niche seems to work. You need to bounce around to 30 different sites to hopefully gain all of the knowledge necessary to build the successful business you want.</p>
-                <p><em>Dare to Conquer</em> is the opposite of that.</p>
-                <p>DTC is all about me (Scrivs) sharing every single thing that I know about building a successful business.</p>
-                <p>I do this through a number of different ways and you can access all of them through this page.</p>
-                <p>Lifetime access. I learn something new, I share it with you, and you grow even more.</p>
+                <p>Maybe you want to join DTC but the full payment is out of your reach. Because of this I've decided to offer Payment Plans on a limited basis. You get full access to everything DTC right from the get go so there are no restrictions.</p>
+                <h2>Payment Options</h2>
+                <p>There are 3 options and all 3 are limited to 30 sign-ups.</p>
+                <ul>
+                    <li>$100 a month, 9 total payments</li>
+                    <li>$150 a month, 5 total payments</li>
+                    <li>$200 a month, 3 total payments</li>
+                </ul>
+                <p>You pay, you keep access. You don't pay, access is removed so please only consider these options if you know you can make a payment each month for the life of the payment plan.</p>
+                <p><strong>Once you pay in full there will be no more payments and your lifetime access to DTC will remain.</strong></p>
             </div>
         </div>
     </div>
@@ -37,22 +36,11 @@
 <section class="content lesson ice" id="join">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12">
-                <h2 class="">Enrollment</h2>
-            </div>
-            <div class="col-12 col-lg-8">
-                <p>The beauty of the <em>Dare to Conquer</em> is that once you join, you join for life. You won't have to worry about paying for the next version or when a new course is added.</p>
-                <p>It's the ultimate pay once, learn forever online business resource.</p>
-                <h3 class="">Pricing</h3>
-                <p><strong>The current enrollment price is $500 for a lifetime membership.</strong> That's as much as a single course cost on most sites and even less than other courses!</p>
-            </div>
-        </div>
-        <div class="row">
             <div class="col-12 col-lg-8">
                 <div class="card" style="margin-bottom: 1rem;">
                     <div class="card-header">Join the Party</div>
                     <div class="card-body">
-                        {!! Form::open(['url' => 'payment', 'class' => 'callout', 'id' => 'payment-form']) !!}
+                        {!! Form::open(['url' => 'subscription', 'class' => 'callout', 'id' => 'payment-form']) !!}
                             @if(! empty($message))
                                 <div class="alert alert-danger" role="alert">
                                   <p>{{ $message }}</p>
@@ -92,6 +80,24 @@
                                     @endunless
                                 </div>
                                 <h4 style="">Payment Information</h4>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="slug" id="exampleRadios1" value="membership-200" checked>
+                                  <label class="form-check-label" for="exampleRadios1">
+                                    $200 a month, total of 3 payments
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="slug" id="exampleRadios2" value="membership-150">
+                                  <label class="form-check-label" for="exampleRadios2">
+                                    $150 a month, total of 5 payments
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                              <input class="form-check-input" type="radio" name="slug" id="exampleRadios3" value="membership-100">
+                                  <label class="form-check-label" for="exampleRadios3">
+                                    $100 a month, total of 9 payments
+                                  </label>
+                                </div>
                                 <div class="form-group">
                                     <label for="card">Card</label>
                                     <div id="card-element">
@@ -99,17 +105,11 @@
                                     <div id="card-errors"></div>
                                 </div>
                             <input type="hidden" name="type" value="membership">
-                            <button type="submit" class="btn btn-large btn-block btn-primary btn-lg submit-button">Join the Club for $500 (One-Time Payment)</button>
+                            <button type="submit" class="btn btn-large btn-block btn-primary btn-lg submit-button">Join the Club</button>
                             <p style="margin-top: 1rem;" class="text-center"><strong>Please, only click the button once.</strong></p>
                         {!! Form::close() !!}
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-lg-4 sidebar">
-                <h3>Need Payment Plan?</h3>
-                <p><a href="/join/plan">Check out the Payment Plan details page.</a></p>
-                <h3>Need to Pay With PayPal?</h3>
-                <p>Sure thing. Shoot an email to scrivs@daretoconquer.com letting me know you wish to pay with PayPal and include the email address I can send an invoice to.</p>
             </div>
         </div>
     </div>

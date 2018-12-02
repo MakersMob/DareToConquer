@@ -21,6 +21,10 @@ Route::get('/join', function () {
 	return view('join');
 });
 
+Route::get('/join/plan', function() {
+	return view('payment-plan');
+});
+
 Route::get('privacy-policy', function() {
 	return view('privacy-policy');
 });
@@ -163,6 +167,7 @@ Route::resource('episode', 'EpisodeController');
 
 
 Route::post('/payment', 'PaymentController@store');
+Route::post('/subscription', 'SubscriptionController@store');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -214,6 +219,13 @@ Route::get('/bootcamp/affiliate-marketing', function () {
 Route::get('/bootcamp/affiliate-marketing/welcome', function () {
 	return view('bootcamp.affiliate.welcome');
 });
+
+/* Stripe Webhooks */
+
+Route::post(
+    'stripe/webhook',
+    '\Laravel\Cashier\Http\Controllers\WebhookController@handleWebhook'
+);
 
 Route::group(['middleware' => 'auth'], function () {
 	Route::get('/member/affiliate-program', function () {
