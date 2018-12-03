@@ -33,6 +33,23 @@
 		</div>
 	</div>
 </section>
+<section class="content rose">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2>Recent <a target="_blank" href="https://www.youtube.com/channel/UC8oSwL2gkSn_zH8wwJMIHrw">DTC YouTube</a> Videos</h2>
+			</div>
+			@foreach($youtubes as $youtube)
+				<div class="col-12 col-lg-4">
+					<div class="image">
+						<a target="_blank" href="https://youtube.com/watch?v={{ $youtube->youtube_id }}"><img src="http://img.youtube.com/vi/{{ $youtube->youtube_id }}/mqdefault.jpg"></a>
+						<p><small><strong><a href="https://youtube.com/watch?v={{ $youtube->youtube_id }}">{{ $youtube->title }}</a></strong></small></p>
+					</div>
+				</div>
+			@endforeach
+		</div>
+	</div>
+</section>
 <section class="content smoke lesson">
 	<div class="container">
 		<div class="row">

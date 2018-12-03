@@ -76,6 +76,7 @@
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="/exchange">Member Exchange</a>
                                     <a class="dropdown-item" href="/service">Member Services</a>
+                                    <a class="dropdown-item" href="/youtube">YouTube Videos</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
@@ -131,6 +132,7 @@
                     <div class="col-12 col-lg-4">
                         <h4>Helpful Things</h4>
                         <ul>
+                            <li><a href="/youtube">YouTube Videos</a></li>
                             <li><a href="/articles">Articles</a></li>
                             <li><a href="/questions">Online Business FAQ</a></li>
                             <!--<li><a href="/guide">Online Business Help Guides</a></li>-->

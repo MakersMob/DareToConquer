@@ -13,9 +13,7 @@
 
 Auth::routes();
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'BaseController@index');
 
 Route::get('/join', function () {
 	return view('join');
@@ -28,6 +26,9 @@ Route::get('/join/plan', function() {
 Route::get('privacy-policy', function() {
 	return view('privacy-policy');
 });
+
+/* YouTube */
+Route::get('youtube', 'YoutubeController@index');
 
 /* Story */
 
@@ -254,6 +255,8 @@ Route::group(['middleware' => 'auth'], function () {
 		Route::post('archives', 'ArchiveController@store');
 
 		Route::post('user/points', 'PointUserController@store');
+		Route::get('youtube/create', 'YoutubeController@create');
+		Route::post('youtube', 'YoutubeController@store');
 	});	
 	Route::get('course/{course}/{id}', 'LessonController@show');
 	Route::get('lessoncompleted/{id}', 'LessoncompletedController@show');
