@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1 class="billboard"><strong>DTC Youtube Videos</strong></h1>
+                <h1 class="billboard">DTC <strong><a href="https://www.youtube.com/channel/UC8oSwL2gkSn_zH8wwJMIHrw">Youtube</a></strong> Videos</h1>
             </div>
         </div>
     </div>
