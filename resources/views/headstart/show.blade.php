@@ -30,7 +30,7 @@
         <h2>Other Days</h2>
         <ul>
           @foreach($days as $da)
-            <li><a href="/headstart/{{ $da->slug }}">{{ $da->title }}</a></li>
+            <li>@if($da->id == $day->id) {{ $da->title }} @else <a href="/headstart/{{ $da->slug }}">{{ $da->title }}</a> @endif</li>
           @endforeach
         </ul>
       </div>
