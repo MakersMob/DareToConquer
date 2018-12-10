@@ -23,4 +23,18 @@
     </div>
   </div>
 </section>
+<section class="content smoke lesson">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Other Days</h2>
+        <ul>
+          @foreach($days as $da)
+            <li><a href="/headstart/{{ $da->slug }}">{{ $da->title }}</a></li>
+          @endforeach
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 @endsection
