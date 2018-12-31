@@ -116,7 +116,6 @@ class ExchangeController extends Controller
     {
         $exchange = Exchange::find($id);
 
-        $exchange->niche = $request->niche;
         $exchange->type = $request->type;
         $exchange->url = $request->url;
         $exchange->description = $request->description;
