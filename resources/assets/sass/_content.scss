@@ -124,6 +124,13 @@
 	.card-header {
 		font-weight: 700;
 	}
+
+	.win {
+		border: 1px solid $smoke;
+		background-color: $smoke;
+		padding: 2rem;
+		margin-bottom: 2rem;
+	}
 }
 .content .sidebar {
 	li {

@@ -358,6 +358,13 @@ a {
   font-weight: 700;
 }
 
+.content .win {
+  border: 1px solid #eee;
+  background-color: #eee;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
 .content .sidebar li {
   margin-left: 1rem;
   margin-right: 0;
