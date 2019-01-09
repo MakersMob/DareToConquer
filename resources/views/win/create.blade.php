@@ -34,7 +34,7 @@
 				</div>
 			</div>
 			<div class="col-12 col-lg-6">
-				<p>A win is a win. Not only does it help you to record your wins but it helps others see how they can make similar progress.</p>
+				<p>A win is a win. Not only does it help to record your wins but it helps others see how they can make similar progress.</p>
 			</div>
 		</div>
 	</div>
