@@ -45,7 +45,7 @@ class WinController extends Controller
             'process' => $request->process
         ]);
 
-        return redirect('win/'.$win->id);
+        return redirect('win/');
     }
 
     /**
