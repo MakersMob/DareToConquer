@@ -22,11 +22,11 @@
 						{!! Form::open(['url' => 'win']) !!}
 							<div class="form-group">
 								<label for="description">What was your #win?</label>
-								<textarea name="description" id="description" cols="" rows="5" class="form-control"></textarea>
+								<textarea name="description" id="description" cols="" rows="5" class="form-control" required></textarea>
 							</div>
 							<div class="form-group">
 								<label for="process">How did you accomplish this #win?</label>
-								<textarea name="process" id="process" cols="" rows="5" class="form-control"></textarea>
+								<textarea name="process" id="process" cols="" rows="5" class="form-control" required></textarea>
 							</div>
 							<button type="submit" class="btn btn-primary btn-block">Add #win</button>
 						{!! Form::close() !!}

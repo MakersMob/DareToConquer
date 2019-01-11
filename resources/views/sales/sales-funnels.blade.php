@@ -16,7 +16,7 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12">
-				<p>This course won't start dripping out until December 15th. If you want to get in at a lower price (60% off) and you trust that I'm going to create something awesome then you can reserve your seat now.</p>
+				<p>This course won't start dripping out until February 5th. If you want to get in at a lower price (60% off) and you trust that I'm going to create something awesome then you can reserve your seat now.</p>
         <p>This course will cover the traditional online sales funnel from ads to landing page to webinar to email to sale and also cover DTC's Upside Down Sales Funnel.</p>
 			</div>
 		</div>
