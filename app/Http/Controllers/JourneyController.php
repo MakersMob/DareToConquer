@@ -44,15 +44,22 @@ class JourneyController extends Controller
             $query->orderBy('order', 'ASC');
         }])->where('slug', $slug)->first();
 
-    	if(Auth::guest()) {
-    		return view('sales.journey.'.$slug, compact('journey'));
-    	} elseif(Auth::user() && Auth::user()->hasRole('gold')) {
+    	// if(Auth::guest()) {
+    	// 	return view('sales.journey.'.$slug, compact('journey'));
+
+    	// } elseif(Auth::user() && Auth::user()->hasRole('gold')) {
+     //        return view('journey.show', compact('journey'));
+     //    } elseif(Auth::user() && Auth::user()->journeys->contains($journey->id)) {
+     //        return view('journey.show', compact('journey'));
+     //    } else {
+     //        return view('sales.journey.'.$slug, compact('journey'));
+     //    }    
+
+        if(Auth::user() && Auth::user()->hasRole('gold')) {
             return view('journey.show', compact('journey'));
-        } elseif(Auth::user() && Auth::user()->journeys->contains($journey->id)) {
-            return view('journey.show', compact('journey'));
-        } else {
-            return view('sales.journey.'.$slug, compact('journey'));
-        }    	
+        }
+
+        redirect('/home');
     }
 
     public function edit($id)
