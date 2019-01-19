@@ -44,7 +44,7 @@
                 <p>The beauty of the <em>Dare to Conquer</em> is that once you join, you join for life. You won't have to worry about paying for the next version or when a new course is added.</p>
                 <p>It's the ultimate pay once, learn forever online business resource.</p>
                 <h3 class="">Pricing</h3>
-                <p><strong>The current enrollment price is $500 for a lifetime membership.</strong> That's as much as a single course cost on most sites and even less than other courses!</p>
+                <p><strong>The current enrollment price is $1,000 for a lifetime membership.</strong> That's as much as a single course cost on most sites and even less than other courses!</p>
             </div>
         </div>
         <div class="row">
@@ -99,15 +99,13 @@
                                     <div id="card-errors"></div>
                                 </div>
                             <input type="hidden" name="type" value="membership">
-                            <button type="submit" class="btn btn-large btn-block btn-primary btn-lg submit-button">Join the Club for $500 (One-Time Payment)</button>
+                            <button type="submit" class="btn btn-large btn-block btn-primary btn-lg submit-button">Join for Life for $1,000</button>
                             <p style="margin-top: 1rem;" class="text-center"><strong>Please, only click the button once.</strong></p>
                         {!! Form::close() !!}
                     </div>
                 </div>
             </div>
             <div class="col-12 col-lg-4 sidebar">
-                <h3>Need Payment Plan?</h3>
-                <p><a href="/join/plan">Check out the Payment Plan details page.</a></p>
                 <h3>Need to Pay With PayPal?</h3>
                 <p>Sure thing. Shoot an email to scrivs@daretoconquer.com letting me know you wish to pay with PayPal and include the email address I can send an invoice to.</p>
             </div>
@@ -120,9 +118,8 @@
             <div class="col-12">
                 <p>If this awesome sales page hasn't enticed you enough then why don't you go through one of my <a href="/bootcamp">free bootcamps</a> to get a better feel for how I do things.</p>
                 <h2>What is inside</h2>
-                <p>Currently, when you purchase a DTC Membership you will get access to both DTC and <a href="https://billionaireblogclub.com">the Billionaire Blog Club</a>.</p>
-                <p>The reason why is because I'm slowly moving over all BBC assets to DTC but I'm doing it from the ground up.</p>
-                <p>Between both sites you'll find courses on:</p>
+                <p>Currently, when you purchase a DTC Membership you will get full access to both DTC.</p>
+                <p>You'll find courses on:</p>
                 <ul>
                     <li>Pinterest</li>
                     <li>SEO</li>
