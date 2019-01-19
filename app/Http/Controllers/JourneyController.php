@@ -59,7 +59,7 @@ class JourneyController extends Controller
             return view('journey.show', compact('journey'));
         }
 
-        redirect('/home');
+        return redirect('/home');
     }
 
     public function edit($id)
