@@ -28,11 +28,11 @@
 				@endif
 				<div class="card" style="margin-bottom: 1rem;">
 					<div class="card-header">
-						Description
+						The Why
 					</div>
 					<div class="card-body">
 						@if($biz->description == '')
-							<p>No description has been added yet but it is probably a great biz.</p>
+							<p>No Why has been added yet but it is probably a great biz.</p>
 						@else
 							{!! $biz->description !!}
 						@endif

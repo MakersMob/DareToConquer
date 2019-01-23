@@ -92,7 +92,7 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="description">Description</label>
+								<label for="description">Your Why</label>
 								<textarea class="form-control" name="description" id="description" cols="" rows="10">{{ $description }}</textarea>
 							</div>
 							<div class="form-check">
