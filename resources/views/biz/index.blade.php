@@ -29,7 +29,7 @@
 							<?php $count = count($biz->niches); ?>
 								<td>
 									@if($biz->guest_post == 1) <!--<span class="float-right badge badge-success" style="margin-right: 10px">Accepts Guest Post</span>--> @endif
-									<a href="/bizs/{{ $biz->id }}">{{ $biz->name }}</a>
+									<a href="/directory/{{ $biz->id }}">{{ $biz->name }}</a>
 								</td>
 								<td><a href="/member/{{ $biz->user->id }}">{{ $biz->user->first_name }} {{ $biz->user->last_name }}</a></td>
 								<td>
