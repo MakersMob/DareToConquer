@@ -25,7 +25,6 @@
 								</tr>
 							</thead>
 						@foreach($bizs as $biz)
-							@if($biz->user->hasrole('pro'))
 							<tr>
 							<?php $count = count($biz->niches); ?>
 								<td>
@@ -42,7 +41,6 @@
 								</td>
 								<td>@if($biz->guest_post == 1) &#10003; @endif</td>
 							</tr>
-							@endif
 						@endforeach
 						</table>
 				{{ $bizs->links() }}
