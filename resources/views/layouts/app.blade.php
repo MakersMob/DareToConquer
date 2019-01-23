@@ -75,6 +75,7 @@
                                 Community</a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="/win">#wins</a>
+                                    <a class="dropdown-item" href="/directory">Member Directory</a>
                                     <a class="dropdown-item" href="/exchange">Member Exchange</a>
                                     <a class="dropdown-item" href="/service">Member Services</a>
                                     <a class="dropdown-item" href="/youtube">YouTube Videos</a>
