@@ -29,8 +29,6 @@
 							<?php $count = count($biz->niches); ?>
 								<td>
 									@if($biz->guest_post == 1) <!--<span class="float-right badge badge-success" style="margin-right: 10px">Accepts Guest Post</span>--> @endif
-									@if($biz->user->hasRole('pro')) <!--<span class="float-right badge badge-primary" style="margin-right: 10px;">Pro Member</span>--> @endif
-									@if(count($biz->reports) > 0) <!--<i class="fa fa-money" title="Has income reports" style="margin-right: 10px;"></i>--> @endif 
 									<a href="/bizs/{{ $biz->id }}">{{ $biz->name }}</a>
 								</td>
 								<td><a href="/member/{{ $biz->user->id }}">{{ $biz->user->first_name }} {{ $biz->user->last_name }}</a></td>
