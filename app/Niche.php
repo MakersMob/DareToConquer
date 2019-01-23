@@ -13,10 +13,10 @@ class Niche extends Model
     	'name', 'slug',
     ];
 
-    // public function blogs()
-    // {
-    // 	return $this->belongsToMany('DareToConquer\Blog');
-    // }
+    public function bizs()
+    {
+     	return $this->belongsToMany('DareToConquer\Biz');
+    }
 
     public function exchanges()
     {

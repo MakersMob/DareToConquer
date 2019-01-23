@@ -240,6 +240,18 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('/win/create', 'WinController@create');
 	Route::get('/win/{id}', 'WinController@show');
 
+	// Directory
+
+	Route::get('/directory/niche/{id}', 'NicheController@show');
+	Route::get('/directory/guest-posts', 'GuestPostController@index');
+	Route::get('/directory', 'BizController@index');
+	Route::get('/directory/create', 'BizController@create');
+	Route::post('/directory', 'BizController@store');
+	Route::get('/directory/{id}', 'BizController@show');
+	Route::get('/directory/{id}/edit', 'BizController@edit');
+	Route::patch('/directory/{id}', 'BizController@update');
+	Route::resource('blogs', 'BizController');
+
 
 	Route::get('/welcome', 'WelcomeController@show');
 	Route::get('service/{id}/destroy', 'ServiceController@destroy');

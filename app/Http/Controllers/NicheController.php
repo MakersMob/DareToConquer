@@ -48,9 +48,9 @@ class NicheController extends Controller
      */
     public function show($id)
     {
-        // $niche = Niche::with('blogs')->where('slug', $id)->first();
+        $niche = Niche::with('bizs')->where('slug', $id)->first();
 
-        // return view('niche.show', compact('niche'));
+        return view('niche.show', compact('niche'));
     }
 
     /**
