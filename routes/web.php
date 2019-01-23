@@ -262,6 +262,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('niche', 'NicheController');
 	Route::resource('member', 'MemberController');
 	Route::resource('password', 'PasswordController');
+	Route::resource('newsletter', 'NewsletterController');
 	Route::group(['middleware' => ['role:admin']], function () {
 		Route::get('user/{user}/course/{course}', 'UserCourseController@show');
 		Route::post('usersearch', 'UserSearchController@show');
