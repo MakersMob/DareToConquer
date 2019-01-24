@@ -10,7 +10,7 @@
 				@if(Auth::user()->id == $exchange->user_id)
 					<div style="margin-top: 1rem;">
 						<a href="/exchange/{{ $exchange->id }}/edit" class="btn btn-primary">Edit Task</a> 
-						<a href="/exchange/{{ $exchange->id }}/close" class="btn btn-warning btn-lg ">Close Task</a>
+						<a href="/exchange/{{ $exchange->id }}/close" class="btn btn-alert ">Remove Task from Exchange</a>
 					</div>
 				@endif
 			</div>
