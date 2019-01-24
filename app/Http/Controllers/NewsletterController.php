@@ -66,7 +66,9 @@ class NewsletterController extends Controller
      */
     public function edit($id)
     {
-        //
+        $newsletter = Newsletter::find($id);
+
+        return view('newsletter.edit', compact('newsletter'));
     }
 
     /**
@@ -78,7 +80,14 @@ class NewsletterController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $newsletter = Newsletter::find($id);
+
+        $newsletter->subject = $request->subject;
+        $newsletter->newsletter = $request->newsletter;
+
+        $newsletter->save();
+
+        return redirect('/newsletter');
     }
 
     /**
