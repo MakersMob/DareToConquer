@@ -26,7 +26,7 @@
 								<label for="newsletter">Newsletter</label>
 								<textarea class="form-control" name="newsletter" rows="8">{{ $newsletter->newsletter }}</textarea>
 							</div>
-							<button type="submit" class="btn btn-primary">Create Newsletter</button>
+							<button type="submit" class="btn btn-primary">Update Newsletter</button>
 						{!! Form::close() !!}
 					</div>
 				</div>
