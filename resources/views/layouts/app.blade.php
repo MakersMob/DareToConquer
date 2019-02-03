@@ -79,6 +79,7 @@
                                     <a class="dropdown-item" href="/exchange">Member Exchange</a>
                                     <a class="dropdown-item" href="/service">Member Services</a>
                                     <a class="dropdown-item" href="/youtube">YouTube Videos</a>
+                                    <a class="dropdown-item" href="/newsletter">Community Newsletters</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
