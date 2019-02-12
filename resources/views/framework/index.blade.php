@@ -52,7 +52,6 @@
     </div>
 </div>
 </section>
-@role('admin')
 <section class="content smoke">
     <div class="container">
         <div class="row">
@@ -80,5 +79,4 @@
         </div>
     </div>
 </section>
-@endrole
 @endsection
