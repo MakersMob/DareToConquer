@@ -15,9 +15,12 @@ Auth::routes();
 
 Route::get('/', 'BaseController@index');
 
-Route::get('/framework', function() {
-	return view('framework/index');
+Route::get('/framework/updates', function() {
+	return view('framework.updates');
 });
+
+Route::resource('section', 'SectionController');
+Route::resource('framework', 'FrameworkController');
 
 Route::get('/join', function () {
 	return view('join');
