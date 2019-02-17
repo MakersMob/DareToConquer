@@ -44,7 +44,7 @@
                 <p>The beauty of the <em>Dare to Conquer</em> is that once you join, you join for life. You won't have to worry about paying for the next version or when a new course is added.</p>
                 <p>It's the ultimate pay once, learn forever online business resource.</p>
                 <h3 class="">Pricing</h3>
-                <p><strong>The current enrollment price is $1,000 for a lifetime membership.</strong> That's as much as a single course cost on most sites and even less than other courses!</p>
+                <p><strong>The current enrollment price is $547 for a lifetime membership.</strong> That's as much as a single course cost on most sites and even less than other courses!</p>
             </div>
         </div>
         <div class="row">
@@ -99,7 +99,7 @@
                                     <div id="card-errors"></div>
                                 </div>
                             <input type="hidden" name="type" value="membership">
-                            <button type="submit" class="btn btn-large btn-block btn-primary btn-lg submit-button">Join for Life for $1,000</button>
+                            <button type="submit" class="btn btn-large btn-block btn-primary btn-lg submit-button">Join for Life for $547</button>
                             <p style="margin-top: 1rem;" class="text-center"><strong>Please, only click the button once.</strong></p>
                         {!! Form::close() !!}
                     </div>
@@ -128,7 +128,7 @@
                     <li>Email Marketing</li>
                 </ul>
                 <p>You'll also find Challenges and Journeys that will guide you through launching a blog, getting a 1,000 subscribers, and earning your first $1,000.</p>
-                <p>More importantly you'll gain access to the DTC Slack Community where you can ask me personally questions when they enter your mind. You'll also get answers from 1,200+ people that live around the world and are taking the same journey as you.</p>
+                <p>More importantly you'll gain access to the DTC Slack Community where you can ask me personally questions when they enter your mind. You'll also get answers from 1,300+ people that live around the world and are taking the same journey as you.</p>
                 <p>It is an experience like no other.</p>
             </div>
         </div>

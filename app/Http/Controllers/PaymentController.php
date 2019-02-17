@@ -35,7 +35,7 @@ class PaymentController extends Controller
                 $description = $course->name;
                 break;
             case 'membership':
-                $amount = 1000;
+                $amount = 547;
                 $id = 999;
                 $type = 'membership';
                 $description = 'DTC Membership';
