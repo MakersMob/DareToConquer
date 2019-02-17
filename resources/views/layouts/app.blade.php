@@ -37,6 +37,9 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
+                            <a class="nav-link @if(Request::is('framework*')) active @endif" href="/framework">Framework</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link @if(Request::is('courses*')) active @endif" href="/course">Courses</a>
                         </li>
                         @role('gold')
