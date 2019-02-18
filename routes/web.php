@@ -228,7 +228,7 @@ Route::get('/bootcamp/affiliate-marketing/welcome', function () {
 	return view('bootcamp.affiliate.welcome');
 });
 
-Route::get('/win', 'WinController@index');
+
 
 /* Stripe Webhooks */
 
@@ -243,6 +243,7 @@ Route::group(['middleware' => 'auth'], function () {
 	});
 
 	// Wins
+	Route::get('/win', 'WinController@index');
 	Route::post('/win', 'WinController@store');
 	Route::get('/win/create', 'WinController@create');
 	Route::get('/win/{id}', 'WinController@show');
