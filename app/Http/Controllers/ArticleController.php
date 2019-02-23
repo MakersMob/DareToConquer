@@ -61,6 +61,7 @@ class ArticleController extends Controller
     public function show($id)
     {
         $article = Article::where('slug', $id)->first();
+        
 
         return view('article.show', compact('article'));
     }
@@ -74,8 +75,9 @@ class ArticleController extends Controller
     public function edit($id)
     {
         $article = Article::find($id);
+        $media = $article->getMedia('media');
 
-        return view('article.edit', compact('article'));
+        return view('article.edit', compact('article', 'media'));
     }
 
     /**
