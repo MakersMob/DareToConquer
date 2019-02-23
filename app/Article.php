@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use DareToConquer\Services\Markdowner;
 use Spatie\MediaLibrary\HasMedia\HasMedia;
 use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
-use Laravel\Scout\Searchable;
+//use Laravel\Scout\Searchable;
 
 class Article extends Model implements HasMedia
 {
