@@ -10,7 +10,7 @@ use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
 
 class Article extends Model implements HasMedia
 {
-    use HasMediaTrait, Searchable;
+    use HasMediaTrait;
 
     protected $fillable = [
     	'title', 'slug', 'content', 'summary', 'seo_title', 'active'
