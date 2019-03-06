@@ -1,4 +1,4 @@
-@extends('layouts.app', ['title' => 'Dare to Conquer Pinterest: The Ultimate Blog Traffic Generating Course', 'description' => 'Learn how to turn Pinterest into a traffic generating machine for your blog where you consistently get thousands of people every single day to view your content.', 'page' => 'landing'])
+@extends('layouts.app', ['title' => 'Dare to Conquer Content Creation: Writing Content that People Love', 'description' => 'Stop wasting your time writing content that does not convert', 'page' => 'landing'])
 
 @section('content')
 <section class="welcome course">
@@ -6,8 +6,8 @@
 		<div class="row">
 			<div class="col-12 text-center">
         <h2 class="preheader">Dare to Conquer...</h2>
-				<h1 class="billboard"><span>Pinterest</span></h1>
-				<h2 class="subheader course-title">The Ultimate Blog Traffic Generating Course</h2>
+				<h1 class="billboard"><span>Content Creation</span></h1>
+				<h2 class="subheader course-title">Start Creating Content Your Audience Loves/h2>
 			</div>
 		</div>
 	</div>
@@ -16,10 +16,9 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12">
-				<p>You don&rsquo;t want to throw a party where nobody comes. That is how most sites feel with no traffic. Pinterest is that one person who seems to be friends with everyone and can get them to show up at the drop of a dime.</p>
-				<p>But to do well with Pinterest you can't just show up and do stuff. <strong>You have to have a strategy behind it all and you need to be able to adapt that strategy when Pinterest makes a change.</strong></p>
-				<p>That is why <em>Dare to Conquer: Pinterest</em> is an ever-evolving course. I spend my time growing multiple sites with Pinterest and that requires testing different strategies and tools all of the time.</p>
-				<p>If you're ready to get people to your party and learn what I've learned, then let's get started.</p>
+				<p>It's hard to have any success with an online business if you don't do a good job creating content that people find valuable.</p>
+        <p>The content can't just be valuable. It has to be the right stuff for the right people, but how do you make that happen?</p>
+        <p>DTC: Content Creation, walks you through everything that I do to write content that attracts an audience, gets them to sign up and keeps them around.</p>
 			</div>
 		</div>
 	</div>
