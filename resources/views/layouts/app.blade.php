@@ -132,6 +132,7 @@
                             <li><a href="/course/pinterest">Pinterest</a></li>
                             <li><a href="/course/seo">SEO</a></li>
                             <li><a href="/course/affiliate-marketing">Affiliate Marketing</a></li>
+                            <li><a href="/course/content-creation">Content Creation</a></li>
                             <!--<li><a href="/course/sales-funnels">Sales Funnels</a></li>-->
                         </ul>
                     </div>
