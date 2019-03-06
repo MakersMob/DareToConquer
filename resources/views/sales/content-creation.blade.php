@@ -7,7 +7,7 @@
 			<div class="col-12 text-center">
         <h2 class="preheader">Dare to Conquer...</h2>
 				<h1 class="billboard"><span>Content Creation</span></h1>
-				<h2 class="subheader course-title">Start Creating Content Your Audience Loves/h2>
+				<h2 class="subheader course-title">Start Creating Content Your Audience Loves</h2>
 			</div>
 		</div>
 	</div>
