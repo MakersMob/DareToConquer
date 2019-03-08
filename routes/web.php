@@ -228,7 +228,10 @@ Route::get('/bootcamp/affiliate-marketing/welcome', function () {
 	return view('bootcamp.affiliate.welcome');
 });
 
+// Testimonial Index
 
+Route::get('/testimonials', 'TestimonialController@index');
+Route::get('/testimonials/member/{id}', 'TestimonialController@show');
 
 /* Stripe Webhooks */
 
@@ -241,6 +244,10 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('/member/affiliate-program', function () {
 		return view('member.affiliate');
 	});
+
+	// Testimonials
+	Route::get('/testimonials/create', 'TestimonialController@create');
+	Route::post('testimonials', 'TestimonialController@store');
 
 	// Wins
 	Route::get('/win', 'WinController@index');
@@ -259,6 +266,10 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('/directory/{id}/edit', 'BizController@edit');
 	Route::patch('/directory/{id}', 'BizController@update');
 	Route::resource('blogs', 'BizController');
+
+	// Webinars
+
+	Route::resource('webinars', 'WebinarController');
 
 
 	Route::get('/welcome', 'WelcomeController@show');

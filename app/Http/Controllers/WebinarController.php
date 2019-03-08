@@ -3,10 +3,9 @@
 namespace DareToConquer\Http\Controllers;
 
 use Illuminate\Http\Request;
-use DareToConquer\Testimonial;
-use Auth;
+use DareToConquer\Webinar;
 
-class TestimonialController extends Controller
+class WebinarController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +14,9 @@ class TestimonialController extends Controller
      */
     public function index()
     {
-        $testimonials = Testimonial::get();
+        $webinars = Webinar::get();
 
-        return view('testimonial.index', compact('testimonials'));
+        return view('webinar.index', compact('webinars'));
     }
 
     /**
@@ -27,7 +26,7 @@ class TestimonialController extends Controller
      */
     public function create()
     {
-        return view('testimonial.create');
+        return view('webinar.create');
     }
 
     /**
@@ -38,12 +37,13 @@ class TestimonialController extends Controller
      */
     public function store(Request $request)
     {
-        $testimonial = Testimonial::create([
-            'user_id' => Auth::user()->id,
-            'content' => $request->content
+        $webinar = Webinar::create([
+            'title' => $request->title,
+            'description' => $request->description,
+            'video' => $request->video
         ]);
 
-        return redirect('testimonials/member/'.Auth::user()->id);
+        return redirect('webinars/'.$webinar->id);
     }
 
     /**
@@ -54,9 +54,10 @@ class TestimonialController extends Controller
      */
     public function show($id)
     {
-        $testimonial = Testimonial::where('user_id', $id)->first();
+        $webinar = Webinar::find($id);
+        $webinars = Webinar::get();
 
-        return view('testimonial.show', compact('testimonial'));
+        return view('webinar.show', compact('webinar', 'webinars'));
     }
 
     /**
@@ -67,7 +68,9 @@ class TestimonialController extends Controller
      */
     public function edit($id)
     {
-        //
+        $webinar = Webinar::find($id);
+
+        return view('webinar.edit', compact('webinar'));
     }
 
     /**
@@ -79,7 +82,15 @@ class TestimonialController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $webinar = Webinar::find($id);
+
+        $webinar->title = $request->title;
+        $webinar->description = $request->description;
+        $webinar->video = $request->video;
+
+        $webinar->save();
+
+        return redirect('webinars/'.$webinar->id);
     }
 
     /**

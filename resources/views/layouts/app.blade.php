@@ -46,6 +46,9 @@
                         <li class="nav-item">
                             <a class="nav-link @if(Request::is('journey*')) active @endif" href="/journey">Journeys</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link @if(Request::is('webinar*')) active @endif" href="/webinars">Webinars</a>
+                        </li>
                         @endhasrole
                         @role('admin')
                             <li class="nav-item">
