@@ -13,13 +13,13 @@
 		</div>
 	</div>
 </section>
-<section class="content smoke">
+<section class="content">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 @role('bronze') col-lg-6 @endhasrole">
 				<ul class="@role('bronze')mini-course-list @endhasrole course-list">
 					@foreach($webinars as $webinar)
-						<li class="text-center"><a href="/webinars/{{$webinar->id}}">{{$webinar->title}}</a></li>
+						<li><a href="/webinars/{{$webinar->id}}">{{$webinar->title}}</a></li>
 					@endforeach
 				</ul>
 			</div>

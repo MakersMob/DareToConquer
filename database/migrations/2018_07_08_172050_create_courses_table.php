@@ -20,6 +20,7 @@ class CreateCoursesTable extends Migration
             $table->text('description')->nullable();
             $table->integer('price')->default(0);
             $table->boolean('active')->default(0);
+            $table->integer('order')->default(100);
             $table->timestamps();
         });
     }

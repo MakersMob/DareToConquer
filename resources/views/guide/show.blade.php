@@ -14,7 +14,7 @@
 		</div>
 	</div>
 </section>
-<section class="content smoke lesson">
+<section class="content lesson">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 main">

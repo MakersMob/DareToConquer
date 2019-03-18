@@ -27,12 +27,12 @@ class CourseController extends Controller
         $user = Auth::user();
 
         if($user->hasRole('admin')) {
-            $courses = Course::get();
+            $courses = Course::orderBy('order', 'ASC')->get();
         } elseif($user->hasRole('gold')) {
-            $courses = Course::where('active', 1)->get();
+            $courses = Course::where('active', 1)->orderBy('order', 'ASC')->get();
         } else {
             $courses = $user->courses;
-            $others = Course::where('active', 1)->get();
+            $others = Course::where('active', 1)->orderBy('order', 'ASC')->get();
             return view('course.index', compact('courses', 'others'));
         }
 

@@ -11,7 +11,7 @@ class Course extends Model
     use Sluggable;
 
     protected $fillable = [
-    	'name', 'slug', 'description', 'price', 'active',
+    	'name', 'slug', 'description', 'price', 'active', 'order'
     ];
 
     public function modules()
