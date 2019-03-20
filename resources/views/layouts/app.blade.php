@@ -49,9 +49,9 @@
                         <li class="nav-item">
                             <a class="nav-link @if(Request::is('webinar*')) active @endif" href="/webinars">Webinars</a>
                         </li>
-                        <!--<li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link @if(Request::is('challenge*')) active @endif" href="/challenge">Challenges</a>
-                        </li>-->
+                        </li>
                         @endhasrole
                         @role('admin')
                             <li class="nav-item">

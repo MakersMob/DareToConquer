@@ -39,12 +39,18 @@
                 <p><strong>There will be absolutely no refunds unless somehow I fail on my end to take care of business.</strong></p>
                 <h2>Tiers</h2>
                 <p>I realize some people will want a more hands-on approach with regards to my help so I've set things up in tiers to give you the opportunity to decide what works best for you.</p>
-                <h3>Tier 1</h3>
+                <p>There are limited spots for each tier not because I'm trying to do some fancy marketing trick but because I need to ensure I can invest the proper time to each individual participating in the challenge.</p>
+                <h3>Tier 1: $199</h3>
                 <p>The Challenge as I've explained above. You'll walk through the exercises and get feedback from me once you fill out your worksheet. This is more than suitable for most people.</p>
-                <h3>Tier 2</h3>
-                <p></p>
-                <h3>Tier 3</h3>
-                <p>A full SEO analysis of your site.</p>
+                <h3>Tier 2: $499</h3>
+                <p>Same as above but at the end of the month (April) we will have a 30-minute strategy call with regards to your SEO strategy moving forward.</p>
+                <h3>Tier 3: $999</h3>
+                <p>Same as above but it also includes two additional 30-minute strategy calls at the end of May and June.</p>
+                <h3>Tier 4: $4,999</h3>
+                <p>Consider me your personal SEO consultant.</p>
+                <p>For 3 months (April, May, June), I'll work side-by-side with you to improve your SEO. I'll dive into your site and make tweaks to help increase SEO. We will also have bi-monthly calls to go over strategy and what is needed to work on moving forward.</p>
+                <p><strong>If you are in the health &amp; wellness industry, please do not sign up for this tier. You will be refunded.</strong></p>
+                <p>Not to start any crazy conspiracies but this is simply because I have a number of health &amp; wellness sites that I'm working on and don't want the efforts I do with you to conflict with my own.</p>
             </div>
         </div>
     </div>
