@@ -7,21 +7,25 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use DareToConquer\User;
+use DareToConquer\Challenge;
+use DareToConquer\Tier;
 
-class MembershipPurchased extends Mailable
+class ChallengePurchased extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $user;
+    public $user, $challenge, $tier;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct(User $user)
+    public function __construct(User $user, Challenge $challenge, Tier $tier)
     {
         $this->user = $user;
+        $this->challenge = $challenge;
+        $this->tier = $tier;
     }
 
     /**
@@ -32,6 +36,6 @@ class MembershipPurchased extends Mailable
     public function build()
     {
         return $this->from('scrivs@daretoconquer.com', 'Scrivs')
-                    ->view('emails.membership.welcome');
+                    ->view('emails.challenge.seo');
     }
 }

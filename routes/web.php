@@ -245,6 +245,13 @@ Route::group(['middleware' => 'auth'], function () {
 		return view('member.affiliate');
 	});
 
+	// Challenges
+	Route::get('/challenge/welcome', function() {
+		return view('challenge.welcome');
+	});
+	Route::post('/challenge/payment', 'ChallengePaymentController@store');
+	Route::resource('/challenge', 'ChallengeController');
+
 	// Testimonials
 	Route::get('/testimonials/create', 'TestimonialController@create');
 	Route::post('testimonials', 'TestimonialController@store');

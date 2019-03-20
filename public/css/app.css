@@ -377,23 +377,24 @@ a {
   font-family: "Poppins", sans-serif;
 }
 
-.content .sidebar li {
+.content.lesson .sidebar li {
   margin-left: 1rem;
   margin-right: 0;
 }
 
-.content .sidebar li a {
+.content.lesson .sidebar li a {
   display: block;
   color: #FF715B;
 }
 
-.content .sidebar li a:hover {
+.content.lesson .sidebar li a:hover {
   color: #333;
 }
 
-.content .sidebar p,
-.content .sidebar li {
+.content.lesson .sidebar p,
+.content.lesson .sidebar li {
   font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 
 .content.lesson {

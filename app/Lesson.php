@@ -41,6 +41,11 @@ class Lesson extends Model implements HasMedia
         return $this->belongsToMany('DareToConquer\User')->withTimestamps();
     }
 
+    public function challenge()
+    {
+        return $this->hasMany('DareToConquer\Challenge');
+    }
+
     public function sluggable()
     {
         return [

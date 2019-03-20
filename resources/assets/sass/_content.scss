@@ -140,7 +140,7 @@
 		font-family: $font-family-sans-serif;
 	}
 }
-.content .sidebar {
+.content.lesson .sidebar {
 	li {
 		margin-left: 1rem;
 		margin-right: 0;
@@ -154,6 +154,7 @@
 	}
 	p, li {
 		font-size: 16px;
+		font-family: $font-family-sans-serif;
 	}
 }
 .content.lesson {

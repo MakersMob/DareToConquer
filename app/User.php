@@ -84,6 +84,11 @@ class User extends Authenticatable
         return $this->hasMany('DareToConquer\Testimonial');
     }
 
+    public function challenges()
+    {
+        return $this->belongsToMany('DareToConquer\Challenge');
+    }
+
     public function lessonCompleted($id)
     {
         $pivot = Auth::user()->lessons()->wherePivot('lesson_id', $id)->first();

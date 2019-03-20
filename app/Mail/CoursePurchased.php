@@ -42,7 +42,7 @@ class CoursePurchased extends Mailable
                 $email = 'thanks';
                 break;
         }
-        return $this->from('scrivs@daretoconquer.com')
+        return $this->from('scrivs@daretoconquer.com', 'Scrivs')
                     ->view($email);
     }
 }
