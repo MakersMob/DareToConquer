@@ -596,6 +596,25 @@ img.avatar {
   max-width: 24px;
 }
 
+.card.smoke {
+  background-color: #021828;
+}
+
+.card.smoke p strong {
+  background-color: #021828;
+  color: #f9cb40;
+  font-weight: 500;
+}
+
+.card.sidebar {
+  padding-bottom: 0;
+}
+
+.card.sidebar p {
+  font-size: 18px;
+  color: #fff;
+}
+
 footer {
   padding: 2rem 0 3rem;
   color: #fff;

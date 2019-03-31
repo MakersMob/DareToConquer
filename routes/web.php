@@ -325,6 +325,10 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('exchange/{id}/close', 'ExchangeController@close');
 	Route::resource('task', 'TaskController');
 	Route::resource('exchange', 'ExchangeController');
+
+	// Tidbits
+
+	Route::resource('tidbit', 'TidbitController');
 });
 
 Route::get('archives', 'ArchiveController@index');

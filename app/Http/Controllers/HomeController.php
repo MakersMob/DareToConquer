@@ -5,6 +5,7 @@ namespace DareToConquer\Http\Controllers;
 use Illuminate\Http\Request;
 use DareToConquer\Lesson;
 use DareToConquer\Stop;
+use DareToConquer\Tidbit;
 use Auth;
 
 class HomeController extends Controller
@@ -26,12 +27,14 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $tidbits = Tidbit::orderBy('id', 'DESC')->get();
+
         if(Auth::user()->hasRole('gold')) {
             $lessons = Lesson::where('active', 1)->orderBy('updated_at', 'DESC')->paginate(10);
 
             $stops = Stop::where('active', 1)->orderBy('updated_at', 'DESC')->paginate(5);
             
-            return view('home', compact('lessons', 'stops'));
+            return view('home', compact('lessons', 'stops', 'tidbits'));
         }
         
         $courses = Auth::user()->courses()->pluck('course_id')->toArray();
@@ -44,7 +47,9 @@ class HomeController extends Controller
             $stops = Stop::where('active', 1)->where('journey_id', $journeys)->orderBy('updated_at', 'DESC')->paginate(5);
 
         }
+
         
-        return view('home', compact('lessons', 'stops'));
+        
+        return view('home', compact('lessons', 'stops', 'tidbits'));
     }
 }

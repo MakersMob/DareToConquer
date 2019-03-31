@@ -13,7 +13,7 @@
 <section class="content lesson smoke">
 <div class="container">
     <div class="row">
-        <div class="col-12 ">
+        <div class="col-12 col-lg-8">
             <div class="card" style="margin-bottom: 2rem;">
                 <div class="card-header">Recently Added/Updated Lessons</div>
 
@@ -86,6 +86,13 @@
                 </div>
             </div>
             @endunless
+        </div>
+        <div class="col-12 col-lg-4 sidebar">
+            @foreach($tidbits as $tidbit)
+                <div class="tidbit">
+                    {!! $tidbit->content !!}
+                </div>
+            @endforeach
         </div>
     </div>
 </div>

@@ -320,3 +320,21 @@ img.avatar {
 	border-radius: 1000px;
 	max-width: 24px;
 }
+
+.card.smoke {
+	background-color: $night;
+	p {
+		strong {
+			background-color: $night;
+			color: $yellow;
+			font-weight: 500;
+		}
+	}
+}
+.card.sidebar {
+	padding-bottom: 0;
+	p {
+		font-size: 18px;
+		color: $white;
+	}
+}

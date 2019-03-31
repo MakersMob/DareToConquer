@@ -19,7 +19,7 @@ class CourseController extends Controller
     public function index()
     {
         if(Auth::guest()) {
-            $courses = Course::where('active', 1)->get();
+            $courses = Course::where('active', 1)->orderBy('order', 'ASC')->get();
 
             return view('course.index', compact('courses'));
         }
