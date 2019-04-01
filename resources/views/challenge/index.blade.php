@@ -10,8 +10,7 @@
         <div class="row">
             <div class="col-12">
                 <h2 class="preheader">Are you ready?</h2>
-                <h1 class="billboard"><strong>DTC Challenge: SEO</strong></h1>
-                <div class="" style="margin-top: 2rem;"><a href="#join" class="btn btn-primary btn-lg">Join Today</a></div>
+                <h1 class="billboard"><strong>DTC Challenges</strong></h1>
             </div>
         </div>
     </div>
@@ -20,6 +19,13 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
+                @if(Auth::user()->challenges->contains(1))
+                    <!--<h3>Jump into the <a href="/challenge/1">SEO Challenge</a></h3>-->
+                    <h3>SEO Challenge goes live at 8am PST</h3>
+                @else
+                    <p>The current Challenge is now being taken by some DTC Members. The next Challenge will be in May and I'll let you know when you can sign up.</p>
+                @endif
+                <!--
                 <p>Would you like to get my personal feedback on how you're doing with SEO on your site?</p>
                 <p>Would you like to go through a structured 28-day program that will make sure that your SEO strategy is on point?</p>
                 <p>Then this SEO Challenge is for you.</p>
@@ -51,10 +57,12 @@
                 <p>For 3 months (April, May, June), I'll work side-by-side with you to improve your SEO. I'll dive into your site and make tweaks to help increase SEO. We will also have bi-monthly calls to go over strategy and what is needed to work on moving forward.</p>
                 <p><strong>If you are in the health &amp; wellness industry, please do not sign up for this tier. You will be refunded.</strong></p>
                 <p>Not to start any crazy conspiracies but this is simply because I have a number of health &amp; wellness sites that I'm working on and don't want the efforts I do with you to conflict with my own.</p>
+                -->
             </div>
         </div>
     </div>
 </section>
+<!--
 <section class="content lesson ice" id="join">
     <div class="container">
         <div class="row justify-content-center">
@@ -121,6 +129,7 @@
         @endif
     </div>
 </section>
+-->
 @endsection
 
 @section('footScripts')

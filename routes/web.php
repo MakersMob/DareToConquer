@@ -246,11 +246,20 @@ Route::group(['middleware' => 'auth'], function () {
 	});
 
 	// Challenges
+	Route::get('/challenge/{challenge}/set/{id}', 'SetController@show');
 	Route::get('/challenge/welcome', function() {
 		return view('challenge.welcome');
 	});
 	Route::post('/challenge/payment', 'ChallengePaymentController@store');
 	Route::resource('/challenge', 'ChallengeController');
+
+	Route::resource('/set', 'SetController');
+
+	Route::resource('/exercise', 'ExerciseController');
+
+	Route::post('answer', 'AnswerController@store');
+
+	Route::post('feedback', 'FeedbackController@store');
 
 	// Testimonials
 	Route::get('/testimonials/create', 'TestimonialController@create');

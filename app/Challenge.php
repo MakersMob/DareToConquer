@@ -16,7 +16,7 @@ class Challenge extends Model
     	return $this->hasMany('DareToConquer\Tier');
     }
 
-    public function user()
+    public function users()
     {
     	return $this->belongsToMany('DareToConquer\User');
     }
@@ -24,6 +24,11 @@ class Challenge extends Model
     public function lesson()
     {
     	return $this->belongsTo('DareToConquer\Lesson');
+    }
+
+    public function sets()
+    {
+        return $this->hasMany('DareToConquer\Set');
     }
 
     public function setDescriptionAttribute($value)

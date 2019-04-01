@@ -135,16 +135,16 @@
                     <div class="col-12 col-lg-4">
                         <h4>Premium Courses</h4>
                         <ul>
-                            <li><a href="/course/building-a-brand">Building a Brand</a></li>
-                            <li><a href="/course/building-a-tribe">Building a Tribe</a></li>
+                            <!--<li><a href="/course/building-a-brand">Building a Brand</a></li>-->
+                            <!--<li><a href="/course/building-a-tribe">Building a Tribe</a></li>-->
                             <li><a href="/course/content-creation">Content Creation</a></li>
                             <li><a href="/course/pinterest">Pinterest</a></li>
                             <li><a href="/course/seo">SEO</a></li>
                             <li><a href="/course/affiliate-marketing">Affiliate Marketing</a></li>
-                            <li><a href="/course/product-creation">Product Creation</a></li>
-                            <li><a href="/course/landing-pages">Landing Pages</a></li>
-                            <li><a href="/course/product-launches">Product Launches</a></li>
-                            <li><a href="/course/sales-funnels">Sales Funnels</a></li>
+                            <!--<li><a href="/course/product-creation">Product Creation</a></li>-->
+                            <!--<li><a href="/course/landing-pages">Landing Pages</a></li>-->
+                            <!--<li><a href="/course/product-launches">Product Launches</a></li>-->
+                            <!--<li><a href="/course/sales-funnels">Sales Funnels</a></li>-->
                         </ul>
                     </div>
                     <div class="col-12 col-lg-4">

@@ -615,6 +615,32 @@ img.avatar {
   color: #fff;
 }
 
+.exercise {
+  border-bottom: 3px double #eee;
+  margin-bottom: 2rem;
+  max-width: 45rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.exercise .exercise-instructions {
+  font-style: italic;
+}
+
+.exercise div.answer {
+  padding: 2rem;
+  background-color: #eee;
+  margin-bottom: 2rem;
+  border-radius: 0.25rem;
+}
+
+.exercise div.feedback {
+  padding: 2rem;
+  background-color: #F2CCC3;
+  border-radius: 0.25rem;
+  margin-bottom: 2rem;
+}
+
 footer {
   padding: 2rem 0 3rem;
   color: #fff;
