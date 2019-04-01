@@ -20,8 +20,7 @@
         <div class="row">
             <div class="col-12">
                 @if(Auth::user()->challenges->contains(1))
-                    <!--<h3>Jump into the <a href="/challenge/1">SEO Challenge</a></h3>-->
-                    <h3>SEO Challenge goes live at 8am PST</h3>
+                    <h3>Jump into the <a href="/challenge/1">SEO Challenge</a></h3>
                 @else
                     <p>The current Challenge is now being taken by some DTC Members. The next Challenge will be in May and I'll let you know when you can sign up.</p>
                 @endif
