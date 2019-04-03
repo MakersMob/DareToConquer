@@ -314,6 +314,9 @@ Route::group(['middleware' => 'auth'], function () {
 		Route::post('user/points', 'PointUserController@store');
 		Route::get('youtube/create', 'YoutubeController@create');
 		Route::post('youtube', 'YoutubeController@store');
+
+		Route::get('admin/set/{id}', 'AdminSetController@show');
+		Route::get('admin/set/{set}/user/{id}', 'AdminSetUserController@show');
 	});	
 	Route::get('course/{course}/{id}', 'LessonController@show');
 	Route::get('lessoncompleted/{id}', 'LessoncompletedController@show');
