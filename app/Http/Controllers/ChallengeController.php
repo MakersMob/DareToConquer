@@ -56,7 +56,9 @@ class ChallengeController extends Controller
      */
     public function show($id)
     {
-        $challenge = Challenge::find($id);
+        $challenge = Challenge::with(['sets' => function ($query) {
+            $query->where('status', 1);
+        }])->find($id);
 
         return view('challenge.show', compact('challenge'));
     }
