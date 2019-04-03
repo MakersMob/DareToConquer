@@ -75,7 +75,7 @@
 		<div class="row justify-content-center">
 			<div class="col-12 col-lg-8">
 				<table class="table">
-				  @foreach($set->challenge->sets as $st)
+				  @foreach($sets as $st)
 				        <tr class="lessons">
 				          <td><a href="/challenge/{{$set->challenge->id}}/set/{{$set->id}}">{{ $st->title }}</a> @if($st->status == 0) **DRAFT** @endif @if($st->status == 2) **REVIEW** @endif</td>
 				        </tr>

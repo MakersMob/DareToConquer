@@ -52,11 +52,13 @@ class SetController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($challenge, $id)
     {
         $set = Set::with('challenge', 'exercises')->find($id);
 
-        return view('set.show', compact('set'));
+        $sets = Set::where('status', 1)->orderBy('id', 'ASC')->get();
+
+        return view('set.show', compact('set', 'sets'));
     }
 
     /**

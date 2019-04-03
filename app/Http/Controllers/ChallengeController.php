@@ -4,6 +4,7 @@ namespace DareToConquer\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DareToConquer\Challenge;
+use Auth;
 
 class ChallengeController extends Controller
 {
@@ -56,9 +57,15 @@ class ChallengeController extends Controller
      */
     public function show($id)
     {
-        $challenge = Challenge::with(['sets' => function ($query) {
-            $query->where('status', 1);
-        }])->find($id);
+        $user = Auth::user();
+
+        if($user->hasRole('admin')) {
+            $challenge = Challenge::find($id);
+        } else {
+            $challenge = Challenge::with(['sets' => function ($query) {
+                $query->where('status', 1);
+            }])->find($id);
+        }
 
         return view('challenge.show', compact('challenge'));
     }
