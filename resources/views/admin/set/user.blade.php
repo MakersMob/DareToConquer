@@ -29,7 +29,7 @@
 							{!! $exercise->exercise !!}
 						</div>
 						@foreach($answers as $answer)
-							@if($answer->exercise_id == $exercise->id))
+							@if($answer->exercise_id == $exercise->id)
 								<div class="answer">
 									<p><em>They wrote...</em></p>
 									{!! $answer->answer !!}
@@ -37,7 +37,7 @@
 								@if($answer->feedback)
 									<div class="feedback">
 										<p><em>Scrivs says...</em></p>
-										{!! $feedback->feedback !!}
+										{!! $answer->feedback->feedback !!}
 									</div>
 								@else
 									@hasrole('admin')

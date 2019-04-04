@@ -23,7 +23,7 @@ class Answer extends Model
 
     public function feedback()
     {
-    	return $this->has('DareToConquer\Feedback');
+    	return $this->hasOne('DareToConquer\Feedback');
     }
 
     public function setAnswerAttribute($value)
