@@ -28,31 +28,33 @@
 						<div class="exercise-instructions">
 							{!! $exercise->exercise !!}
 						</div>
-						@if($answer = $exercise->exerciseAnswered($exercise->id))
-							<div class="answer">
-								<p><em>They wrote...</em></p>
-								{!! $answer->answer !!}
-							</div>
-							@if($feedback = $answer->feedbackReceived($answer->id))
-								<div class="feedback">
-									<p><em>Scrivs says...</em></p>
-									{!! $feedback->feedback !!}
+						@foreach($answers as $answer)
+							@if($answer->exercise_id == $exercise->id))
+								<div class="answer">
+									<p><em>They wrote...</em></p>
+									{!! $answer->answer !!}
 								</div>
+								@if($answer->feedback)
+									<div class="feedback">
+										<p><em>Scrivs says...</em></p>
+										{!! $feedback->feedback !!}
+									</div>
+								@else
+									@hasrole('admin')
+										{!! Form::open(['url' => 'feedback', 'enctype' => 'multipart/form-data']) !!}
+											<div class="form-group">
+												<label for="feedback">Feedback</label>
+												<textarea class="form-control" name="feedback" rows="8"></textarea>
+												<input type="hidden" name="answer_id" value="{{ $answer->id }}">
+											</div>
+											<button type="submit" class="btn btn-primary btn-lg btn-block">Provide Feedback</button>
+										{!! Form::close() !!}
+									@endhasrole
+								@endif
 							@else
-								@hasrole('admin')
-									{!! Form::open(['url' => 'feedback', 'enctype' => 'multipart/form-data']) !!}
-										<div class="form-group">
-											<label for="feedback">Feedback</label>
-											<textarea class="form-control" name="feedback" rows="8"></textarea>
-											<input type="hidden" name="answer_id" value="{{ $answer->id }}">
-										</div>
-										<button type="submit" class="btn btn-primary btn-lg btn-block">Provide Feedback</button>
-									{!! Form::close() !!}
-								@endhasrole
+								<p><strong>No answer provided yet.</strong></p>
 							@endif
-						@else
-							<p><strong>No answer provided yet.</strong></p>
-						@endif
+						@endforeach
 					</div>
 					<?php $count++; ?>
 				@endforeach
