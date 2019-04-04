@@ -23,42 +23,38 @@
 			<div class="col-12 col-lg-7 main">
 				<?php $count = 1; ?>
 				@foreach($set->exercises as $exercise)
-					@unless($exercise->set_id != $set->id)
-						<div class="exercise" id="exercise-{{ $exercise->id }}">
-							<h3>Exercise {{ $count }}</h3>
-							<div class="exercise-instructions">
-								{!! $exercise->exercise !!}
-							</div>
-							@foreach($answers as $answer)
-								@if($answer->exercise_id == $exercise->id)
-									<div class="answer">
-										<p><em>They wrote...</em></p>
-										{!! $answer->answer !!}
-									</div>
-									@if($answer->feedback)
-										<div class="feedback">
-											<p><em>Scrivs says...</em></p>
-											{!! $answer->feedback->feedback !!}
-										</div>
-									@else
-										@hasrole('admin')
-											{!! Form::open(['url' => 'feedback', 'enctype' => 'multipart/form-data']) !!}
-												<div class="form-group">
-													<label for="feedback">Feedback</label>
-													<textarea class="form-control" name="feedback" rows="8"></textarea>
-													<input type="hidden" name="answer_id" value="{{ $answer->id }}">
-												</div>
-												<button type="submit" class="btn btn-primary btn-lg btn-block">Provide Feedback</button>
-											{!! Form::close() !!}
-										@endhasrole
-									@endif
-								@else
-									<p><strong>No answer provided yet.</strong></p>
-								@endif
-							@endforeach
+					<div class="exercise" id="exercise-{{ $exercise->id }}">
+						<h3>Exercise {{ $count }}</h3>
+						<div class="exercise-instructions">
+							{!! $exercise->exercise !!}
 						</div>
-						<?php $count++; ?>
-					@endunless
+						@foreach($answers as $answer)
+							@if($answer->exercise_id == $exercise->id)
+								<div class="answer">
+									<p><em>They wrote...</em></p>
+									{!! $answer->answer !!}
+								</div>
+								@if($answer->feedback)
+									<div class="feedback">
+										<p><em>Scrivs says...</em></p>
+										{!! $answer->feedback->feedback !!}
+									</div>
+								@else
+									@hasrole('admin')
+										{!! Form::open(['url' => 'feedback', 'enctype' => 'multipart/form-data']) !!}
+											<div class="form-group">
+												<label for="feedback">Feedback</label>
+												<textarea class="form-control" name="feedback" rows="8"></textarea>
+												<input type="hidden" name="answer_id" value="{{ $answer->id }}">
+											</div>
+											<button type="submit" class="btn btn-primary btn-lg btn-block">Provide Feedback</button>
+										{!! Form::close() !!}
+									@endhasrole
+								@endif
+							@endif
+						@endforeach
+					</div>
+					<?php $count++; ?>
 				@endforeach
 			</div>
 		</div>
