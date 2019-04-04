@@ -56,6 +56,11 @@
 					</div>
 					<?php $count++; ?>
 				@endforeach
+				{!! Form::open(['url' => 'admin/set/feedbackcompleted', 'enctype' => 'multipart/form-data']) !!}
+					<input type="hidden" name="user_id" value="{{ $user->id}}">
+					<input type="hidden" name="set_id" value="{{ $set->id}}">
+					<button type="submit" class="btn btn-primary btn-lg btn-block">Feedback Completed</button>
+				{!! Form::close() !!}
 			</div>
 		</div>
 	</div>

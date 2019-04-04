@@ -253,6 +253,8 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::post('/challenge/payment', 'ChallengePaymentController@store');
 	Route::resource('/challenge', 'ChallengeController');
 
+	// Sets
+	Route::post('/set/completed', 'SetUserController@store');
 	Route::resource('/set', 'SetController');
 
 	Route::resource('/exercise', 'ExerciseController');
@@ -315,6 +317,7 @@ Route::group(['middleware' => 'auth'], function () {
 		Route::get('youtube/create', 'YoutubeController@create');
 		Route::post('youtube', 'YoutubeController@store');
 
+		Route::post('admin/set/feedbackcompleted', 'AdminSetUserController@store');
 		Route::get('admin/set/{set}/user/{id}', 'AdminSetUserController@show');
 		Route::get('admin/set/{id}', 'AdminSetController@show');
 	});	

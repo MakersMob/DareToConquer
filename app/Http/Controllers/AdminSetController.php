@@ -10,8 +10,9 @@ class AdminSetController extends Controller
     public function show($id)
     {
     	$set = Set::find($id);
+    	$count = count($set->exercises);
     	$sets = Set::get();
 
-    	return view('admin.set.show', compact('set', 'sets'));
+    	return view('admin.set.show', compact('set', 'sets', 'count'));
     }
 }

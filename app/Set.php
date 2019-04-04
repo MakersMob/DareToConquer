@@ -19,6 +19,11 @@ class Set extends Model
     	return $this->hasMany('DareToConquer\Exercise');
     }
 
+    public function users()
+    {
+        return $this->belongsToMany('DareToConquer\User')->withTimestamps()->withPivot('feedback');
+    }
+
     public function setDescriptionAttribute($value)
     {
         $markdown = new Markdowner();

@@ -55,6 +55,15 @@
 					</div>
 					<?php $count++; ?>
 				@endforeach
+				@if(Auth::user()->sets->contains($set->id))
+					<p>You've completed this set of exercises.</p>
+				@else
+					{!! Form::open(['url' => '/set/completed', 'enctype' => 'multipart/form-data']) !!}
+						<input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
+						<input type="hidden" name="set_id" value="{{ $set->id}}">
+						<button type="submit" class="btn btn-primary btn-lg btn-block">Mark Set Completed</button>
+					{!! Form::close() !!}
+				@endif
 			</div>
 		</div>
 	</div>

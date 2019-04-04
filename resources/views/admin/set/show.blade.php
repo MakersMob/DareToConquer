@@ -20,7 +20,7 @@
       <div class="col-12 col-lg-7 main">
         <ul>
           @foreach($set->challenge->users as $user)
-            <li><a href="/admin/set/{{ $set->id }}/user/{{ $user->id }}">{{ $user->first_name }} {{ $user->last_name }}</a></li>
+            <li><a href="/admin/set/{{ $set->id }}/user/{{ $user->id }}">{{ $user->first_name }} {{ $user->last_name }}</a> @if($user->sets->contains($set->id)) <strong>Completed</strong> @endif @if($user->setCompleted($user->id, $set->id)) <strong>Feedback Completed</strong> @endif</li>
           @endforeach
         </ul>
       </div>

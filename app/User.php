@@ -94,6 +94,11 @@ class User extends Authenticatable
         return $this->hasMany('DareToConquer\Answer');
     }
 
+    public function sets()
+    {
+        return $this->belongsToMany('DareToConquer\Set')->withTimestamps()->withPivot('feedback');
+    }
+
     public function lessonCompleted($id)
     {
         $pivot = Auth::user()->lessons()->wherePivot('lesson_id', $id)->first();
@@ -106,5 +111,13 @@ class User extends Authenticatable
         $pivot = Auth::user()->stops()->wherePivot('stop_id', $id)->first();
         //dd($pivot);
         return $pivot;
+    }
+
+    public function setCompleted($user_id, $set_id)
+    {
+        $user = User::find($user_id);
+        $result = User::sets()->wherePivot('set_id', $set_id)->wherePivot('feedback', 1)->first();
+
+        return $result;
     }
 }
