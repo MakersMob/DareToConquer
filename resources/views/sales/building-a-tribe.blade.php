@@ -19,6 +19,7 @@
 				<p><strong>You know you have value to offer the world and there are people who will love it</strong></p>
         <p>This course will help you deliver your message to the right people to they actually follow you and spend money on you.</p>
         <p>By purchasing this course you also get access to <a href="/course/building-a-brand">Building a Brand</a> because a strong brand attracts a strong tribe.</p>
+        @include('partials.payment.membership')
 			</div>
 		</div>
 	</div>

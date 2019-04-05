@@ -19,6 +19,7 @@
 				<p>It's hard to have any success with an online business if you don't do a good job creating content that people find valuable.</p>
         <p>The content can't just be valuable. It has to be the right stuff for the right people, but how do you make that happen?</p>
         <p>DTC: Content Creation, walks you through everything that I do to write content that attracts an audience, gets them to sign up and keeps them around.</p>
+        @include('partials.payment.membership')
 			</div>
 		</div>
 	</div>

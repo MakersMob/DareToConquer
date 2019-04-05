@@ -121,11 +121,12 @@
                 <p>Currently, when you purchase a DTC Membership you will get full access to both DTC.</p>
                 <p>You'll find courses on:</p>
                 <ul>
-                    <li>Pinterest</li>
-                    <li>SEO</li>
-                    <li>Affiliate Marketing</li>
+                    <li>Building a Brand</li>
+                    <li>Building a Tribe</li>
                     <li>Content Creation</li>
-                    <li>Email Marketing</li>
+                    <li>SEO</li>
+                    <li>Pinterest</li>
+                    <li>Affiliate Marketing</li>
                 </ul>
                 <p>You'll also find Challenges and Journeys that will guide you through launching a blog, getting a 1,000 subscribers, and earning your first $1,000.</p>
                 <p>More importantly you'll gain access to the DTC Slack Community where you can ask me personally questions when they enter your mind. You'll also get answers from 1,300+ people that live around the world and are taking the same journey as you.</p>

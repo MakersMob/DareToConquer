@@ -18,6 +18,7 @@
 			<div class="col-12">
 				<p>Hm, I really need to find time to work on these sales page.</p>
         <p>Ummmm...okay, this course will help you understand how to do effective affiliate marketing because it's much more than posting a link in a blog post and hoping for the best.</p>
+        @include('partials.payment.membership')
 			</div>
 		</div>
 	</div>
