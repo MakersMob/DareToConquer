@@ -88,6 +88,19 @@ class PaymentController extends Controller
             }
 
         	$user->courses()->attach($course->id);
+
+            switch ($course->id) {
+                case '2':
+                    $user->courses()->attach(18);
+                    break;
+                case '18':
+                    $user->courses()->attach(2);
+                    break;
+                default:
+                    # code...
+                    break;
+            }
+
         	$user->assignRole('bronze');
 
             Mail::to($user)->send(new CoursePurchased($user, $course));
@@ -124,6 +137,19 @@ class PaymentController extends Controller
 
                 Mail::to($user)->send(new CoursePurchased($user, $course));
                 $user->courses()->attach($course->id);
+
+                switch ($course->id) {
+                    case '2':
+                        $user->courses()->attach(18);
+                        break;
+                    case '18':
+                        $user->courses()->attach(2);
+                        break;
+                    default:
+                        # code...
+                        break;
+                }
+
                 $user->assignRole('bronze');
 
                 return redirect('/welcome');

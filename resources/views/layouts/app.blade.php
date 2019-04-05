@@ -135,8 +135,8 @@
                     <div class="col-12 col-lg-4">
                         <h4>Premium Courses</h4>
                         <ul>
-                            <!--<li><a href="/course/building-a-brand">Building a Brand</a></li>-->
-                            <!--<li><a href="/course/building-a-tribe">Building a Tribe</a></li>-->
+                            <li><a href="/course/building-a-brand">Building a Brand</a></li>
+                            <li><a href="/course/building-a-tribe">Building a Tribe</a></li>
                             <li><a href="/course/content-creation">Content Creation</a></li>
                             <li><a href="/course/pinterest">Pinterest</a></li>
                             <li><a href="/course/seo">SEO</a></li>

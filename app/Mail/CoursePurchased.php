@@ -37,7 +37,18 @@ class CoursePurchased extends Mailable
             case 'pinterest':
                 $email = 'emails.course.pinterest';
                 break;
-            
+            case 'building-a-brand':
+                $email = 'emails.course.brand';
+                break;
+            case 'building-a-tribe':
+                $email = 'emails.course.tribe';
+                break;
+            case 'seo':
+                $email = 'emails.course.seo';
+                break;
+            case 'affiliate-marketing':
+                $email = 'emails.course.affiliate-marketing';
+                break;
             default:
                 $email = 'thanks';
                 break;
