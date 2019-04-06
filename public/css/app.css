@@ -193,7 +193,7 @@ a {
 @media (min-width: 1060px) {
   .welcome h1 {
     font-size: 4rem;
-    line-height: 1;
+    line-height: 1.2;
   }
 }
 
@@ -454,7 +454,7 @@ a {
 
 .content.lesson p,
 .content.lesson li {
-  font-family: "PT Serif", serif;
+  font-family: "Noto Serif", serif;
 }
 
 .content.lesson div.recap {
@@ -479,7 +479,7 @@ a {
 .content.lesson div.recap h4 {
   text-align: center;
   margin-top: 0;
-  font-family: "PT Serif", sans-serif;
+  font-family: "Noto Serif", sans-serif;
 }
 
 .content.smoke {
@@ -570,7 +570,7 @@ a {
 }
 
 .content.objectives ol li {
-  font-family: "PT Serif", serif;
+  font-family: "Noto Serif", serif;
 }
 
 @media (min-width: 768px) {

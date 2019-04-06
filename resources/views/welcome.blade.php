@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row">
         <div class="col-12">
-            <h1 class="billboard">You will <span>quit your job</span> in 12 months.</h1>
+            <h1 class="billboard">You will <span>happily quit your job</span> in the next 12 months.</h1>
         </div>
     </div>
   </div>

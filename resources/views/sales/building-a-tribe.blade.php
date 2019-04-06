@@ -6,8 +6,8 @@
 		<div class="row">
 			<div class="col-12 text-center">
         <h2 class="preheader">Dare to Conquer...</h2>
-				<h1 class="billboard"><span>Building a Brand</span></h1>
-				<h2 class="subheader course-title">Create a Brand That You and Your People Love</h2>
+				<h1 class="billboard"><span>Building a Tribe</span></h1>
+				<h2 class="subheader course-title">Create a Tribe of Follows That Pay You Consistently</h2>
 			</div>
 		</div>
 	</div>
