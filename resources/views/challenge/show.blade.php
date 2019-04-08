@@ -10,11 +10,11 @@
 		</div>
 	</div>
 </section>
-<section class="content smoke lesson">
+<section class="content lesson">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg-6">
-				<table class="table">
+				<table class="table table-dark">
 					<?php $c = 1; ?>
 					@foreach($challenge->sets as $set)
 						@if(count($set->exercises) > 0)

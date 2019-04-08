@@ -38,9 +38,13 @@ class NoteController extends Controller
      */
     public function store(Request $request)
     {
+        $lesson = Lesson::find($request->lesson_id);
+
         $notes = Note::create([
             'notes' => $request->notes,
             'lesson_id' => $request->lesson_id,
+            'module_id' => $lesson->module_id,
+            'course_id' => $lesson->course_id,
             'user_id' => Auth::user()->id
         ]);
 

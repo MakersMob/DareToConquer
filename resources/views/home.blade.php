@@ -13,7 +13,7 @@
 <section class="content lesson">
 <div class="container">
     <div class="row">
-        <div class="col-12 col-lg-8">
+        <div class="col-12 col-lg-7">
             <div class="card" style="margin-bottom: 2rem;">
                 <div class="card-header">Recently Added/Updated Lessons</div>
 
@@ -87,12 +87,20 @@
             </div>
             @endunless
         </div>
-        <div class="col-12 col-lg-4 sidebar">
-            @foreach($tidbits as $tidbit)
-                <div class="tidbit">
-                    {!! $tidbit->content !!}
+        <div class="col-12 col-lg-5 sidebar">
+            <div class="tidbit">
+                 <div class="card">
+                    <div class="card-header">
+                        DTC News
+                    </div>
+                    <div class="card-body">
+                    @foreach($tidbits as $tidbit)
+                        <small>{{ date('F jS', strtotime($tidbit->created_at)) }}</small>
+                        {!! $tidbit->content !!}
+                    @endforeach
+                    </div>
                 </div>
-            @endforeach
+            </div>
         </div>
     </div>
 </div>

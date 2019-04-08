@@ -46,6 +46,11 @@ class Lesson extends Model implements HasMedia
         return $this->hasMany('DareToConquer\Challenge');
     }
 
+    public function notes()
+    {
+        return $this->hasMany('DareToConquer\Note');
+    }
+
     public function sluggable()
     {
         return [

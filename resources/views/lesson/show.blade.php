@@ -34,7 +34,7 @@
 <section class="content lesson">
   <div class="container">
   	<div class="row">
-      <div class="col-12">
+      <!--<div class="col-12">
         <ul class="nav nav-tabs">
           <li class="nav-item">
             <a class="nav-link active" href="#">Lesson</a>
@@ -43,7 +43,7 @@
             <a class="nav-link" href="/course/{{ $lesson->course->slug }}/{{ $lesson->slug }}/notes" tabindex="-1">Notes</a>
           </li>
         </ul>
-      </div>
+      </div>-->
       <div class="col-12 col-lg-7 main">
         {!! $lesson->content !!}
       </div>

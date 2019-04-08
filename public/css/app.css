@@ -169,6 +169,7 @@ a {
 .welcome h2 {
   font-weight: 500;
   line-height: 1.2;
+  font-family: "Poppins", sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -676,6 +677,10 @@ img.avatar {
 
 .courses .course-list li a:hover {
   color: #FF0066;
+}
+
+.courses ul.course-list {
+  list-style-type: none;
 }
 
 .courses .course-list li a {

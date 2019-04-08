@@ -34,6 +34,11 @@ class Course extends Model
         return $this->belongsToMany('DareToConquer\Bundle');
     }
 
+    public function notes()
+    {
+        return $this->hasMany('DareToConquer\Note');
+    }
+
     public function sluggable()
     {
         return [

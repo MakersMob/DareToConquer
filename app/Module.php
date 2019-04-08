@@ -24,6 +24,11 @@ class Module extends Model
         return $this->hasMany('DareToConquer\Lesson');
     }
 
+    public function notes()
+    {
+        return $this->hasMany('DareToConquer\Note');
+    }
+
     public function sluggable()
     {
         return [

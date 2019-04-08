@@ -3,6 +3,8 @@
 namespace DareToConquer\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DareToConquer\Course;
+use DareToConquer\Bundle;
 
 class BundleController extends Controller
 {
@@ -23,7 +25,9 @@ class BundleController extends Controller
      */
     public function create()
     {
-        //
+        $courses = Course::orderBy('order', 'ASC')->where('active', 1)->get();
+
+        return view('bundle.create', compact('courses'));
     }
 
     /**
@@ -34,7 +38,20 @@ class BundleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $bundle = Bundle::create([
+            'name' => $request->name,
+            'slug' => $request->slug,
+            'price' => $request->price,
+            'description' => $request->description
+        ]);
+
+        if(! is_null($request->courses)) {
+            foreach($request->courses as $course) {
+                $bundle->courses()->attach($course);
+            }
+        }
+
+        return redirect('bundles/'.$bundle->slug);
     }
 
     /**
@@ -45,7 +62,9 @@ class BundleController extends Controller
      */
     public function show($id)
     {
-        //
+        $bundle = Bundle::where('slug', $id)->first();
+
+        return view('bundle.show', compact('bundle'));
     }
 
     /**

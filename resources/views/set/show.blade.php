@@ -24,34 +24,40 @@
 				<?php $count = 1; ?>
 				@foreach($set->exercises as $exercise)
 					<div class="exercise" id="exercise-{{ $exercise->id }}">
-						<h3>Exercise {{ $count }}</h3>
-						<div class="exercise-instructions">
-							{!! $exercise->exercise !!}
-						</div>
-						@if($answer = $exercise->exerciseAnswered($exercise->id))
-							<div class="answer">
-								<p><em>You wrote...</em></p>
-								{!! $answer->answer !!}
+						<div class="card">
+							<div class="card-header">
+								Exercise {{ $count }}
 							</div>
-							@if($feedback = $answer->feedbackReceived($answer->id))
-								<div class="feedback">
-									<p><em>Scrivs says...</em></p>
-									{!! $feedback->feedback !!}
+							<div class="card-body">
+								<div class="exercise-instructions">
+									{!! $exercise->exercise !!}
 								</div>
-							@endif
-						@else
-							<div class="card">
-								<div class="card-body">
-									{!! Form::open(['url' => 'answer', 'enctype' => 'multipart/form-data']) !!}
-										<div class="form-group">
-											<textarea class="form-control" name="answer" rows="8"></textarea>
-											<input type="hidden" name="exercise_id" value="{{ $exercise->id }}">
+								@if($answer = $exercise->exerciseAnswered($exercise->id))
+									<div class="answer">
+										<p><em>You wrote...</em></p>
+										{!! $answer->answer !!}
+									</div>
+									@if($feedback = $answer->feedbackReceived($answer->id))
+										<div class="feedback">
+											<p><em>Scrivs says...</em></p>
+											{!! $feedback->feedback !!}
 										</div>
-										<button type="submit" class="btn btn-primary btn-lg btn-block">Save Answer</button>
-									{!! Form::close() !!}
-								</div>
+									@endif
+								@else
+									<div class="card">
+										<div class="card-body">
+											{!! Form::open(['url' => 'answer', 'enctype' => 'multipart/form-data']) !!}
+												<div class="form-group">
+													<textarea class="form-control" name="answer" rows="8"></textarea>
+													<input type="hidden" name="exercise_id" value="{{ $exercise->id }}">
+												</div>
+												<button type="submit" class="btn btn-primary btn-lg btn-block">Save Answer</button>
+											{!! Form::close() !!}
+										</div>
+									</div>
+								@endif
 							</div>
-						@endif
+						</div>
 					</div>
 					<?php $count++; ?>
 				@endforeach

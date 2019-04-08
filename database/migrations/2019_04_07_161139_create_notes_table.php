@@ -20,6 +20,10 @@ class CreateNotesTable extends Migration
             $table->foreign('user_id')->references('id')->on('users');
             $table->integer('lesson_id')->unsigned();
             $table->foreign('lesson_id')->references('id')->on('lessons');
+            $table->integer('module_id')->unsigned();
+            $table->foreign('module_id')->references('id')->on('modules');
+            $table->integer('course_id')->unsigned();
+            $table->foreign('course_id')->references('id')->on('courses');
             $table->timestamps();
         });
     }

@@ -14,7 +14,15 @@
 <section class="content">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 col-lg-8">
+			<div class="col-12">
+				<!--<ul class="nav nav-tabs">
+				  <li class="nav-item">
+				    <a class="nav-link active" href="#">Lessons</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="/course/{{ $course->slug }}/notes" tabindex="-1">Notes</a>
+				  </li>
+				</ul>-->
 				<table class="table">
 					<?php $c = 1; ?>
 					@foreach($modules as $module)
