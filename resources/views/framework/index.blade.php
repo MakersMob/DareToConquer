@@ -12,7 +12,7 @@
 </section>
 <section class="content lesson">
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row">
         <div class="col-md-8">
             <p>Is there a step-by-step way to build a successful business? I don't think so but that's only because there are obstacles that are unique to you.</p>
             <p>However, that doesn't mean you can't follow a roadmap. Some set of guidelines that will at least make sure you don't run out of water or food on your journey.</p>
@@ -54,7 +54,7 @@
 </section>
 <section class="content smoke">
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row">
             <div class="col-12 col-lg-6">
                 <h2>Table of Contents</h2>
                 <table class="table">

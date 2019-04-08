@@ -9,14 +9,14 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="preheader">Hello and Welcome to...</h2>
-                <h1 class="billboard"><strong>Dare to Conquer</strong></h1>
+                <h1 class="billboard">Dare to Conquer: <span>Full Access</span></h1>
+                <h2 class="subheader">Get everything now and in the future for just one price. Your future life can&rsquo;t wait.</h2>
                 <div class="" style="margin-top: 2rem;"><a href="#join" class="btn btn-primary btn-lg">Join Today</a></div>
             </div>
         </div>
     </div>
 </section>
-<section class="content lesson smoke">
+<section class="content lesson">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -34,9 +34,9 @@
         </div>
     </div>
 </section>
-<section class="content lesson ice" id="join">
+<section class="content lesson vanilla" id="join">
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row">
             <div class="col-12">
                 <h2 class="">Enrollment</h2>
             </div>
@@ -91,7 +91,7 @@
                                     </div>
                                     @endunless
                                 </div>
-                                <h4 style="">Payment Information</h4>
+                                <h4 style="margin-top: 1rem;">Payment Information</h4>
                                 <div class="form-group">
                                     <label for="card">Card</label>
                                     <div id="card-element">
@@ -100,19 +100,19 @@
                                 </div>
                             <input type="hidden" name="type" value="membership">
                             <button type="submit" class="btn btn-large btn-block btn-primary btn-lg submit-button">Join for Life for $597</button>
-                            <p style="margin-top: 1rem;" class="text-center"><strong>Please, only click the button once.</strong></p>
+                            <p style="margin-top: 1rem;" class=""><strong>Please, only click the button once.</strong></p>
                         {!! Form::close() !!}
                     </div>
                 </div>
             </div>
             <div class="col-12 col-lg-4 sidebar">
-                <h3>Need to Pay With PayPal?</h3>
+                <h3 style="margin-top: 0;">Need to Pay With PayPal?</h3>
                 <p>Sure thing. Shoot an email to scrivs@daretoconquer.com letting me know you wish to pay with PayPal and include the email address I can send an invoice to.</p>
             </div>
         </div>
     </div>
 </section>
-<section class="content lesson smoke">
+<section class="content lesson">
     <div class="container">
         <div class="row">
             <div class="col-12">

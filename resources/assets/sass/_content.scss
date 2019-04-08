@@ -1,13 +1,27 @@
+h3.thirds {
+	font-size: 28px;
+}
+
+.circle-text {
+	text-align: center;
+		width: 120px;
+		    line-height: 120px;
+		    border-radius: 50%;
+		    text-align: center;
+		    font-size: 48px;
+		    background-color: $black;
+	color: $white;
+}
+
 .content {
 	background-color: $white;
-	padding: 2rem 0;
+	padding: 4rem 0;
 	strong {
 	 	background-color: $yellow;
 	 	font-weight: 700;
 	}
 	h2, h3 {
 		margin-top: 2rem;
-		color: $space;
 		font-family: $font-family-sans-serif;
 		strong {
 			color: $pink;
@@ -16,20 +30,20 @@
 		// max-width: 45rem;
 		// margin-left: auto;
 		// margin-right: auto;
-		text-align: center;
+		//text-align: center;
 	}
 	h4, h5 {
 		max-width: 45rem;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
+		// margin-left: auto;
+		// margin-right: auto;
+		// text-align: center;
 
 	}
 	p, li {
 		font-size: 1.3rem;
 		max-width: 45rem;
-		margin-left: auto;
-		margin-right: auto;
+		// margin-left: auto;
+		// margin-right: auto;
 	}
 	label {
 		font-size: 16px;
@@ -39,11 +53,10 @@
 		padding: 0;
 	}
 	div.image {
-		text-align: center;
 		img {
 			max-width: 100%;
-			margin-left: auto;
-			margin-right: auto;
+			// margin-left: auto;
+			// margin-right: auto;
 		}
 	}
 
@@ -81,39 +94,13 @@
 		color: $white;
 	}
 	button.btn, a.btn {
-		border-radius: 1000px;
-	}
-
-	ul.course-list, ul.mini-course-list {
-		list-style-type: none;
-		padding: 0;
-		margin: 0;
-		font-size: 16px;
-		li {
-			padding: 0;
-			line-height: 1;
-			margin-bottom: 3rem;
-			a {
-				font-family: $font-family-sans-serif;
-				color: $pink;
-				font-weight: 900;
-				text-decoration: none;
-				border: none;
-				&:hover {
-					color: $black;
-				}
-			}
-		}
-	}
-	ul.course-list {
-		li a {
-			font-size: 3rem;
-		}
-	}
-	ul.mini-course-list {
-		li a {
-			font-size: 2rem;
-		}
+		border-radius: $border-radius;
+		font-family: $font-family-sans-serif;
+		border: none;
+		text-decoration: none;
+		color: $white;
+		font-weight: 500;
+		letter-spacing: 1px;
 	}
 
 	form strong {
@@ -140,6 +127,7 @@
 		font-family: $font-family-sans-serif;
 	}
 }
+
 .content.lesson .sidebar {
 	li {
 		margin-left: 1rem;
@@ -153,15 +141,20 @@
 		}
 	}
 	p, li {
-		font-size: 16px;
+		font-size: 18px;
 		font-family: $font-family-sans-serif;
 	}
 }
 .content.lesson {
 	background-color: #fefefe;
 	p {
-		margin: rem-calc(30) auto;
+		margin-top: rem-calc(30);
+		margin-bottom: rem-calc(30);
 		line-height: 2.14;
+		&.second-sans {
+			font-family: $font-family-sans-serif2;
+			line-height: 1.6
+		}
 		&:first-child {
 			margin-top: 0;
 		}
@@ -173,10 +166,14 @@
 				border-bottom: none;
 				text-decoration: none;
 			}
+			&.btn {
+				color: $white;
+				border-bottom: none;
+			}
 		}
 	}
 	blockquote {
-		padding-left: 5rem;
+		padding-left: 3rem;
 		font-style: italic;
 		border-left: 10px solid $rose;
 	}
@@ -193,6 +190,9 @@
 				border-bottom: none;
 				text-decoration: none;
 			}
+			&.nav-link {
+				border-bottom: none;
+			}
 		}
 	}
 	p, li, div.recap {
@@ -202,11 +202,11 @@
 		font-family: $font-family-serif;
 	}
 	div.recap {
-		margin-left:auto;
-		margin-right: auto;
+		// margin-left:auto;
+		// margin-right: auto;
 		border: 3px solid rgba($ocean, 0.5);
-		background-color: $smoke;
-		padding: 1rem 1rem 0;
+		background-color: $vanilla;
+		padding: 2rem 1rem 0;
 		margin-bottom: 1rem;
 		border-radius: $border-radius;
 		p {
@@ -218,9 +218,7 @@
 			margin-left: 1.5rem;
 		}
 		h3, h4 {
-			text-align: center;
 			margin-top: 0;
-			font-family: $font-family-special;
 		}
 	}
 }
@@ -232,9 +230,21 @@
 		border: 3px solid $white;
 	}
 }
-
+.content.vanilla {
+	background-color: $vanilla;
+}
 .content.sky {
 	background-color: $sky;
+}
+
+.content.black {
+	background-color: $black;
+	p {
+		color: $white;
+		strong {
+			color: $black;
+		}
+	}
 }
 
 .content.ocean {
@@ -251,12 +261,17 @@
 		border: 3px solid $rose;
 	}
 }
-
+.content.myrtle {
+	background-color: $myrtle;
+	table.table {
+		background-color: $white;
+	}
+}
+.content.red {
+	background-color: $red;
+}
 .content.rose {
 	background-color: $rose;
-	h2, h3 {
-		color: rgba($space, 0.75);
-	}
 	table {
 		background-color: $white;
 		border-radius: $border-radius;
@@ -298,7 +313,7 @@
 	}
 	@media (min-width: 768px) {
 		ol {
-			padding-left: 3.6rem;
+			padding-left: 0;
 		}
 	}
 }
@@ -360,5 +375,65 @@ img.avatar {
 		background-color: $rose;
 		border-radius: $border-radius;
 		margin-bottom: 2rem;
+	}
+}
+
+.courses {
+	background-color: $myrtle;
+	padding: 4rem 0;
+	.course-list {
+		//list-style-type: none;
+		padding: 0;
+		margin: 0;
+		font-size: 3rem;
+		li {
+			padding: 0;
+			line-height: 1;
+			a {
+				font-family: $font-family-serif;
+				color: $blue;
+				font-weight: 900;
+				text-decoration: none;
+				border: none;
+				display: block;
+				background-color: $myrtle;
+				padding: 2rem 0;
+				&:hover {
+					color: $pink;
+				}
+			}
+		}
+	}
+	.course-list {
+		li a {
+			font-size: 3rem;
+		}
+	}
+}
+
+.sidebar-item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+	/* Position the items */
+	// &:nth-child(2) { top: 25%; }
+	// &:nth-child(3) { top: 50%; }
+	// &:nth-child(4) { top: 75%; }
+}
+
+.make-me-sticky {
+  position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    
+  padding: 0 15px;
+}
+
+.sidebar-form {
+	input, textarea {
+		font-size: 18px;
 	}
 }

@@ -5,16 +5,16 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h1><span>Community Newsletters</span></h1>
+				<h1>Community Newsletters</h1>
 			</div>
 		</div>
 	</div>
 </section>
-<section class="content directory smoke">
+<section class="content directory">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg-6">
-				<h2>The Ish</h2>
+				<h2 style="margin-top: 0;">The Ish</h2>
 				<p>Every Sunday, the all-powerful Marybeth drops the Community Newsletter. Each week she saves a copy. Consider it your personal library without the clutter.</p>
 			</div>
 			<div class="col-12 col-lg-6">

@@ -1,13 +1,13 @@
 .navbar {
-	background-color: $pink;
+	background-color: $white;
 	.navbar-brand {
 		font-family: $font-family-sans-serif;
 		font-weight: 700;
-		font-size: 1.5rem;
+		font-size: 2rem;
 		padding-right: 1rem;
-		color: $white !important;
+		color: $black !important;
 		&:hover {
-			color: $yellow !important;
+			color: $pink !important;
 		}
 		img {
 			max-width: 2rem;
@@ -17,15 +17,17 @@
 	li.nav-item a.nav-link {
 		//font-family: "Permanent Marker",sans-serif;
 		font-size: 1rem;
-		color: $white;
-		font-weight: 700;
+		color: $blue;
+		font-weight: 500;
 		margin-top: 2px;
+		letter-spacing: 1px;
+		text-transform:: uppercase;
 		&:hover {
-			color: $ocean !important;
+			color: $pink !important;
 		}
 		&.active {
-			color: $yellow !important;
-			font-weight: 900;
+			color: $pink !important;
+			//font-weight: 900;
 		}
 	}
 	a.dropdown-item {

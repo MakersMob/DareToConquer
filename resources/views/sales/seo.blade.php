@@ -4,10 +4,9 @@
 <section class="welcome course">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 text-center">
-        <h2 class="preheader">Dare to Conquer...</h2>
-				<h1 class="billboard"><span>SEO</span></h1>
-				<h2 class="subheader course-title">The Ultimate Google Mastery Course</h2>
+			<div class="col-12">
+				<h1 class="billboard">The <span>SEO</span> Course</h1>
+				<h2 class="subheader course-title">Get free traffic from Google and grow your business</h2>
 			</div>
 		</div>
 	</div>
@@ -20,7 +19,6 @@
         <p>The one question you have to ask yourself now is <strong><em>how much traffic are you missing out on because you don't understand how to get the most out of SEO?</em></strong></p>
         <p>This is why the <em>Dare to Conquer: SEO</em> course exists because you shouldn't have to ask that question. Instead, you should be able to look at new areas of growth for your business.</p>
         <p>It&rsquo;s time to get started now because search engine traffic isn&rsquo;t going wait around until you are ready.</p>
-        @include('partials.payment.membership')
 			</div>
 		</div>
 	</div>

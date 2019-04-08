@@ -4,21 +4,19 @@
 <section class="welcome course">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 text-center">
-        <h2 class="preheader">Dare to Conquer...</h2>
-				<h1 class="billboard"><span>Affiliate Marketing</span></h1>
-				<h2 class="subheader course-title">The Ultimate Passively Active Revenue Generating Course</h2>
+			<div class="col-12">
+				<h1 class="billboard">The <span>Affiliate Marketing</span> Course</h1>
+				<h2 class="subheader course-title">The make money while other people do the work lifestyle</h2>
 			</div>
 		</div>
 	</div>
 </section>
 <section class="content lesson">
 	<div class="container">
-		<div class="row justify-content-center">
+		<div class="row">
 			<div class="col-12">
 				<p>Hm, I really need to find time to work on these sales page.</p>
         <p>Ummmm...okay, this course will help you understand how to do effective affiliate marketing because it's much more than posting a link in a blog post and hoping for the best.</p>
-        @include('partials.payment.membership')
 			</div>
 		</div>
 	</div>

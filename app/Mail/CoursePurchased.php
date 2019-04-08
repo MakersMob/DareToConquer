@@ -49,6 +49,9 @@ class CoursePurchased extends Mailable
             case 'affiliate-marketing':
                 $email = 'emails.course.affiliate-marketing';
                 break;
+            case 'content-creation':
+                $email = 'emails.course.content-creation';
+                break;
             default:
                 $email = 'thanks';
                 break;

@@ -10,21 +10,16 @@
 		</div>
 	</div>
 </section>
-<section class="content smoke lesson">
+<section class="courses">
 	<div class="container">
 		<div class="row">
-			@foreach($guides as $guide)	
-				<div class="col-12 col-lg-4">
-					<div class="card mb-3">
-						<div class="card-header">
-							<a href="/guide/{{ $guide->slug }}">{{ $guide->title }}</a>
-						</div>
-						<div class="card-body">
-							<p>{{ $guide->summary }}</p>
-						</div>
-					</div>
-				</div>
-			@endforeach
+			<div class="col-12">
+				<ul class="course-list">
+				@foreach($guides as $guide)	
+					<li><a href="/guide/{{ $guide->slug }}">{{ $guide->title }}</a></li>
+				@endforeach
+				</ul>
+			</div>
 		</div>
 	</div>
 </section>

@@ -5,14 +5,7 @@
   <div class="container">
     <div class="row">
         <div class="col-12">
-            <h1 class="billboard">You will <span>happily quit your job</span> in the next 18 months.</h1>
-            <h2 class="subheader">Learn how to build an online business that creates more freedom and happiness in your life.</h2>
-            <ul>
-            	<li>End the confusion of where to start</li>
-            	<li>Stop the panic of what to do next</li>
-            	<li>Enjoy the freedom that your business brings</li>
-            </ul>
-			<p style="margin-top: 2rem;"><a href="/bootcamp" class="btn btn-primary btn-md" style="margin-right: 2rem;">View Free Bootcamps</a> <a href="/course" class="btn btn-secondary btn-md">View Premium Courses</a></p>
+            <h1 class="billboard">You will <span>happily quit your job</span> in the next 12 months.</h1>
         </div>
     </div>
   </div>
@@ -20,72 +13,10 @@
 <section class="content lesson">
 	<div class="container">
 		<div class="row">
-			<div class="col-12" style="margin-bottom: 2rem;">
-				<h2>The better way to <strong>learn how to build an online business</strong> that you love.</h2>
-			</div>
-			<div class="col-12 col-lg-4">
-				<div class="circle-text">1</div>
-				<h3 class="thirds">Come up with an idea, lay out the plan</h3>
-				<p>First, <strong>you need an idea that you know will make money</strong>. Also, understand the big picture of how online businesses make money.</p>
-				<h5>Free Bootcamps</h5>
-				<ul>
-					<li><a href="/bootcamp/ideas">Biz Idea Generation</a></li>
-					<li><a href="/bootcamp/blogging">Blogging Bootcamp</a></li>
-				</ul>
-			</div>
-			<div class="col-12 col-lg-4">
-				<div class="circle-text">2</div>
-				<h3 class="thirds">Build a brand, gain an audience</h3>
-				<p>Second, <strong>you need an audience that will love the value that you provide them</strong>.</p>
-				<h5>Free Bootcamps</h5>
-				<ul>
-					<li><a href="/bootcamp/brand">Brand Framework</a></li>
-					<li><a href="/bootcamp/tribe">Finding Your Tribe</a></li>
-					<li><a href="/bootcamp/seo">Understanding SEO</a></li>
-					<li><a href="/bootcamp/pinterest">Principles of Pinterest</a></li>
-				</ul>
-			</div>
-			<div class="col-12 col-lg-4">
-				<div class="circle-text">3</div>
-				<h3 class="thirds">Make money, quit job, live happily</h3>
-				<p>Finally, make the kind of money that finally lets you <strong>live the lifestyle that you want</strong> and wake up every day happy.</p>
-				<h5>Free Bootcamps</h5>
-				<ul>
-					<li><a href="/bootcamp/affiliate-marketing">Affiliate Marketing</a></li>
-					<li><a href="/bootcamp/product-creation">Product Creation</a></li>
-					<li><a href="/bootcamp/sales-funnels">Sales Funnels</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="content lesson myrtle">
-	<div class="container">
-		<div class="row">
-			<div class="col-12 col-lg-6">
-				<div class="image">
-					<img src="https://s3-us-west-2.amazonaws.com/obstacleco-assets/wp-content/uploads/2019/04/07022307/buttonupsmile.jpg">
-				</div>
-			</div>
-			<div class="col-12 col-lg-6">
-				<h2 style="margin-top: 0;">Hello!</h2>
-				<p><strong>My name is Paul Scrivens and I believe that everyone deserves the opportunity to achieve the lifestyle that they want.</strong></p>
-				<p>That's why I created Dare to Conquer.</p>
-				<p>It's my goal to help everyone that is willing to learn achieve the lifestyle they know they have in them.</p>
-				<p>I&rsquo;ve been fortunate to run a number of successful online businesses that allow me the freedom to live life on my terms.</p>
-				<p>To say that I am happy would be an understatement.</p>
-				<p>I want everyone to be able to find this kind of happiness where you no longer have to worry about bills, lack of time with friends &amp; family, and wondering if you're really getting the most out of your life.</p>
-				<p>I figure if you follow my lead, it will take you 18 months to quit your job and live life the way you want.</p>
-				<p>Are you with me?</p>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="content lesson">
-	<div class="container">
-		<div class="row">
 			<div class="col-12">
-				<h2 style="margin-top: 0">If you&rsquo;re lost on your journey...</h2>
+				<p>Hello!</p>
+				<p><strong>My name is Paul Scrivens and I believe that everyone deserves the opportunity to achieve the lifestyle that they want. That's why I created Dare to Conquer.</strong></p>
+				<p>It's my goal to help everyone that is willing to learn achieve the lifestyle they know they have in them.</p>
 				<p>My favorite books as a kid were the <em>Choose Your Own Adventure</em> books. My Mom didn't like me reading them because they weren't really books. More like videogames in text form.</p>
 				<div class="image" style="float:left; margin-right: 2rem; margin-bottom: 2rem;">
 					<img src="https://daretoconquer-app-master.s3.amazonaws.com/53/Cave_of_time.jpg">
@@ -105,7 +36,7 @@
 		</div>
 	</div>
 </section>
-<section class="content vanilla lesson">
+<section class="content smoke lesson">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -138,7 +69,7 @@
 			@foreach($youtubes as $youtube)
 				<div class="col-12 col-lg-4">
 					<div class="image">
-						<a target="_blank" href="https://youtube.com/watch?v={{ $youtube->youtube_id }}"><img src="http://img.youtube.com/vi/{{ $youtube->youtube_id }}/hqdefault.jpg"></a>
+						<a target="_blank" href="https://youtube.com/watch?v={{ $youtube->youtube_id }}"><img src="http://img.youtube.com/vi/{{ $youtube->youtube_id }}/mqdefault.jpg"></a>
 						<p><small><strong><a href="https://youtube.com/watch?v={{ $youtube->youtube_id }}">{{ $youtube->title }}</a></strong></small></p>
 					</div>
 				</div>

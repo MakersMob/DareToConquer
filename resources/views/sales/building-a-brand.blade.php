@@ -4,22 +4,20 @@
 <section class="welcome course">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 text-center">
-        <h2 class="preheader">Dare to Conquer...</h2>
-				<h1 class="billboard"><span>Building a Brand</span></h1>
-				<h2 class="subheader course-title">Create a Brand That You and Your People Love</h2>
+			<div class="col-12">
+				<h1 class="billboard">The <span>Building a Brand</span> Course</h1>
+				<h2 class="subheader">Create a Brand That You and Your People Love</h2>
 			</div>
 		</div>
 	</div>
 </section>
 <section class="content lesson">
 	<div class="container">
-		<div class="row justify-content-center">
+		<div class="row">
 			<div class="col-12">
 				<p><strong>You want to build something that people will love and make you money.</strong></p>
         <p>This course will get you started on that path.</p>
         <p>By purchasing this course you also get access to <a href="/course/building-a-tribe">Building a Tribe</a> because what is the point of building a brand if you can't build a following with it?</p>
-        @include('partials.payment.membership')
 			</div>
 		</div>
 	</div>

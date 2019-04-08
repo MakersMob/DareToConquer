@@ -10,13 +10,13 @@
 		</div>
 	</div>
 </section>
-<section class="content">
+<section class="courses">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
 				<ul class="course-list">
 					@foreach($journeys as $journey)
-						<li class="text-center"><a href="/journey/{{ $journey->slug }}">{{ $journey->title }}</a></li>
+						<li><a href="/journey/{{ $journey->slug }}">{{ $journey->title }}</a></li>
 					@endforeach
 				</ul>
 			</div>

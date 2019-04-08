@@ -29,6 +29,11 @@ class Course extends Model
         return $this->belongsToMany('DareToConquer\User')->withTimestamps();
     }
 
+    public function bundles()
+    {
+        return $this->belongsToMany('DareToConquer\Bundle');
+    }
+
     public function sluggable()
     {
         return [

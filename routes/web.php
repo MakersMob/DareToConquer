@@ -245,6 +245,10 @@ Route::group(['middleware' => 'auth'], function () {
 		return view('member.affiliate');
 	});
 
+	// Notes
+	Route::get('course/{course}/{id}/notes', 'NoteController@show');
+	Route::resource('notes', 'NoteController');
+
 	// Challenges
 	Route::get('/challenge/{challenge}/set/{id}', 'SetController@show');
 	Route::get('/challenge/welcome', function() {

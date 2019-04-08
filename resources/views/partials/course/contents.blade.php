@@ -1,10 +1,10 @@
-<section class="content">
+<section class="content myrtle">
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row">
       <div class="col-12 col-lg-8">
-        <h2>What Is Inside</h2>
+        <h2>What is inside the course?</h2>
         @if(count($modules) == 0)
-          <p class="text-center">Nothing because this course hasn't launched yet.</p>
+          <p class="">Nothing because this course hasn't launched yet.</p>
         @else
           <table class="table">
             <?php $c = 1; ?>

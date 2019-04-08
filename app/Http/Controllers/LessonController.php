@@ -6,7 +6,9 @@ use Illuminate\Http\Request;
 use DareToConquer\Lesson;
 use DareToConquer\Module;
 use DareToConquer\Course;
+use DareToConquer\Note;
 use Auth;
+use League\HTMLToMarkdown\HtmlConverter;
 
 class LessonController extends Controller
 {
@@ -88,13 +90,23 @@ class LessonController extends Controller
     public function show($course, $id)
     {
         $lesson = Lesson::where('slug', $id)->firstOrFail();
+
+        $notes = Note::where('lesson_id', $lesson->id)->where('user_id', Auth::user()->id)->first();
+        $note = '';
+
+        if(! is_null($notes)) {
+            $converter = new HtmlConverter();
+
+            $note = $converter->convert($notes->notes);
+        }
+        
         
         if(Auth::user()->hasRole('admin')) {
             $modules = Module::where('course_id', $lesson->course->id)->with(['less' => function ($query) {
                 $query->orderBy('order', 'ASC');
             }])->orderBy('order', 'ASC')->get();
 
-            return view('lesson.show', compact('lesson', 'modules'));
+            return view('lesson.show', compact('lesson', 'modules', 'notes', 'note'));
         }
 
         $modules = Module::where('course_id', $lesson->course_id)->where('active', 1)->with(['less' => function ($query) {
@@ -102,7 +114,7 @@ class LessonController extends Controller
             $query->orderBy('order', 'ASC');
         }])->orderBy('order', 'ASC')->get();
 
-        return view('lesson.show', compact('lesson', 'modules'));
+        return view('lesson.show', compact('lesson', 'modules', 'notes'));
     }
 
     /**

@@ -4,10 +4,9 @@
 <section class="welcome course">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 text-center">
-        <h2 class="preheader">Dare to Conquer...</h2>
-				<h1 class="billboard"><span>Building a Tribe</span></h1>
-				<h2 class="subheader course-title">Create a Tribe of Follows That Pay You Consistently</h2>
+			<div class="col-12">
+				<h1 class="billboard">The <span>Building a Tribe</span> Course</h1>
+				<h2 class="subheader course-title">Build a Tribe of True Fans</h2>
 			</div>
 		</div>
 	</div>
@@ -19,7 +18,6 @@
 				<p><strong>You know you have value to offer the world and there are people who will love it</strong></p>
         <p>This course will help you deliver your message to the right people to they actually follow you and spend money on you.</p>
         <p>By purchasing this course you also get access to <a href="/course/building-a-brand">Building a Brand</a> because a strong brand attracts a strong tribe.</p>
-        @include('partials.payment.membership')
 			</div>
 		</div>
 	</div>

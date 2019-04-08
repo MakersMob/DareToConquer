@@ -4,10 +4,9 @@
 <section class="welcome course">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 text-center">
-        <h2 class="preheader">Dare to Conquer...</h2>
-				<h1 class="billboard"><span>Pinterest</span></h1>
-				<h2 class="subheader course-title">The Ultimate Blog Traffic Generating Course</h2>
+			<div class="col-12">
+				<h1 class="billboard">The <span>Pinterest</span> Course</h1>
+				<h2 class="subheader course-title">Increase the traffic to your site with the power of free Pinterest marketing</h2>
 			</div>
 		</div>
 	</div>
@@ -20,7 +19,6 @@
 				<p>But to do well with Pinterest you can't just show up and do stuff. <strong>You have to have a strategy behind it all and you need to be able to adapt that strategy when Pinterest makes a change.</strong></p>
 				<p>That is why <em>Dare to Conquer: Pinterest</em> is an ever-evolving course. I spend my time growing multiple sites with Pinterest and that requires testing different strategies and tools all of the time.</p>
 				<p>If you're ready to get people to your party and learn what I've learned, then let's get started.</p>
-        @include('partials.payment.membership')
 			</div>
 		</div>
 	</div>

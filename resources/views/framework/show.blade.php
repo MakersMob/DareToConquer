@@ -16,7 +16,7 @@
 </section>
 <section class="content lesson">
 	<div class="container">
-		<div class="row justify-content-center">
+		<div class="row">
 			<div class="col-12 main">
 				<p class="date text-muted">Updated: {{ date('F j, Y', strtotime($framework->updated_at)) }}</p>
 				{!! $framework->content !!}
@@ -26,7 +26,7 @@
 </section>
 <section class="content smoke">
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row">
             <div class="col-1 col-lg-6">
                 <h2>Table of Contents</h2>
                 <table class="table">

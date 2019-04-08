@@ -1,14 +1,19 @@
 <section class="content smoke lesson">
 	<div class="container">
-		<div class="row justify-content-center">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="" style="margin-top: 0;">Jump right in for ${{ $course->price }}</h2>
+            </div>
+        </div>
+		<div class="row">
 			<div class="col-12 col-lg-8">
-          <h2 class="text-center" style="margin-top: 0;">Jump right in for ${{ $course->price }}</h2>
                 <div class="card">
                     <div class="card-body">
                         <form method="POST" action="/payment" accept-charset="UTF-8" id="payment-form" name="stripe-form">
                             {{ csrf_field() }}
                             <div class="payment-errors"></div>
                             <div class="row">
+                                @guest
                                 <div class="col-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="name">First Name</label>
@@ -35,6 +40,7 @@
                                         <small class="form-text text-muted">Password you will use to log into the member's area.</small>
                                     </div>
                                 </div>
+                                @endguest
                             </div>
                             <h4 style="">Payment Information</h4>
                             <div class="form-group">
@@ -48,6 +54,11 @@
                         </form>
                     </div>
                 </div>
+            </div>
+            <div class="col-12 col-lg-4 sidebar">
+                <h3 style="margin-top: 0;">Get everything DTC</h3>
+                <p>If you want access to all courses, journeys and other resources in DTC, then you should consider the <a href="/join">full lifetime membership</a> for $597.</p>
+                <p>Pay once and never purchase any more courses ever again.</p>
             </div>
         </div>
     </div>

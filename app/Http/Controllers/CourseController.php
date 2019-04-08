@@ -76,7 +76,7 @@ class CourseController extends Controller
     {
         $course = Course::where('slug', $id)->firstOrFail();
 
-        if(Auth::guest()) {
+        if(Auth::guest() || ! Auth::user()->courses->contains($course->id)) {
             $modules = Module::where('course_id', $course->id)->where('active', 1)->with(['less' => function ($query) {
                 $query->where('active', '1');
                 $query->orderBy('order', 'ASC');

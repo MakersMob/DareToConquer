@@ -16,7 +16,7 @@
   </div>
 </section>
 @if(count($lesson->objectives) > 0)
-<section class="content smoke objectives">
+<section class="content rose objectives">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -35,7 +35,48 @@
   <div class="container">
   	<div class="row">
       <div class="col-12">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Lesson</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/course/{{ $lesson->course->slug }}/{{ $lesson->slug }}/notes" tabindex="-1">Notes</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-7 main">
         {!! $lesson->content !!}
+      </div>
+      <div class="col-lg-5 sidebar">
+        <div class="sidebar-item">
+          <div class="make-me-sticky">
+            <div class="card">
+              <div class="card-header">
+                Notes
+              </div>
+              <div class="card-body">
+                @if($notes == '')
+                  {!! Form::open(['url' => 'notes', 'class' => 'sidebar-form']) !!}
+                    <div class="form-group">
+                      <textarea class="form-control" name="notes" rows="15"></textarea>
+                    </div>
+                    <input type="hidden" name="lesson_id" value="{{ $lesson->id }}">
+                    <button type="submit" class="btn btn-primary btn-block">Save Notes</button>
+                  {!! Form::close() !!}
+                @else
+                  {!! Form::open(['url' => 'notes/'.$notes->id, 'class' => 'sidebar-form']) !!}
+                    @method('PUT')
+                    <div class="form-group">
+                      <textarea class="form-control" name="notes" rows="15">{{ $note }}</textarea>
+                    </div>
+                    <input type="hidden" name="lesson_id" value="{{ $lesson->id }}">
+                    <button type="submit" class="btn btn-primary btn-block">Save Notes</button>
+                  {!! Form::close() !!}
+                @endif
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -44,7 +85,7 @@
 <section class="content smoke objectives">
   <div class="container">
     <div class="row">
-      <div class="col-12 justify-content-center">
+      <div class="col-12">
         <h3>Lesson Objectives Recap</h3>
         <ol>
           @foreach($lesson->objectives as $objective)
@@ -57,22 +98,22 @@
 </section>
 @endif
 @if(count($lesson->worksheets) > 0)
-<section class="content ocean">
+<section class="content vanilla">
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row">
       <div class="col-12 col-lg-8">
           <h3 style="margin-top: 0;">{{ $lesson->name }} <strong>Exercises</strong></h3>
           @foreach($lesson->worksheets as $worksheet)
             <div class="card" style="margin-bottom: 2rem;">
                 <div class="card-body">
                   @if($answer = $worksheet->worksheetanswered($worksheet->id))
-                    <h5 class="worksheet-question text-center" id="worksheet-{{$worksheet->id}}">{{ $worksheet->description}}</h5>
+                    <h5 class="worksheet-question" id="worksheet-{{$worksheet->id}}">{{ $worksheet->description}}</h5>
                     {!! $answer->answer !!}
                   @else
                     <div id="worksheet-{{$worksheet->id}}"></div>
                       {!! Form::open(['url' => 'worksheetanswers']) !!}
                         <div class="form-group">
-                          <label for="answer" class="text-center"><strong>{{ $worksheet->description}}</strong></label>
+                          <label for="answer" class=""><strong>{{ $worksheet->description}}</strong></label>
                           <textarea class="form-control" name="answer" rows="6"></textarea>
                         </div>
                         <input type="hidden" name="worksheet_id" value="{{$worksheet->id}}">
@@ -87,18 +128,30 @@
   </div>
 </section>
 @endif
-<section class="content rose">
+@unless($lesson->active != 1)
+<section class="content">
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row">
   		<div class="col-12 col-lg-8">
-        @unless($lesson->active != 1)
+        
           @if(Auth::user()->lessons->contains($lesson->id))
-            <p>You've completed this lesson but good on you for coming back and revisiting things!</p>
+            <h3>All done!</h3>
+            <p>You've completed this lesson but good on you for coming back and revisiting things.</p>
           @else
+            <h3>Have you completed this lesson?</h3>
             <p><a href="/lessoncompleted/{{$lesson->id}}" class="btn btn-block btn-primary btn-lg">I've completed this lesson!</a></p>
           @endif
-        @endunless
-        <h2 style="border-bottom: none;">{{ $lesson->course->name }} <strong>Curriculum</strong></h2>
+       
+      </div>
+    </div>
+  </div>
+</section>
+ @endunless
+<section class="content rose">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <h2 style="border-bottom: none; margin-top: 0;">{{ $lesson->course->name }} <strong>Curriculum</strong></h2>
   			<table class="table">
           <?php $c = 1; ?>
           @foreach($modules as $module)
