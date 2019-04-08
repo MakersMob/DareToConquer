@@ -37,6 +37,11 @@ Route::get('privacy-policy', function() {
 /* YouTube */
 Route::get('youtube', 'YoutubeController@index');
 
+/* Email Triggers */
+Route::get('the-sales-sequence', function() {
+	return view('triggers.sales-sequence');
+});
+
 /* Story */
 
 /* Track 1 */
