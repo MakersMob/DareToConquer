@@ -7,6 +7,7 @@
 			<div class="col-12">
 				<h3 class="preheader"><a href="/course">Courses</a></h3>
 				<h1><strong>{{ $course->name }}</strong></h1>
+				<p><a href="/course/{{ $course->slug }}/pdf" class="btn btn-primary">Download Course PDF</a></p>
 			</div>
 		</div>
 	</div>
@@ -14,7 +15,7 @@
 <section class="content">
 	<div class="container">
 		<div class="row">
-			<div class="col-12">
+			<div class="col-12 col-lg-6">
 				<!--<ul class="nav nav-tabs">
 				  <li class="nav-item">
 				    <a class="nav-link active" href="#">Lessons</a>

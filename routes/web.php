@@ -382,6 +382,7 @@ Route::group(['middleware' => 'auth'], function () {
 		Route::get('admin/set/{set}/user/{id}', 'AdminSetUserController@show');
 		Route::get('admin/set/{id}', 'AdminSetController@show');
 	});	
+	Route::get('course/{course}/pdf', 'CoursePdfController@show');
 	Route::get('course/{course}/{id}', 'LessonController@show');
 	Route::get('lessoncompleted/{id}', 'LessoncompletedController@show');
 	Route::get('stopcompleted/{id}', 'StopCompletedController@store');
