@@ -16,7 +16,7 @@
 </section>
 <section class="content lesson">
 	<div class="container">
-		<div class="row justify-content-center">
+		<div class="row">
 			<div class="col-12 col-lg-5">
 				{!! $set->description !!}
 			</div>
@@ -51,7 +51,7 @@
 													<textarea class="form-control" name="answer" rows="8"></textarea>
 													<input type="hidden" name="exercise_id" value="{{ $exercise->id }}">
 												</div>
-												<button type="submit" class="btn btn-primary btn-lg btn-block">Save Answer</button>
+												<button type="submit" class="btn btn-primary btn-md btn-block">Save Answer</button>
 											{!! Form::close() !!}
 										</div>
 									</div>
@@ -61,13 +61,23 @@
 					</div>
 					<?php $count++; ?>
 				@endforeach
+			</div>
+		</div>
+	</div>
+</section>
+<section class="content lesson smoke">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
 				@if(Auth::user()->sets->contains($set->id))
+					<h2>Well done!</h2>
 					<p>You've completed this set of exercises.</p>
 				@else
+					<h2>Have you completed all of the exercises in this set?</h2>
 					{!! Form::open(['url' => '/set/completed', 'enctype' => 'multipart/form-data']) !!}
 						<input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
 						<input type="hidden" name="set_id" value="{{ $set->id}}">
-						<button type="submit" class="btn btn-primary btn-lg btn-block">Mark Set Completed</button>
+						<button type="submit" class="btn btn-primary btn-md btn-block">Mark Set Completed</button>
 					{!! Form::close() !!}
 				@endif
 			</div>
@@ -76,8 +86,9 @@
 </section>
 <section class="content rose">
 	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-12 col-lg-8">
+		<div class="row">
+			<div class="col-12 col-lg-6">
+				<h2>Exercise Sets</h2>
 				<table class="table">
 				  @foreach($sets as $st)
 				        <tr class="lessons">

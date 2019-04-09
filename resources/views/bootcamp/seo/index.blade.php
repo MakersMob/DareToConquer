@@ -1,17 +1,17 @@
-@extends('layouts.app', ['title' => 'The Free 12-Day Blogging Bootcamp', 'description' => 'Want to start making money from blogging? This free bootcamp will help show you what it takes to make a living with a blog.'])
+@extends('layouts.app', ['title' => 'The SEO Email Bootcamp', 'description' => 'Learn how to conquer SEO and get free traffic from search engines'])
 
 @section('content')
 <section class="welcome">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h1 class="billboard"><strong>The Free 5-Day SEO Bootcamp</strong></h1>
+				<h1 class="billboard">The <span>Understanding SEO</span> Bootcamp</h1>
 				<h2 class="subheader">Take this SEO crash course and find out what it takes to build a successful blog before you make some silly mistakes.</h2>
 			</div>
 		</div>
 	</div>
 </section>
-<section class="content smoke">
+<section class="content lesson rose">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg-8">

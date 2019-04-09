@@ -12,7 +12,7 @@
             	<li>Stop the panic of what to do next</li>
             	<li>Enjoy the freedom that your business brings</li>
             </ul>
-			<p style="margin-top: 2rem;"><a href="/bootcamp" class="btn btn-primary btn-md" style="margin-right: 2rem;">View Free Bootcamps</a> <a href="/course" class="btn btn-secondary btn-md">View Premium Courses</a></p>
+			<p style="margin-top: 2rem;"><a href="/bootcamp" class="btn btn-primary btn-lg" style="margin-right: 2rem;">View Free Bootcamps</a> <a href="/course" class="btn btn-secondary btn-lg">View Premium Courses</a></p>
         </div>
     </div>
   </div>
@@ -27,34 +27,31 @@
 				<div class="circle-text">1</div>
 				<h3 class="thirds">Come up with an idea, lay out the plan</h3>
 				<p>First, <strong>you need an idea that you know will make money</strong>. Also, understand the big picture of how online businesses make money.</p>
-				<h5>Free Bootcamps</h5>
-				<ul>
+				<ol>
+					<li><a href="/bootcamp/business">Online Business Bootcamp</a></li>
 					<li><a href="/bootcamp/ideas">Biz Idea Generation</a></li>
-					<li><a href="/bootcamp/blogging">Blogging Bootcamp</a></li>
-				</ul>
+				</ol>
 			</div>
 			<div class="col-12 col-lg-4">
 				<div class="circle-text">2</div>
 				<h3 class="thirds">Build a brand, gain an audience</h3>
 				<p>Second, <strong>you need an audience that will love the value that you provide them</strong>.</p>
-				<h5>Free Bootcamps</h5>
-				<ul>
-					<li><a href="/bootcamp/brand">Brand Framework</a></li>
-					<li><a href="/bootcamp/tribe">Finding Your Tribe</a></li>
+				<ol start="3">
+					<li><a href="/bootcamp/brand">Brand &amp; Tribe Framework</a></li>
+					<li><a href="/bootcamp/content">Creating Killer Content</a></li>
 					<li><a href="/bootcamp/seo">Understanding SEO</a></li>
 					<li><a href="/bootcamp/pinterest">Principles of Pinterest</a></li>
-				</ul>
+				</ol>
 			</div>
 			<div class="col-12 col-lg-4">
 				<div class="circle-text">3</div>
 				<h3 class="thirds">Make money, quit job, live happily</h3>
 				<p>Finally, make the kind of money that finally lets you <strong>live the lifestyle that you want</strong> and wake up every day happy.</p>
-				<h5>Free Bootcamps</h5>
-				<ul>
-					<li><a href="/bootcamp/affiliate-marketing">Affiliate Marketing</a></li>
+				<ol start="7">
+					<li><a href="/bootcamp/affiliate-marketing">Acquiring Affiliate Marketing Dollars</a></li>
 					<li><a href="/bootcamp/product-creation">Product Creation</a></li>
-					<li><a href="/bootcamp/sales-funnels">Sales Funnels</a></li>
-				</ul>
+					<li><a href="/bootcamp/sales-funnels">Storytelling Sales Funnels</a></li>
+				</ol>
 			</div>
 		</div>
 	</div>

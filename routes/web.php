@@ -192,7 +192,7 @@ Route::resource('journey', 'JourneyController');
 /* Headstart */
 Route::resource('headstart', 'HeadstartController');
 
-/* Bootcamp */
+/* Bootcamps */
 Route::get('/bootcamp', function () {
 	return view('bootcamp.index');
 });
@@ -231,6 +231,54 @@ Route::get('/bootcamp/affiliate-marketing', function () {
 
 Route::get('/bootcamp/affiliate-marketing/welcome', function () {
 	return view('bootcamp.affiliate.welcome');
+});
+
+Route::get('/bootcamp/business', function () {
+	return view('bootcamp.business.index');
+});
+
+Route::get('/bootcamp/business/welcome', function () {
+	return view('bootcamp.business.welcome');
+});
+
+Route::get('/bootcamp/ideas', function () {
+	return view('bootcamp.idea.index');
+});
+
+Route::get('/bootcamp/ideas/welcome', function () {
+	return view('bootcamp.idea.welcome');
+});
+
+Route::get('/bootcamp/brand', function () {
+	return view('bootcamp.brand.index');
+});
+
+Route::get('/bootcamp/brand/welcome', function () {
+	return view('bootcamp.brand.welcome');
+});
+
+Route::get('/bootcamp/content', function () {
+	return view('bootcamp.content.index');
+});
+
+Route::get('/bootcamp/content/welcome', function () {
+	return view('bootcamp.content.welcome');
+});
+
+Route::get('/bootcamp/product-creation', function () {
+	return view('bootcamp.product.index');
+});
+
+Route::get('/bootcamp/product-creation/welcome', function () {
+	return view('bootcamp.product.welcome');
+});
+
+Route::get('/bootcamp/sales-funnels', function () {
+	return view('bootcamp.funnels.index');
+});
+
+Route::get('/bootcamp/sales-funnels/welcome', function () {
+	return view('bootcamp.funnels.welcome');
 });
 
 // Testimonial Index

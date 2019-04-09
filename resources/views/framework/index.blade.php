@@ -1,7 +1,7 @@
 @extends('layouts.app', ['title' => 'DTC Framework'])
 
 @section('content')
-<section class="welcome home">
+<section class="welcome">
   <div class="container">
     <div class="row">
         <div class="col-12">

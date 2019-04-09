@@ -1,17 +1,17 @@
-@extends('layouts.app', ['title' => 'The Free 12-Day Blogging Bootcamp', 'description' => 'Want to start making money from blogging? This free bootcamp will help show you what it takes to make a living with a blog.'])
+@extends('layouts.app', ['title' => 'The Principles of Pinterest Bootcamp', 'description' => 'Master the ins and outs of Pinterest so you can drive free traffic to your site'])
 
 @section('content')
 <section class="welcome">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h1 class="billboard"><strong>The Free 5-Day Pinterest Bootcamp</strong></h1>
-				<h2 class="subheader">Take this Pinterest crash course and find out what it takes to build a successful blog before you make some silly mistakes.</h2>
+				<h1 class="billboard">The <span>Principles of Pinterest</span> Bootcamp</h1>
+				<h2 class="subheader">Take this Pinterest crash course and find out how to drive free traffic to your site from one of the world's largest search engines</h2>
 			</div>
 		</div>
 	</div>
 </section>
-<section class="content smoke">
+<section class="content lesson rose">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg-8">

@@ -125,12 +125,17 @@
                 <div class="row">
                     <div class="col-12 col-lg-4">        
                         <h4>Free Bootcamps</h4>
-                        <ul>
-                            <li><a href="/bootcamp/blogging">Blogging</a></li>
-                            <li><a href="/bootcamp/pinterest">Pinterest</a></li>
-                            <li><a href="/bootcamp/seo">SEO</a></li>
-                            <li><a href="/bootcamp/affiliate-marketing">Affiliate Marketing</a></li>
-                        </Li>
+                        <ol>
+                            <li><a href="/bootcamp/business">Online Business Bootcamp</a></li>
+                            <li><a href="/bootcamp/ideas">Biz Idea Generation</a></li>
+                            <li><a href="/bootcamp/brand">Brand &amp; Tribe Framework</a></li>
+                            <li><a href="/bootcamp/content">Creating Killer Content</a></li>
+                            <li><a href="/bootcamp/seo">Understanding SEO</a></li>
+                            <li><a href="/bootcamp/pinterest">Principles of Pinterest</a></li>
+                            <li><a href="/bootcamp/affiliate-marketing">Acquiring Affiliate Marketing Dollars</a></li>
+                            <li><a href="/bootcamp/product-creation">Perfect Info Product Creation</a></li>
+                            <li><a href="/bootcamp/sales-funnels">Storytelling Sales Funnels</a></li>
+                        </ol>
                     </div>
                     <div class="col-12 col-lg-4">
                         <h4>Premium Courses</h4>
@@ -150,6 +155,7 @@
                     <div class="col-12 col-lg-4">
                         <h4>Helpful Things</h4>
                         <ul>
+                            <li><a href="/framework">DTC Business Framework</a></li>
                             <li><a href="/youtube">YouTube Videos</a></li>
                             <li><a href="/articles">Articles</a></li>
                             <li><a href="/questions">Online Business FAQ</a></li>

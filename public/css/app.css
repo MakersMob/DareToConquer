@@ -115,6 +115,22 @@ a {
   background: #474954;
 }
 
+.welcome.home {
+  background: url("https://s3-us-west-2.amazonaws.com/obstacleco-assets/wp-content/uploads/2019/04/08235536/dtc-mountains2.jpg") fixed top center;
+  background-size: cover;
+  color: #fff;
+}
+
+.welcome.home h1,
+.welcome.home h2,
+.welcome.home h3 {
+  color: #fff;
+}
+
+.welcome.home h1 span {
+  color: #f9cb40;
+}
+
 .welcome {
   background-color: #F0F0E6;
   padding: 4rem 0;
@@ -179,7 +195,6 @@ a {
 }
 
 .welcome h2.subheader {
-  color: #474954;
   margin-top: 2rem;
 }
 
@@ -224,7 +239,8 @@ h3.thirds {
   text-align: center;
   font-size: 48px;
   background-color: #333;
-  color: #fff;
+  color: #f9cb40;
+  font-weight: 700;
 }
 
 .content {
@@ -724,15 +740,38 @@ footer a:hover {
   text-decoration: none;
 }
 
+footer ul,
+footer ol {
+  padding-left: 0;
+  margin-left: 0;
+  list-style-type: none;
+}
+
+footer ul li,
+footer ol li {
+  border-bottom: 1px solid rgba(238, 238, 238, 0.25);
+  padding: 8px 0;
+}
+
+footer ul li:last-child,
+footer ol li:last-child {
+  border-bottom: none;
+}
+
 footer p,
 footer li {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 footer h2,
 footer h3,
 footer h4 {
   font-family: "Aleo", serif;
+}
+
+footer h4 {
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 /**
