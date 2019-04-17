@@ -1,40 +1,34 @@
-.welcome.home {
-	background: url('https://s3-us-west-2.amazonaws.com/obstacleco-assets/wp-content/uploads/2019/04/08235536/dtc-mountains2.jpg') fixed top center;
-	background-size: cover;
-	color: $white;
-	h1, h2, h3 {
-		color: $white;
-	}
-	h1 {
-		span {
-			color: $yellow;
-		}
-	}
-}
-
 .welcome {
 	background-color: $vanilla;
 	padding: 4rem 0;
 	//text-align: center;
-	font-family: $font-family-serif;
 	ul {
-		margin: 2rem 0 0;
+		margin: 1rem 0 0;
 		padding: 0;
+		list-style-type: none;
+		//font-family: $headings-font-family;
 		li {
-			font-size: 2rem;
+			font-family: $font-family-sans-serif2;
+			span {
+				background-color: $yellow;
+				color: $black;
+				font-weight: 700;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
 		}
 	}
 	h3.preheader, h3.subheader {
-		margin-bottom: 1rem;
+		letter-spacing: -1px;
+		margin-bottom: 10px;
 		@media (min-width: 768px) {
 			font-size: 1.5rem;
 		}
 		font-weight: 500;
-		font-family: $font-family-sans-serif;
 		a {
 			background-color: $myrtle;
 			color: $black;
-			padding: 0 10px;
+			padding: 5px 10px;
 			border-radius: $border-radius;
 			&:hover {
 				color: $myrtle;
@@ -49,37 +43,50 @@
 		color: $space;
 	}
 	h2 {
-		font-weight: 500;
 		line-height: 1.2;
-		font-family: $font-family-sans-serif;
+		letter-spacing: -1px;
 		@media (min-width: 768px) {
 			font-size: 2rem;
 		}
 		&.subheader {
 			margin-top: 2rem;
+			strong {
+				background-color: $yellow;
+				color: $black;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
 		}
 		&.preheader {
+			margin-bottom: 0;
 			a {
 				color: $primary;
 			}
 		}
 	}
 	a.btn {
-		font-family: $font-family-sans-serif;
+		font-family: $font-family-sans-serif2;
+		//font-weight: 700;
+		//letter-spacing: 1px;
 	}
 	h1 {
 		@media (min-width: 1060px) {
-			font-size: 4rem;
-			line-height: 1.2;
+			
 		}
-		font-family: $font-family-sans-serif;
-		font-weight: 900;
 		span {
-			color: $pink;
+			color: $black;
+			background-color: $yellow;
+			padding-left: 10px;
+			padding-right: 10px;
 		}
 	}
 	img.avatar-image {
 		max-width: 64px;
 		border-radius: 1000px;
+	}
+	.card-header {
+		//font-weight: 700;
+		font-family: $font-family-sans-serif2;
+		text-transform: uppercase;
 	}
 }

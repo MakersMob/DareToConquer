@@ -11,7 +11,7 @@
 		</div>
 	</div>
 </section>
-<section class="content smoke">
+<section class="content ">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg-8">

@@ -13,7 +13,7 @@ class WelcomeController extends Controller
     {
     	$user = Auth::user();
 
-    	$payment = Payment::where('user_id', $user->id)->orderBy('id', 'DESC')->first();
+    	$payment = Payment::where('user_id', $user->id)->orderBy('id', 'DESC')->last();
 
     	switch ($payment->type) {
     		case 'membership':

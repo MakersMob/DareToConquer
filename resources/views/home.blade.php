@@ -5,12 +5,12 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1 class="billboard"><strong>Welcome Home, {{ Auth::user()->first_name }}</strong></h1>
+                <h1 class="billboard">Welcome Home, {{ Auth::user()->first_name }}</h1>
             </div>
         </div>
     </div>
 </section>
-<section class="content lesson">
+<section class="content lesson vanilla">
 <div class="container">
     <div class="row">
         <div class="col-12 col-lg-7">
@@ -95,7 +95,7 @@
                     </div>
                     <div class="card-body">
                     @foreach($tidbits as $tidbit)
-                        <small>{{ date('F jS', strtotime($tidbit->created_at)) }}</small>
+                        <p class="small date"><em>{{ date('F jS', strtotime($tidbit->created_at)) }}</em></p>
                         {!! $tidbit->content !!}
                     @endforeach
                     </div>

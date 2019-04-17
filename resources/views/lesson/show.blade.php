@@ -44,10 +44,10 @@
           </li>
         </ul>
       </div>-->
-      <div class="col-12 col-lg-7 main">
+      <div class="col-12 main">
         {!! $lesson->content !!}
       </div>
-      <div class="col-lg-5 sidebar">
+      <!--<div class="col-lg-5 sidebar">
         <div class="sidebar-item">
           <div class="make-me-sticky">
             <div class="card">
@@ -76,13 +76,13 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>-->
       </div>
     </div>
   </div>
 </section>
 @if(count($lesson->objectives) > 0)
-<section class="content smoke objectives">
+<section class="content rose objectives">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -101,8 +101,8 @@
 <section class="content vanilla">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-8">
-          <h3 style="margin-top: 0;">{{ $lesson->name }} <strong>Exercises</strong></h3>
+      <div class="col-12 col-lg-6">
+          <h3 style="margin-top: 0;">Exercises</h3>
           @foreach($lesson->worksheets as $worksheet)
             <div class="card" style="margin-bottom: 2rem;">
                 <div class="card-body">
@@ -113,11 +113,11 @@
                     <div id="worksheet-{{$worksheet->id}}"></div>
                       {!! Form::open(['url' => 'worksheetanswers']) !!}
                         <div class="form-group">
-                          <label for="answer" class=""><strong>{{ $worksheet->description}}</strong></label>
+                          <label for="answer" class="">{{ $worksheet->description}}</label>
                           <textarea class="form-control" name="answer" rows="6"></textarea>
                         </div>
                         <input type="hidden" name="worksheet_id" value="{{$worksheet->id}}">
-                        <button type="submit" class="btn btn-lg btn-primary btn-block">Save response</button>
+                        <button type="submit" class="btn btn-primary btn-block">Save response</button>
                       {!! Form::close() !!}
                    @endif
                 </div>
@@ -132,7 +132,7 @@
 <section class="content">
   <div class="container">
     <div class="row">
-  		<div class="col-12 col-lg-8">
+  		<div class="col-12 col-lg-6">
         
           @if(Auth::user()->lessons->contains($lesson->id))
             <h3>All done!</h3>
@@ -147,11 +147,11 @@
   </div>
 </section>
  @endunless
-<section class="content rose">
+<section class="content vanilla">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-8">
-        <h2 style="border-bottom: none; margin-top: 0;">{{ $lesson->course->name }} <strong>Curriculum</strong></h2>
+      <div class="col-12 col-lg-6">
+        <h2 style="border-bottom: none; margin-top: 0;">Curriculum</h2>
   			<table class="table">
           <?php $c = 1; ?>
           @foreach($modules as $module)

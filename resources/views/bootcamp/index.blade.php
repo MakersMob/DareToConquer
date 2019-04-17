@@ -4,9 +4,10 @@
 <section class="welcome">
 	<div class="container">
 		<div class="row">
-			<div class="col-12">
-				<h1 class="billboard"><strong>Business Bootcamps</strong></h1>
-				<h2 class="subheader">Free Email Bootcamps to Jumpstart Your Business</h2>
+			<div class="col-12 col-lg-8">
+				<h1 class="billboard">Free Email <strong>Business Bootcamps</strong></h1>
+				<p>Jumpstart your business with a new email every day.</p>
+				<p>Listed in the order that I would take them in if I was just getting started from the beginning, but feel free to go crazy and do what you want.</p>
 			</div>
 		</div>
 	</div>
@@ -15,7 +16,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<ul class="course-list">
+				<ol class="course-list">
 					<li><a href="/bootcamp/business">Online Business Bootcamp</a></li>
 					<li><a href="/bootcamp/ideas">Biz Idea Generation</a></li>
 					<li><a href="/bootcamp/brand">Brand &amp; Tribe Framework</a></li>
@@ -25,7 +26,7 @@
 					<li><a href="/bootcamp/affiliate-marketing">Acquiring Affiliate Marketing Dollars</a></li>
 					<li><a href="/bootcamp/product-creation">Perfect Info Product Creation</a></li>
 					<li><a href="/bootcamp/sales-funnels">Storytelling Sales Funnels</a></li>
-				</ul>
+				</ol>
 			</div>
 		</div>
 	</div>

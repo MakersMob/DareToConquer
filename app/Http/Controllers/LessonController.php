@@ -46,10 +46,11 @@ class LessonController extends Controller
         $module = Module::find($request->module_id);
         $order = 1;
 
-        $less = Lesson::where('module_id', $request->module_id)->get();
-        $l = $less->last();
-        if($l) {
-            $order = $l->order + 1;
+        $less = Lesson::where('module_id', $request->module_id)->orderBy('order', 'DESC')->first();
+        //$l = $less->last();
+
+        if($less) {
+            $order = $less->order + 1;
         }
         
 
@@ -129,7 +130,10 @@ class LessonController extends Controller
         $modules = Module::orderBy('id', 'DESC')->get();
         $media = $lesson->getMedia('media');
 
-        return view('lesson.edit', compact('lesson', 'modules', 'media'));
+        $converter = new HtmlConverter;
+        $content = $converter->convert($lesson->content);
+
+        return view('lesson.edit', compact('lesson', 'modules', 'media', 'content'));
     }
 
     /**

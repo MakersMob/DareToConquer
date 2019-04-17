@@ -10,7 +10,7 @@
 		</div>
 	</div>
 </section>
-<section class="content smoke">
+<section class="content lesson">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg-8">
@@ -41,6 +41,9 @@
 			</div>
 			<div class="col-12 col-lg-4 sidebar">
 				<div class="card">
+					<div class="card-header">
+						Commission
+					</div>
 					<div class="card-body">
 						<p>You earn 40% commission on all DTC products.</p>
 						<p>Payments occur on the 1st of the month, 30 days after commission approval (if someone buys on February 16th, you will get paid on April 1st).</p>

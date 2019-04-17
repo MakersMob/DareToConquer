@@ -18,7 +18,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="//js.stripe.com/v3/"></script>
     <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css?family=Aleo:400,400i,700|Poppins:400,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700|Montserrat:400,700,900|Roboto:400,700,900" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <meta name="google-site-verification" content="N6MbNrBPXwIIUB6WpB57yr-mW1kLsQdpdCpsUSw0V9c" />
 </head>
@@ -40,7 +40,7 @@
                             <a class="nav-link @if(Request::is('framework*')) active @endif" href="/framework">Framework</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link @if(Request::is('courses*')) active @endif" href="/course">Courses</a>
+                            <a class="nav-link @if(Request::is('courses*') || Request::is('course*')) active @endif" href="/course">Courses</a>
                         </li>
                         @role('gold')
                         <li class="nav-item">
@@ -134,28 +134,28 @@
                             <li><a href="/bootcamp/pinterest">Principles of Pinterest</a></li>
                             <li><a href="/bootcamp/affiliate-marketing">Acquiring Affiliate Marketing Dollars</a></li>
                             <li><a href="/bootcamp/product-creation">Perfect Info Product Creation</a></li>
-                            <li><a href="/bootcamp/sales-funnels">Storytelling Sales Funnels</a></li>
+                            <li><a href="/bootcamp/sales-funnels">Storyselling Sales Funnels</a></li>
                         </ol>
                     </div>
                     <div class="col-12 col-lg-4">
                         <h4>Premium Courses</h4>
                         <ul>
-                            <li><a href="/course/building-a-brand">Building a Brand</a></li>
-                            <li><a href="/course/building-a-tribe">Building a Tribe</a></li>
+                            <li><a href="/course/building-a-brand">Hero Branding</a></li>
+                            <li><a href="/course/building-a-tribe">Tribe Love</a></li>
                             <li><a href="/course/content-creation">Content Creation</a></li>
-                            <li><a href="/course/pinterest">Pinterest</a></li>
-                            <li><a href="/course/seo">SEO</a></li>
+                            <li><a href="/course/pinterest">Dating Pinterest</a></li>
+                            <li><a href="/course/seo">SEO My Goodness</a></li>
                             <li><a href="/course/affiliate-marketing">Affiliate Marketing</a></li>
                             <!--<li><a href="/course/product-creation">Product Creation</a></li>-->
                             <!--<li><a href="/course/landing-pages">Landing Pages</a></li>-->
                             <!--<li><a href="/course/product-launches">Product Launches</a></li>-->
-                            <!--<li><a href="/course/sales-funnels">Sales Funnels</a></li>-->
+                            <li><a href="/course/sales-funnels">Feel Good Funnels</a></li>
                         </ul>
                     </div>
                     <div class="col-12 col-lg-4">
                         <h4>Helpful Things</h4>
                         <ul>
-                            <li><a href="/framework">DTC Business Framework</a></li>
+                            <li><a href="/framework">The DTC Business Framework</a></li>
                             <li><a href="/youtube">YouTube Videos</a></li>
                             <li><a href="/articles">Articles</a></li>
                             <li><a href="/questions">Online Business FAQ</a></li>
@@ -197,15 +197,27 @@
       })();
     </script>
     <!-- end Drip -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51364-108"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        @guest
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51364-108"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
 
-      gtag('config', 'UA-51364-108');
-    </script>
+              gtag('config', 'UA-51364-108');
+            </script>
+        @else
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51364-115"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'UA-51364-115');
+            </script>
+        @endauth
     @endif
 </body>
 </html>

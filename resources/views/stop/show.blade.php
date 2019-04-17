@@ -23,9 +23,9 @@
 		</div>
 	</div>
 </section>
-<section class="content rose">
+<section class="content vanilla">
 	<div class="container">
-		<div class="row justify-content-center">
+		<div class="row">
 			<div class="col-12 col-lg-8">
 				@unless($stop->active != 1)
 				  @if(Auth::user()->stops->contains($stop->id))
@@ -35,6 +35,11 @@
 				  @endif
 				@endunless
 				<table class="table">
+					<thead>
+						<tr>
+							<td colspan="2">Journey Stops</td>
+						</tr>
+					</thead>
 				  @foreach($journey->stops as $st)
 				        <tr class="lessons">
 				          <td><a href="/journey/{{$journey->slug}}/{{ $st->slug }}">{{ $st->name }}</a> @if($st->active == 0) **DRAFT** @endif @if($st->active == 2) **REVIEW** @endif</td>

@@ -11,7 +11,7 @@
 		</div>
 	</div>
 </section>
-<section class="content lesson rose">
+<section class="content lesson ">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg-8">

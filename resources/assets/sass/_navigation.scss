@@ -6,6 +6,7 @@
 		font-size: 2rem;
 		padding-right: 1rem;
 		color: $black !important;
+		letter-spacing: -1px;
 		&:hover {
 			color: $pink !important;
 		}
@@ -20,7 +21,7 @@
 		color: $blue;
 		font-weight: 500;
 		margin-top: 2px;
-		letter-spacing: 1px;
+		//letter-spacing: 1px;
 		text-transform:: uppercase;
 		&:hover {
 			color: $pink !important;

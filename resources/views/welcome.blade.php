@@ -1,18 +1,30 @@
 @extends('layouts.app', ['title' => 'Build the Online Business of Your Dreams'])
 
 @section('content')
-<section class="welcome home">
+<section class="welcome">
   <div class="container">
     <div class="row">
-        <div class="col-12">
-            <h1 class="billboard">You will <span>happily quit your job</span> in the next 18 months.</h1>
-            <h2 class="subheader">Learn how to build an online business that creates more freedom and happiness in your life.</h2>
+        <div class="col-12 col-lg-8">
+            <h1 class="billboard">You will <span>happily quit your job</span> in the next 18 months.<br><span>I dare you.</span></h1>
+            <p>Learn <strong>how to build an online business</strong> that creates more freedom and happiness in your life.</p>
             <ul>
-            	<li>End the confusion of where to start</li>
-            	<li>Stop the panic of what to do next</li>
-            	<li>Enjoy the freedom that your business brings</li>
+            	<li><span>End the confusion of where to start</span></li>
+            	<li><span>Stop the panic of what to do next</span></li>
+            	<li><span>Enjoy the freedom that your business brings</span></li>
             </ul>
-			<p style="margin-top: 2rem;"><a href="/bootcamp" class="btn btn-primary btn-lg" style="margin-right: 2rem;">View Free Bootcamps</a> <a href="/course" class="btn btn-secondary btn-lg">View Premium Courses</a></p>
+        </div>
+        <div class="col-12 col-lg-4 sidebar">
+        	<div class="card">
+        		<div class="card-header">
+        			Let&rsquo;s get started
+        		</div>
+        		<div class="card-body">
+        			<p>Dare to Conquer is all about providing you with all of the resources that you need to start and build a successful online business.</p>
+        			<p>Check it out.</p>
+					<p style=""><a href="/bootcamp" class="btn btn-primary btn-block" style="margin-right: 2rem;">View Free Bootcamps</a></p>
+					<p><a href="/course" class="btn btn-primary btn-block">View Premium Courses</a></p>
+				</div>
+			</div>
         </div>
     </div>
   </div>
@@ -20,43 +32,60 @@
 <section class="content lesson">
 	<div class="container">
 		<div class="row">
-			<div class="col-12" style="margin-bottom: 2rem;">
+			<div class="col-12 col-lg-8" style="margin-bottom: 2rem;">
 				<h2>The better way to <strong>learn how to build an online business</strong> that you love.</h2>
 			</div>
-			<div class="col-12 col-lg-4">
-				<div class="circle-text">1</div>
-				<h3 class="thirds">Come up with an idea, lay out the plan</h3>
-				<p>First, <strong>you need an idea that you know will make money</strong>. Also, understand the big picture of how online businesses make money.</p>
-				<ol>
-					<li><a href="/bootcamp/business">Online Business Bootcamp</a></li>
-					<li><a href="/bootcamp/ideas">Biz Idea Generation</a></li>
-				</ol>
+			<div class="col-lg-4">
 			</div>
 			<div class="col-12 col-lg-4">
-				<div class="circle-text">2</div>
-				<h3 class="thirds">Build a brand, gain an audience</h3>
-				<p>Second, <strong>you need an audience that will love the value that you provide them</strong>.</p>
-				<ol start="3">
-					<li><a href="/bootcamp/brand">Brand &amp; Tribe Framework</a></li>
-					<li><a href="/bootcamp/content">Creating Killer Content</a></li>
-					<li><a href="/bootcamp/seo">Understanding SEO</a></li>
-					<li><a href="/bootcamp/pinterest">Principles of Pinterest</a></li>
-				</ol>
+				<div class="card">
+					<div class="card-body">
+						<div class="circle-text">1</div>
+						<h3 class="thirds">Find an idea, create a plan</h3>
+						<p>First, <strong>you need an idea that you know will make money</strong>. Also, you want to understand the big picture of how online businesses make money. This is the start</p>
+						<h5>Free Bootcamps</h5>
+						<ol>
+							<li><a href="/bootcamp/business">Online Business Bootcamp</a></li>
+							<li><a href="/bootcamp/ideas">Biz Idea Generation</a></li>
+						</ol>
+					</div>
+				</div>
 			</div>
 			<div class="col-12 col-lg-4">
-				<div class="circle-text">3</div>
-				<h3 class="thirds">Make money, quit job, live happily</h3>
-				<p>Finally, make the kind of money that finally lets you <strong>live the lifestyle that you want</strong> and wake up every day happy.</p>
-				<ol start="7">
-					<li><a href="/bootcamp/affiliate-marketing">Acquiring Affiliate Marketing Dollars</a></li>
-					<li><a href="/bootcamp/product-creation">Product Creation</a></li>
-					<li><a href="/bootcamp/sales-funnels">Storytelling Sales Funnels</a></li>
-				</ol>
+				<div class="card">
+					<div class="card-body">
+						<div class="circle-text">2</div>
+						<h3 class="thirds">Build a brand, get true fans</h3>
+						<p>Second, <strong>you need an audience that will love the value that you provide them</strong>.</p>
+						<h5>Free Bootcamps</h5>
+						<ol start="3">
+							<li><a href="/bootcamp/brand">Brand &amp; Tribe Framework</a></li>
+							<li><a href="/bootcamp/content">Creating Killer Content</a></li>
+							<li><a href="/bootcamp/seo">Understanding SEO</a></li>
+							<li><a href="/bootcamp/pinterest">Principles of Pinterest</a></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-4">
+				<div class="card">
+					<div class="card-body">
+						<div class="circle-text">3</div>
+						<h3 class="thirds">Make money, live happily</h3>
+						<p>Finally, make the kind of money that finally lets you <strong>live the lifestyle that you want</strong> and wake up every day happy.</p>
+						<h5>Free Bootcamps</h5>
+						<ol start="7">
+							<li><a href="/bootcamp/affiliate-marketing">Affiliate Marketing Dollars</a></li>
+							<li><a href="/bootcamp/product-creation">Product Creation</a></li>
+							<li><a href="/bootcamp/sales-funnels">Storytelling Sales Funnels</a></li>
+						</ol>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<section class="content lesson myrtle">
+<section class="content lesson vanilla">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg-6">
@@ -65,7 +94,7 @@
 				</div>
 			</div>
 			<div class="col-12 col-lg-6">
-				<h2 style="margin-top: 0;">Hello!</h2>
+				<h2 style="margin-top: 0;">Hello, Daredevil!</h2>
 				<p><strong>My name is Paul Scrivens and I believe that everyone deserves the opportunity to achieve the lifestyle that they want.</strong></p>
 				<p>That's why I created Dare to Conquer.</p>
 				<p>It's my goal to help everyone that is willing to learn achieve the lifestyle they know they have in them.</p>
@@ -79,6 +108,15 @@
 	</div>
 </section>
 <section class="content lesson">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="quote" style="margin-top: 0;">&ldquo;The game is all about taking action and challenging yourself to reach the life that you know you deserve.&rdquo;</h2>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="content lesson vanilla">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -102,7 +140,7 @@
 		</div>
 	</div>
 </section>
-<section class="content vanilla lesson">
+<section class="content lesson">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -126,7 +164,7 @@
 		</div>
 	</div>
 </section>
-<section class="content rose">
+<section class="content vanilla">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -143,7 +181,7 @@
 		</div>
 	</div>
 </section>
-<section class="content smoke lesson">
+<section class="content lesson">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">

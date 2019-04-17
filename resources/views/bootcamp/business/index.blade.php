@@ -11,11 +11,11 @@
 		</div>
 	</div>
 </section>
-<section class="content lesson rose">
+<section class="content lesson">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg-8">
-				<p>You already know that people make money online but you might wondering if it's really legit and if you can do the same thing.</p>
+				<p>You already know that people make money online but you might be wondering if it's really legit and if you can do the same thing.</p>
 				<p>This bootcamp is going to walk you through the ways people make money online and build successful businesses that they are proud of.</p>
 				<p>If you're new to this online game then this is where you want to start.</p>
 				<!--<div class="">

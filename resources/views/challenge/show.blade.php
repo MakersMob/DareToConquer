@@ -14,7 +14,12 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg-6">
-				<table class="table table-dark">
+				<table class="table">
+					<thead>
+						<tr>
+							<td>Exercise Sets</td>
+						</tr>
+					</thead>
 					<?php $c = 1; ?>
 					@foreach($challenge->sets as $set)
 						@if(count($set->exercises) > 0)

@@ -8,10 +8,14 @@
 <section class="welcome">
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <h1 class="billboard">Dare to Conquer: <span>Full Access</span></h1>
-                <h2 class="subheader">Get everything now and in the future for just one price. Your future life can&rsquo;t wait.</h2>
-                <div class="" style="margin-top: 2rem;"><a href="#join" class="btn btn-primary btn-lg">Join Today</a></div>
+            <div class="col-12 col-lg-8">
+                <h1 class="billboard">You will <span>happily quit your job</span> in the next 18 months.<br><span>I dare you.</span></h1>
+                <p>Learn <strong>how to build an online business</strong> that creates more freedom and happiness in your life.</p>
+                <ul>
+                    <li><span>End the confusion of where to start</span></li>
+                    <li><span>Stop the panic of what to do next</span></li>
+                    <li><span>Enjoy the freedom that your business brings</span></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -44,7 +48,7 @@
                 <p>The beauty of the <em>Dare to Conquer</em> is that once you join, you join for life. You won't have to worry about paying for the next version or when a new course is added.</p>
                 <p>It's the ultimate pay once, learn forever online business resource.</p>
                 <h3 class="">Pricing</h3>
-                <p><strong>The current enrollment price is $597 for a lifetime membership.</strong> That's as much as a single course cost on most sites and even less than other courses!</p>
+                <p><strong>The current enrollment price is ${{ env('MEMBERSHIP_PRICE') }} for a lifetime membership.</strong> That's as much as a single course cost on most sites and even less than other courses!</p>
             </div>
         </div>
         <div class="row">
@@ -99,7 +103,7 @@
                                     <div id="card-errors"></div>
                                 </div>
                             <input type="hidden" name="type" value="membership">
-                            <button type="submit" class="btn btn-large btn-block btn-primary btn-lg submit-button">Join for Life for $597</button>
+                            <button type="submit" class="btn btn-large btn-block btn-primary btn-lg submit-button">Join for Life for ${{ env('MEMBERSHIP_PRICE') }}</button>
                             <p style="margin-top: 1rem;" class=""><strong>Please, only click the button once.</strong></p>
                         {!! Form::close() !!}
                     </div>

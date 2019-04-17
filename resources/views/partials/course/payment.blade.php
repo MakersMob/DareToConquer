@@ -1,4 +1,4 @@
-<section class="content smoke lesson">
+<section class="content vanilla lesson">
 	<div class="container">
         <div class="row">
             <div class="col-12">
@@ -49,7 +49,7 @@
                             </div>
                             <input type="hidden" name="type" value="course">
                             <input type="hidden" name="course" value="{{ $course->slug }}">
-                            <button type="submit" class="btn btn-lg btn-primary btn-block" id="paymentButton">Get Started With {{ $course->title }} Today</button>
+                            <button type="submit" class="btn btn-md btn-primary btn-block" id="paymentButton">Get Started With {{ $course->name }} Today</button>
                             <p style="margin-top: 1rem;" class="text-center"><strong>Please do not submit the form more than once.</strong></p>
                         </form>
                     </div>
@@ -57,8 +57,10 @@
             </div>
             <div class="col-12 col-lg-4 sidebar">
                 <h3 style="margin-top: 0;">Get everything DTC</h3>
-                <p>If you want access to all courses, journeys and other resources in DTC, then you should consider the <a href="/join">full lifetime membership</a> for $597.</p>
+                <p><strong>If you want access to all courses, journeys and other resources in DTC</strong>, then you should consider the <a href="/join">full lifetime membership</a> for ${{ env('MEMBERSHIP_PRICE') }}.</p>
                 <p>Pay once and never purchase any more courses ever again.</p>
+                <h3>Need to pay with PayPal?</h3>
+                <p>Shoot an email to scrivs@daretoconquer.com letting me know you wish to pay with PayPal and include the email address I can send an invoice to.</p>
             </div>
         </div>
     </div>

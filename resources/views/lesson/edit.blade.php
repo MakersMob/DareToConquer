@@ -5,13 +5,13 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h2>Update Lesson</h2>
+				<h2 class="preheader">Update Lesson</h2>
 				<h1>{{ $lesson->name }}</h1>
 			</div>
 		</div>
 	</div>
 </section>
-<section class="content smoke">
+<section class="content">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-lg-8">
@@ -54,7 +54,7 @@
 							</div>
 							<div class="form-group">
 								<label for="content">Content</label>
-								<textarea class="form-control" name="content" rows="20">{{ $lesson->content }}</textarea>
+								<textarea class="form-control" name="content" rows="20">{{ $content }}</textarea>
 							</div>
 							<div class="form-group">
 								<div class="custom-file">
@@ -68,7 +68,7 @@
 				</div>
 			</div>
 			<div class="col-12 col-lg-4">
-				<h3>Media</h3>
+				<h4 style="margin-top: 0;">Media</h4>
 				@foreach($media as $med) 
 					<div class="image">
 						<img src="{{ $med->getFullUrl() }}">
