@@ -136,7 +136,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2>Get free access to the <strong>Building a Tribe</strong> Course</h2>
+        <h2>Get free access to the <strong>Tribe Love</strong> Course</h2>
         <p>Because building a brand and building a tribe go hand-in-hand, when you purchase the <em>Building a Brand Course</em> you also get access to the <em>Building a Tribe Course</em> as well.</p>
         <p>Two course for the price of one.</p>
       </div>
