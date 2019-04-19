@@ -11,6 +11,17 @@
 		</div>
 	</div>
 </section>
+<section class="content lesson">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p>It's like you've unlocked a hidden treasure. Currently, this course is in its BETA stage meaning it's not 100% complete yet, but in its current form it's still going to help you create a 6-figure product for your audience.</p>
+        <p>Because you're ready to take action now, if you purchase this course you'll also get access to <a href="/course/product-creation"><em>6-Figure Product Creation</em></a> as well.</p>
+        <p>That product sales automation lifestyle is just around the corner.</p>
+      </div>
+    </div>
+  </div>
+</section>
 @include('partials.course.payment')
 @include('partials.course.contents')
 @endsection
