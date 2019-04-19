@@ -25,6 +25,9 @@ class CoursePdfController extends Controller
     						.page-break {
     						    page-break-after: always;
     						}
+                            img {
+                                max-width: 100%;
+                            }
     					</style>
     				<body>
     					<h1>'.$course->name.'</h1>

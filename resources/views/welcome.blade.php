@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row">
         <div class="col-12 col-lg-8">
-            <h1 class="billboard">You will <span>happily build a successful business</span> because you deserve it.<br><span>I dare you.</span></h1>
+            <h1 class="billboard">You will <span>happily build a successful online business</span> because you deserve it.</h1>
             <p>Learn <strong>how to build an online business</strong> that creates more freedom and happiness in your life.</p>
             <ul>
             	<li><span>End the confusion of where to start</span></li>

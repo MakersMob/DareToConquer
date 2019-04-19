@@ -142,7 +142,7 @@
                         <ul>
                             <li><a href="/course/building-a-brand">Hero Branding</a></li>
                             <li><a href="/course/building-a-tribe">Tribe Love</a></li>
-                            <li><a href="/course/content-creation">Content Creation</a></li>
+                            <li><a href="/course/content-creation">Content Creation Cocktail</a></li>
                             <li><a href="/course/pinterest">Dating Pinterest</a></li>
                             <li><a href="/course/seo">SEO My Goodness</a></li>
                             <li><a href="/course/affiliate-marketing">Affiliate Marketing</a></li>
