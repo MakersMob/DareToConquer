@@ -27,7 +27,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $tidbits = Tidbit::orderBy('id', 'DESC')->limit(5);
+        $tidbits = Tidbit::orderBy('id', 'DESC')->get();
 
         if(Auth::user()->hasRole('gold')) {
             $lessons = Lesson::where('active', 1)->orderBy('updated_at', 'DESC')->paginate(10);
