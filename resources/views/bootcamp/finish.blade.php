@@ -10,7 +10,7 @@
 		</div>
 	</div>
 </section>
-<section class="content lessons">
+<section class="content lesson">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
