@@ -13,7 +13,7 @@
 		</div>
 	</div>
 </section>
-<section class="content smoke lesson">
+<section class="content lesson">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg-8">

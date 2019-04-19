@@ -146,7 +146,7 @@
                             <li><a href="/course/pinterest">Dating Pinterest</a></li>
                             <li><a href="/course/seo">SEO My Goodness</a></li>
                             <li><a href="/course/affiliate-marketing">Affiliate Marketing</a></li>
-                            <!--<li><a href="/course/product-creation">Product Creation</a></li>-->
+                            <li><a href="/course/product-creation">6-Figure Product Creation</a></li>
                             <!--<li><a href="/course/landing-pages">Landing Pages</a></li>-->
                             <!--<li><a href="/course/product-launches">Product Launches</a></li>-->
                             <li><a href="/course/sales-funnels">Feel Good Funnels</a></li>
