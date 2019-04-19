@@ -186,7 +186,6 @@ a.btn-primary {
 
 .welcome h2 {
   line-height: 1.2;
-  letter-spacing: -1px;
 }
 
 @media (min-width: 768px) {
