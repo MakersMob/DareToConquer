@@ -49,6 +49,10 @@
                 <p>It's the ultimate pay once, learn forever online business resource.</p>
                 <h3 class="">Pricing</h3>
                 <p><strong>The current enrollment price is ${{ env('MEMBERSHIP_PRICE') }} for a lifetime membership.</strong> That's as much as a single course cost on most sites and even less than other courses!</p>
+                <h3>The Guarantee</h3>
+                <p>This is a huge investment for anyone so I want to make sure you know that I believe in the material and more importantly I believe in you.</p>
+                <p><strong>So if you purchase the full DTC Membership, you can get your money back any time with 18 months of purchase as long as you show me that you've completed the courses and tried your best to implement the material.</strong></p>
+                <p>18 months. You got this.</p>
             </div>
         </div>
         <div class="row">
