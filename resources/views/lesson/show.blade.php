@@ -202,7 +202,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-6">
-        <h2 style="border-bottom: none; margin-top: 0;">Curriculum</h2>
+        <h3 style="border-bottom: none; margin-top: 0;">Curriculum</h3>
   			<table class="table">
           <?php $c = 1; ?>
           @foreach($modules as $module)
