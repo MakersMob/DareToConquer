@@ -41,7 +41,7 @@ class TidbitController extends Controller
             'content' => $request->content
         ]);
 
-        return redirect('/tidbit/'.$tidbit->id);
+        return redirect('/home');
     }
 
     /**
