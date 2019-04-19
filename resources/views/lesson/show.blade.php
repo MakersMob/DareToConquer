@@ -132,7 +132,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2>Questions</h2>
+        <h3 style="margin-top: 0;">Questions</h3>
         <p>If you aren't sure about something in the lesson or need some more clarification, then ask a question here and we will make sure it gets answered.</p>
       </div>
       <div class="col-12 col-lg-6">
