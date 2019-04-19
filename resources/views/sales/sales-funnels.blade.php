@@ -4,9 +4,8 @@
 <section class="welcome course">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 text-center">
-        <h2 class="preheader">Dare to Conquer...</h2>
-				<h1 class="billboard"><span>Sales Funnels</span></h1>
+			<div class="col-12">
+				<h1 class="billboard">{{ $course->name }}</h1>
 				<h2 class="subheader course-title">Learn How Passive Income Is Really Made</h2>
 			</div>
 		</div>
@@ -16,8 +15,7 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12">
-				<p>This course won't start dripping out until February 5th. If you want to get in at a lower price (60% off) and you trust that I'm going to create something awesome then you can reserve your seat now.</p>
-        <p>This course will cover the traditional online sales funnel from ads to landing page to webinar to email to sale and also cover DTC's Upside Down Sales Funnel.</p>
+				
 			</div>
 		</div>
 	</div>

@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1 class="">The <span>SEO</span> Course</h1>
+        <h1 class="billboard">{{ $course->name }}</h1>
         <h2 class="subheader">The make money while other people do the work lifestyle</h2>
         <div class="" style="margin-top: 2rem;"><a href="#payment-form" class="btn btn-primary">Purchase Now for ${{ $course->price }}</a></div>
       </div>
