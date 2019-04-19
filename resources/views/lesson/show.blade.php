@@ -186,10 +186,10 @@
   		<div class="col-12 col-lg-6">
         
           @if(Auth::user()->lessons->contains($lesson->id))
-            <h3>All done!</h3>
+            <h3 style="margin-top: 0;">All done!</h3>
             <p>You've completed this lesson but good on you for coming back and revisiting things.</p>
           @else
-            <h3>Have you completed this lesson?</h3>
+            <h3 style="margin-top: 0;">Have you completed this lesson?</h3>
             <p><a href="/lessoncompleted/{{$lesson->id}}" class="btn btn-block btn-primary btn-lg">I've completed this lesson!</a></p>
           @endif
        
