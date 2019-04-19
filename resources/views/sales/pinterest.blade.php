@@ -6,7 +6,7 @@
 		<div class="row">
 			<div class="col-12">
 				<h1 class="billboard">{{ $course->name }}</h1>
-				<h2 class="subheader course-title">Increase the traffic to your site with the power of free Pinterest marketing</h2>
+				<p>Increase the traffic to your site with the power of free Pinterest marketing</p>
         <div class="" style="margin-top: 2rem;"><a href="#payment-form" class="btn btn-primary btn-lg">Purchase Now for ${{ $course->price }}</a></div>
 			</div>
 		</div>
