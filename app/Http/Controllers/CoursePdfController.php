@@ -34,13 +34,17 @@ class CoursePdfController extends Controller
     					<div class="page-break"></div>';
 
     	foreach($course->modules as $module) {
-    		$data .= '<h2>'.$module->name.'</h2>';
-    		$data .= '<div class="page-break"></div>';
-    		foreach($module->less as $lesson) {
-    			$data .= '<h2>'.$lesson->name.'</h2>';
-    			$data .= $lesson->content;
-    			$data .= '<div class="page-break"></div>';
-    		}
+            if($module->active == 1) {
+                $data .= '<h2>'.$module->name.'</h2>';
+                $data .= '<div class="page-break"></div>';
+                foreach($module->less as $lesson) {
+                    if($lesson->active == 1) {
+                        $data .= '<h2>'.$lesson->name.'</h2>';
+                        $data .= $lesson->content;
+                        $data .= '<div class="page-break"></div>';
+                    }
+                }
+            }
     	}
 
     	$data .= '</body></html>';
