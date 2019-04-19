@@ -96,6 +96,12 @@ class PaymentController extends Controller
                 case '18':
                     $user->courses()->attach(2);
                     break;
+                case '10':
+                    $user->courses()->attach(11);
+                    break;
+                case '11':
+                    $user->courses()->attach(10);
+                    break;
                 default:
                     # code...
                     break;
@@ -144,6 +150,12 @@ class PaymentController extends Controller
                         break;
                     case '18':
                         $user->courses()->attach(2);
+                        break;
+                    case '10':
+                        $user->courses()->attach(11);
+                        break;
+                    case '11':
+                        $user->courses()->attach(10);
                         break;
                     default:
                         # code...
