@@ -15,6 +15,10 @@ Auth::routes();
 
 Route::get('/', 'BaseController@index');
 
+Route::get('/sales-funnels', function () {
+	return redirect('/course/sales-funnels');
+});
+
 Route::get('/framework/updates', function() {
 	return view('framework.updates');
 });
