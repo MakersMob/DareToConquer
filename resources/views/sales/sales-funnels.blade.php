@@ -6,16 +6,7 @@
 		<div class="row">
 			<div class="col-12">
 				<h1 class="billboard">{{ $course->name }}</h1>
-				<h2 class="subheader course-title">Learn How Passive Income Is Really Made</h2>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="content lesson">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-12">
-				
+				<p>Learn How Passive Income Is Really Made</p>
 			</div>
 		</div>
 	</div>
