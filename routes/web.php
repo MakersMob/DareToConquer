@@ -298,6 +298,10 @@ Route::group(['middleware' => 'auth'], function () {
 		return view('member.affiliate');
 	});
 
+	// Lessons
+	Route::post('lessonquestion', 'LessonquestionController@store');
+	Route::post('lessonanswer', 'LessonanswerController@store');
+
 	// Bundles
 	Route::resource('bundles', 'BundleController');
 

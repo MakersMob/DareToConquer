@@ -128,8 +128,59 @@
   </div>
 </section>
 @endif
+<section class="content lesson">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Questions</h2>
+        <p>If you aren't sure about something in the lesson or need some more clarification, then ask a question here and we will make sure it gets answered.</p>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="card">
+          <div class="card-body">
+            {!! Form::open(['url' => 'lessonquestion', 'class' => 'sidebar-form']) !!}
+              <div class="form-group">
+                <textarea class="form-control" name="question" rows="5"></textarea>
+              </div>
+              <input type="hidden" name="lesson_id" value="{{ $lesson->id }}">
+              <button type="submit" class="btn btn-primary btn-block">Ask a Question</button>
+            {!! Form::close() !!}
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        @foreach($lesson->questions as $question)
+          <div class="lessonquestion">
+            <a class="" data-toggle="collapse" id="question-{{ $question->id }}-link" href="#question-{{ $question->id}}" aria-expanded="false" aria-controls="collapseQuestion">{!! $question->question !!}</a>
+            <div class="collapse" id="question-{{ $question->id }}">
+              <div class="card">
+                <div class="card-body">
+                  @if($question->answer)
+                    {!! $question->answer->answer !!}
+                  @else
+                    <p>The answer to this question is coming shortly.</p>
+                    @role('admin')
+                      {!! Form::open(['url' => 'lessonanswer', 'class' => 'sidebar-form']) !!}
+                        <div class="form-group">
+                          <textarea class="form-control" name="answer" rows="5"></textarea>
+                        </div>
+                        <input type="hidden" name="question_id" value="{{ $question->id }}">
+                        <input type="hidden" name="lesson_id" value="{{ $lesson->id }}">
+                        <button type="submit" class="btn btn-primary btn-block">Answer Question</button>
+                      {!! Form::close() !!}
+                    @endrole
+                  @endif
+                </div>
+              </div>
+            </div>
+          </div>
+        @endforeach
+      </div>
+    </div>
+  </div>
+</section>
 @unless($lesson->active != 1)
-<section class="content">
+<section class="content vanilla">
   <div class="container">
     <div class="row">
   		<div class="col-12 col-lg-6">
@@ -147,7 +198,7 @@
   </div>
 </section>
  @endunless
-<section class="content vanilla">
+<section class="content">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-6">

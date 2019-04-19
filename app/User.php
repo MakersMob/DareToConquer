@@ -99,6 +99,11 @@ class User extends Authenticatable
         return $this->belongsToMany('DareToConquer\Set')->withTimestamps()->withPivot('feedback');
     }
 
+    public function questions()
+    {
+        return $this->hasMany('DareToConquer\Lessonquestion');
+    }
+
     public function lessonCompleted($id)
     {
         $pivot = Auth::user()->lessons()->wherePivot('lesson_id', $id)->first();
