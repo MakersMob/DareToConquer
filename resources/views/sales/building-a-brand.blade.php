@@ -54,7 +54,7 @@
       <div class="col-12">
         <p><strong>You want to build something that people will love and make you money.</strong></p>
         <p>This course will get you started on that path.</p>
-        <p>By purchasing this course you also get access to <a href="/course/building-a-tribe">Building a Tribe</a> because what is the point of building a brand if you can't build a following with it?</p>
+        <p>By purchasing this course you also get access to <a href="/course/building-a-tribe">Tribe Love</a> because what is the point of building a brand if you can't build a following with it?</p>
       </div>
     </div>
   </div>
