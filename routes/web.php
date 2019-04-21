@@ -298,6 +298,11 @@ Route::post(
 );
 
 Route::group(['middleware' => 'auth'], function () {
+	// Upgrade
+	Route::get('upgrade', 'UpgradeController@show');
+	Route::post('upgrade', 'UpgradeController@store');
+
+
 	Route::get('/member/affiliate-program', function () {
 		return view('member.affiliate');
 	});
