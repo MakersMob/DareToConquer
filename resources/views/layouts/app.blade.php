@@ -37,9 +37,6 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link @if(Request::is('framework*')) active @endif" href="/framework">Framework</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link @if(Request::is('courses*') || Request::is('course*')) active @endif" href="/course">Courses</a>
                         </li>
                         @role('gold')
@@ -54,11 +51,14 @@
                         </li>
                         @endhasrole
                         @role('admin')
-                            <li class="nav-item">
+                            <!--<li class="nav-item">
                                 <a class="nav-link @if(Request::is('guide*')) active @endif" href="/guide">Guides</a>
-                            </li>
+                            </li>-->
                         @endhasrole
                         @guest
+                        <li class="nav-item">
+                            <a class="nav-link @if(Request::is('framework*')) active @endif" href="/framework">Framework</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link @if(Request::is('bootcamp*')) active @endif" href="/bootcamp">Bootcamps</a>
                         </li>
