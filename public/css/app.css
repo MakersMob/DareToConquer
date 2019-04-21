@@ -302,6 +302,10 @@ h3.thirds {
   padding: 0;
 }
 
+.content img {
+  max-width: 100%;
+}
+
 .content div.image img {
   max-width: 100%;
 }
@@ -958,7 +962,7 @@ footer h4 {
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
-  --breakpoint-xl: 1400px;
+  --breakpoint-xl: 1200px;
   --font-family-sans-serif: "Montserrat", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -1534,9 +1538,9 @@ pre code {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .container {
-    max-width: 1320px;
+    max-width: 1140px;
   }
 }
 
@@ -2604,7 +2608,7 @@ pre code {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .col-xl {
     -ms-flex-preferred-size: 0;
         flex-basis: 0;
@@ -3118,7 +3122,7 @@ pre code {
   }
 }
 
-@media (max-width: 1399.98px) {
+@media (max-width: 1199.98px) {
   .table-responsive-xl {
     display: block;
     width: 100%;
@@ -5762,7 +5766,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (max-width: 1399.98px) {
+@media (max-width: 1199.98px) {
   .navbar-expand-xl > .container,
   .navbar-expand-xl > .container-fluid {
     padding-right: 0;
@@ -5770,7 +5774,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .navbar-expand-xl {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -8161,7 +8165,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .d-xl-none {
     display: none !important;
   }
@@ -9054,7 +9058,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .flex-xl-row {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -9300,7 +9304,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .float-xl-left {
     float: left !important;
   }
@@ -10703,7 +10707,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .m-xl-0 {
     margin: 0 !important;
   }
@@ -11089,7 +11093,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .text-xl-left {
     text-align: left !important;
   }
