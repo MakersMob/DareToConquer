@@ -97,6 +97,9 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    @role('bronze')
+                                        <a class="dropdown-item" href="/upgrade">Upgrade to Gold</a>
+                                    @endhasrole
                                     <a class="dropdown-item" href="#">{{ Auth::user()->points }} Points</a>
                                     <a class="dropdown-item" href="/member/affiliate-program">Affiliate Program</a>
                                     <a class="dropdown-item" href="/member/edit">Edit Profile</a>

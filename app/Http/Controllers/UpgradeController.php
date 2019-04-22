@@ -5,13 +5,18 @@ namespace DareToConquer\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use DareToConquer\Payment;
+use Stripe;
+use DareToConquer\Mail\MembershipPurchased;
+use DareToConquer\Mail\CoursePurchased;
+use DareToConquer\Mail\InviteRequired;
+use Illuminate\Support\Facades\Mail;
 
 class UpgradeController extends Controller
 {
     public function show()
     {
     	$user = Auth::user();
-    	$payments = Payment::where('user_id', $user->id)->get();
+    	$payments = Payment::where('user_id', $user->id)->where('type', 'course')->get();
 
     	$total = 0;
 
@@ -27,7 +32,7 @@ class UpgradeController extends Controller
     public function store(Request $request)
     {
     	$user = Auth::user();
-    	$payments = Payment::where('user_id', $user->id)->get();
+    	$payments = Payment::where('user_id', $user->id)->where('type', 'course')->get();
 
     	$total = 0;
 
