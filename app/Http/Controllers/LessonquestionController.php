@@ -47,7 +47,7 @@ class LessonquestionController extends Controller
 
         $lesson = Lesson::find($request->lesson_id);
 
-        Mail::to(['scrivs@daretoconquer.com', 'marybeth@daretoconquer.com'])->send(new LessonquestionAsked($question));
+        Mail::to(['scrivs@daretoconquer.com', 'marybeth@daretoconquer.com'])->send(new LessonquestionAsked($question, Auth::user()));
 
         return redirect('/course/'.$lesson->course->slug.'/'.$lesson->slug.'#question-'.$question->id.'-link');
     }

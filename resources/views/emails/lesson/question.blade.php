@@ -1,4 +1,4 @@
-<p>The rousing question is:</p>
+<p>{{ $user->first_name }} {{ $user->last_name }} asks:</p>
 
 {!! $question->question !!}
 

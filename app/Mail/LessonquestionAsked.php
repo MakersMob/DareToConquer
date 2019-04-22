@@ -7,21 +7,23 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use DareToConquer\Lessonquestion;
+use DareToConquer\User;
 
 class LessonquestionAsked extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $question;
+    public $question, $user;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct(Lessonquestion $question)
+    public function __construct(Lessonquestion $question, User $user)
     {
         $this->question = $question;
+        $this->user = $user;
     }
 
     /**
