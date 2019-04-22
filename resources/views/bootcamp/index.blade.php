@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg-8">
-				<h1 class="billboard">Free Email <strong>Business Bootcamps</strong></h1>
+				<h1 class="">Email Business Bootcamps</h1>
 				<p>Jumpstart your business with a new email every day.</p>
 				<p>Listed in the order that I would take them in if I was just getting started from the beginning, but feel free to go crazy and do what you want.</p>
 			</div>
