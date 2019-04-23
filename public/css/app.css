@@ -239,6 +239,10 @@ a.btn-primary {
   border-radius: 1000px;
 }
 
+.welcome .sidebar .card .card-body {
+  color: #3f3f3d;
+}
+
 .welcome .sidebar .card .card-header {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;

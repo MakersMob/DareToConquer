@@ -140,10 +140,10 @@
           <div class="card-body">
             {!! Form::open(['url' => 'lessonquestion', 'class' => 'sidebar-form']) !!}
               <div class="form-group">
-                <textarea class="form-control" name="question" rows="5"></textarea>
+                <textarea class="form-control" name="question" rows="5" required></textarea>
               </div>
               <input type="hidden" name="lesson_id" value="{{ $lesson->id }}">
-              <button type="submit" class="btn btn-primary btn-block">Ask a Question</button>
+              <button type="submit" class="btn btn-primary btn-block">Submit Question</button>
             {!! Form::close() !!}
           </div>
         </div>
