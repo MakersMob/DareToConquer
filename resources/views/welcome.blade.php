@@ -19,10 +19,10 @@
         			Let&rsquo;s get started
         		</div>
         		<div class="card-body">
-        			<p>Dare to Conquer is all about providing you with all of the resources that you need to start and build a successful online business.</p>
+        			<p>Dare to Conquer is about providing you with all of the resources that you need to start and build a successful online business.</p>
         			<p>Check it out.</p>
-					<p style=""><a href="/bootcamp" class="btn btn-primary btn-block" style="margin-right: 2rem;">View Free Bootcamps</a></p>
-					<p><a href="/course" class="btn btn-primary btn-block">View Premium Courses</a></p>
+					<p style=""><a href="/bootcamp" class=" btn-blue " style="margin-right: 2rem;">View Free Bootcamps &#8594;</a></p>
+					<p><a href="/course" class=" btn-indigo ">View Premium Courses &#8594;</a></p>
 				</div>
 			</div>
         </div>
@@ -42,7 +42,7 @@
 					<div class="card-body">
 						<div class="circle-text">1</div>
 						<h3 class="thirds">Find an idea, create a plan</h3>
-						<p>First, <strong>you need an idea that you know will make money</strong>. Also, you want to understand the big picture of how online businesses make money. This is the start</p>
+						<p>First, <strong>you need an idea that you know will make money</strong>. Also, you want to understand the big picture of how online businesses make money. This is the start.</p>
 						<h5>Free Bootcamps</h5>
 						<ol>
 							<li><a href="/bootcamp/business">Online Business Bootcamp</a></li>
@@ -56,7 +56,7 @@
 					<div class="card-body">
 						<div class="circle-text">2</div>
 						<h3 class="thirds">Build a brand, get true fans</h3>
-						<p>Second, <strong>you need an audience that will love the value that you provide them</strong>.</p>
+						<p>Second, <strong>you need an audience that will love the value that you provide them</strong>. Create and promote time.</p>
 						<h5>Free Bootcamps</h5>
 						<ol start="3">
 							<li><a href="/bootcamp/brand">Brand &amp; Tribe Framework</a></li>

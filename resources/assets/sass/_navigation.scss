@@ -1,12 +1,11 @@
 .navbar {
 	background-color: $white;
+	border-bottom: 1px solid $smoke;
 	.navbar-brand {
-		font-family: $font-family-sans-serif;
 		font-weight: 700;
 		font-size: 2rem;
 		padding-right: 1rem;
 		color: $black !important;
-		letter-spacing: -1px;
 		&:hover {
 			color: $pink !important;
 		}
@@ -27,8 +26,9 @@
 			color: $pink !important;
 		}
 		&.active {
-			color: $pink !important;
+			background-color: $pink !important;
 			//font-weight: 900;
+			border-radius: $border-radius;
 		}
 	}
 	a.dropdown-item {
