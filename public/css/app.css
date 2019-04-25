@@ -524,7 +524,8 @@ h3.thirds {
 }
 
 .content.lesson div.recap {
-  border: 10px solid #eeb8c8;
+  border-top: 10px solid #eeb8c8;
+  border-left: 10px solid #eeb8c8;
   background-color: #f9f9f7;
   padding: 3rem 3rem 1rem;
   margin-bottom: 1rem;

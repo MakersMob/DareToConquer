@@ -237,7 +237,8 @@ h3.thirds {
 	div.recap {
 		// margin-left:auto;
 		// margin-right: auto;
-		border: 10px solid $pink;
+		border-top: 10px solid $pink;
+		border-left: 10px solid $pink;
 		background-color: $gray0;
 		padding: 3rem 3rem 1rem;
 		margin-bottom: 1rem;
