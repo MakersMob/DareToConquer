@@ -855,8 +855,15 @@ img.avatar {
 }
 
 p.date {
-  border-bottom: 1px dotted #eee;
   margin-bottom: 0;
+}
+
+p.date span {
+  background-color: #eeb8c8;
+}
+
+.tidbit {
+  border-top: 1px dotted #eee;
 }
 
 .sidebar .card .card-header {

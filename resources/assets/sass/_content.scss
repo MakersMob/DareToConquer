@@ -517,10 +517,12 @@ img.avatar {
 }
 
 p.date {
-	border-bottom: 1px dotted $smoke;
+	span { background-color: $pink; }
 	margin-bottom: 0;
 }
-
+.tidbit {
+	border-top: 1px dotted $smoke;
+}
 .sidebar {
 	.card {
 		.card-header {

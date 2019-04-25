@@ -88,19 +88,12 @@
             @endunless
         </div>
         <div class="col-12 col-lg-5 sidebar">
-            <div class="tidbit">
-                 <div class="card">
-                    <div class="card-header">
-                        DTC News
-                    </div>
-                    <div class="card-body">
-                    @foreach($tidbits as $tidbit)
-                        <p class="small date"><em>{{ date('F jS', strtotime($tidbit->created_at)) }}</em></p>
-                        {!! $tidbit->content !!}
-                    @endforeach
-                    </div>
+            @foreach($tidbits as $tidbit)
+                <div class="tidbit">
+                    <p class="small date"><span>{{ date('F jS', strtotime($tidbit->created_at)) }}</span></p>
+                    {!! $tidbit->content !!}
                 </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </div>
