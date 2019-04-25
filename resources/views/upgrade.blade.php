@@ -41,7 +41,7 @@
             <div class="col-12 col-lg-8">
                 <p>Upgrade time means full access to all Course, Journeys and any other Resource on DTC.</p>
                 <h3 class="">Pricing</h3>
-                <p>Your upgrade price is the Gold Member Price MINUS however much you've spent on courses so far. The current enrollment price is ${{ env('MEMBERSHIP_PRICE') }} for a gold membership.</p>
+                <p>Your upgrade price is the Gold Member Price MINUS however much you've spent on courses so far. The current enrollment price is ${{ env('OLD_MEMBERSHIP_PRICE') }} for a gold membership.</p>
                 <p><strong>Your upgrade price is ${{ $price }}.</strong></p>
                 <h3>The Guarantee</h3>
                 <p>Upgrading also means you've activated the 18-month money back guarantee.</p>

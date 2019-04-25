@@ -24,7 +24,7 @@ class UpgradeController extends Controller
     		$total = $total + $payment->price;
     	}
 
-    	$price = env('MEMBERSHIP_PRICE') - $total;
+    	$price = env('OLD_MEMBERSHIP_PRICE') - $total;
 
     	return view('upgrade', compact('price', 'user', 'payments'));
     }
@@ -40,7 +40,7 @@ class UpgradeController extends Controller
     		$total = $total + $payment->price;
     	}
 
-    	$amount = env('MEMBERSHIP_PRICE') - $total;
+    	$amount = env('OLD_MEMBERSHIP_PRICE') - $total;
 
     	$description = 'DTC Membership Upgrade';
     	$type = 'membership';
