@@ -26,7 +26,7 @@
 <section class="content vanilla">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 col-lg-8">
+			<div class="col-12 col-lg-6">
 				@unless($stop->active != 1)
 				  @if(Auth::user()->stops->contains($stop->id))
 				    <p>You've completed this Stop but good on you for coming back and revisiting things!</p>
@@ -34,6 +34,14 @@
 				    <p><a href="/stopcompleted/{{$stop->id}}" class="btn btn-block btn-primary btn-lg">I've completed this Stop!</a></p>
 				  @endif
 				@endunless
+			</div>
+		</div>
+	</div>
+</section>
+<section class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-lg-6">
 				<table class="table">
 					<thead>
 						<tr>
