@@ -152,9 +152,12 @@ h3.thirds {
 	li {
 		margin-left: 1rem;
 		margin-right: 0;
+		&.list-group-item {
+			margin-left: 0;
+		}
 		a {
 			display: block;
-			color: $pink;
+			//color: $pink;
 			&:hover {
 				color: $black;
 			}

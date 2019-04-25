@@ -25,7 +25,7 @@
 			</div>
 			<div class="col-12 col-lg-4 sidebar">
 				<h4>Categories</h4>
-				<ul class="list-group" style="margin-bottom: 2rem;">
+				<ul class="list-group" style="margin-bottom: 2rem; margin-left: 0;">
 					<li class="list-group-item"><a style="border: none;" href="/questions/category/affiliate-marketing">Affiliate Marketing</a></li>
 					<li class="list-group-item"><a style="border: none;" href="/questions/category/DTC">Dare to Conquer</a></li>
 					<li class="list-group-item"><a style="border: none;" href="/questions/category/blogging">Blogging</a></li>

@@ -422,9 +422,12 @@ h3.thirds {
   margin-right: 0;
 }
 
+.content.lesson .sidebar li.list-group-item {
+  margin-left: 0;
+}
+
 .content.lesson .sidebar li a {
   display: block;
-  color: #eeb8c8;
 }
 
 .content.lesson .sidebar li a:hover {

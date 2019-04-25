@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h2 class="preheader"><a href="/questions">Online Business FAQ</a></h2>
+				<h3 class="preheader"><a href="/questions">Online Business FAQ</a></h3>
 				<h1 class=""><strong>{{ $cat }}</strong></h1>
 				@role('admin')
 					<div class="" style="margin-top: 2rem;"><a href="/questions/create" class="btn btn-primary">Add Question</a></div>
@@ -14,7 +14,7 @@
 		</div>
 	</div>
 </section>
-<section class="content smoke lesson">
+<section class="content lesson">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg-8">
