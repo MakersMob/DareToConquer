@@ -726,10 +726,6 @@ h3.thirds {
   padding-left: 1.6rem;
 }
 
-.content.objectives ol li {
-  font-family: "Source Serif Pro", serif;
-}
-
 @media (min-width: 768px) {
   .content.objectives ol {
     padding-left: 0;
