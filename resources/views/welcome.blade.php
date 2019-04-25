@@ -101,7 +101,7 @@
 				<p>I&rsquo;ve been fortunate to run a number of successful online businesses that allow me the freedom to live life on my terms.</p>
 				<p>To say that I am happy would be an understatement.</p>
 				<p>I want everyone to be able to find this kind of happiness where you no longer have to worry about bills, lack of time with friends &amp; family, and wondering if you're really getting the most out of your life.</p>
-				<p>I figure if you follow my lead, it will take you 18 months to quit your job and live life the way you want.</p>
+				<p><strong>I figure if you follow my lead, it will take you 18 months to quit your job and live life the way you want.</strong></p>
 				<p>Are you with me?</p>
 			</div>
 		</div>
