@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h3 class="preheader"><a href="/guide">DTC Business Guides</a></h3>
+				<h3 class="preheader"><a href="/guide">Guides</a></h3>
 				<h1 class="">{{ $guide->title }}</h1>
 				@role('admin')
 					<div class="" style="margin-top: 2rem;"><a href="/guide/{{ $guide->id }}/edit" class="btn btn-primary">Edit Guide</a></div>
