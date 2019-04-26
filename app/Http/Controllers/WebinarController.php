@@ -14,7 +14,7 @@ class WebinarController extends Controller
      */
     public function index()
     {
-        $webinars = Webinar::get();
+        $webinars = Webinar::orderBy('id', 'DESC')->get();
 
         return view('webinar.index', compact('webinars'));
     }
