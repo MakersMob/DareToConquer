@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h2 class="preheader"><a href="/webinars">DTC Member Webinars</a></h2>
+				<h3 class="preheader"><a href="/webinars">DTC Member Webinars</a></h3>
 				<h1 class="">{{ $webinar->title }}</h1>
 				@role('admin')
 					<div class="" style="margin-top: 2rem;"><a href="/webinars/{{ $webinar->id }}/edit" class="btn btn-primary">Edit Webinar</a></div>
