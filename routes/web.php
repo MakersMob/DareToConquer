@@ -298,6 +298,12 @@ Route::post(
 );
 
 Route::group(['middleware' => 'auth'], function () {
+	// Roadmap
+	Route::get('roadmap', function () {
+		return view('roadmap.index');
+	});
+
+
 	// Upgrade
 	Route::get('upgrade', 'UpgradeController@show');
 	Route::post('upgrade', 'UpgradeController@store');

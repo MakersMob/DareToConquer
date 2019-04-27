@@ -10,15 +10,19 @@ h3.thirds {
 	text-align: center;
 	font-size: 36px;
 	background-color: $black;
-	color: $yellow;
+	color: $yellow2;
 	font-weight: 700;
 }
 
 .content {
 	background-color: $white;
 	padding: 4rem 0;
+	code {
+		background-color: $teal;
+		color: $black;
+	}
 	strong {
-	 	background-color: $teal;
+	 	background-color: $yellow2;
 	}
 	h2, h3 {
 		margin-top: 2rem;
@@ -535,5 +539,28 @@ p.date {
 				font-size: 18px;
 			}
 		}
+	}
+}
+
+.content.lesson div.small {
+	h5 {
+		font-size: 20px;
+	}
+	ol.roadmap {
+		ol.sub-list {
+				margin-left: 1.6rem;
+			}
+		li {
+			line-height: 1;
+			margin-bottom: 0;
+			&.heading span {
+				font-weight: 700;
+				background-color: $yellow2;
+			}
+		}
+		margin-left: 1.3rem;
+	}
+	li, p {
+		font-size: 18px;
 	}
 }

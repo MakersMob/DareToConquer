@@ -36,6 +36,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
+                        <!--<li class="nav-item">
+                            <a class="nav-link @if(Request::is('roadmap*')) active @endif" href="/roadmap">Roadmap</a>
+                        </li>-->
                         <li class="nav-item">
                             <a class="nav-link @if(Request::is('courses*') || Request::is('course*')) active @endif" href="/course">Courses</a>
                         </li>
