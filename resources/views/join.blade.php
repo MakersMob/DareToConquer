@@ -48,11 +48,16 @@
                 <p>The beauty of the <em>Dare to Conquer</em> is that once you join, you join for life. You won't have to worry about paying for the next version or when a new course is added.</p>
                 <p>It's the ultimate pay once, learn forever online business resource.</p>
                 <h3 class="">Pricing</h3>
-                <p><strong>The current enrollment price is ${{ env('MEMBERSHIP_PRICE') }} for a lifetime membership.</strong> That's as much as a single course cost on most sites and even less than other courses!</p>
+                <p><strong>The current enrollment price is ${{ env('MEMBERSHIP_PRICE') }} for a Gold Membership</strong></p>
                 <h3>The Guarantee</h3>
                 <p>This is a huge investment for anyone so I want to make sure you know that I believe in the material and more importantly I believe in you.</p>
                 <p><strong>So if you purchase the full DTC Membership, you can get your money back any time with 18 months of purchase as long as you show me that you've completed the courses and tried your best to implement the material.</strong></p>
                 <p>18 months. You got this.</p>
+                <h4>Payment Options</h4>
+                <p>While there are no payment plan options for the Gold Membership, if you buy a course, it will go towards the total for your upgrade price if you want to upgrade to Gold Membership later on.</p>
+                <p>Your upgrade price is the Gold Member Price MINUS however much you've spent on courses so far. The current enrollment price is ${{ env('MEMBERSHIP_PRICE') }} for a gold membership.</p>
+                <p>So if you purchased <em>Hero Branding</em> ($199) and <em>Dating Pinterest</em> ($199), your upgrade price would be:</p>
+                <p><code>${{ env('MEMBERSHIP_PRICE') }} - $199 - $199 = $599.</code></p>
             </div>
         </div>
         <div class="row">
