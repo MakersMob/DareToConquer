@@ -26,11 +26,11 @@
 			</div>
 			<div class="col-lg-6">
 				<h5>All Roadmaps</h5>
-				<p>No matter which roadmap you decide to follow I'd suggest everyone do the <a href="/course/building-a-brand">Hero Branding</a>, <a href="/course/building-a-tribe">Tribe Love</a>, <a href="/course/content-creation">Content Creation Cocktail</a> courses.</p>
+				<p>No matter which roadmap you decide to follow I'd suggest everyone do the <a href="/course/building-a-brand">Hero Branding</a>, <a href="/course/building-a-tribe">Tribe Love</a>, <a href="/course/content-creation">Content Creation Cocktail</a> courses first.</p>
 				<p>These courses help to build a foundation that will help you find your focus as to who you are talking to as well as establish where you wish to take your business in the future.</p>
 			</div>
 			<div class="col-lg-3 small" style="margin-bottom: 2rem;">
-				<h5>General Roadmap</h5>
+				<h5>General</h5>
 				<ol type="I" class="roadmap">
 					<li class="heading"><a href="/course/seo"><span>SEO My Goodness</span></a>
 						<ol type="1" class="sub-list">
