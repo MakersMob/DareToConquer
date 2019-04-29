@@ -290,6 +290,11 @@ Route::get('/bootcamp/sales-funnels/welcome', function () {
 Route::get('/testimonials', 'TestimonialController@index');
 Route::get('/testimonials/member/{id}', 'TestimonialController@show');
 
+// Roadmap
+	Route::get('roadmap', function () {
+		return view('roadmap.index');
+	});
+
 /* Stripe Webhooks */
 
 Route::post(
@@ -298,10 +303,6 @@ Route::post(
 );
 
 Route::group(['middleware' => 'auth'], function () {
-	// Roadmap
-	Route::get('roadmap', function () {
-		return view('roadmap.index');
-	});
 
 
 	// Upgrade

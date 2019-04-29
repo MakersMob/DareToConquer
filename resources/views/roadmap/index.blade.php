@@ -14,7 +14,7 @@
 <section class="content lesson">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6 sidebar">
+			<div class="col-lg-6 sidebar" style="margin-bottom: 2rem;">
 				<div class="card">
 					<div class="card-body">
 						<p>It's really hard for me to say that you should do the courses in a specific order because what you'll find is that there is a lot of crossover between them.</p>
@@ -24,45 +24,35 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3 small">
+			<div class="col-lg-6">
+				<h5>All Roadmaps</h5>
+				<p>No matter which roadmap you decide to follow I'd suggest everyone do the <a href="/course/building-a-brand">Hero Branding</a>, <a href="/course/building-a-tribe">Tribe Love</a>, <a href="/course/content-creation">Content Creation Cocktail</a> courses.</p>
+				<p>These courses help to build a foundation that will help you find your focus as to who you are talking to as well as establish where you wish to take your business in the future.</p>
+			</div>
+			<div class="col-lg-3 small" style="margin-bottom: 2rem;">
 				<h5>General Roadmap</h5>
 				<ol type="I" class="roadmap">
-					<li class="heading"><span>Hero Branding</span>
+					<li class="heading"><a href="/course/seo"><span>SEO My Goodness</span></a>
 						<ol type="1" class="sub-list">
 							<li>All Modules</li>
 						</ol>
 					</li>
-					<li class="heading"><span>Tribe Love</span>
+					<li class="heading"><a href="/course/pinterest"><span>Dating Pinterest</span></a>
 						<ol type="1" class="sub-list">
 							<li>All Modules</li>
 						</ol>
 					</li>
-					<li class="heading"><span>Content Creation Cocktail</span>
+					<li class="heading"><a href="/course/affiliate-marketing"><span>Affiliate Marketing Magic</span></a>
 						<ol type="1" class="sub-list">
 							<li>All Modules</li>
 						</ol>
 					</li>
-					<li class="heading"><span>SEO My Goodness</span>
+					<li class="heading"><a href="/course/product-creation"><span>6-Figure Product Creation</span></a>
 						<ol type="1" class="sub-list">
 							<li>All Modules</li>
 						</ol>
 					</li>
-					<li class="heading"><span>Dating Pinterest</span>
-						<ol type="1" class="sub-list">
-							<li>All Modules</li>
-						</ol>
-					</li>
-					<li class="heading"><span>Affiliate Marketing Magic</span>
-						<ol type="1" class="sub-list">
-							<li>All Modules</li>
-						</ol>
-					</li>
-					<li class="heading"><span>6-Figure Product Creation</span>
-						<ol type="1" class="sub-list">
-							<li>All Modules</li>
-						</ol>
-					</li>
-					<li class="heading"><span>Feel Good Funnels</span>
+					<li class="heading"><a href="/course/sales-funnels"><span>Feel Good Funnels</span></a>
 						<ol type="1" class="sub-list">
 							<li>All Modules</li>
 						</ol>
@@ -72,27 +62,12 @@
 			<div class="col-lg-3 small">
 				<h5>Ad Revenue</h5>
 				<ol type="I" class="roadmap">
-					<li class="heading"><span>Hero Branding</span>
+					<li class="heading"><a href="/course/seo"><span>SEO My Goodness</span></a>
 						<ol type="1" class="sub-list">
 							<li>All Modules</li>
 						</ol>
 					</li>
-					<li class="heading"><span>Tribe Love</span>
-						<ol type="1" class="sub-list">
-							<li>All Modules</li>
-						</ol>
-					</li>
-					<li class="heading"><span>Content Creation Cocktail</span>
-						<ol type="1" class="sub-list">
-							<li>All Modules</li>
-						</ol>
-					</li>
-					<li class="heading"><span>SEO My Goodness</span>
-						<ol type="1" class="sub-list">
-							<li>All Modules</li>
-						</ol>
-					</li>
-					<li class="heading"><span>Dating Pinterest</span>
+					<li class="heading"><a href="/course/pinterest"><span>Dating Pinterest</span></a>
 						<ol type="1" class="sub-list">
 							<li>All Modules</li>
 						</ol>
@@ -102,37 +77,22 @@
 			<div class="col-lg-3 small">
 				<h5>Product Revenue</h5>
 				<ol type="I" class="roadmap">
-					<li class="heading"><span>Hero Branding</span>
+					<li class="heading"><a href="/course/product-creation"><span>6-Figure Product Creation</span></a>
 						<ol type="1" class="sub-list">
 							<li>All Modules</li>
 						</ol>
 					</li>
-					<li class="heading"><span>Tribe Love</span>
+					<li class="heading"><a href="/course/sales-funnels"><span>Feel Good Funnels</span></a>
 						<ol type="1" class="sub-list">
 							<li>All Modules</li>
 						</ol>
 					</li>
-					<li class="heading"><span>Content Creation Cocktail</span>
+					<li class="heading"><a href="/course/seo"><span>SEO My Goodness</span></a>
 						<ol type="1" class="sub-list">
 							<li>All Modules</li>
 						</ol>
 					</li>
-					<li class="heading"><span>6-Figure Product Creation</span>
-						<ol type="1" class="sub-list">
-							<li>All Modules</li>
-						</ol>
-					</li>
-					<li class="heading"><span>Feel Good Funnels</span>
-						<ol type="1" class="sub-list">
-							<li>All Modules</li>
-						</ol>
-					</li>
-					<li class="heading"><span>SEO My Goodness</span>
-						<ol type="1" class="sub-list">
-							<li>All Modules</li>
-						</ol>
-					</li>
-					<li class="heading"><span>Dating Pinterest</span>
+					<li class="heading"><a href="/course/pinterest"><span>Dating Pinterest</span></a>
 						<ol type="1" class="sub-list">
 							<li>All Modules</li>
 						</ol>
@@ -142,27 +102,12 @@
 			<div class="col-lg-3 small">
 				<h5>Email List Building</h5>
 				<ol type="I" class="roadmap">
-					<li class="heading"><span>Hero Branding</span>
+					<li class="heading"><a href="/course/seo"><span>SEO My Goodness</span></a>
 						<ol type="1" class="sub-list">
 							<li>All Modules</li>
 						</ol>
 					</li>
-					<li class="heading"><span>Tribe Love</span>
-						<ol type="1" class="sub-list">
-							<li>All Modules</li>
-						</ol>
-					</li>
-					<li class="heading"><span>Content Creation Cocktail</span>
-						<ol type="1" class="sub-list">
-							<li>All Modules</li>
-						</ol>
-					</li>
-					<li class="heading"><span>SEO My Goodness</span>
-						<ol type="1" class="sub-list">
-							<li>All Modules</li>
-						</ol>
-					</li>
-					<li class="heading"><span>Dating Pinterest</span>
+					<li class="heading"><a href="/course/pinterest"><span>Dating Pinterest</span></a>
 						<ol type="1" class="sub-list">
 							<li>All Modules</li>
 						</ol>
@@ -172,37 +117,22 @@
 			<div class="col-lg-3 small">
 				<h5>Affiliate Marketing Revenue</h5>
 				<ol type="I" class="roadmap">
-					<li class="heading"><span>Hero Branding</span>
+					<li class="heading"><a href="/course/seo"><span>SEO My Goodness</span></a>
 						<ol type="1" class="sub-list">
 							<li>All Modules</li>
 						</ol>
 					</li>
-					<li class="heading"><span>Tribe Love</span>
+					<li class="heading"><a href="/course/affiliate-marketing"><span>Affiliate Marketing Magic</span></a>
 						<ol type="1" class="sub-list">
 							<li>All Modules</li>
 						</ol>
 					</li>
-					<li class="heading"><span>Content Creation Cocktail</span>
+					<li class="heading"><a href="/course/pinterest"><span>Dating Pinterest</span></a>
 						<ol type="1" class="sub-list">
 							<li>All Modules</li>
 						</ol>
 					</li>
-					<li class="heading"><span>SEO My Goodness</span>
-						<ol type="1" class="sub-list">
-							<li>All Modules</li>
-						</ol>
-					</li>
-					<li class="heading"><span>Affiliate Marketing Magic</span>
-						<ol type="1" class="sub-list">
-							<li>All Modules</li>
-						</ol>
-					</li>
-					<li class="heading"><span>Dating Pinterest</span>
-						<ol type="1" class="sub-list">
-							<li>All Modules</li>
-						</ol>
-					</li>
-					<li class="heading"><span>Feel Good Funnels</span>
+					<li class="heading"><a href="/course/sales-funnels"><span>Feel Good Funnels</span></a>
 						<ol type="1" class="sub-list">
 							<li>All Modules</li>
 						</ol>
@@ -212,22 +142,7 @@
 			<div class="col-lg-3 small">
 				<h5>SEO Traffic</h5>
 				<ol type="I" class="roadmap">
-					<li class="heading"><span>Hero Branding</span>
-						<ol type="1" class="sub-list">
-							<li>All Modules</li>
-						</ol>
-					</li>
-					<li class="heading"><span>Tribe Love</span>
-						<ol type="1" class="sub-list">
-							<li>All Modules</li>
-						</ol>
-					</li>
-					<li class="heading"><span>Content Creation Cocktail</span>
-						<ol type="1" class="sub-list">
-							<li>All Modules</li>
-						</ol>
-					</li>
-					<li class="heading"><span>SEO My Goodness</span>
+					<li class="heading"><a href="/course/seo"><span>SEO My Goodness</span></a>
 						<ol type="1" class="sub-list">
 							<li>All Modules</li>
 						</ol>
