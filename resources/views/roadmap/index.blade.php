@@ -20,7 +20,7 @@
 						<p>It's really hard for me to say that you should do the courses in a specific order because what you'll find is that there is a lot of crossover between them.</p>
 						<p>It might help you to go through SEO while also looking at half of the Pinterest course and keeping the Content Creation course in mind.</p>
 						<p>So what I've done is provided you with the natural order of courses to go through if there is a very specific goal that you want to achieve.</p>
-						<p><strong>You should 100% go through all of the courses AT LEAST 2-3x if not more. There will be times where you forget certain things, missing certain things, or things just won't click until all of the pieces are in place.</strong></p> 
+						<p><strong>You should 100% go through all of the courses AT LEAST 2-3x if not more. There will be times where you forget certain things, miss certain things, or things just won't click until all of the pieces are in place.</strong></p> 
 					</div>
 				</div>
 			</div>
