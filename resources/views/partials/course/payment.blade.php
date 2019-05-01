@@ -57,7 +57,7 @@
             </div>
             <div class="col-12 col-lg-4 sidebar">
                 <h3 style="margin-top: 0;">Get everything DTC</h3>
-                <p><strong>If you want access to all courses, journeys and other resources in DTC</strong>, then you should consider the <a href="/join">full lifetime membership</a> for ${{ env('MEMBERSHIP_PRICE') }}.</p>
+                <p><strong>If you want access to all courses, journeys and other resources in DTC</strong>, then you should consider the <a href="/join">Gold Lifetime Membership</a> for ${{ env('MEMBERSHIP_PRICE') }}.</p>
                 <p>Pay once and never purchase any more courses ever again.</p>
                 <h3>Need to pay with PayPal?</h3>
                 <p>Shoot an email to scrivs@daretoconquer.com letting me know you wish to pay with PayPal and include the email address I can send an invoice to.</p>
