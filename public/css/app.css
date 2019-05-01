@@ -66,9 +66,9 @@ a.btn-link {
 }
 
 a.btn-primary {
-  background-color: #fff;
-  color: #2053c9;
-  border: 3px double #2053c9;
+  background-color: #eeb8c8;
+  color: #333;
+  border: 3px double #333;
 }
 
 .navbar {
@@ -209,7 +209,7 @@ a.btn-primary {
 }
 
 .welcome a.btn-blue {
-  background-color: #fff;
+  background-color: #eeb8c8;
   text-decoration: underline;
   color: #2053c9;
 }

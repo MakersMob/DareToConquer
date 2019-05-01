@@ -6,7 +6,7 @@
 		<div class="row">
 			<div class="col-12 col-lg-8">
 				<h1 class="billboard">{{ $course->name }}</h1>
-        <h2 class="subheader">You will understand the difference between creating a brand and just building a website.</h2>
+        <h2 class="subheader">You will understand the difference between creating a brand people love and just building a website that people leave.</h2>
 				<p>Learn how to create a brand that makes more money, attracts more True Fans, and allows you to live the life that you want.</p>
         <div class="" style="margin-top: 2rem;"><a href="#payment-form" class="btn btn-primary">Purchase Now for ${{ $course->price }}</a></div>
 			</div>
