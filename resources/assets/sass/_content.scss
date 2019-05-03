@@ -277,6 +277,12 @@ h3.thirds {
 		border-bottom: 1px solid $smoke;
 		margin-bottom: 2rem;
 	}
+
+	.card.testimonial .card-body {
+		font-family: $font-family-serif;
+		font-style: italic;
+		font-size: 18px;
+	}
 }
 .content.home, .content.crowd, .content.affiliate, .content.seo {
 	background: url('https://s3-us-west-2.amazonaws.com/obstacleco-assets/wp-content/uploads/2019/04/08235536/dtc-mountains2.jpg') fixed top center;

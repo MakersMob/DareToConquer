@@ -12,6 +12,42 @@
 		</div>
 	</div>
 </section>
+<section class="content lesson">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Here&rsquo;s how to build a great brand</h2>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="circle-text">1</div>
+            <h3 class="thirds">Start things right</h3>
+            <p>Starting a business with a weak brand means you will have to go back to the drawing board over and over and over again. Avoid those headaches and get things started right.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="circle-text">2</div>
+            <h3 class="thirds">Gain true fans</h3>
+            <p>There is a difference between building an audience and gaining True Fans that follow everything that you do and want to buy everything that you create. This is how you get word-of-mouth.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="circle-text">3</div>
+            <h3 class="thirds">Become an authority</h3>
+            <p>Be recognized by others in the industry as a go to source that provides high-value without losing focus on who you are and what you want to represent in the world.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 @include('partials.course.payment')
 @include('partials.course.contents')
 <section class="content lesson vanilla">

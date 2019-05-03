@@ -209,7 +209,6 @@ a.btn-primary {
 }
 
 .welcome a.btn-blue {
-  background-color: #eeb8c8;
   text-decoration: underline;
   color: #2053c9;
 }
@@ -564,6 +563,12 @@ h3.thirds {
   padding-bottom: 2rem;
   border-bottom: 1px solid #eee;
   margin-bottom: 2rem;
+}
+
+.content.lesson .card.testimonial .card-body {
+  font-family: "Source Serif Pro", serif;
+  font-style: italic;
+  font-size: 18px;
 }
 
 .content.home,

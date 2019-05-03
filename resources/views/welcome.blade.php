@@ -21,8 +21,8 @@
         		<div class="card-body">
         			<p>Dare to Conquer is about providing you with all of the resources that you need to start and build a successful online business.</p>
         			<p>Check it out.</p>
-					<p style=""><a href="/bootcamp" class=" btn-blue " style="margin-right: 2rem;">View Free Bootcamps &#8594;</a></p>
-					<p><a href="/course" class=" btn-indigo ">View Premium Courses &#8594;</a></p>
+					<p style=""><a href="/bootcamp" class="btn-blue " style="margin-right: 2rem;">View Free Bootcamps &#8594;</a></p>
+					<p><a href="/course" class="btn-indigo ">View Premium Courses &#8594;</a></p>
 				</div>
 			</div>
         </div>
