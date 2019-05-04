@@ -159,10 +159,30 @@
             <div class="col-12 col-lg-4" style="margin-bottom: 2rem;">
                 <div class="card testimonial">
                     <div class="card-body">
-                        <strong>I joined BBC when I was ready to quit blogging. I’d been working for over a year with no results.  It was my last ditch effort.  I wish I’d joined when I started the blog.</strong> There’s no fluff. It’s real life, actionable steps you can take to see results and get your blog going in the right direction. The courses are straight forward, comprehensive, and the slack community is invaluable.  There are very few membership sites that offer lifetime updates and access to real live people.  Worth every penny.
+                        The DTC courses have been monumental in changing the way that we think about our content and delivery. <strong>The courses directly walk you through creating an authentic experience for your readers so you can guide them towards the transformation your blog and business are aiming to create.</strong> Not only are the courses easily digestible and ideas throughly explained, but there is no time-wasting fluff, helping you to implement tools and ideas quickly and efficiently. 
                     </div>
                     <div class="card-footer">
-                        <a href="https://createandfind.com/">- Melissa Clifton</a>
+                        <a href="http://frugalfinanciers.com/">- Thomas and Jen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4" style="margin-bottom: 2rem;">
+                <div class="card testimonial">
+                    <div class="card-body">
+                        DTC has been one of the best investments I've ever made; I had no idea how much I didn't know. When I started out, I had a "if you build it they will come" mentality. <strong>I had my site open for 4 months before signing up for DTC and in that time, in total I had 1,127 sessions. 12 days after buying DTC, I had 1,243 sessions in a single DAY.</strong> The content and community you get with DTC provides value far beyond its costs, plus Scrivs personality and writing style make it entertaining and easy to understand instead of like reading a textbook.
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://funesfitness.com/">- Jillian Funes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4" style="margin-bottom: 2rem;">
+                <div class="card testimonial">
+                    <div class="card-body">
+                        I consider myself extremely lucky because the month that I decided to start my blog/online business was the same month that I came across Paul Scrivens and Dare to Conquer. <strong>Without the content and knowledge provided by Scrivs and the community of amazing people inside of Dare to Conquer, my blog/business, Swift Salary, would probably be doing alright, but it wouldn't be anywhere close to where it is today.</strong>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.swiftsalary.com">- Dylan Houlihan</a>
                     </div>
                 </div>
             </div>
