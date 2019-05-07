@@ -164,23 +164,7 @@
 		</div>
 	</div>
 </section>
-<section class="content vanilla">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<h2>Recent <a target="_blank" href="https://www.youtube.com/channel/UC8oSwL2gkSn_zH8wwJMIHrw">DTC YouTube</a> Videos</h2>
-			</div>
-			@foreach($youtubes as $youtube)
-				<div class="col-12 col-lg-4">
-					<div class="image">
-						<a target="_blank" href="https://youtube.com/watch?v={{ $youtube->youtube_id }}"><img src="http://img.youtube.com/vi/{{ $youtube->youtube_id }}/hqdefault.jpg"></a>
-						<p><small><strong><a href="https://youtube.com/watch?v={{ $youtube->youtube_id }}">{{ $youtube->title }}</a></strong></small></p>
-					</div>
-				</div>
-			@endforeach
-		</div>
-	</div>
-</section>
+@include('partials.testimonials')
 <section class="content lesson">
 	<div class="container">
 		<div class="row">
@@ -199,6 +183,23 @@
 				<p><strong>You deserve the opportunity to strive for the lifestyle that you desire.</strong></p>
 				<p><a href="/join">Join today</a> or go and explore the site some more.</p>
 			</div>
+		</div>
+	</div>
+</section>
+<section class="content vanilla">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2>Recent <a target="_blank" href="https://www.youtube.com/channel/UC8oSwL2gkSn_zH8wwJMIHrw">DTC YouTube</a> Videos</h2>
+			</div>
+			@foreach($youtubes as $youtube)
+				<div class="col-12 col-lg-4">
+					<div class="image">
+						<a target="_blank" href="https://youtube.com/watch?v={{ $youtube->youtube_id }}"><img src="http://img.youtube.com/vi/{{ $youtube->youtube_id }}/hqdefault.jpg"></a>
+						<p><small><strong><a href="https://youtube.com/watch?v={{ $youtube->youtube_id }}">{{ $youtube->title }}</a></strong></small></p>
+					</div>
+				</div>
+			@endforeach
 		</div>
 	</div>
 </section>

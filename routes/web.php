@@ -31,7 +31,7 @@ Route::get('/join', function () {
 });
 
 Route::get('/join/plan', function() {
-	return view('payment-plan');
+	return redirect('/join');
 });
 
 Route::get('privacy-policy', function() {
