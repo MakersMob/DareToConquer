@@ -15,6 +15,10 @@ Auth::routes();
 
 Route::get('/', 'BaseController@index');
 
+Route::get('/podia', function() {
+	return view('podia');
+});
+
 Route::get('/sales-funnels', function () {
 	return redirect('/course/sales-funnels');
 });
