@@ -54,7 +54,7 @@ class UpgradeController extends Controller
                 'source' => $request->stripeToken,
                 'description' => $description,
                 'capture' => true,
-                'receipt_email' => $request->email,
+                'receipt_email' => $user->email,
             ]);
         } catch (\Cartalyst\Stripe\Exception\CardErrorException $e) {
             $message = $e->getMessage();
